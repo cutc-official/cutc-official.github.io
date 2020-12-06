@@ -18,7 +18,7 @@ export default {
 <style>
 nav {
 	display: flex;
-	background: var(--main-color);
+	background: var(--nav-color);
 	padding: 1% var(--splash-page-inset);
 }
 </style>

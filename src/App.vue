@@ -7,6 +7,7 @@
 :root {
   /* COLORS */
   --main-color: #C8190F;
+  --nav-color: #A3241D;
   --background: #FEE8E7;
 
   --splash-page-inset: 10%;
@@ -37,15 +38,15 @@ a {
 h4, h3, h2, h1 { margin: .2em 0 }
 h4 {
   font-size: 22;
-  font-weight: 200;
+  font-weight: 500;
 }
 h3 {
   font-size: 24;
-  font-weight: 200;
+  font-weight: 500;
 }
 h2 {
   font-size: 32;
-  font-weight: 300;
+  font-weight: 400;
 }
 h1 {
   font-size: 44;
