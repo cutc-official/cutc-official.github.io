@@ -1,30 +1,74 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
   <router-view/>
 </template>
 
 <style>
+/* GLOBAL VARIABLES */
+:root {
+  /* COLORS */
+  --main-color: #C8190F;
+  --background: #FEE8E7;
+
+  --splash-page-inset: 10%;
+}
+
+/* APP SETTINGS */
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: white;
 }
 
-#nav {
-  padding: 30px;
+html { scroll-behavior: smooth }
+html, body { height: 100% }
+body {
+  margin: 0px;
+  background: #FBDCDA;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+
+/* GLOBAL STYLES */
+
+a {
+  color: white;
+}
+/* p {} */
+h4, h3, h2, h1 { margin: .2em 0 }
+h4 {
+  font-size: 22;
+  font-weight: 200;
+}
+h3 {
+  font-size: 24;
+  font-weight: 200;
+}
+h2 {
+  font-size: 32;
+  font-weight: 300;
+}
+h1 {
+  font-size: 44;
+  font-weight: 700;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+/* Make links look like links even with no href */
+a {
+	text-decoration: underline;     
+  text-decoration-color: rgba(255, 255, 255, 0.5);  
+	cursor: pointer;
+}
+
+/* Just for input */
+input::placeholder { color: var(--main-color) }
+input:-ms-input-placeholder { color: var(--main-color) }
+input::-ms-input-placeholder { color: var(--main-color) }
+input {
+	border: 0;
+	border-radius: 50em;
+	padding: 1em;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	color: var(--main-color);
 }
 </style>
