@@ -74,9 +74,28 @@ input {
 }
 
 iframe {
-	width: 80%;
-	height: 100vh;
+	width: 100%;
+	min-height: var(--form-height);
 	border: none;
-	padding: 5em;
+	padding: 5em 0;
+	margin: 0 auto;
+	display: block;
+}
+
+@media(max-width: 450px) {
+	iframe {
+		min-height: calc(var(--form-height) * 1.2);
+	}
+}
+
+@media(max-width: 350px) {
+	iframe {
+		min-height: calc(var(--form-height) * 1.275);
+	}
+}
+
+#wrap {
+	--form-height: 140em;
+	background: #f1ecec;
 }
 </style>
