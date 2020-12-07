@@ -7,16 +7,16 @@
 		<span>
 			<h3>Welcome to the 2021</h3>
 			<h1>Canadian Undergraduate Technology Conference</h1>
-			<h2>Building our Future</h2>
+			<!-- <h2>Building our Future</h2> -->
 			<div style="height: 1em"/>
 
 			<h3>Jul 24-25, 2021 • Virtual Event</h3>
-			<input 
+			<!-- <input 
 				type="text"
 				placeholder="Enter your email for updates!"
 				v-model="email"
 				@keyup.enter="addMailList"
-			>
+			> -->
 			<!-- LINKS -->
 			<h4>
 				<a href="#sign-up-form" id="scrollLink">Join our ambassador team</a> •
@@ -69,8 +69,13 @@ export default {
 	background: linear-gradient(180deg, #3C0805 0%, rgba(103, 8, 3, 0.8) 100%);
 }
 
-input {
+/* input {
 	width: 60%;
+} */
+
+.links {
+	display: flex;
+
 }
 
 iframe {
