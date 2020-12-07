@@ -28,8 +28,10 @@
 	<div id="wrap">
 		<iframe
 			id="sign-up-form"
-			src="https://forms.gle/XvbVXZU64caA9anf6"
-			type="application/binary"
+			src="https://docs.google.com/forms/d/e/1FAIpQLSenWSkfyO8tIkbBzCKUql000yg5ZEBPDKsCWeE0Rvp_cPuSsw/viewform?embedded=true"
+			marginheight="0"
+			marginwidth="0"
+			frameborder="0"
 		/>
 	</div>
 </span>
@@ -87,20 +89,38 @@ iframe {
 	display: block;
 }
 
-@media(max-width: 450px) {
+@media(max-width: 650px) {
 	iframe {
-		min-height: calc(var(--form-height) * 1.2);
+		min-height: calc(var(--form-height) * 1.1);
+	}
+}
+
+@media(max-width: 520px) {
+	iframe {
+		min-height: calc(var(--form-height) * 1.15);
+	}
+}
+
+@media(max-width: 465px) {
+	iframe {
+		min-height: calc(var(--form-height) * 1.25);
+	}
+}
+
+@media(max-width: 420px) {
+	iframe {
+		min-height: calc(var(--form-height) * 1.33);
 	}
 }
 
 @media(max-width: 350px) {
 	iframe {
-		min-height: calc(var(--form-height) * 1.275);
+		min-height: calc(var(--form-height) * 1.4);
 	}
 }
 
 #wrap {
-	--form-height: 140em;
+	--form-height: 130em;
 	background: #f1ecec;
 }
 </style>
