@@ -2,7 +2,7 @@
 <span>
 	<nav-bar/>
 	<div class="intro" id="container">
-		<img src="../assets/building.svg">
+		<img src="../assets/building.svg" id="cutc-building-image">
 		<!-- TEXT COLUMN -->
 		<span>
 			<h3>Welcome to the 2021</h3>
@@ -19,8 +19,8 @@
 			> -->
 			<!-- LINKS -->
 			<h4>
-				<a href="#sign-up-form" id="scrollLink">Join our ambassador team</a> •
-				<a href="https://2020.cutc.ca" target="_blank">Check out CUTC 2020</a>
+				<a href="#sign-up-form" id="scrollLink">Join our ambassador team</a> 
+				<!--• <a href="https://2020.cutc.ca" target="_blank">Check out CUTC 2020</a> -->
 			</h4>
 		</span>
 	</div>
@@ -62,6 +62,7 @@ export default {
 .intro {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
 
 	height: 50%;
 	column-gap: 5em;
@@ -69,6 +70,11 @@ export default {
 	box-sizing: border-box;
 
 	background: linear-gradient(180deg, #3C0805 0%, rgba(103, 8, 3, 0.8) 100%);
+}
+
+#cutc-building-image {
+	max-height: 40vh;
+	justify-self: end;
 }
 
 /* input {
