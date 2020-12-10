@@ -18,10 +18,11 @@
 				@keyup.enter="addMailList"
 			> -->
 			<!-- LINKS -->
-			<h4>
+			<div class="links">
 				<a href="#sign-up-form" id="scrollLink">Join our ambassador team</a> 
-				<!--• <a href="https://2020.cutc.ca" target="_blank">Check out CUTC 2020</a> -->
-			</h4>
+				<h4 style="margin: 0 5px">•</h4>
+				<a href="https://2020.cutc.ca" target="_blank">Check out CUTC 2020</a>
+			</div>
 		</span>
 	</div>
 
@@ -83,7 +84,11 @@ export default {
 
 .links {
 	display: flex;
+}
 
+a {
+	font-size: 22;
+  font-weight: 500;
 }
 
 iframe {

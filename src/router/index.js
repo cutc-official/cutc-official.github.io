@@ -21,6 +21,7 @@ export const routes = [
   // }
 ];
 
+// * REMOVE "/website/" FOR FILEZILLA
 const router = createRouter({
   history: createWebHistory('/website/'), // Required for deployment
   routes,
