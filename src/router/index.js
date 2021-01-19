@@ -23,7 +23,7 @@ export const routes = [
 
 const router = createRouter({
 	// Required for gh-pages deployment
-	history: createWebHistory(location.host == 'cutc-official.github.io' ? '/website/' : '/'),
+	history: createWebHistory('/'),
 	routes
 });
 

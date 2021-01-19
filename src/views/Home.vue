@@ -66,7 +66,7 @@ export default {
 	align-items: center;
 
 	height: 50%;
-	column-gap: 5em;
+	column-gap: 1em;
 	padding: 10% var(--splash-page-inset);
 	box-sizing: border-box;
 
@@ -74,7 +74,7 @@ export default {
 }
 
 #cutc-building-image {
-	max-height: 40vh;
+	max-height: 50vh;
 	justify-self: end;
 }
 
