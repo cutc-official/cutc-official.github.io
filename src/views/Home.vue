@@ -1,5 +1,5 @@
 <template>
-<span>
+<span style="scroll">
 	<nav-bar/>
 	<div class="intro" id="container">
 		<img src="../assets/building.svg" id="cutc-building-image">
@@ -18,22 +18,8 @@
 				@keyup.enter="addMailList"
 			> -->
 			<!-- LINKS -->
-			<div class="links">
-				<a href="#sign-up-form" id="scrollLink">Join our ambassador team</a> 
-				<h4 style="margin: 0 5px">•</h4>
-				<a href="https://2020.cutc.ca" target="_blank">Check out CUTC 2020</a>
-			</div>
+			<a href="https://2020.cutc.ca" target="_blank">Check out CUTC 2020</a>
 		</span>
-	</div>
-
-	<div id="wrap">
-		<iframe
-			id="sign-up-form"
-			src="https://docs.google.com/forms/d/e/1FAIpQLSenWSkfyO8tIkbBzCKUql000yg5ZEBPDKsCWeE0Rvp_cPuSsw/viewform?embedded=true"
-			marginheight="0"
-			marginwidth="0"
-			frameborder="0"
-		/>
 	</div>
 </span>
 </template>
@@ -78,60 +64,8 @@ export default {
 	justify-self: end;
 }
 
-/* input {
-	width: 60%;
-} */
-
-.links {
-	display: flex;
-}
-
 a {
 	font-size: 22;
   font-weight: 500;
-}
-
-iframe {
-	width: 100%;
-	min-height: var(--form-height);
-	border: none;
-	padding: 5em 0;
-	margin: 0 auto;
-	display: block;
-}
-
-@media(max-width: 650px) {
-	iframe {
-		min-height: calc(var(--form-height) * 1.1);
-	}
-}
-
-@media(max-width: 520px) {
-	iframe {
-		min-height: calc(var(--form-height) * 1.15);
-	}
-}
-
-@media(max-width: 465px) {
-	iframe {
-		min-height: calc(var(--form-height) * 1.25);
-	}
-}
-
-@media(max-width: 420px) {
-	iframe {
-		min-height: calc(var(--form-height) * 1.33);
-	}
-}
-
-@media(max-width: 350px) {
-	iframe {
-		min-height: calc(var(--form-height) * 1.4);
-	}
-}
-
-#wrap {
-	--form-height: 130em;
-	background: #f1ecec;
 }
 </style>
