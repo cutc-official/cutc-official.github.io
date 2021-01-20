@@ -22,7 +22,8 @@
 }
 
 html { scroll-behavior: smooth }
-html, body { height: 100% }
+/* TEMPORARY FOR SPLASH PAGE */
+html, body {margin: 0; height: 100%; overflow: hidden}
 body {
   margin: 0px;
   background: #FBDCDA;
