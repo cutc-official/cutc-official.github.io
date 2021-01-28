@@ -62,12 +62,12 @@ export default {
 }
 
 input[type="email"] {
-  width: 40%;
+	width: 40%;
 }
 input[type="submit"] {
-  margin-left: -60px;
-  background: var(--main-color);
-  color: white;
+	margin-left: -60px;
+	background: var(--main-color);
+	color: white;
 }
 
 input:focus {
