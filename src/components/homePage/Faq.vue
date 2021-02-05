@@ -2,7 +2,7 @@
   <div id="faq">
     <h2>Frequently Asked Questions</h2>
     <div class="questions" v-for="question in questions['questions']" :key="question">
-      <button v-on:click="show" class="accordion">{{question.question}}</button>
+      <button @click="show" class="accordion">{{question.question}}</button>
       <div class="content">
         <p>{{question.answer}}</p>
       </div>
