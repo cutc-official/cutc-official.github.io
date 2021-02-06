@@ -1,0 +1,16 @@
+{
+    "slides": [
+        {
+            "name": "Name 1",
+            "personDescription": "Position 1",
+            "content": "words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words",
+            "image": "pic.svg"
+        },
+        {
+            "name": "Name 2",
+            "personDescription": "Position 2",
+            "content": "words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words",
+            "image": "pic.svg"
+        }
+    ]
+}
