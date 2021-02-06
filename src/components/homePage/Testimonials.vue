@@ -1,13 +1,26 @@
 <template>
-<div id="testimonials">
-	<h2>Testimonials</h2>
-	<!-- SIDE SCROLLER -->
-</div>
+  <div id="testimonials">
+    <h2>Testimonials</h2>
+    <!-- SIDE SCROLLER -->
+    <vueper-slides>
+      <vueper-slide v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" />
+    </vueper-slides>
+  </div>
 </template>
 
 <script>
+import { VueperSlides, VueperSlide } from 'vueperslides';
+import 'vueperslides/dist/vueperslides.css';
+import TestimonialInfo from "../../content/testimonials.json";
+
 export default {
 	name: 'Testimonials',
+	components: { VueperSlides, VueperSlide },
+  data () {
+    return {
+      information: TestimonialInfo
+    };
+  }
 }
 </script>
 
