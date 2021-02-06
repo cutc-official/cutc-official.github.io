@@ -3,7 +3,13 @@
     <h2>Testimonials</h2>
     <!-- SIDE SCROLLER -->
     <vueper-slides>
-      <vueper-slide v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" />
+      <vueper-slide 
+        v-for="(slide, i) in information['slides']" 
+        :key="i" 
+        :title="slide.title" 
+        :content="slide.content" 
+        :image="slide.image" 
+      />
     </vueper-slides>
   </div>
 </template>

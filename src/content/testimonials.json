@@ -1,0 +1,19 @@
+{
+    "slides": [
+        {
+            "title": "Slide #1",
+            "content": "Slide content.",
+            "image": ""
+        },
+        {
+            "title": "Slide #2",
+            "content": "Slide content.",
+            "image": ""
+        },
+        {
+            "title": "Slide #3",
+            "content": "Slide content.",
+            "image": ""
+        }
+    ]
+}
