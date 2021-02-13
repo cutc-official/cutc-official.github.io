@@ -1,18 +1,13 @@
 {
     "slides": [
         {
-            "title": "Slide #1",
-            "content": "Slide content.",
-            "image": ""
+            "title": "PERSON 1",
+            "content": "\"words words words words words words words words words words words words words words words words\"",
+            "image": "../../assets/pic.svg"
         },
         {
-            "title": "Slide #2",
-            "content": "Slide content.",
-            "image": ""
-        },
-        {
-            "title": "Slide #3",
-            "content": "Slide content.",
+            "title": "PERSON 2",
+            "content": "\"words words words words words words words words words words words words words words words words\"",
             "image": ""
         }
     ]
