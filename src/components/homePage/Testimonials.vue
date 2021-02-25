@@ -12,9 +12,9 @@
           <template v-slot:content>
             <div class="vueperslide__content-wrapper" style="flex-direction: row">
               <div id="slides">
-                <img src="../../assets/pic.svg" />
-                <span>{{ slide.title }}</span>
-                <span>{{ slide.content }}</span>
+                <img src="../../assets/pic.svg" style="float: left; margin: 7% 10%;"/>
+                <p style="margin: 10% 0 2%;">{{ slide.title }}</p>
+                <span style="margin: 2%;">{{ slide.content }}</span>
               </div>
             </div>
           </template>
@@ -54,7 +54,7 @@ export default {
 
 #slides {
   width: 60%;
-  margin: 10%;
+  height: 50%;
   background: #FEEAEA;
   float: right; 
   color: black;
