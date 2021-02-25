@@ -4,16 +4,18 @@
     <!-- SIDE SCROLLER -->
     <div>
       <img src="../../assets/testimonial_building.svg" id="building" />
-      <vueper-slides id="slides" :bullets="false" :arrows="false" autoplay>
+      <vueper-slides class="no-shadow" :bullets="false" :arrows="false" autoplay>
         <vueper-slide 
           v-for="(slide, i) in information['slides']" 
           :key="i"  
         >
           <template v-slot:content>
             <div class="vueperslide__content-wrapper" style="flex-direction: row">
-              <img src="../../assets/pic.svg" />
-              <span>{{ slide.title }}</span>
-              <span>{{ slide.content }}</span>
+              <div id="slides">
+                <img src="../../assets/pic.svg" />
+                <span>{{ slide.title }}</span>
+                <span>{{ slide.content }}</span>
+              </div>
             </div>
           </template>
         </vueper-slide>
@@ -42,7 +44,7 @@ export default {
 <style scoped>
 #testimonials {
 	margin: 1em;
-	background: var(--nav-color);
+  color: black;
 }
 
 #building {
