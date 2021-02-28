@@ -2,10 +2,13 @@
   <div id="faq">
     <h2 class="header">Ask us anything</h2>
     <div class="content">
-      <FaqSubSection questionType="General" />
-      <FaqSubSection questionType="Virtual" />
-      <FaqSubSection questionType="Challenge" />
-      <FaqSubSection questionType="Other" />
+      <FaqSubSection
+        v-for="header in Object.keys(questions)"
+        :key="header"
+        v-bind:questionType="header"
+      />
+    </div>
+    <div class="button-holder">
       <button class="ask">Send us a question!</button>
     </div>
   </div>
@@ -22,8 +25,7 @@ export default {
     return {
       questions: Questions
     };
-  },
-  methods: {}
+  }
 };
 </script>
 
@@ -38,10 +40,18 @@ export default {
   letter-spacing: 0.2px;
   color: #000000;
 }
+.header {
+  margin-left: 2rem;
+}
 .content {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.button-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .ask {
   margin-top: 2rem;
@@ -56,6 +66,7 @@ export default {
   background: #e84545;
   border-radius: 5px;
   cursor: pointer;
+  text-align: center;
 }
 @media screen and (max-width: 850px) {
   .header {

@@ -5,7 +5,7 @@
     </div>
     <div class="questions" v-for="question in questions[questionType]" :key="question">
       <button @click="show" class="accordion">
-        <div v-bind:class="arrowClass"></div>
+        <div v-bind:class="question.answer === lastAccordion ? 'arrow-active': 'arrow-right'"></div>
         {{question.question}}
       </button>
       <div class="content">
@@ -24,8 +24,7 @@ export default {
   data() {
     return {
       questions: Questions,
-      lastAccordion: "",
-      arrowClass: "arrow-right"
+      lastAccordion: ""
     };
   },
   methods: {
@@ -35,20 +34,16 @@ export default {
       let accordions = document.getElementsByClassName("accordion");
       for (let element of accordions) {
         element.nextElementSibling.style.maxHeight = null;
-        //this.arrowClass = "arrow-right";
       }
       let content = event.target.nextElementSibling;
       // accordion is open, we need to close it
       if (content.style.maxHeight) {
-        // originally this condition was content.style.maxHeight || the last accordion but there was a bug which was if I closed the current accordion and tried to reopen it, it wouldn't work
         content.style.maxHeight = null;
-        //this.arrowClass = "arrow-right";
       } else {
         //accordion is closed
         content.style.maxHeight = content.scrollHeight + "px";
-        //this.arrowClass = "arrow-active";
       }
-      this.lastAccordion = content;
+      this.lastAccordion = content.querySelector("p").textContent;
     }
   }
 };
