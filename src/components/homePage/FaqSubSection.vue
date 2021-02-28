@@ -1,19 +1,4 @@
-<template>
-  <div class="box">
-    <div class="banner">
-      <div class="header">{{questionType}}</div>
-    </div>
-    <div class="questions" v-for="question in questions[questionType]" :key="question">
-      <button @click="show" class="accordion">
-        <div v-bind:class="question.answer === lastAccordion ? 'arrow-active': 'arrow-right'"></div>
-        {{question.question}}
-      </button>
-      <div class="content">
-        <p>{{question.answer}}</p>
-      </div>
-    </div>
-  </div>
-</template>
+<template></template>
 
 <script>
 import Questions from "../../content/faq.json";
@@ -32,6 +17,7 @@ export default {
       // close any accordions that's open first
 
       let accordions = document.getElementsByClassName("accordion");
+      console.log(accordions);
       for (let element of accordions) {
         element.nextElementSibling.style.maxHeight = null;
       }
@@ -43,7 +29,10 @@ export default {
         //accordion is closed
         content.style.maxHeight = content.scrollHeight + "px";
       }
+      let above = event.target;
+      console.log(above);
       this.lastAccordion = content.querySelector("p").textContent;
+      console.log(content);
     }
   }
 };
