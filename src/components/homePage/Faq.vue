@@ -2,84 +2,26 @@
   <div id="faq">
     <h2 class="header">Ask us anything</h2>
     <div class="content">
-      <div class="box">
+      <div class="box" v-for="(questionSet, groupTitle) in questions" :key="groupTitle">
         <div class="banner">
-          <div class="box-header">{{Object.keys(questions)[0]}}</div>
+          <div class="box-header">{{groupTitle}}</div>
         </div>
         <div
           class="questions"
-          v-for="question in questions[Object.keys(questions)[0]]"
-          :key="question"
+          v-for="qa in questionSet"
+          :key="qa"
         >
-          <button @click="show($event,0)" class="accordion">
+          <button @click="show($event, qa.question)" class="accordion">
             <div
-              v-bind:class="question.answer === lastAccordion && currentBox === 0 ? 'arrow-active': 'arrow-right'"
+              v-bind:class="qa.question == currentQuestion ? 'arrow-active': 'arrow-right'"
             ></div>
-            {{question.question}}
+            {{qa.question}}
           </button>
-          <div class="p-content">
-            <p>{{question.answer}}</p>
-          </div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="banner">
-          <div class="box-header">{{Object.keys(questions)[1]}}</div>
-        </div>
-        <div
-          class="questions"
-          v-for="question in questions[Object.keys(questions)[1]]"
-          :key="question"
-        >
-          <button @click="show($event,1)" class="accordion">
-            <div
-              v-bind:class="question.answer === lastAccordion  && currentBox === 1? 'arrow-active': 'arrow-right'"
-            ></div>
-            {{question.question}}
-          </button>
-          <div class="p-content">
-            <p>{{question.answer}}</p>
-          </div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="banner">
-          <div class="box-header">{{Object.keys(questions)[2]}}</div>
-        </div>
-        <div
-          class="questions"
-          v-for="question in questions[Object.keys(questions)[2]]"
-          :key="question"
-        >
-          <button @click="show($event,2)" class="accordion">
-            <div
-              v-bind:class="question.answer === lastAccordion  && currentBox === 2? 'arrow-active': 'arrow-right'"
-            ></div>
-            {{question.question}}
-          </button>
-          <div class="p-content">
-            <p>{{question.answer}}</p>
-          </div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="banner">
-          <div class="box-header">{{Object.keys(questions)[3]}}</div>
-        </div>
-        <div
-          class="questions"
-          v-for="question in questions[Object.keys(questions)[3]]"
-          :key="question"
-        >
-          <button @click="show($event,3)" class="accordion">
-            <div
-              v-bind:class="question.answer === lastAccordion  && currentBox === 3 ? 'arrow-active': 'arrow-right'"
-            ></div>
-            {{question.question}}
-          </button>
-          <div class="p-content">
-            <p>{{question.answer}}</p>
-          </div>
+          <transition name="fadeHeight" mode="out-in">
+            <div v-if="qa.question == currentQuestion">
+              <p class="p-content">{{qa.answer}}</p>
+            </div>
+          </transition>
         </div>
       </div>
     </div>
@@ -97,27 +39,15 @@ export default {
   data() {
     return {
       questions: Questions,
-      lastAccordion: "",
-      currentBox: null
+      currentQuestion: ''
     };
   },
   methods: {
-    show: function(event, box) {
-      // close any accordions that's open first
-      let accordions = document.getElementsByClassName("accordion");
-      for (let element of accordions) {
-        element.nextElementSibling.style.maxHeight = null;
-      }
-      let content = event.target.nextElementSibling;
-      // accordion is open, we need to close it
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        //accordion is closed
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-      this.currentBox = box;
-      this.lastAccordion = content.querySelector("p").textContent;
+    show(_, question) {
+      if (this.currentQuestion == question) 
+        this.currentQuestion = ''
+      else
+        this.currentQuestion = question;
     }
   }
 };
@@ -204,19 +134,7 @@ button.accordion {
   display: flex;
 }
 .p-content {
-  overflow-wrap: break-word;
-  padding: 0rem 2rem;
-  border-left: 1px;
-  border-right: 1px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-in-out;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
+  font-size: 12px;
 }
 .arrow-right {
   margin-right: 0.5rem;
@@ -242,5 +160,18 @@ button.accordion {
   .p-content {
     font-size: 12px;
   }
+}
+
+.fadeHeight-enter-active,
+.fadeHeight-leave-active {
+  transition: all 0.5s;
+  max-height: 100vh;
+}
+.fadeHeight-enter,
+.fadeHeight-leave-to
+{
+  opacity: 0;
+  max-height: 0px;
+  overflow: hidden;
 }
 </style>

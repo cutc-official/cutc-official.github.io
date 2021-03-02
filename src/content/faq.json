@@ -10,58 +10,20 @@
 		{
 			"question": "How do I get tickets?",
 			"answer": "CUTC 2020 will be held as an online conference this year, making it accessible to everyone and anyone who’s interested in getting involved. To register, visit https://cutc-reconnect.eventbrite.ca/."
-		},
-		{
-			"question": "Who can attend?",
-			"answer": "High school, undergraduate and graduate students from all across Canada can attend CUTC Reconnect. Have any questions? Shoot us an email or a DM!"
 		}
 	],
 	"Virtual": [{
-			"question": "What makes CUTC different?",
+			"question": "Is it going to be virtual?",
 			"answer": "At the CUTC, you get to learn from the people in the trenches- entrepreneurs, pioneers in technology and the ones who build and maintain the tech we use everyday. With opportunities for you to get your hands dirty and create things, network exclusively with top employers, meet others in the community and learn something new, CUTC 2020 is the place to be for anyone looking to make an impact in tech."
-		},
+		}
+	],
+	"Challenge": [
 		{
-			"question": "Are tickets free?",
-			"answer": "Yes! Tickets to CUTC 2020 are free!"
-		},
-		{
-			"question": "How do I get tickets?",
-			"answer": "CUTC 2020 will be held as an online conference this year, making it accessible to everyone and anyone who’s interested in getting involved. To register, visit https://cutc-reconnect.eventbrite.ca/."
-		},
-		{
-			"question": "Who can attend?",
+			"question": "What is this year's challenge?",
 			"answer": "High school, undergraduate and graduate students from all across Canada can attend CUTC Reconnect. Have any questions? Shoot us an email or a DM!"
 		}
 	],
-	"Challenge": [{
-			"question": "What makes CUTC different?",
-			"answer": "At the CUTC, you get to learn from the people in the trenches- entrepreneurs, pioneers in technology and the ones who build and maintain the tech we use everyday. With opportunities for you to get your hands dirty and create things, network exclusively with top employers, meet others in the community and learn something new, CUTC 2020 is the place to be for anyone looking to make an impact in tech."
-		},
-		{
-			"question": "Are tickets free?",
-			"answer": "Yes! Tickets to CUTC 2020 are free!"
-		},
-		{
-			"question": "How do I get tickets?",
-			"answer": "CUTC 2020 will be held as an online conference this year, making it accessible to everyone and anyone who’s interested in getting involved. To register, visit https://cutc-reconnect.eventbrite.ca/."
-		},
-		{
-			"question": "Who can attend?",
-			"answer": "High school, undergraduate and graduate students from all across Canada can attend CUTC Reconnect. Have any questions? Shoot us an email or a DM!"
-		}
-	],
-	"Other": [{
-			"question": "Is a schedule available?",
-			"answer": "Yes! Check out the full schedule on the schedule tab"
-		},
-		{
-			"question": "Are tickets free?",
-			"answer": "Yes! Tickets to CUTC 2020 are free!"
-		},
-		{
-			"question": "How do I get tickets?",
-			"answer": "CUTC 2020 will be held as an online conference this year, making it accessible to everyone and anyone who’s interested in getting involved. To register, visit https://cutc-reconnect.eventbrite.ca/."
-		},
+	"Other": [
 		{
 			"question": "Who can attend?",
 			"answer": "High school, undergraduate and graduate students from all across Canada can attend CUTC Reconnect. Have any questions? Shoot us an email or a DM!"
