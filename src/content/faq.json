@@ -13,20 +13,15 @@
 		}
 	],
 	"Virtual": [{
-			"question": "Is it going to be virtual?",
-			"answer": "At the CUTC, you get to learn from the people in the trenches- entrepreneurs, pioneers in technology and the ones who build and maintain the tech we use everyday. With opportunities for you to get your hands dirty and create things, network exclusively with top employers, meet others in the community and learn something new, CUTC 2020 is the place to be for anyone looking to make an impact in tech."
-		}
-	],
-	"Challenge": [
-		{
-			"question": "What is this year's challenge?",
-			"answer": "High school, undergraduate and graduate students from all across Canada can attend CUTC Reconnect. Have any questions? Shoot us an email or a DM!"
-		}
-	],
-	"Other": [
-		{
-			"question": "Who can attend?",
-			"answer": "High school, undergraduate and graduate students from all across Canada can attend CUTC Reconnect. Have any questions? Shoot us an email or a DM!"
-		}
-	]
+		"question": "Is it going to be virtual?",
+		"answer": "At the CUTC, you get to learn from the people in the trenches- entrepreneurs, pioneers in technology and the ones who build and maintain the tech we use everyday. With opportunities for you to get your hands dirty and create things, network exclusively with top employers, meet others in the community and learn something new, CUTC 2020 is the place to be for anyone looking to make an impact in tech."
+	}],
+	"Challenge": [{
+		"question": "What is this year's challenge?",
+		"answer": "High school, undergraduate and graduate students from all across Canada can attend CUTC Reconnect. Have any questions? Shoot us an email or a DM!"
+	}],
+	"Other": [{
+		"question": "Who can attend?",
+		"answer": "High school, undergraduate and graduate students from all across Canada can attend CUTC Reconnect. Have any questions? Shoot us an email or a DM!"
+	}]
 }

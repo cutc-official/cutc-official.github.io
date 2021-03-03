@@ -6,18 +6,12 @@
         <div class="banner">
           <div class="box-header">{{groupTitle}}</div>
         </div>
-        <div
-          class="questions"
-          v-for="qa in questionSet"
-          :key="qa"
-        >
+        <div class="questions" v-for="qa in questionSet" :key="qa">
           <button @click="show($event, qa.question)" class="accordion">
-            <div
-              v-bind:class="qa.question == currentQuestion ? 'arrow-active': 'arrow-right'"
-            ></div>
+            <div v-bind:class="qa.question == currentQuestion ? 'arrow-active': 'arrow-right'"></div>
             {{qa.question}}
           </button>
-          <transition name="fadeHeight" mode="out-in">
+          <transition name="fadeHeight">
             <div v-if="qa.question == currentQuestion">
               <p class="p-content">{{qa.answer}}</p>
             </div>
@@ -39,15 +33,13 @@ export default {
   data() {
     return {
       questions: Questions,
-      currentQuestion: ''
+      currentQuestion: ""
     };
   },
   methods: {
     show(_, question) {
-      if (this.currentQuestion == question) 
-        this.currentQuestion = ''
-      else
-        this.currentQuestion = question;
+      if (this.currentQuestion == question) this.currentQuestion = "";
+      else this.currentQuestion = question;
     }
   }
 };
@@ -134,7 +126,17 @@ button.accordion {
   display: flex;
 }
 .p-content {
-  font-size: 12px;
+  overflow-wrap: break-word;
+  padding: 0rem 2rem;
+  border-left: 1px;
+  border-right: 1px;
+  overflow: hidden;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
 }
 .arrow-right {
   margin-right: 0.5rem;
@@ -161,15 +163,13 @@ button.accordion {
     font-size: 12px;
   }
 }
-
 .fadeHeight-enter-active,
 .fadeHeight-leave-active {
   transition: all 0.5s;
   max-height: 100vh;
 }
 .fadeHeight-enter,
-.fadeHeight-leave-to
-{
+.fadeHeight-leave-to {
   opacity: 0;
   max-height: 0px;
   overflow: hidden;
