@@ -7,8 +7,7 @@
 :root {
 	/* COLORS */
 	--main-color: #C8190F;
-	--nav-color: #A3241D;
-	--background: #FEE8E7;
+	--nav-color: #B3160D;
 
 	--splash-page-inset: 10%;
 }
@@ -24,7 +23,7 @@
 html { scroll-behavior: smooth }
 body {
 	margin: 0px;
-	background: #FBDCDA;
+	background: #fff;
 }
 
 
