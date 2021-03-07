@@ -1,7 +1,10 @@
 <template>
 <div id="hero">
 	<div class="intro">
-		<img src="../../assets/building.svg" id="cutc-building-image">
+		<div class="building">
+			<countdown/>
+			<img src="../../assets/building.svg" id="cutc-building-image">
+		</div>
 		<!-- TEXT COLUMN -->
 		<span>
 			<h3>Welcome to the 2021</h3>
@@ -25,7 +28,6 @@
 			<a href="https://2020.cutc.ca" target="_blank">Check out CUTC 2020</a>
 		</span>
 	</div>
-	<countdown/>
 </div>
 </template>
 
@@ -53,13 +55,13 @@ export default {
 	padding: 10% var(--splash-page-inset);
 	box-sizing: border-box;
 }
+.building {
+	position: relative;
+}
 #cutc-building-image {
 	max-height: 50vh;
-	justify-self: end;
-}
-
-img {
 	max-width: 100%;
+	justify-self: end;
 }
 
 input[type="email"] {
