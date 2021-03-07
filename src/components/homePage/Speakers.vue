@@ -1,15 +1,39 @@
 <template>
 <div id="speakers">
-	<h2>CUTC 2020</h2>
 	<div id="tabs">
-		<p id="tab" @click="currentPage = 0"> Speakers </p>
-		<p id="tab" @click="currentPage = 1"> Events </p>
+		<p class="tab" v-bind:class="[isActive ? 'underlined' : 'none']" @click="currentPage = 0; toggleStyle()"> Speakers </p>
+		<p class="tab" v-bind:class="[isActive ? 'underlined' : 'none']" @click="currentPage = 1; toggleStyle()"> Events </p>
 	</div>
+  
 	<vueper-slides v-if="currentPage == 0">
-		<vueper-slide v-for="i in 5" :key="i" :title="i.toString()" />
+		<template v-slot:arrow-right>
+			<img src="../../assets/Arrow.svg"/>
+		</template>
+		<template v-slot:arrow-left>
+		</template>
+		<vueper-slide 
+			v-for="(slide, i) in slides" 
+			:key="i" 
+			:title="slide.title" 
+			:content="slide.content">
+			<template v-slot:content>
+            <div class="vueperslide__content-wrapper" style="flex-direction: row">
+				<img src="../../assets/elonmusk.svg" id="person" />
+            </div>
+          </template>
+		</vueper-slide>
 	</vueper-slides>
 	<vueper-slides v-else>
-		<vueper-slide v-for="i in 5" :key="i" :title="i.toString()" />
+		<template v-slot:arrow-right>
+			<img src="../../assets/Arrow.svg"/>
+		</template>
+		<template v-slot:arrow-left>
+		</template>
+		<vueper-slide 
+			v-for="(slide, i) in slides"  
+			:key="i" 
+			:title="slide.title" 
+			:content="slide.content" />
 	</vueper-slides>
 </div>
 </template>
@@ -19,15 +43,24 @@ import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
 export default {
+	methods: {
+	toggleStyle: function() {
+		this.isActive = !this.isActive;
+	}
+},
 	components: { VueperSlides, VueperSlide },
 	name: 'Speakers',
 	data: () => ({
 		slides: [
 			{
-				title: 'Slide #1',
-				content: 'Slide content.'
-				}
-				],
+				content: 'words words words words words words words words words words words words words words words',
+				image: "../../assets/elonmusk.svg"
+			},
+			{
+				content: 'more words more words more words more words more words more words more words more words more words',
+				image: "../../assets/elonmusk.svg"
+			}
+		],
 		currentPage: 0,
 }),
 	
@@ -37,24 +70,50 @@ export default {
 <style scoped>
 #speakers {
 	margin: 1em;
-	background: var(--nav-color);
+	background: #FFF5F5;
+	color: black;
+}
+#person {
+	float: left;
 }
 #tabs {
 	margin: 0 auto;
 	display: flex;
 }
 #content {
-	color: white;
 	padding: 40px;
 	display: flex;
 }
 #tab {
 	overflow: hidden;
 	display: flex;
-	padding: 40px;
+	padding: 30px;
 	cursor: pointer;
 	margin: 0 auto;
 	text-align: center;
 	float: center;
 }
- </style>
+.underlined{
+	overflow: hidden;
+	display: flex;
+	padding: 30px;
+	cursor: pointer;
+	margin: 0 auto;
+	text-align: center;
+	float: center;
+	border-bottom:#FF5B5B;
+	text-align: center;
+	float: center;
+}
+
+.blue{
+  background: blue;
+}
+.vueperslides__bullet .default {
+  background: #FF4E4E;
+}
+.vueperslides__bullet--active .default {background-color: #42b983 !important;}
+.vueperslides__bullet span {
+  display: block !important;
+}
+</style>
