@@ -8,7 +8,7 @@
         </div>
         <div class="questions" v-for="qa in questionSet" :key="qa">
           <button @click="show($event, qa.question)" class="accordion">
-            <div v-bind:class="qa.question == currentQuestion ? 'arrow-active': 'arrow-right'"></div>
+            <div :class="{'arrow-active': qa.question == currentQuestion, 'arrow-right': true}"></div>
             {{qa.question}}
           </button>
           <transition name="fadeHeight">
@@ -54,7 +54,7 @@ export default {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 0.2px;
-  color: #000000;
+  color: black;
 }
 .header {
   margin-left: 2rem;
@@ -74,13 +74,13 @@ export default {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5rem;
   line-height: 22px;
   color: white;
   width: 13rem;
   height: 3rem;
   background: #e84545;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
   text-align: center;
 }
@@ -107,6 +107,7 @@ export default {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
+  padding: .2em;
   line-height: 28px;
   letter-spacing: 0.07px;
   color: #ffffff;
@@ -133,9 +134,9 @@ button.accordion {
   overflow: hidden;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
   color: #000000;
 }
 .arrow-right {
@@ -147,12 +148,6 @@ button.accordion {
   border-left: 1.5rem solid gray;
 }
 .arrow-active {
-  margin-right: 0.5rem;
-  width: 0;
-  height: 0;
-  border-top: 0.5rem solid transparent;
-  border-bottom: 0.5rem solid transparent;
-  border-left: 1.5rem solid gray;
   transform: matrix(0.02, 1, -1, 0.02, 0, 0);
 }
 @media screen and (max-width: 850px) {
