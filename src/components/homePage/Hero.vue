@@ -45,9 +45,6 @@ export default {
 </script>
 
 <style scoped>
-#hero {
-	background: linear-gradient(180deg, #3C0805 0%, rgba(103, 8, 3, 0.8) 100%);
-}
 .intro {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -59,6 +56,10 @@ export default {
 #cutc-building-image {
 	max-height: 50vh;
 	justify-self: end;
+}
+
+img {
+	max-width: 100%;
 }
 
 input[type="email"] {
