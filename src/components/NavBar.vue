@@ -1,5 +1,5 @@
 <template>
-	<div id="nav-bar">
+	<header id="nav-bar">
 		<img src="../assets/logo.svg">
 
 		<label v-if="isMobile" @click="openMenu">&#9776;</label>
@@ -13,7 +13,9 @@
 
 		<!-- MOBILE MENU -->
 		<div v-if="isMobile && isMenuOpen" class="mobileMenu">
-			<label @click="closeMenu">&#x2715;</label>
+			<div class="close-button">
+				<label @click="closeMenu">&#x2715;</label>
+			</div>
 			<nav>
 				<a @click="closeMenu" href="#about">ABOUT</a>
 				<hr noshade>
@@ -26,7 +28,7 @@
 				<a @click="closeMenu" href="#faq">FAQ</a>
 			</nav>
 		</div>
-	</div>
+	</header>
 </template>
 
 
@@ -52,9 +54,7 @@ export default {
 		}
 	},
 	beforeCreate() {
-		// ! "THIS" PROBLEMS ARE WEIRD
-		const obj = this;
-		window.addEventListener('resize', function(){obj.handleResize()});
+		window.addEventListener('resize', () => this.handleResize());
 	}
 }
 </script>
@@ -63,11 +63,12 @@ export default {
 #nav-bar {
 	padding: 1em;
 	display: flex;
+	max-width: 100%;
 	justify-content: space-between;
 }
 
 label {
-	font-size: 32px;
+	font-size: 48px;
 }
 img {
 	padding: 0 7vw 0 var(--splash-page-inset);
@@ -76,9 +77,10 @@ img {
 nav {
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
+	width: 80vw;
 }
 a {
-	margin: 0 5vw 0 0;
 	text-decoration: none;
 	font-weight: 600;
 }
@@ -87,6 +89,7 @@ a {
 	nav {
 		flex-direction: column;
 		align-items: flex-start;
+		width: 100vw;
 	}
 	a {
 		padding: 0.5em 2em;
@@ -101,9 +104,13 @@ a {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
+	z-index: 2;
 
 	background: white;
 	color: var(--nav-color);
+}
+.close-button {
+	margin: 1em 0 1em 85%;
 }
 hr {
 	width: 100%;
