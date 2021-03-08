@@ -18,13 +18,9 @@
 			</div>
 			<nav>
 				<a @click="closeMenu" href="#about">ABOUT</a>
-				<hr noshade>
 				<a @click="closeMenu" href="#speakers">SPEAKERS</a>
-				<hr noshade>
 				<a @click="closeMenu" href="#testimonials">TESTIMONIALS</a>
-				<hr noshade>
 				<a @click="closeMenu" href="#sponsors">SPONSORS</a>
-				<hr noshade>
 				<a @click="closeMenu" href="#faq">FAQ</a>
 			</nav>
 		</div>
@@ -85,19 +81,6 @@ a {
 	font-weight: 600;
 }
 
-@media screen and (max-width: 850px) {
-	nav {
-		flex-direction: column;
-		align-items: flex-start;
-		width: 100vw;
-	}
-	a {
-		padding: 0.5em 2em;
-		color: var(--nav-color);
-		font-size: 24px;
-	}
-}
-
 .mobileMenu {
 	position: fixed;
 	top: 0;
@@ -109,12 +92,24 @@ a {
 	background: white;
 	color: var(--nav-color);
 }
+
+.mobileMenu>nav {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100vw;
+	}
+.mobileMenu>nav>a {
+	padding: 1em 2em;
+	color: var(--nav-color);
+	font-size: 24px;
+}
+.mobileMenu>nav>a:not(:last-child) {
+	width: 100%;
+	border-bottom: 2px solid var(--nav-color);
+}
+
 .close-button {
 	margin: 1em 0 1em 85%;
-}
-hr {
-	width: 100%;
-	border: 1px solid var(--nav-color);
 }
 
 </style>
