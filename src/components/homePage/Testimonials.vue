@@ -11,7 +11,7 @@
             <div class="vueperslide__content-wrapper" style="flex-direction: row">
               <div id="slides">
                 <div id="title">
-                <img :src="slide.image" id="person" />
+                <img :src="getImage(slide.image)" id="person" />
                   <br />
                   <strong> {{ slide.name }} </strong>
                   <br/> 
@@ -42,10 +42,12 @@ export default {
     };
   },
   methods: {
-    getImage() {
-      const jsonObjects = TestimonialInfo['slides'];
-      console.log("here")
-      document.getElementById("displayPic").src = jsonObjects[0].image;
+    getImage(pic) {
+      try {
+        return require("../../assets/" + pic);
+      } catch(e) {
+        throw Error(`testimonials.json references image that does not exist in assets: "${pic}"`);
+      }
     }
   }
 }
