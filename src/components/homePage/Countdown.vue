@@ -40,9 +40,8 @@ export default {
 <style scoped>
 #countdown {
 	position: absolute;
-	top: 48%;
-	left: 15%;
-	width: 30%;
+	bottom: 34%;
+	right: 36%;
 	padding: 0.5em;
 
 	background: #ffe8e8;
@@ -65,7 +64,7 @@ export default {
 p {
 	margin: auto;
 	font-weight: bold;
-	font-size: 1vw;
+	font-size: 1em;
 	color: var(--nav-color);
 }
 </style>
