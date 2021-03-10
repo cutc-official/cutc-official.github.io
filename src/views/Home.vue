@@ -1,7 +1,9 @@
 <template>
 <span style="scroll">
-	<nav-bar/>
-	<hero/>
+	<div class="fade">
+		<nav-bar/>
+		<hero/>
+	</div>
 	<!-- Timeline -->
 	<about/>
 	<!-- Tab -->
@@ -51,6 +53,10 @@ export default {
 </script>
 
 <style scoped>
+.fade {
+	background: linear-gradient(180deg, #FF4E4E 0%, #FFAEAE 66.67%, #FFC5C5 77.6%, #FFD8D8 87.5%, #FFFFFF 100%);
+}
+
 #sponsors {
 	margin: 1em;
 	background: var(--nav-color);	
