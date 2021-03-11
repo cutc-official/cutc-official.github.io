@@ -55,7 +55,6 @@ export default {
         return require("../../assets/" + pic);
       } catch(e) {
         // throw Error(`testimonials.json references image that does not exist in assets: "${pic}"`);
-        return require("");
       }
     }
   }
