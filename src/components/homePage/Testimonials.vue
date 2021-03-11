@@ -19,7 +19,7 @@
             <div class="vueperslide__content-wrapper" style="flex-direction: row">
               <div id="slides">
                 <div id="title">
-                  <img :src="getImage(slide.image)" id="person" />
+                  <img :src="getImage(slide.image)" id="person" :alt="slide.alt"/>
                   <br />
                   <strong> {{ slide.name }} </strong>
                   <br/> 
@@ -54,7 +54,8 @@ export default {
       try {
         return require("../../assets/" + pic);
       } catch(e) {
-        throw Error(`testimonials.json references image that does not exist in assets: "${pic}"`);
+        // throw Error(`testimonials.json references image that does not exist in assets: "${pic}"`);
+        return require("");
       }
     }
   }
