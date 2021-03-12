@@ -1,5 +1,6 @@
 <template>
   <div id="testimonials">
+    <h2 class="headline">Hear what people have to say about CUTC!</h2>
     <div>
       <img src="../../assets/testimonial_building.svg" id="building" />
       <vueper-slides 
@@ -15,7 +16,6 @@
           :key="i"
         >
           <template v-slot:content>
-            <h2 id="hear">Hear what people have to say about CUTC!</h2>
             <div class="vueperslide__content-wrapper" style="flex-direction: row">
               <div id="slides">
                 <div id="title">
@@ -25,7 +25,7 @@
                   <br/> 
                   <strong> {{ slide.personDescription }} </strong>
                 </div>
-                <div id="content">{{ slide.content }}</div>
+                <div id="content">"{{ slide.content }}"</div>
               </div>
             </div>
           </template>
@@ -72,13 +72,6 @@ export default {
 #building {
   height: 40em;
   float: left; 
-}
-
-#hear {
-  position: relative;
-  top: 20%;
-  left: 25%;
-  font-weight: bold;
 }
 
 #slides {
