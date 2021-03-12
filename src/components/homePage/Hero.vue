@@ -19,7 +19,6 @@
 			<input type="email" name="EMAIL" placeholder="Enter your email for updates!" required>
 			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_73d566326ae6bb629b42fb5fd_e28a4a51fe" tabindex="-1" value=""></div>
-			<input type="submit" value="Submit">
 		</form>
 		<!-- End Mailchimp Signup Form -->
 
@@ -70,12 +69,7 @@ export default {
 }
 
 input[type="email"] {
-	width: 40%;
-}
-input[type="submit"] {
-	margin-left: -60px;
-	background: var(--main-color);
-	color: white;
+	width: min(95%, 400px);
 }
 input:focus {
 	outline:none;
