@@ -12,8 +12,8 @@
 	<testimonials/>
 
 	<div id="sponsors">
-		<h2>Sponsors</h2>
-		<!-- <img src="Sponsors image.png?" alt=""> -->
+		<h2 class="sponsor-headline">Our 2020 Sponsors and Partners</h2>
+		<img src="../assets/sponsors2020.svg" alt="hi" class="sponsor-img">
 	</div>
 
 	<!-- Dropdown -->
@@ -59,7 +59,13 @@ export default {
 
 #sponsors {
 	margin: 1em;
-	background: var(--nav-color);	
+}
+.sponsor-headline {
+	margin: 5%;
+}
+.sponsor-img {
+	width: 90%;
+	margin: 0 5%;
 }
 
 .footer {
