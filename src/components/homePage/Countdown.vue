@@ -1,6 +1,6 @@
 <template>
 	<div id="countdown">
-		<p class="title">COUNTDOWN!</p>
+		<p class="title">CUTC COUNTDOWN!</p>
 		<div class="data">
 		<p>{{days}}</p>
 		<p>{{hours}}</p>
@@ -16,10 +16,10 @@ const conferenceDate = new Date('July 24, 2021 10:00:00');
 export default {
 	name: 'Countdown',
 	data: () => ({
-		days: 0,
-		hours: 0,
-		minutes: 0,
-		seconds: 0,
+		days: null,
+		hours: null,
+		minutes: null,
+		seconds: null,
 	}),
 	methods: {
 		updateTimeStamp() {
@@ -59,6 +59,7 @@ export default {
 .title {
 	text-align: center;
 	font-weight: normal;
+	font-size: 0.55em;
 }
 
 p {
