@@ -43,8 +43,9 @@ h3 {
 	font-weight: 500;
 }
 h2 {
-	font-size: 32;
-	font-weight: 400;
+	font-size: 40;
+	font-weight: 700;
+	color: black;
 }
 h1 {
 	font-size: 44;

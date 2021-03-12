@@ -48,10 +48,6 @@ export default {
 <style scoped>
 #faq {
   margin: 1em;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
   line-height: 48px;
   letter-spacing: 0.2px;
   color: black;

@@ -8,7 +8,7 @@
 	<span>
 		<h3>Welcome to the 2021</h3>
 		<h1>Canadian Undergraduate Technology Conference</h1>
-		<!-- <h2>Building our Future</h2> -->
+		<h2 class="slogan">Possibility Taking Shape</h2>
 		<div style="height: 1em"/>
 
 		<h3>Jul 24-25, 2021 • Virtual Event</h3>
@@ -61,6 +61,12 @@ export default {
 	max-height: 50vh;
 	width: 100%;
 	justify-self: end;
+}
+
+.slogan {
+	font-size: 32;
+	font-weight: 400;
+	color: white;
 }
 
 input[type="email"] {
