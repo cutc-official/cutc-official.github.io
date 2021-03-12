@@ -13,7 +13,10 @@
 
 	<div id="sponsors">
 		<h2 class="sponsor-headline">Our 2020 Sponsors and Partners</h2>
-		<img src="../assets/sponsors2020.svg" alt="hi" class="sponsor-img">
+		<img
+			src="../assets/sponsors2020.svg" 
+			alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion" class="sponsor-img"
+		>
 	</div>
 
 	<!-- Dropdown -->
