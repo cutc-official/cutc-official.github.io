@@ -2,7 +2,9 @@
   <div class="parent">
     <div class="footer">
       <p class="title">CUTC 2021 &mdash; Amplify</p>
-      <p class="contact">Contact us</p>
+      <a href="mailto:info@cutc.ca" style="text-decoration: none;">
+        <p class="contact">Contact us</p>
+      </a>
       <div class="cutc-icons">
         <a
           v-for="(item,index) in items.items"
