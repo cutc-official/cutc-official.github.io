@@ -7,33 +7,13 @@
       </a>
       <div class="cutc-icons">
         <a
-          v-for="(item,index) in items.items"
+          v-for="item in items"
           :key="item.link"
           :href="`${item.link}`"
           target="_blank"
           class="icons"
         >
-          <svg
-            width="40"
-            height="41"
-            viewBox="0 0 40 41"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <rect y="0.867188" width="40" height="40" :fill="`url(#pattern${index})`" />
-            <defs>
-              <pattern
-                :id="`pattern${index}`"
-                patternContentUnits="objectBoundingBox"
-                width="1"
-                height="1"
-              >
-                <use :xlink:href="`#image${index}`" transform="scale(0.015625)" />
-              </pattern>
-              <image :id="`image${index}`" width="64" height="64" :xlink:href="`${item.image}`" />
-            </defs>
-          </svg>
+          <img :src="`${item.image}`" />
         </a>
       </div>
       <p>&copy; Copyright 2021 CUTC</p>
@@ -42,13 +22,27 @@
 </template>
 
 <script>
-import Items from "../../content/footer-info.json";
-
+import Facebook from "../../assets/socials/facebook.svg";
+import Instagram from "../../assets/socials/instagram.svg";
+import Twitter from "../../assets/socials/twitter.svg";
 export default {
   name: "Bottom",
   data() {
     return {
-      items: Items
+      items: [
+        {
+          link: "https://www.facebook.com/cutc2021/",
+          image: Facebook
+        },
+        {
+          link: "https://www.instagram.com/cutc2021/",
+          image: Instagram
+        },
+        {
+          link: "https://twitter.com/CUTC2021",
+          image: Twitter
+        }
+      ]
     };
   }
 };
