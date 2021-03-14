@@ -70,6 +70,7 @@ export default {
 
 input[type="email"] {
 	width: min(95%, 400px);
+	font-family: inherit;
 }
 input:focus {
 	outline:none;
