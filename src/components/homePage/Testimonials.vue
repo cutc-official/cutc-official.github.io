@@ -12,7 +12,7 @@
         autoplay
       >
         <vueper-slide 
-          v-for="(slide, i) in information['slides']" 
+          v-for="(slide, i) in information.slides" 
           :key="i"
         >
           <template v-slot:content>
@@ -51,7 +51,6 @@ export default {
   },
   methods: {
     getImage(pic) {
-      console.log(pic);
       try {
         return require("../../assets/testimonials/" + pic);
       } catch(e) {

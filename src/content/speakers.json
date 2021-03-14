@@ -1,17 +1,26 @@
 
 {
-    "slides": [
+    "Speakers": [
         {
-            "title": "slide 1",
-            "content": "words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words",
-            "image": "elonmusk.svg",
-            "alt": "someone's picture"
+            "name": "Jerry Lee",
+            "tagLine": "Ex Google, CEO of Wonsulting",
+            "content": "This event changed my life for the better. I am sooo happy I came to CUTC. This event changed my life for the better. I am sooo happy I came to CUTC.",
+            "image": "elonmusk.svg"
         },
         {
-            "title": "slide 2",
-            "content": "more words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words",
-            "image": "elonmusk.svg",
-            "alt": "someone's picture"
+            "name": "David from Google",
+            "content": "This event changed my life for the better. I am sooo happy I came to CUTC. This event changed my life for the better. I am sooo happy I came to CUTC.",
+            "tagLine": "Google CTO"
+        }
+    ],
+    "Events": [
+        {
+            "name": "Women's Panel",
+            "content": "Yay!"
+        },
+        {
+            "name": "MicroSoft Tech Challenge",
+            "content": "Wow prizes??"
         }
     ]
 }
