@@ -1,8 +1,8 @@
 <template>
   <div id="faq">
     <h2>Ask us anything</h2>
-    <div class="content" :class={}>
-      <div class="box" v-for="(questionSet, groupTitle) in questions" :key="groupTitle">
+    <div class="content" :class="{'content-multiple': questions.length > 1}">
+      <div class="box" v-for="(questionSet, groupTitle) in questions" :key="groupTitle" :class="{'box-multiple': questions.length > 1}">
         <div v-if="groupTitle" class="banner">
           <div class="box-header">{{groupTitle}}</div>
         </div>
@@ -57,6 +57,7 @@ export default {
 .content-multiple {
   justify-content: space-evenly;
 }
+
 .button-holder {
   display: flex;
   align-items: center;
@@ -79,8 +80,11 @@ export default {
 }
 .box {
   margin-top: 1rem;
+}
+.box-multiple {
   width: 45%;
 }
+
 .banner {
   padding-left: 0.5rem;
   background: #e84545;
