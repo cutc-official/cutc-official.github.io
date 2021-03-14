@@ -1,0 +1,17 @@
+
+{
+    "slides": [
+        {
+            "title": "slide 1",
+            "content": "words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words",
+            "image": "elonmusk.svg",
+            "alt": "someone's picture"
+        },
+        {
+            "title": "slide 2",
+            "content": "more words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words",
+            "image": "elonmusk.svg",
+            "alt": "someone's picture"
+        }
+    ]
+}

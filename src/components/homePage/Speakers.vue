@@ -9,18 +9,13 @@
 		<template v-slot:arrow-right>
 			<img src="../../assets/Arrow.svg"/>
 		</template>
-		<template v-slot:arrow-left>
-		</template>
 		<vueper-slide 
-			v-for="(slide, i) in slides" 
-			:key="i" 
-			:title="slide.title" 
-			:content="slide.content">
+			v-for="(slide, i) in information['slides']" 
+			:key="i" >
 			<template v-slot:content>
+                  <img :src="getImage(slide.image)" id="person" :alt="slide.alt"/>
+                {{ slide.content }}
         <div class="vueperslide__content-wrapper">
-					<div class="card-wrapper">
-						<img src="../../assets/elonmusk.svg" id="person" />
-					</div>
         </div>
       </template>
 		</vueper-slide>
@@ -29,13 +24,16 @@
 		<template v-slot:arrow-right>
 			<img src="../../assets/Arrow.svg"/>
 		</template>
-		<template v-slot:arrow-left>
-		</template>
-		<vueper-slide
-			v-for="(slide, i) in slides"  
-			:key="i" 
-			:title="slide.title" 
-			:content="slide.content" />
+		<vueper-slide 
+			v-for="(slide, i) in information['slides']" 
+			:key="i" >
+			<template v-slot:content>
+                  <img :src="getImage(slide.image)" id="person" :alt="slide.alt"/>
+                {{ slide.content }}
+        <div class="vueperslide__content-wrapper">
+        </div>
+      </template>
+		</vueper-slide>
 	</vueper-slides>
 </div>
 </template>
@@ -43,24 +41,24 @@
 <script>
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
+import SpeakerInfo from "../../content/speakers.json";
 
 export default {
 	components: { VueperSlides, VueperSlide },
 	name: 'Speakers',
 	data: () => ({
-		slides: [
-			{
-				content: 'words words words words words words words words words words words words words words words',
-				image: "../../assets/elonmusk.svg"
-			},
-			{
-				content: 'more words more words more words more words more words more words more words more words more words',
-				image: "../../assets/elonmusk.svg"
-			}
-		],
+		information: SpeakerInfo,
 		currentPage: 0,
-}),
-	
+}), 
+	methods: {
+		getImage(pic) {
+			try {
+				return require("../../assets/" + pic);
+			} catch(e) {
+				throw Error(`pic does not exist`);
+			}
+		}
+	}
 }
 </script>
 
@@ -69,17 +67,31 @@ export default {
 	margin: 1em;
 	background: #FFF5F5;
 	color: black;
+	font-family: Montserrat;
+
 }
 #person {
 	float: left;
+	margin-left: 40px;
+	margin-top: 40px;
 }
+
 .tabs {
 	margin: 0 auto;
 	display: flex;
 }
 #content {
-	padding: 40px;
+	padding: 400px;
 	display: flex;
+	font-weight: 100px;
+	text-align: center;
+	margin: 20%;
+	font-style: italic;
+	font-size: 24px;
+	float: center;
+	margin-left: auto;
+    margin-right: auto;
+    width: 8em;
 }
 .tab {
 	overflow: hidden;
@@ -89,17 +101,16 @@ export default {
 	margin: 0 auto;
 	text-align: center;
 	float: center;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 36px;
+	font-style: normal;
+	text-align: center;
 }
 .underlined{
 	text-decoration: 1px solid #FF5B5B;
-	/* border-bottom:#FF5B5B; */
-	/* text-align: center; */
-	/* float: center; */
 }
 
-.blue{
-  background: blue;
-}
 .vueperslides__bullet .default {
   background: #FF4E4E;
 }
@@ -109,8 +120,17 @@ export default {
 }
 
 .card-wrapper {
-	/* width: 100%;
-	height: 100%; */
-	border: 10px solid black;
+	width: 100%;
+	height: 100%;
 }
+
+@media screen and (max-width:1450px) {
+  #person {
+	float: center;
+  }
+  #content {
+    font-size: 17px;
+  }
+}
+
 </style>
