@@ -38,20 +38,20 @@ h4, h3, h2, h1, p, a {
   font-style: normal;
 }
 h4 {
-	font-size: 22;
+	font-size: 22px;
 	font-weight: 500;
 }
 h3 {
-	font-size: 24;
+	font-size: 24px;
 	font-weight: 500;
 }
 h2 {
-	font-size: 40;
+	font-size: 40px;
 	font-weight: 700;
 	color: black;
 }
 h1 {
-	font-size: 44;
+	font-size: 44px;
 	font-weight: 700;
 }
 
