@@ -7,7 +7,7 @@
           <div class="box-header">{{groupTitle}}</div>
         </div>
         <div class="questions" v-for="qa in questionSet" :key="qa">
-          <button @click="show($event, qa.question)" class="accordion">
+          <button @click="show(qa.question)" class="accordion">
             <div :class="{'arrow-active': qa.question == currentQuestion, 'arrow-right': true}"></div>
             {{qa.question}}
           </button>
@@ -37,7 +37,7 @@ export default {
     };
   },
   methods: {
-    show(_, question) {
+    show(question) {
       if (this.currentQuestion == question) this.currentQuestion = "";
       else this.currentQuestion = question;
     }
@@ -48,9 +48,8 @@ export default {
 <style scoped>
 #faq {
   margin: 1em;
-  line-height: 48px;
+  line-height: 24px;
   letter-spacing: 0.2px;
-  color: black;
 }
 .header {
   margin-left: 2rem;
@@ -67,10 +66,7 @@ export default {
 }
 .ask {
   margin-top: 2rem;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 500;
-  line-height: 22px;
   color: white;
   width: 13rem;
   height: 3rem;
@@ -79,15 +75,6 @@ export default {
   border: none;
   cursor: pointer;
   text-align: center;
-}
-@media screen and (max-width: 850px) {
-  .header {
-    margin-left: 0.8rem;
-    font-size: 1.5rem;
-  }
-  .content {
-    width: 100%;
-  }
 }
 .box {
   margin-top: 1rem;
@@ -99,54 +86,42 @@ export default {
   border-radius: 3px;
 }
 .box-header {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   padding: .2em;
-  line-height: 28px;
-  letter-spacing: 0.07px;
-  color: #ffffff;
 }
 button.accordion {
   overflow-wrap: break-word;
   width: 100%;
-  background: white;
+  background: none;
   border: none;
-  outline: none;
   padding: 1rem 0.5rem;
   font-size: 1rem;
   cursor: pointer;
   display: flex;
 }
-.panel {
-  display: flex;
-}
 .p-content {
-  overflow-wrap: break-word;
   padding: 0rem 2rem;
-  border-left: 1px;
-  border-right: 1px;
   overflow: hidden;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
-  color: #000000;
+  color: black;
 }
+
 .arrow-right {
   margin-right: 0.5rem;
-  width: 0;
-  height: 0;
   border-top: 0.5rem solid transparent;
   border-bottom: 0.5rem solid transparent;
-  border-left: 1.5rem solid gray;
+  border-left: 1.1rem solid #C4C4C4;
 }
 .arrow-active {
   transform: matrix(0.02, 1, -1, 0.02, 0, 0);
 }
+
 @media screen and (max-width: 850px) {
+  .header {
+    margin-left: 0.8rem;
+    font-size: 1.5rem;
+  }
   .box {
     width: 90%;
   }
@@ -154,6 +129,7 @@ button.accordion {
     font-size: 12px;
   }
 }
+
 .fadeHeight-enter-active,
 .fadeHeight-leave-active {
   transition: all 0.5s;

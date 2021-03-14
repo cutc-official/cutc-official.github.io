@@ -2,7 +2,7 @@
 <div id="hero">
 	<div class="building">
 		<countdown/>
-		<img src="../../assets/building.svg" id="cutc-building-image">
+		<img src="../../assets/hero.svg" id="cutc-building-image">
 	</div>
 	<!-- TEXT COLUMN -->
 	<span>

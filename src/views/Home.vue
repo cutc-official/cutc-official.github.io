@@ -23,7 +23,7 @@
     <!-- Dropdown -->
     <faq />
     <!-- Unsure? -->
-    <team />
+    <!-- <team /> -->
 
     <bottom />
   </span>
@@ -36,7 +36,7 @@ import About from "../components/homePage/About.vue";
 import Speakers from "../components/homePage/Speakers.vue";
 import Testimonials from "../components/homePage/Testimonials.vue";
 import Faq from "../components/homePage/Faq.vue";
-import Team from "../components/homePage/Team.vue";
+// import Team from "../components/homePage/Team.vue";
 import Bottom from "../components/homePage/Footer.vue";
 export default {
   name: "Home",
@@ -47,7 +47,7 @@ export default {
     Speakers,
     Testimonials,
     Faq,
-    Team,
+    // Team,
     Bottom
   }
 };

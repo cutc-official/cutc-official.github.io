@@ -2,7 +2,7 @@
   <div id="testimonials">
     <h2 class="headline">Hear what people have to say about CUTC!</h2>
     <div>
-      <img src="../../assets/testimonial_building.svg" id="building" />
+      <img src="../../assets/testimonials/testimonial_building.svg" class="building" />
       <vueper-slides 
         class="no-shadow" 
         :bullets="false" 
@@ -16,16 +16,16 @@
           :key="i"
         >
           <template v-slot:content>
-            <div class="vueperslide__content-wrapper" style="flex-direction: row">
-              <div id="slides">
-                <div id="title">
-                  <img :src="getImage(slide.image)" id="person" :alt="slide.alt"/>
-                  <br />
+            <div class="vueperslide__content-wrapper">
+              <div class="slide">
+                <div class="title">
+                  <img :src="getImage(slide.image)" class="person" :alt="slide.name + '\'s Photo'"/>
+                  <br/>
                   <strong> {{ slide.name }} </strong>
                   <br/> 
                   <strong> {{ slide.personDescription }} </strong>
                 </div>
-                <div id="content">"{{ slide.content }}"</div>
+                <div class="content">"{{ slide.content }}"</div>
               </div>
             </div>
           </template>
@@ -44,15 +44,16 @@ import TestimonialInfo from "../../content/testimonials.json";
 export default {
 	name: 'Testimonials',
 	components: { VueperSlides, VueperSlide },
-  data () {
+  data() {
     return {
       information: TestimonialInfo
     };
   },
   methods: {
     getImage(pic) {
+      console.log(pic);
       try {
-        return require("../../assets/" + pic);
+        return require("../../assets/testimonials/" + pic);
       } catch(e) {
         // throw Error(`testimonials.json references image that does not exist in assets: "${pic}"`);
       }
@@ -65,167 +66,76 @@ export default {
 #testimonials {
 	margin: 4em;
   color: black;
-  font-family: Montserrat;
-  font-style: normal;
 }
 
-#building {
-  height: 40em;
+.building {
+  height: 40vw;
   float: left; 
 }
 
-#slides {
-  width: 50%;
-  height: 50%;
+.slide {
+  width: min(80%, 40em);
+  height: min(100%, min-content);
   background: #FEEAEA;
-  float: right; 
 }
 
-#title {
+.title {
   float: left;
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 6%;
+  max-width: 30%;
 }
 
-#person {
-  width: auto;
-  height: auto;
+.person {
+  height: 131px;
+  border-radius: 50%;
 }
 
-#content {
+.content {
   margin: 8%;
   text-align: left;
 }
 
-@media screen and (max-width:1450px) {
-  #slides {
-    width: 50%;
-    height: 60%;
-  }
-}
-
-@media screen and (max-width:1310px) {
-  #building {
-    height: 30em;
-  }
-
-  #hear {
-    top: 15%;
-    left: 20%;
-  }
-
-  #slides {
-    width: 60%;
-    height: 70%;
-  }
-}
-
-@media screen and (max-width:1110px) {
-  #building {
-    height: 25em;
-  }
-
-  #hear {
-    top: 9%;
-    left: 15%;
-    font-size: 20px;
-  }
-
-  #slides {
-    width: 70%;
-    height: 85%;
-  }
-}
-
-@media screen and (max-width:930px) {
-  #building {
-    height: 20em;
-  }
-
-  #hear {
-    top: 1%;
-    left: 5%;
-    font-size: 20px;
-  }
-
-  #slides {
-    width: 90%;
-    height: 100%;
-  }
-}
-
-@media screen and (max-width:800px) {
-  #building {
+@media screen and (max-width:850px) {
+  .building {
     display: none;
   }
-
-  #hear {
-    display: none;
-  }
-
-  #slides {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media screen and (max-width:700px) {
-  #person {
+  .person {
     margin: 3%;
     height: 80px;
   }
 
-  #title {
+  .title {
     font-size: 12px;
   }
 
-  #content {
-    font-size: 11px;
+  .content {
+    font-size: 10px;
   }
 }
 
 @media screen and (max-width:550px) {
-  #person {
-    height: 60px;
+  .person {
+    height: 30px;
   }
 
-  #content {
-    font-size: 9px;
-  }
-}
-
-@media screen and (max-width:450px) {
-  #person {
-    height: 50px;
-  }
-
-  #title {
-    font-size: 11px;
-  }
-
-  #content {
-    font-size: 8px;
-  }
-}
-
-@media screen and (max-width:400px) {
-  #title {
+  .title {
     font-size: 10px;
   }
 
-  #content {
+  .content {
     font-size: 7px;
   }
 }
 
-@media screen and (max-width:360px) {
-  #title {
-    font-size: 9px;
+@media screen and (max-width:400px) {
+  .title {
+    font-size: 6px;
   }
 
-  #content {
-    font-size: 6px;
+  .content {
+    font-size: 5px;
   }
 }
 </style>

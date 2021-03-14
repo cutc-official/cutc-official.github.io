@@ -32,8 +32,11 @@ body {
 a {
 	color: white;
 }
-/* p {} */
-h4, h3, h2, h1 { margin: .2em 0 }
+h4, h3, h2, h1, p, a {
+	margin: .2em 0;
+	font-family: Montserrat;
+  font-style: normal;
+}
 h4 {
 	font-size: 22;
 	font-weight: 500;
