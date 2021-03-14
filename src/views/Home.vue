@@ -1,83 +1,88 @@
 <template>
-<span style="scroll">
-	<div class="fade">
-		<nav-bar/>
-		<hero/>
-	</div>
-	<!-- Timeline -->
-	<about/>
-	<!-- Tab -->
-	<speakers/>
-	<!-- Carousel -->
-	<testimonials/>
+  <span style="scroll">
+    <div class="fade">
+      <nav-bar />
+      <hero />
+    </div>
+    <!-- Timeline -->
+    <about />
+    <!-- Tab -->
+    <speakers />
+    <!-- Carousel -->
+    <testimonials />
 
-	<div id="sponsors">
-		<h2 class="sponsor-headline">Our 2020 Sponsors and Partners</h2>
-		<img
-			src="../assets/sponsors2020.svg" 
-			alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion" class="sponsor-img"
-		>
-	</div>
+    <div id="sponsors">
+      <h2 class="sponsor-headline">Our 2020 Sponsors and Partners</h2>
+      <img
+        src="../assets/sponsors2020.svg"
+        alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"
+        class="sponsor-img"
+      />
+    </div>
 
-	<!-- Dropdown -->
-	<faq/>
-	<!-- Unsure? -->
-	<team/>
+    <!-- Dropdown -->
+    <faq />
+    <!-- Unsure? -->
+    <team />
 
-	<div class="footer">
-		<a href="https://www.facebook.com/cutc2021/" target="_blank">Facebook</a>
-		<a href="https://www.instagram.com/cutc2021/" target="_blank">Instagram</a>
-		<a href="https://www.linkedin.com/company/canadian-undergraduate-technology-conference/" target="_blank">LinkedIn</a>
-	</div>
-</span>
+    <bottom />
+  </span>
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue';
-import Hero from '../components/homePage/Hero.vue';
-import About from '../components/homePage/About.vue';
-import Speakers from '../components/homePage/Speakers.vue';
-import Testimonials from '../components/homePage/Testimonials.vue';
-import Faq from '../components/homePage/Faq.vue';
-import Team from '../components/homePage/Team.vue';
-
+import NavBar from "../components/NavBar.vue";
+import Hero from "../components/homePage/Hero.vue";
+import About from "../components/homePage/About.vue";
+import Speakers from "../components/homePage/Speakers.vue";
+import Testimonials from "../components/homePage/Testimonials.vue";
+import Faq from "../components/homePage/Faq.vue";
+import Team from "../components/homePage/Team.vue";
+import Bottom from "../components/homePage/Footer.vue";
 export default {
-	name: 'Home',
-	components: {
-		NavBar,
-		Hero,
-		About,
-		Speakers,
-		Testimonials,
-		Faq,
-		Team,
-	}
-}
+  name: "Home",
+  components: {
+    NavBar,
+    Hero,
+    About,
+    Speakers,
+    Testimonials,
+    Faq,
+    Team,
+    Bottom
+  }
+};
 </script>
 
 <style scoped>
 .fade {
-	background: linear-gradient(180deg, #FF4E4E 0%, #FFAEAE 66.67%, #FFC5C5 77.6%, #FFD8D8 87.5%, #FFFFFF 100%);
+  background: linear-gradient(
+    180deg,
+    #ff4e4e 0%,
+    #ffaeae 66.67%,
+    #ffc5c5 77.6%,
+    #ffd8d8 87.5%,
+    #ffffff 100%
+  );
 }
 
 #sponsors {
-	margin: 1em;
+  margin: 1em;
 }
 .sponsor-headline {
-	margin: 5%;
+  margin: 5%;
 }
 .sponsor-img {
-	width: 90%;
-	margin: 0 5%;
+  width: 90%;
+  margin: 0 5%;
 }
 
 .footer {
-	display: flex;
-	align-items: center;
-	padding: 1% 0;
-	background: var(--nav-color);
+  display: flex;
+  align-items: center;
+  padding: 1% 0;
+  background: var(--nav-color);
 }
-.footer>a {
-	padding-left: 2em;
+.footer > a {
+  padding-left: 2em;
 }
 </style>
