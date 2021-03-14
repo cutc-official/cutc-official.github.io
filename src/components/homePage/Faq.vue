@@ -47,7 +47,6 @@ export default {
 
 <style scoped>
 #faq {
-  margin: 1em;
   line-height: 24px;
   letter-spacing: 0.2px;
 }

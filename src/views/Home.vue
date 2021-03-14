@@ -1,32 +1,34 @@
 <template>
-  <span style="scroll">
-    <div class="fade">
-      <nav-bar />
-      <hero />
-    </div>
-    <!-- Timeline -->
-    <about />
-    <!-- Tab -->
-    <speakers />
-    <!-- Carousel -->
-    <testimonials />
+<span style="scroll">
+	<div class="fade">
+		<nav-bar />
+		<hero />
+	</div>
 
-    <div id="sponsors">
-      <h2 class="sponsor-headline">Our 2020 Sponsors and Partners</h2>
-      <img
-        src="../assets/sponsors2020.png"
-        alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"
-        class="sponsor-img"
-      />
-    </div>
+		<div class="home-content">
+		<!-- Timeline -->
+		<about />
+		<!-- Tab -->
+		<speakers />
+		<!-- Carousel -->
+		<testimonials />
 
-    <!-- Dropdown -->
-    <faq />
-    <!-- Unsure? -->
-    <!-- <team /> -->
+		<div id="sponsors">
+			<h2>Our 2020 Sponsors and Partners</h2>
+			<img
+				src="../assets/sponsors2020.png"
+				alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"
+			/>
+		</div>
 
-    <bottom />
-  </span>
+		<!-- Dropdown -->
+		<faq />
+		<!-- Unsure? -->
+		<!-- <team /> -->
+
+	</div>
+	<bottom />
+</span>
 </template>
 
 <script>
@@ -39,50 +41,52 @@ import Faq from "../components/homePage/Faq.vue";
 // import Team from "../components/homePage/Team.vue";
 import Bottom from "../components/homePage/Footer.vue";
 export default {
-  name: "Home",
-  components: {
-    NavBar,
-    Hero,
-    About,
-    Speakers,
-    Testimonials,
-    Faq,
-    // Team,
-    Bottom
-  }
+	name: "Home",
+	components: {
+		NavBar,
+		Hero,
+		About,
+		Speakers,
+		Testimonials,
+		Faq,
+		// Team,
+		Bottom
+	}
 };
 </script>
 
 <style scoped>
-.fade {
-  background: linear-gradient(
-    180deg,
-    #ff4e4e 0%,
-    #ffaeae 66.67%,
-    #ffc5c5 77.6%,
-    #ffd8d8 87.5%,
-    #ffffff 100%
-  );
+.home-content {
+	width: 80%;
+	margin-left: 10%;
 }
 
-#sponsors {
-  margin: 1em;
+.fade {
+	background: linear-gradient(
+		180deg,
+		#ff4e4e 0%,
+		#ffaeae 66.67%,
+		#ffc5c5 77.6%,
+		#ffd8d8 87.5%,
+		#ffffff 100%
+	);
 }
-.sponsor-headline {
-  margin: 5%;
+
+#sponsors>h2 {
+	margin: 2em 0;
 }
-.sponsor-img {
-  width: 90%;
-  margin: 0 5%;
+#sponsors>img {
+	width: 90%;
+	margin: 0 5%;
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  padding: 1% 0;
-  background: var(--nav-color);
+	display: flex;
+	align-items: center;
+	padding: 1% 0;
+	background: var(--nav-color);
 }
 .footer > a {
-  padding-left: 2em;
+	padding-left: 2em;
 }
 </style>
