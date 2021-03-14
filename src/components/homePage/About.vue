@@ -26,10 +26,15 @@
 
 <style scoped>
 #about {
-	--width: 60rem;
+	--width: 75vw;
 	max-width: var(--width);
 	margin: auto;
 	color: black;
+}
+@media screen and (max-width:1250px) {
+	#about {
+		--width: 60rem;
+	}
 }
 /* Firefox scrollbars */
 .history-gallery-container {
@@ -65,6 +70,7 @@
 }
 .history-item h3 {
 	font-weight: bold;
+	font-size: 20px;
 }
 .history-item p {
 	font-size: 90%;

@@ -58,7 +58,7 @@ export default {
 <style scoped>
 .home-content {
 	width: 80%;
-	margin-left: 10%;
+	margin: auto;
 }
 
 .fade {
@@ -77,7 +77,7 @@ export default {
 }
 #sponsors>img {
 	width: 90%;
-	margin: 0 5%;
+	margin: auto;
 }
 
 .footer {
