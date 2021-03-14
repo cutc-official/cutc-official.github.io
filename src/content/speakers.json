@@ -1,0 +1,26 @@
+
+{
+    "Speakers": [
+        {
+            "name": "Jerry Lee",
+            "tagLine": "Ex Google, CEO of Wonsulting",
+            "content": "This event changed my life for the better. I am sooo happy I came to CUTC. This event changed my life for the better. I am sooo happy I came to CUTC.",
+            "image": "elonmusk.svg"
+        },
+        {
+            "name": "David from Google",
+            "content": "This event changed my life for the better. I am sooo happy I came to CUTC. This event changed my life for the better. I am sooo happy I came to CUTC.",
+            "tagLine": "Google CTO"
+        }
+    ],
+    "Events": [
+        {
+            "name": "Women's Panel",
+            "content": "Yay!"
+        },
+        {
+            "name": "MicroSoft Tech Challenge",
+            "content": "Wow prizes??"
+        }
+    ]
+}
