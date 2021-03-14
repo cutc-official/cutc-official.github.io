@@ -49,6 +49,7 @@ h2 {
 	font-size: 40px;
 	font-weight: 700;
 	color: black;
+	margin-top: 2em;
 }
 h1 {
 	font-size: 44px;
@@ -73,5 +74,11 @@ input {
 	margin-top: .5em;
 	margin-bottom: 1em;
 	color: var(--main-color);
+}
+
+@media screen and (max-width: 850px) {
+	h2 {
+		font-size: 32px;
+	}
 }
 </style>

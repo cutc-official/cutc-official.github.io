@@ -1,6 +1,6 @@
 <template>
   <div id="faq">
-    <h2 class="header">Ask us anything</h2>
+    <h2>Ask us anything</h2>
     <div class="content">
       <div class="box" v-for="(questionSet, groupTitle) in questions" :key="groupTitle">
         <div class="banner">
@@ -49,9 +49,6 @@ export default {
 #faq {
   line-height: 24px;
   letter-spacing: 0.2px;
-}
-.header {
-  margin-left: 2rem;
 }
 .content {
   display: flex;

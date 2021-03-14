@@ -72,9 +72,6 @@ export default {
 	);
 }
 
-#sponsors>h2 {
-	margin: 2em 0;
-}
 #sponsors>img {
 	width: 90%;
 	margin: auto;

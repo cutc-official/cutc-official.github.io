@@ -63,9 +63,10 @@ export default {
 }
 
 .slogan {
-	font-size: 32;
+	font-size: 32px;
 	font-weight: 400;
 	color: white;
+	margin: 0;
 }
 
 input[type="email"] {
