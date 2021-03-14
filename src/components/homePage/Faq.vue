@@ -1,13 +1,13 @@
 <template>
   <div id="faq">
     <h2>Ask us anything</h2>
-    <div class="content">
+    <div class="content" :class={}>
       <div class="box" v-for="(questionSet, groupTitle) in questions" :key="groupTitle">
-        <div class="banner">
+        <div v-if="groupTitle" class="banner">
           <div class="box-header">{{groupTitle}}</div>
         </div>
         <div class="questions" v-for="qa in questionSet" :key="qa">
-          <button @click="show(qa.question)" class="accordion">
+          <button @click="show(qa.question)" class="question">
             <div :class="{'arrow-active': qa.question == currentQuestion, 'arrow-right': true}"></div>
             {{qa.question}}
           </button>
@@ -52,8 +52,10 @@ export default {
 }
 .content {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.content-multiple {
+  justify-content: space-evenly;
 }
 .button-holder {
   display: flex;
@@ -89,15 +91,15 @@ export default {
   font-size: 24px;
   padding: .2em;
 }
-button.accordion {
+button.question {
   overflow-wrap: break-word;
-  width: 100%;
   background: none;
   border: none;
   padding: 1rem 0.5rem;
   font-size: 1rem;
   cursor: pointer;
   display: flex;
+  font-weight: 600;
 }
 .p-content {
   padding: 0rem 2rem;
