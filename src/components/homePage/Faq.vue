@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="button-holder">
-      <button class="ask">Send us a question!</button>
+      <a class="ask button" href="mailto:info@cutc.ca">Send us a question!</a>
     </div>
   </div>
 </template>
@@ -75,6 +75,9 @@ export default {
   border: none;
   cursor: pointer;
   text-align: center;
+  display: block;
+  text-decoration: none;
+  line-height: 3rem;
 }
 .box {
   margin-top: 1rem;
@@ -105,6 +108,9 @@ button.accordion {
   overflow: hidden;
   font-size: 16px;
   color: black;
+}
+button {
+  font-family: inherit;
 }
 
 .arrow-right {
