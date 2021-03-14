@@ -1,13 +1,13 @@
 <template>
   <div id="faq">
-    <h2 class="header">Ask us anything</h2>
-    <div class="content">
-      <div class="box" v-for="(questionSet, groupTitle) in questions" :key="groupTitle">
-        <div class="banner">
+    <h2>Ask us anything</h2>
+    <div class="content" :class="{'content-multiple': questions.length > 1}">
+      <div class="box" v-for="(questionSet, groupTitle) in questions" :key="groupTitle" :class="{'box-multiple': questions.length > 1}">
+        <div v-if="groupTitle" class="banner">
           <div class="box-header">{{groupTitle}}</div>
         </div>
         <div class="questions" v-for="qa in questionSet" :key="qa">
-          <button @click="show(qa.question)" class="accordion">
+          <button @click="show(qa.question)" class="question">
             <div :class="{'arrow-active': qa.question == currentQuestion, 'arrow-right': true}"></div>
             {{qa.question}}
           </button>
@@ -47,18 +47,17 @@ export default {
 
 <style scoped>
 #faq {
-  margin: 1em;
   line-height: 24px;
   letter-spacing: 0.2px;
 }
-.header {
-  margin-left: 2rem;
-}
 .content {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.content-multiple {
+  justify-content: space-evenly;
+}
+
 .button-holder {
   display: flex;
   align-items: center;
@@ -81,8 +80,11 @@ export default {
 }
 .box {
   margin-top: 1rem;
+}
+.box-multiple {
   width: 45%;
 }
+
 .banner {
   padding-left: 0.5rem;
   background: #e84545;
@@ -93,15 +95,15 @@ export default {
   font-size: 24px;
   padding: .2em;
 }
-button.accordion {
+button.question {
   overflow-wrap: break-word;
-  width: 100%;
   background: none;
   border: none;
   padding: 1rem 0.5rem;
   font-size: 1rem;
   cursor: pointer;
   display: flex;
+  font-weight: 600;
 }
 .p-content {
   padding: 0rem 2rem;

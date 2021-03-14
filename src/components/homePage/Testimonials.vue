@@ -63,7 +63,7 @@ export default {
 
 <style scoped>
 #testimonials {
-	margin: 4em;
+	margin: 4em 0;
   color: black;
 }
 

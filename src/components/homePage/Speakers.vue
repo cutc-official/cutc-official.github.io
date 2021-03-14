@@ -88,11 +88,6 @@ export default {
 </script>
 
 <style scoped>
-#speakers {
-	width: 80%;
-	margin: 10%;
-}
-
 .info-2020 {
 	display: flex;
 	justify-content: space-around;

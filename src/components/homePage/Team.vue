@@ -13,7 +13,6 @@ export default {
 
 <style scoped>
 #team {
-	margin: 1em;
 	background: var(--nav-color);
 }
 </style>
