@@ -138,7 +138,8 @@ export default {
 }
 .slide-wrapper>img {
 	max-width: 50%;
-	padding: 0 10% 0 0;
+	margin-right: 10%;
+	border-radius: 50%;
 }
 .slide-wrapper>p {
 	display: flex;
