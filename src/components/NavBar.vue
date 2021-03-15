@@ -65,7 +65,6 @@ export default {
 
 label {
 	font-size: 48px;
-	color: white;
 }
 img {
 	padding: 0 7vw 0 var(--splash-page-inset);
@@ -111,9 +110,6 @@ a {
 
 .close-button {
 	margin: 1em 0 1em 85%;
-}
-.close-button>label {
-	color: var(--nav-color);
 }
 
 

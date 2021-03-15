@@ -77,7 +77,10 @@ export default {
 			}
 		},
 		handleResize() {
-			this.slideRatio = window.innerHeight / window.innerWidth
+			if (window.innerWidth <= 550)
+				this.slideRatio = 2.5/1
+			else
+				this.slideRatio = window.innerHeight / window.innerWidth
 		},
 	},
 	created() {

@@ -68,13 +68,9 @@ export default {
       if(window.innerWidth > 850) {
         this.slideRatio = window.innerHeight / window.innerWidth / 1.5;
       } else {
-        this.slideRatio = window.innerHeight / window.innerWidth / 0.8;
+        this.slideRatio = 2.7/1;
       }
-      if(window.innerWidth > 550) {
-        this.mobileView = false;
-      } else {
-        this.mobileView = true;
-      }
+      this.mobileView = window.innerWidth <= 550
     },
   },
   created() {
@@ -96,7 +92,7 @@ export default {
 }
 
 .slide {
-  width: 100%;
+  width: 98%;
   max-width: 40em;
   background: #FEEAEA;
   display: flex;
