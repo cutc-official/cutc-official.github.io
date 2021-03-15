@@ -13,13 +13,13 @@
 		<!-- Carousel -->
 		<testimonials />
 
-		<div id="sponsors">
+		<!--<div id="sponsors">
 			<h2>Our 2020 Sponsors and Partners</h2>
 			<img
 				src="../assets/sponsors2020.png"
 				alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"
 			/>
-		</div>
+		</div>-->
 
 		<!-- Dropdown -->
 		<faq />
