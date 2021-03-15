@@ -77,6 +77,9 @@ input {
 }
 
 @media screen and (max-width: 850px) {
+	h1 {
+		font-size: 24px;
+	}
 	h2 {
 		font-size: 32px;
 	}

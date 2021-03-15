@@ -68,7 +68,7 @@ export default {
       if(window.innerWidth > 850) {
         this.slideRatio = window.innerHeight / window.innerWidth / 1.5;
       } else {
-        this.slideRatio = window.innerHeight / window.innerWidth / 0.9;
+        this.slideRatio = window.innerHeight / window.innerWidth / 0.8;
       }
       if(window.innerWidth > 550) {
         this.mobileView = false;
@@ -96,7 +96,7 @@ export default {
 }
 
 .slide {
-  width: 80%;
+  width: 100%;
   max-width: 40em;
   background: #FEEAEA;
   display: flex;

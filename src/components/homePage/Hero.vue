@@ -68,6 +68,11 @@ export default {
 	color: white;
 	margin: 0;
 }
+@media screen and (max-width: 850px) {
+	.slogan {
+		font-size: 24px;
+	}
+}
 
 input[type="email"] {
 	width: min(95%, 400px);

@@ -104,6 +104,7 @@ button.question {
   cursor: pointer;
   display: flex;
   font-weight: 600;
+  text-align: left;
 }
 .p-content {
   padding: 0rem 2rem;
