@@ -38,7 +38,7 @@
 						<div class="vueperslide__content-wrapper">
 							<div class="slide-wrapper">
 								<img v-if="slide.image" :src="getImage(slide.image)" :alt="slide.name + '\'s Photo'"/>
-								<p>
+								<p :class="{'bold-text': sectionName == 'Events'}">
 									<i>{{ slide.content }}</i>
 									<br/>
 									<strong>{{ slide.name }}</strong>
@@ -77,7 +77,7 @@ export default {
 			}
 		},
 		handleResize() {
-			this.slideRatio = window.innerHeight / window.innerWidth / 1.5 
+			this.slideRatio = window.innerHeight / window.innerWidth
 		},
 	},
 	created() {
@@ -145,6 +145,10 @@ export default {
 	display: flex;
 	flex-direction: column;
 	text-align: start;
+}
+
+.bold-text {
+	font-size: 1.3em;
 }
 
 .vueperslides__bullet .default {

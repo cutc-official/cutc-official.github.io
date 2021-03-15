@@ -1,5 +1,5 @@
 <template>
-  <div class="parent">
+  <div class="footer-wrapper">
     <div class="footer">
       <p class="title">CUTC 2021 &mdash; Amplify</p>
       <a href="mailto:info@cutc.ca" style="text-decoration: none;">
@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style scoped>
-.parent {
+.footer-wrapper {
   display: flex;
   align-items: center;
   /* padding: 1% 0; */
