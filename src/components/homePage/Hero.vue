@@ -17,6 +17,9 @@
 		<form action="https://cutc.us10.list-manage.com/subscribe/post?u=73d566326ae6bb629b42fb5fd&amp;id=e28a4a51fe" method="post" 
 				target="_blank" novalidate>
 			<input type="email" name="EMAIL" placeholder="Enter your email for updates!" required>
+			<button>
+				<img src="../../assets/Group.svg">
+			</button>
 			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_73d566326ae6bb629b42fb5fd_e28a4a51fe" tabindex="-1" value=""></div>
 		</form>
@@ -74,9 +77,25 @@ export default {
 	}
 }
 
+button {
+  position: relative;
+  top: 6px;
+  right: 8.5%;
+  border: none;
+  background-color: #A3241D;
+  border-top-right-radius: 45%;
+  padding-right: 14px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 7px; 
+  border-bottom-right-radius: 45%;
+}
+
 input[type="email"] {
 	width: min(95%, 400px);
 	font-family: inherit;
+	border: 1px solid #A3241D;
+	border-style: solid;
 }
 input:focus {
 	outline:none;
