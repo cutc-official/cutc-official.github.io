@@ -18,7 +18,7 @@
 				target="_blank" novalidate>
 			<input type="email" name="EMAIL" placeholder="Enter your email for updates!" required>
 			<button>
-				<img src="../../assets/Group.svg">
+				<img src="../../assets/HeroArrow.svg">
 			</button>
 			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_73d566326ae6bb629b42fb5fd_e28a4a51fe" tabindex="-1" value=""></div>
@@ -89,6 +89,9 @@ button {
   padding-top: 10px;
   padding-bottom: 7px; 
   border-bottom-right-radius: 45%;
+}
+button:focus {
+	outline: none;
 }
 
 input[type="email"] {
