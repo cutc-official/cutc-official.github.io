@@ -1,115 +1,138 @@
-[
-	{
+[{
 		"name": "Ron Hyman",
 		"position": "Co-Chair",
-		"image": "Ron Hymanjpg"
+		"image": "Ron Hyman.jpg",
+		"emoji": ""
+
 	},
 	{
 		"name": "Gabria Chung",
 		"position": "Co-Chair",
-		"image": "Gabria Chung.jpg"
+		"image": "Gabria Chung.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Justina Chua",
 		"position": "Co-Chair",
-		"image": "Justina Chua.jpg"
+		"image": "Justina Chua.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Daniel Raymond",
 		"position": "Technology Lead",
-		"image": "Daniel Raymond.jpg"
+		"image": "Daniel Raymond.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Chloe Maceda",
 		"position": "Design Member",
-		"image": "Chloe Maceda.jpg"
+		"image": "Chloe Maceda.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Devyani",
-		"position": "Campus Ambassador"
+		"position": "Campus Ambassador",
+		"emoji": ""
 	},
 	{
 		"name": "Jayden Hsiao",
 		"position": "Design Lead",
-		"image": "Jayden Hsiao.jpg"
+		"image": "Jayden Hsiao.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Anureet Jaur Bajwa",
 		"position": "Campus Ambassador Lead",
-		"image": "Anureet Jaur Bajwa.jpg"
+		"image": "Anureet Jaur Bajwa.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Sanchit Guglani",
 		"position": "Campus Ambassador",
-		"image": "Sanchit Guglani.png"
+		"image": "Sanchit Guglani.png",
+		"emoji": ""
 	},
 	{
 		"name": "Suvetha Kugan",
 		"position": "Campus Ambassador",
-		"image": "Suvetha Kugan.jpg"
+		"image": "Suvetha Kugan.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Aadil Ali",
 		"position": "Speakers Lead",
-		"image": "Aadil Ali.jpg"
+		"image": "Aadil Ali.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Akshita",
 		"position": "Campus Ambassador",
-		"image": "Akshita.jpg"
+		"image": "Akshita.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Naman Sood",
 		"position": "Technology Lead",
-		"image": "Naman Sood.jpg"
+		"image": "Naman Sood.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Claire Wang",
 		"position": "Marketing Member",
-		"image": "Claire Wang.jpg"
+		"image": "Claire Wang.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Karl Zhu",
-		"position": "Operations Lead"
+		"position": "Operations Lead",
+		"emoji": ""
 	},
 	{
 		"name": "Julia Woodcock",
 		"position": "Marketing Lead",
-		"image": "Julia Woodcock.jpg"
+		"image": "Julia Woodcock.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Rachel Zhang",
 		"position": "Finance Lead",
-		"image": "Rachel Zhang.png"
+		"image": "Rachel Zhang.png",
+		"emoji": ""
 	},
 	{
-		"name": "Anno Cho",
+		"name": "Anna Cho",
 		"position": "Sponsorship Member",
-		"image": "Anno Cho.jpg"
+		"image": "Anna Cho.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Saloni",
 		"position": "Campus Ambassador",
-		"image": "Saloni.jpg"
+		"image": "Saloni.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Angel Li",
 		"position": "Speakers/Technology Member",
-		"image": "Angel Li.jpg"
+		"image": "Angel Li.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Lisa Do",
 		"position": "Speakers Member",
-		"image": "Lisa Do.jpg"
+		"image": "Lisa Do.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "Sanaa Syed",
 		"position": "Technology Member",
-		"image": "Sanaa Syed.jpg"
+		"image": "Sanaa Syed.jpg",
+		"emoji": ""
 	},
 	{
 		"name": "AKM Adib",
 		"position": "Technology Member",
-		"image": "AKM Adib.jpg"
+		"image": "AKM Adib.jpg",
+		"emoji": ""
 	}
 ]

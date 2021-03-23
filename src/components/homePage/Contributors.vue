@@ -2,14 +2,21 @@
   <div id="contributors">
     <h1>Created with love in 🇨🇦 by</h1>
     <div class="gallery">
-      <div v-for="(member,index) in members.members" :key="member.picture">
-        <a @click="open(index)" style="  text-decoration: none;">
+      <div class="parent" v-for="(member,index) in members" :key="member.name">
+        <a @click="open(index)" style="text-decoration: none;">
           <div class="dialog" v-if="popUp===index">
-            <div class="name">{{member.picture.slice(0,member.picture.indexOf("."))}}</div>
+            <div class="name">{{member.name}}</div>
             <div class="emoji">{{member.emoji}}</div>
             <div class="position">{{member.position}}</div>
+            <img class="rectangle" src="../../assets/Rectangle.svg" />
           </div>
-          <img class="image" :src="require(`@/assets/contributors/${member.picture}`)" />
+          <div v-if="'image' in member">
+            <img class="image" :src="require(`@/assets/contributors/${member.image}`)" />
+            <!-- <img class="image" :src="require(`@/assets/contributors/${member.image}`)" /> -->
+          </div>
+          <div v-else>
+            <img class="image" src="../../assets/contributors/anon.png" />
+          </div>
         </a>
       </div>
     </div>
@@ -17,7 +24,7 @@
 </template>
 
 <script>
-import Members from "../../assets/contributors/names";
+import Members from "../../content/contributors.json";
 export default {
   name: "Contributors",
   data() {
@@ -26,7 +33,7 @@ export default {
   methods: {
     open: function(popped) {
       this.popUp = popped;
-      console.log(popped);
+      console.log(this.popUp);
     }
   }
 };
@@ -40,10 +47,14 @@ export default {
 .gallery {
   display: flex;
   flex-flow: row wrap;
+  margin-top: 2rem;
+}
+.parent {
+  position: relative;
 }
 .image {
   max-height: 5rem;
-  margin-right: 2rem;
+  margin-right: 3.5rem;
   margin-bottom: 1rem;
   border-top-left-radius: 50% 50%;
   border-top-right-radius: 50% 50%;
@@ -51,17 +62,24 @@ export default {
   border-bottom-left-radius: 50% 50%;
 }
 .dialog {
-  padding-top: 0.2rem;
-  padding-left: 0.5rem;
-  width: 8rem;
-  height: 3.5rem;
+  position: absolute;
+  top: -2rem;
+  z-index: 1;
+  padding: 0.2rem 15% 3% 0.5rem;
+  width: auto;
+  height: auto;
   color: black;
   background: #b3160d;
+}
+.rectangle {
+  position: absolute;
+  bottom: -0.4rem;
 }
 .name {
   color: white;
   font-weight: bold;
 }
+
 .position {
   color: white;
   font-size: 0.8rem;
