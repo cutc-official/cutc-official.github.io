@@ -1,18 +1,21 @@
 <template>
   <div id="contributors">
-    <h1>Created with love in 🇨🇦 by</h1>
+    <div>
+      <h2 style="display: inline;">Created with love in &nbsp;</h2>
+      <img style="display: inline;" src="../../assets/Canada.png" />
+      <h2 style="display: inline;">&nbsp; by</h2>
+    </div>
     <div class="gallery">
       <div class="parent" v-for="(member,index) in members" :key="member.name">
-        <a @click="open(index)" style="text-decoration: none;">
+        <a @mouseover="open(index)" style="text-decoration: none;">
           <div class="dialog" v-if="popUp===index">
             <div class="name">{{member.name}}</div>
             <div class="emoji">{{member.emoji}}</div>
             <div class="position">{{member.position}}</div>
-            <img class="rectangle" src="../../assets/Rectangle.svg" />
+            <div class="rectangle"></div>
           </div>
           <div v-if="'image' in member">
             <img class="image" :src="require(`@/assets/contributors/${member.image}`)" />
-            <!-- <img class="image" :src="require(`@/assets/contributors/${member.image}`)" /> -->
           </div>
           <div v-else>
             <img class="image" src="../../assets/contributors/anon.png" />
@@ -33,7 +36,6 @@ export default {
   methods: {
     open: function(popped) {
       this.popUp = popped;
-      console.log(this.popUp);
     }
   }
 };
@@ -44,9 +46,10 @@ export default {
   color: black;
   margin-top: 5rem;
 }
+
 .gallery {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 5fr));
   margin-top: 2rem;
 }
 .parent {
@@ -56,24 +59,26 @@ export default {
   max-height: 5rem;
   margin-right: 3.5rem;
   margin-bottom: 1rem;
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  border-bottom-left-radius: 50% 50%;
+  border-radius: 50%;
 }
 .dialog {
   position: absolute;
   top: -2rem;
   z-index: 1;
-  padding: 0.2rem 15% 3% 0.5rem;
+  padding: 0.2rem 15% 5% 0.5rem;
   width: auto;
   height: auto;
   color: black;
   background: #b3160d;
 }
 .rectangle {
+  width: 0.75rem;
+  height: 0.75rem;
   position: absolute;
   bottom: -0.4rem;
+  background: #b3160d;
+  transform: rotate(45deg);
+  top: 90%;
 }
 .name {
   color: white;
