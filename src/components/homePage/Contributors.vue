@@ -79,6 +79,7 @@ export default {
   background: #b3160d;
   transform: rotate(45deg);
   top: 90%;
+  z-index: -1;
 }
 .name {
   color: white;
