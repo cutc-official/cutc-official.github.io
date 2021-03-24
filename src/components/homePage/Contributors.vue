@@ -7,13 +7,16 @@
     </div>
     <div class="gallery">
       <div class="parent" v-for="(member,index) in members" :key="member.name">
-        <a @mouseover="open(index)" style="text-decoration: none;">
-          <div class="dialog" v-if="popUp===index">
-            <div class="name">{{member.name}}</div>
-            <div class="emoji">{{member.emoji}}</div>
-            <div class="position">{{member.position}}</div>
-            <div class="rectangle"></div>
-          </div>
+        <a @mouseleave="popUp = -1" @mouseover="open(index)" style="text-decoration: none;">
+          <transition name="fade">
+            <div class="dialog" v-if="popUp===index">
+              <div class="name">{{member.name}}</div>
+              <div class="emoji">{{member.emoji}}</div>
+              <div class="position">{{member.position}}</div>
+              <div class="rectangle"></div>
+            </div>
+          </transition>
+
           <div v-if="'image' in member">
             <img class="image" :src="require(`@/assets/contributors/${member.image}`)" />
           </div>
@@ -89,5 +92,12 @@ export default {
 .position {
   color: white;
   font-size: 0.8rem;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
