@@ -6,7 +6,7 @@
     <template v-slot:bullet="{ active }">
       <i class="bullet" :class="active ? 'active' : ''"></i>
     </template> leaving this here because I haven't quite fiured out how to make bullets appear for mobile --> 
-    <swiper class="swiper-container" :loop="true" :autoHeight="true" :pagination="{ clickable: true }">
+    <swiper class="swiper-container" :loop="true" :autoHeight="true" :pagination="{ clickable: true }" :autoplay="{ delay: 10000 }">
       <swiper-slide
         v-for="(slide, i) in information.slides" 
         :key="i"
@@ -28,12 +28,12 @@
 </template>
 
 <script>
-import SwiperCore, { Pagination } from 'swiper';
+import SwiperCore, { Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
 import TestimonialInfo from "../../content/testimonials.json";
 
-SwiperCore.use(Pagination);
+SwiperCore.use([Pagination, Autoplay]);
 
 export default {
   name: 'Testimonials',
