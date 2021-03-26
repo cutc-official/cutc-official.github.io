@@ -86,6 +86,7 @@ export default {
 
 .slide-container {
   margin: auto;
+  padding: 2%;
 }
 
 .slide {

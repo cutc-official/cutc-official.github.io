@@ -20,10 +20,11 @@
 		</div>
 		
 		<div v-for="(section, sectionName) in information" :key="section">
-			<swiper v-if="sectionName == currentPage" :loop="true" :autoHeight="true" :pagination="{ clickable: true }" navigation>
-				<!-- <img src="../../assets/Arrow.svg" class="left-arrow arrow"/> -->
-				<!-- <img src="../../assets/Arrow.svg" class="arrow"/> -->
-
+			<swiper v-if="sectionName == currentPage" :loop="true" :autoHeight="true" :pagination="{ clickable: true }">
+        <div v-if="!mobileView"> 
+					<div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+				</div>
 				<swiper-slide v-for="(slide, i) in section" :key="i">
 					<div class="slide-wrapper">
 						<img class="person" v-if="slide.image" :src="getImage(slide.image)" :alt="slide.name + '\'s Photo'" />
@@ -52,13 +53,11 @@ SwiperCore.use([Navigation, Pagination]);
 export default {
 	components: { Swiper, SwiperSlide },
 	name: 'Speakers',
-	navigation: {
-		nextEl: '.arrow'
-	},
 	data: () => ({
 		information: SpeakerInfo,
 		currentPage: 'Speakers', // ! CONSTANT SHOULD BE DYNAMICALLY SET
-		slideRatio: 0
+		slideRatio: 0,
+		mobileView: false
 	}),
 	methods: {
 		getImage(pic) {
@@ -73,6 +72,7 @@ export default {
 				this.slideRatio = 2.5/1
 			else
 				this.slideRatio = window.innerHeight / window.innerWidth
+			this.mobileView = window.innerWidth <= 550
 		},
 	},
 	created() {
@@ -130,18 +130,19 @@ export default {
 	display: flex;
 	justify-content: space-evenly;
 	max-width: 80%;
+	padding-left: 10%;
 }
 .slide-wrapper>img {
 	max-width: 50%;
 	height: 50%; /* hacky way of doing the aspect ratio of 1-1 */
 	margin-right: 10%;
-	margin-left: 10%;
 	border-radius: 50%;
 }
 .slide-wrapper>p {
 	display: flex;
 	flex-direction: column;
 	text-align: start;
+  margin-bottom: 2rem;
 }
 
 .bold-text {
