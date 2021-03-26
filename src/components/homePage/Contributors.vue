@@ -10,8 +10,7 @@
         <a @mouseleave="popUp = -1" @mouseover="open(index)" style="text-decoration: none;">
           <transition name="fade">
             <div class="dialog" v-if="popUp===index">
-              <div class="name">{{member.name}}</div>
-              <div class="emoji">{{member.emoji}}</div>
+              <div class="name">{{member.name}} {{member.emoji}}</div>
               <div class="position">{{member.position}}</div>
               <div class="rectangle"></div>
             </div>
@@ -66,11 +65,12 @@ export default {
 }
 .dialog {
   position: absolute;
-  top: -2rem;
+  top: -3rem;
+  left: 2rem;
   z-index: 1;
   padding: 0.2rem 15% 5% 0.5rem;
-  width: auto;
-  height: auto;
+  width: max-content;
+  max-width: 100%;
   color: black;
   background: #b3160d;
 }
@@ -78,10 +78,9 @@ export default {
   width: 0.75rem;
   height: 0.75rem;
   position: absolute;
-  bottom: -0.4rem;
   background: #b3160d;
   transform: rotate(45deg);
-  top: 90%;
+  top: 85%;
   z-index: -1;
 }
 .name {
