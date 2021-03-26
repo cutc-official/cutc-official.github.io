@@ -1,54 +1,43 @@
 <template>
   <div id="testimonials">
-    <h2 class="headline">Hear what people have to say about CUTC!</h2>
-    <div class="testimonials-wrapper">
-      <img src="../../assets/testimonials/testimonial_building.svg" class="building" />
-      <vueper-slides 
-        class="no-shadow" 
-        :bullets="mobileView"
-        :touchable="false" 
-        :arrows="!mobileView"
-        :disableArrowsOnEdges="true"
-        :arrowsOutside="true"
-        :slideRatio="slideRatio"
-        autoplay
+    <h2>Hear what people have to say about CUTC!</h2>
+    <img src="../../assets/testimonials/testimonial_building.svg" class="building" />
+    <!-- :bullets="mobileView" :arrows="!mobileView" :slideRatio="slideRatio"
+    <template v-slot:bullet="{ active }">
+      <i class="bullet" :class="active ? 'active' : ''"></i>
+    </template> leaving this here because I haven't quite fiured out how to make bullets appear for mobile --> 
+    <swiper class="swiper-container" :loop="true" :autoHeight="true" :pagination="{ clickable: true }" :autoplay="{ delay: 10000 }">
+      <swiper-slide
+        v-for="(slide, i) in information.slides" 
+        :key="i"
       >
-        <vueper-slide 
-          v-for="(slide, i) in information.slides" 
-          :key="i"
-        >
-          <template v-slot:content>
-            <div class="vueperslide__content-wrapper">
-              <div class="slide">
-                <div class="title">
-                  <img :src="getImage(slide.image)" class="person" :alt="slide.name + '\'s Photo'"/>
-                  <br/>
-                  <strong> {{ slide.name }} </strong>
-                  <br/> 
-                  <strong> {{ slide.personDescription }} </strong>
-                </div>
-                <div class="content">"{{ slide.content }}"</div>
-              </div>
-            </div>
-          </template>
-        </vueper-slide>
-        <template v-slot:bullet="{ active }">
-          <i class="bullet" :class="active ? 'active' : ''"></i>
-        </template>
-      </vueper-slides>
-    </div>
-    <br style="clear:both" />
-  </div>
+        <div class="slide slide-container">
+          <div class="title">
+            <img :src="getImage(slide.image)" class="person" :alt="slide.name + '\'s Photo'"/>
+            <br/>
+            <strong> {{ slide.name }} </strong>
+            <br/> 
+            <strong> {{ slide.personDescription }} </strong>
+          </div>
+          <div class="content">"{{ slide.content }}"</div>
+        </div>
+      </swiper-slide>
+    </swiper>
+  </div> 
+  <br style="clear:both" />
 </template>
 
 <script>
-import { VueperSlides, VueperSlide } from 'vueperslides';
-import 'vueperslides/dist/vueperslides.css';
+import SwiperCore, { Pagination, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/swiper-bundle.css';
 import TestimonialInfo from "../../content/testimonials.json";
+
+SwiperCore.use([Pagination, Autoplay]);
 
 export default {
   name: 'Testimonials',
-  components: { VueperSlides, VueperSlide },
+  components: { Swiper, SwiperSlide },
   data() {
     return {
       information: TestimonialInfo,
@@ -89,6 +78,15 @@ export default {
 .building {
   height: 60vh;
   float: left; 
+}
+
+.swiper-container {
+  margin-top: 10%;
+}
+
+.slide-container {
+  margin: auto;
+  padding: 2%;
 }
 
 .slide {

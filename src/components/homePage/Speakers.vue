@@ -20,53 +20,44 @@
 		</div>
 		
 		<div v-for="(section, sectionName) in information" :key="section">
-			<vueper-slides
-				v-if="sectionName == currentPage"
-				class="no-shadow"
-				:touchable="false"
-				:slideRatio="slideRatio"
-			>
-				<template v-slot:arrow-left>
-					<img src="../../assets/Arrow.svg" class="left-arrow arrow"/>
-				</template>
-				<template v-slot:arrow-right>
-					<img src="../../assets/Arrow.svg" class="arrow"/>
-				</template>
-
-				<vueper-slide v-for="(slide, i) in section" :key="i">
-					<template v-slot:content>
-						<div class="vueperslide__content-wrapper">
-							<div class="slide-wrapper">
-								<img v-if="slide.image" :src="getImage(slide.image)" :alt="slide.name + '\'s Photo'"/>
-								<p :class="{'bold-text': sectionName == 'Events'}">
-									<i>{{ slide.content }}</i>
-									<br/>
-									<strong>{{ slide.name }}</strong>
-									{{ slide.tagLine }}
-								</p>
-							</div>
-						</div>
-					</template>
-				</vueper-slide>
-
-			</vueper-slides>
+			<swiper v-if="sectionName == currentPage" :loop="true" :autoHeight="true" :pagination="{ clickable: true }">
+        <div v-if="!mobileView"> 
+					<div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+				</div>
+				<swiper-slide v-for="(slide, i) in section" :key="i">
+					<div class="slide-wrapper">
+						<img class="person" v-if="slide.image" :src="getImage(slide.image)" :alt="slide.name + '\'s Photo'" />
+						<p :class="{'bold-text': sectionName == 'Events'}">
+							<i>{{ slide.content }}</i>
+							<br/>
+							<strong>{{ slide.name }}</strong>
+							{{ slide.tagLine }}
+						</p>
+					</div>
+				</swiper-slide>
+			</swiper>
 		</div>
 	</div>
 </div>
 </template>
 
 <script>
-import { VueperSlides, VueperSlide } from 'vueperslides'
-import 'vueperslides/dist/vueperslides.css'
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/swiper-bundle.css';
 import SpeakerInfo from "../../content/speakers.json";
 
+SwiperCore.use([Navigation, Pagination]);
+
 export default {
-	components: { VueperSlides, VueperSlide },
+	components: { Swiper, SwiperSlide },
 	name: 'Speakers',
 	data: () => ({
 		information: SpeakerInfo,
 		currentPage: 'Speakers', // ! CONSTANT SHOULD BE DYNAMICALLY SET
-		slideRatio: 0
+		slideRatio: 0,
+		mobileView: false
 	}),
 	methods: {
 		getImage(pic) {
@@ -81,6 +72,7 @@ export default {
 				this.slideRatio = 2.5/1
 			else
 				this.slideRatio = window.innerHeight / window.innerWidth
+			this.mobileView = window.innerWidth <= 550
 		},
 	},
 	created() {
@@ -137,10 +129,12 @@ export default {
 .slide-wrapper {
 	display: flex;
 	justify-content: space-evenly;
-	max-width: 70%;
+	max-width: 80%;
+	padding-left: 10%;
 }
 .slide-wrapper>img {
 	max-width: 50%;
+	height: 50%; /* hacky way of doing the aspect ratio of 1-1 */
 	margin-right: 10%;
 	border-radius: 50%;
 }
@@ -148,22 +142,12 @@ export default {
 	display: flex;
 	flex-direction: column;
 	text-align: start;
+  margin-bottom: 2rem;
 }
 
 .bold-text {
 	font-size: 1.3em;
 }
-
-.vueperslides__bullet .default {
-	background: #FF4E4E;
-}
-.vueperslides__bullet--active .default {
-	background-color: #42b983;
-}
-.vueperslides__bullet span {
-	display: block;
-}
-
 .left-arrow {
 	transform: rotate(180deg);
 }
