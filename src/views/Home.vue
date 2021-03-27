@@ -24,7 +24,6 @@
       <!-- Dropdown -->
       <faq />
       <!-- Unsure? -->
-      <!-- <team /> -->
       <contributors />
     </div>
     <bottom />
@@ -38,7 +37,6 @@ import About from "../components/homePage/About.vue";
 import Speakers from "../components/homePage/Speakers.vue";
 import Testimonials from "../components/homePage/Testimonials.vue";
 import Faq from "../components/homePage/Faq.vue";
-// import Team from "../components/homePage/Team.vue";
 import Contributors from "../components/homePage/Contributors.vue";
 import Bottom from "../components/homePage/Footer.vue";
 export default {
@@ -50,7 +48,6 @@ export default {
     Speakers,
     Testimonials,
     Faq,
-    // Team,
     Contributors,
     Bottom
   }
