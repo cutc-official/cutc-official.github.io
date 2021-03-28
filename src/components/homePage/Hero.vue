@@ -118,6 +118,8 @@ input:focus {
 
 a {
   font-weight: 500;
+	display: block;
+	margin-bottom: 2em;
 }
 
 </style>
