@@ -23,7 +23,7 @@
 			<swiper v-if="sectionName == currentPage" :loop="true" :autoHeight="true" :pagination="{ clickable: true }" :navigation="!isMobile">
 				<swiper-slide v-for="(slide, i) in section" :key="i">
 					<div class="slide-wrapper">
-						<img class="person" v-if="slide.image" :src="getImage(slide.image)" :alt="slide.name + '\'s Photo'" />
+						<img v-if="slide.image" :src="getImage(slide.image)" :alt="slide.name + '\'s Photo'" />
 						<p :class="{'bold-text': sectionName == 'Events'}">
 							<i>{{ slide.content }}</i>
 							<br/>
@@ -126,13 +126,15 @@ export default {
 	display: flex;
 	justify-content: space-evenly;
 	max-width: 80%;
-	padding-left: 10%;
+	margin: auto;
+	align-items: center;
 }
 .slide-wrapper>img {
 	max-width: 50%;
 	height: 50%; /* hacky way of doing the aspect ratio of 1-1 */
 	margin-right: 10%;
 	border-radius: 50%;
+	transform: scale(0.8);
 }
 .slide-wrapper>p {
 	display: flex;
@@ -172,6 +174,10 @@ export default {
 		padding: 0;
 		width: 100%;
 		text-align: center;
+	}
+
+	.slide-wrapper > img {
+		margin-right: 0;
 	}
 
 	.arrow {
