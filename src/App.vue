@@ -38,7 +38,7 @@ p {
 h4, h3, h2, h1, p, a {
 	margin: .2em 0;
 	font-family: Montserrat;
-  font-style: normal;
+	font-style: normal;
 }
 h4 {
 	font-size: 1.375em;
@@ -93,9 +93,9 @@ input {
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s;
+	transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
+	opacity: 0;
 }
 </style>

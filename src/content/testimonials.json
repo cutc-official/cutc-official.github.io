@@ -1,22 +1,20 @@
-{
-    "slides": [
-        {
-            "name": "Iris Wang",
-            "personDescription": "McMaster U / M. Eng",
-            "content": "It became extremely hard during this COVID time for professional networking but I found this event - CUTC 2020: Reconnect and it was a blast. It was inspiring to listen to some of the great stories, cool projects, and advice that the guests shared during the panels. I'm grateful that CUTC Foundation organized this event and I had the chance to recharge from all the encouraging words.",
-            "image": "IrisWang-Testimonial-headshot.jpg"
-        },
-        {
-            "name": "Teya McGuire",
-            "personDescription": "U Washington / Business Administration",
-            "content": "I've had the pleasure of being able to watch the #Women'sPanel at the CUTC Foundation 2020 conference. I want to thank these women for sharing their wisdom and their experiences. As a young woman who also wants to go into technology, it seems like being able to achieve this dream is a daunting task. However, after listening to how these women's paths have changed, how they worked hard to gain mentorship and sponsorship, their advice has been inspiring.",
-            "image": "TeyaMcGuire-Testimonial-headshot.jpg"
-        },
-        {
-            "name": "Vedaant Agnihotri",
-            "personDescription": "U Waterloo / Mechatronics Eng",
-            "content": "Attending #CUTC2020 online was a great experience for me this year. Starting from the opening ceremony right till the maker fair, the whole event was packed with inspirational stories and new opportunities for students, with different qualifications, to network, collaborate and grow, even in such challenging times.",
-            "image": "Vedaant-Testimonial-headshot.jpg"
-        }
-    ]
-}
+[
+	{
+		"name": "Iris Wang",
+		"personDescription": "McMaster U / M. Eng",
+		"content": "It became extremely hard during this COVID time for professional networking but I found this event - CUTC 2020: Reconnect and it was a blast. It was inspiring to listen to some of the great stories, cool projects, and advice that the guests shared during the panels. I'm grateful that CUTC Foundation organized this event and I had the chance to recharge from all the encouraging words.",
+		"image": "IrisWang-Testimonial-headshot.jpg"
+	},
+	{
+		"name": "Teya McGuire",
+		"personDescription": "U Washington / Business Administration",
+		"content": "I've had the pleasure of being able to watch the #Women'sPanel at the CUTC Foundation 2020 conference. I want to thank these women for sharing their wisdom and their experiences. As a young woman who also wants to go into technology, it seems like being able to achieve this dream is a daunting task. However, after listening to how these women's paths have changed, how they worked hard to gain mentorship and sponsorship, their advice has been inspiring.",
+		"image": "TeyaMcGuire-Testimonial-headshot.jpg"
+	},
+	{
+		"name": "Vedaant Agnihotri",
+		"personDescription": "U Waterloo / Mechatronics Eng",
+		"content": "Attending #CUTC2020 online was a great experience for me this year. Starting from the opening ceremony right till the maker fair, the whole event was packed with inspirational stories and new opportunities for students, with different qualifications, to network, collaborate and grow, even in such challenging times.",
+		"image": "Vedaant-Testimonial-headshot.jpg"
+	}
+]

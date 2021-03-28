@@ -49,8 +49,8 @@ export default {
 }
 
 .sponsor-img > img {
-  width: 100%;
-  margin: auto;
+	width: 100%;
+	margin: auto;
 }
 
 .dot {

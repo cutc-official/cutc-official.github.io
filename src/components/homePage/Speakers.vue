@@ -140,7 +140,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	text-align: start;
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .bold-text {
