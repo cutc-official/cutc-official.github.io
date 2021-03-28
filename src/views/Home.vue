@@ -69,4 +69,16 @@ export default {
     #ffffff 100%
   );
 }
+@media screen and (max-width: 850px) {
+	.fade {
+		background: linear-gradient(
+		180deg,
+		#ff4e4e 5%,
+		#ffaeae 66.67%,
+		#ffc5c5 77.6%,
+		#ffd8d8 90%,
+		#ffffff 100%
+	);
+	}
+}
 </style>
