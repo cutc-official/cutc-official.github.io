@@ -17,7 +17,7 @@
 		<form action="https://cutc.us10.list-manage.com/subscribe/post?u=73d566326ae6bb629b42fb5fd&amp;id=e28a4a51fe" method="post" 
 				target="_blank" novalidate>
 			<input type="email" name="EMAIL" placeholder="Enter your email for updates!" required>
-			<button>
+			<button type="submit">
 				<img src="../../assets/HeroArrow.svg">
 			</button>
 			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -80,6 +80,8 @@ export default {
 form {
 	display: flex;
 	position: relative;
+	justify-content: flex-start;
+	margin-bottom: 15px;
 }
 
 button {
@@ -100,8 +102,24 @@ input[type="email"] {
 	font-family: inherit;
 	border: 1px solid #A3241D;
 	border-style: solid;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	box-sizing: border-box;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 15px;
+	margin: 0;
+	border-right-width: 0;
 }
 input:focus {
 	outline:none;
-} 
+}
+
+a {
+	font-size: 22;
+	font-weight: 500;
+	display: block;
+	margin-bottom: 40px;
+}
+
 </style>
