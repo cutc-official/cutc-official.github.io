@@ -59,7 +59,7 @@ export default {
 .title {
 	text-align: center;
 	font-weight: normal;
-	font-size: 0.55em;
+	font-size: 0.5em;
 }
 
 p {

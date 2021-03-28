@@ -56,6 +56,7 @@ export default {
 <style scoped>
 .home-content {
   width: 80%;
+  max-width: 1200px;
   margin: auto;
 }
 

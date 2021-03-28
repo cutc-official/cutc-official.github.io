@@ -2,7 +2,7 @@
 	<header id="nav-bar">
 		<img src="../assets/logo.svg">
 
-		<label v-if="isMobile" @click="openMenu">&#9776;</label>
+		<button v-if="isMobile" @click="openMenu">&#9776;</button>
 		<nav v-else>
 			<a href="#about">ABOUT</a>
 			<a href="#speakers">SPEAKERS</a>
@@ -12,18 +12,18 @@
 		</nav>
 
 		<!-- MOBILE MENU -->
-		<div v-if="isMobile && isMenuOpen" class="mobileMenu">
-			<div class="close-button">
-				<label @click="closeMenu">&#x2715;</label>
+		<transition name="fade">
+			<div v-if="isMobile && isMenuOpen" class="mobileMenu">
+				<button class="close-button" @click="closeMenu">&#x2715;</button>
+				<nav>
+					<a @click="closeMenu" href="#about">ABOUT</a>
+					<a @click="closeMenu" href="#speakers">SPEAKERS</a>
+					<a @click="closeMenu" href="#testimonials">TESTIMONIALS</a>
+					<a @click="closeMenu" href="#sponsors">SPONSORS</a>
+					<a @click="closeMenu" href="#faq">FAQ</a>
+				</nav>
 			</div>
-			<nav>
-				<a @click="closeMenu" href="#about">ABOUT</a>
-				<a @click="closeMenu" href="#speakers">SPEAKERS</a>
-				<a @click="closeMenu" href="#testimonials">TESTIMONIALS</a>
-				<a @click="closeMenu" href="#sponsors">SPONSORS</a>
-				<a @click="closeMenu" href="#faq">FAQ</a>
-			</nav>
-		</div>
+		</transition>
 	</header>
 </template>
 
@@ -63,8 +63,11 @@ export default {
 	justify-content: space-between;
 }
 
-label {
-	font-size: 48px;
+button {
+	font-size: 3em;
+	background: none;
+	border: none;
+	color: white;
 }
 img {
 	padding: 0 7vw 0 var(--splash-page-inset);
@@ -101,7 +104,7 @@ a {
 .mobileMenu>nav>a {
 	padding: 1em 2em;
 	color: var(--nav-color);
-	font-size: 24px;
+	font-size: 1.5em;
 }
 .mobileMenu>nav>a:not(:last-child) {
 	width: 100%;
@@ -110,6 +113,7 @@ a {
 
 .close-button {
 	margin: 1em 0 1em 85%;
+	color: var(--nav-color);
 }
 
 

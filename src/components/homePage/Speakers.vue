@@ -90,7 +90,7 @@ export default {
 
 .info-2020>p {
 	width: 100%;
-	font-size: 32px;
+	font-size: 2em;
 	font-weight: 600;
 	text-align: center;
 }
@@ -114,7 +114,7 @@ export default {
 	cursor: pointer;
 	margin: 0 auto;
 	font-weight: 600;
-	font-size: 32px;
+	font-size: 2em;
 	line-height: 36px;
 }
 .tab-select{
@@ -156,7 +156,7 @@ export default {
 		border-radius: 3px;
 	}
 	.info-2020>p {
-		font-size: 13px;
+		font-size: 0.75em;
 	}
 
 	.tabs {
@@ -170,7 +170,7 @@ export default {
 		color: white;
 	}
 	.tabs>p {
-		font-size: 13px;
+		font-size: 0.75em;
 		padding: 0;
 		width: 100%;
 		text-align: center;

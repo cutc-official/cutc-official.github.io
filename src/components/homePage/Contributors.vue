@@ -51,7 +51,7 @@ export default {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 5fr));
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 5fr));
   margin-top: 2rem;
 }
 .parent {
@@ -91,12 +91,5 @@ export default {
 .position {
   color: white;
   font-size: 0.8rem;
-}
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
 }
 </style>

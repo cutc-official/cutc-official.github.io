@@ -6,15 +6,13 @@
         <div v-if="groupTitle" class="banner">
           <div class="box-header">{{groupTitle}}</div>
         </div>
-        <div class="questions" v-for="qa in questionSet" :key="qa">
+        <div v-for="qa in questionSet" :key="qa">
           <button @click="show(qa.question)" class="question">
             <div :class="{'arrow-active': qa.question == currentQuestion, 'arrow-right': true}"></div>
             {{qa.question}}
           </button>
           <transition name="fadeHeight">
-            <div v-if="qa.question == currentQuestion">
-              <p class="p-content">{{qa.answer}}</p>
-            </div>
+            <p v-if="qa.question == currentQuestion" class="p-content">{{qa.answer}}</p>
           </transition>
         </div>
       </div>
@@ -92,10 +90,10 @@ export default {
 }
 .box-header {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5em;
   padding: .2em;
 }
-button.question {
+.question {
   overflow-wrap: break-word;
   background: none;
   border: none;
@@ -109,7 +107,6 @@ button.question {
 .p-content {
   padding: 0rem 2rem;
   overflow: hidden;
-  font-size: 16px;
   color: black;
 }
 button {
@@ -133,9 +130,6 @@ button {
   }
   .box {
     width: 90%;
-  }
-  .p-content {
-    font-size: 12px;
   }
 }
 

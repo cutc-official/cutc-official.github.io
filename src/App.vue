@@ -32,27 +32,30 @@ body {
 a {
 	color: white;
 }
+p {
+	font-size: 1em;
+}
 h4, h3, h2, h1, p, a {
 	margin: .2em 0;
 	font-family: Montserrat;
   font-style: normal;
 }
 h4 {
-	font-size: 22px;
+	font-size: 1.375em;
 	font-weight: 500;
 }
 h3 {
-	font-size: 24px;
+	font-size: 1.5em;
 	font-weight: 500;
 }
 h2 {
-	font-size: 40px;
+	font-size: 2.5em;
 	font-weight: 700;
 	color: black;
 	margin-top: 2em;
 }
 h1 {
-	font-size: 44px;
+	font-size: 2.75em;
 	font-weight: 700;
 }
 
@@ -78,10 +81,21 @@ input {
 
 @media screen and (max-width: 850px) {
 	h1 {
-		font-size: 24px;
+		font-size: 1.5em;
 	}
 	h2 {
-		font-size: 32px;
+		font-size: 2em;
 	}
+}
+
+[v-cloak] {
+	display: none;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>

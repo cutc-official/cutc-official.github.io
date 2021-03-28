@@ -140,10 +140,10 @@ i.bullet.active {
   }
   .title {
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 1.5em;
   }
   .content {
-    font-size: 18px;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 550px) {
