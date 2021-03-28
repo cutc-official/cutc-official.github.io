@@ -178,6 +178,7 @@ export default {
 
 	.slide-wrapper > img {
 		margin-right: 0;
+		height: auto;
 	}
 
 	.arrow {
