@@ -17,6 +17,9 @@
 		<form action="https://cutc.us10.list-manage.com/subscribe/post?u=73d566326ae6bb629b42fb5fd&amp;id=e28a4a51fe" method="post" 
 				target="_blank" novalidate>
 			<input type="email" name="EMAIL" placeholder="Enter your email for updates!" required>
+			<button type="submit">
+				<img src="../../assets/HeroArrow.svg">
+			</button>
 			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_73d566326ae6bb629b42fb5fd_e28a4a51fe" tabindex="-1" value=""></div>
 		</form>
@@ -74,9 +77,39 @@ export default {
 	}
 }
 
+form {
+	display: flex;
+	position: relative;
+	justify-content: flex-start;
+	margin-bottom: 15px;
+}
+
+button {
+	height: 40px;
+	width: 50px;
+	border: none;
+	background-color:#A3241D;
+	border-top-right-radius: 45%;
+	border-bottom-right-radius: 45%;
+	margin: 0;
+}
+button:focus {
+	outline: none;
+}
+
 input[type="email"] {
 	width: min(95%, 400px);
 	font-family: inherit;
+	border: 1px solid #A3241D;
+	border-style: solid;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	box-sizing: border-box;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 15px;
+	margin: 0;
+	border-right-width: 0;
 }
 input:focus {
 	outline:none;
@@ -84,6 +117,9 @@ input:focus {
 
 a {
 	font-size: 22;
-  font-weight: 500;
+	font-weight: 500;
+	display: block;
+	margin-bottom: 40px;
 }
+
 </style>
