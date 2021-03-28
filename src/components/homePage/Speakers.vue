@@ -20,14 +20,10 @@
 		</div>
 		
 		<div v-for="(section, sectionName) in information" :key="section">
-			<swiper v-if="sectionName == currentPage" :loop="true" :autoHeight="true" :pagination="{ clickable: true }">
-        <div v-if="!mobileView"> 
-					<div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-				</div>
+			<swiper v-if="sectionName == currentPage" :loop="true" :autoHeight="true" :pagination="{ clickable: true }" :navigation="!isMobile">
 				<swiper-slide v-for="(slide, i) in section" :key="i">
 					<div class="slide-wrapper">
-						<img class="person" v-if="slide.image" :src="getImage(slide.image)" :alt="slide.name + '\'s Photo'" />
+						<img v-if="slide.image" :src="getImage(slide.image)" :alt="slide.name + '\'s Photo'" />
 						<p :class="{'bold-text': sectionName == 'Events'}">
 							<i>{{ slide.content }}</i>
 							<br/>
@@ -46,7 +42,7 @@
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
-import SpeakerInfo from "../../content/speakers.json";
+import SpeakerInfo from "@/content/speakers.json";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -56,23 +52,19 @@ export default {
 	data: () => ({
 		information: SpeakerInfo,
 		currentPage: 'Speakers', // ! CONSTANT SHOULD BE DYNAMICALLY SET
-		slideRatio: 0,
-		mobileView: false
+		isMobile: false
 	}),
 	methods: {
 		getImage(pic) {
 			try {
-				return require("../../assets/speakers/" + pic);
+				return require("@/assets/speakers/" + pic);
 			} catch(e) {
 				// throw Error(`pic does not exist: ${pic}`);
 			}
 		},
 		handleResize() {
-			if (window.innerWidth <= 550)
-				this.slideRatio = 2.5/1
-			else
-				this.slideRatio = window.innerHeight / window.innerWidth
-			this.mobileView = window.innerWidth <= 550
+			this.isMobile = window.innerWidth <= 550
+			console.log(this.isMobile)
 		},
 	},
 	created() {
@@ -83,6 +75,10 @@ export default {
 </script>
 
 <style scoped>
+#speakers {
+	--swiper-theme-color: #E84545;
+}
+
 .info-2020 {
 	display: flex;
 	justify-content: space-around;
@@ -130,13 +126,15 @@ export default {
 	display: flex;
 	justify-content: space-evenly;
 	max-width: 80%;
-	padding-left: 10%;
+	margin: auto;
+	align-items: center;
 }
 .slide-wrapper>img {
 	max-width: 50%;
 	height: 50%; /* hacky way of doing the aspect ratio of 1-1 */
 	margin-right: 10%;
 	border-radius: 50%;
+	transform: scale(0.8);
 }
 .slide-wrapper>p {
 	display: flex;
@@ -176,6 +174,10 @@ export default {
 		padding: 0;
 		width: 100%;
 		text-align: center;
+	}
+
+	.slide-wrapper > img {
+		margin-right: 0;
 	}
 
 	.arrow {
