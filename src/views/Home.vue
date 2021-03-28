@@ -1,28 +1,28 @@
 <template>
-  <span style="scroll">
-    <div class="fade">
-      <nav-bar />
-      <hero />
-    </div>
+	<span style="scroll">
+		<div class="fade">
+			<nav-bar />
+			<hero />
+		</div>
 
-    <div class="home-content">
-      <!-- Timeline -->
-      <about />
-      <!-- Tab -->
-      <speakers />
-      <!-- Carousel -->
-      <testimonials />
+		<div class="home-content">
+			<!-- Timeline -->
+			<about />
+			<!-- Tab -->
+			<speakers />
+			<!-- Carousel -->
+			<testimonials />
 
-      <!-- Sponsorship -->
-      <sponsorship />
+			<!-- Sponsorship -->
+			<sponsorship />
 
-      <!-- Dropdown -->
-      <faq />
-      <!-- Unsure? -->
-      <contributors />
-    </div>
-    <bottom />
-  </span>
+			<!-- Dropdown -->
+			<faq />
+			<!-- Unsure? -->
+			<contributors />
+		</div>
+		<bottom />
+	</span>
 </template>
 
 <script>
@@ -37,37 +37,38 @@ import Contributors from "../components/homePage/Contributors.vue";
 import Bottom from "../components/homePage/Footer.vue";
 
 export default {
-  name: "Home",
-  components: {
-    NavBar,
-    Hero,
-    About,
-    Speakers,
-    Testimonials,
-    Sponsorship,
-    Faq,
-    Contributors,
-    Bottom
-  }
+	name: "Home",
+	components: {
+		NavBar,
+		Hero,
+		About,
+		Speakers,
+		Testimonials,
+		Sponsorship,
+		Faq,
+		Contributors,
+		Bottom
+	}
 };
 </script>,
-    Sponsorship
+		Sponsorship
 
 <style scoped>
 .home-content {
-  width: 80%;
-  margin: auto;
+	width: 80%;
+	max-width: 1200px;
+	margin: auto;
 }
 
 .fade {
-  background: linear-gradient(
-    180deg,
-    #ff4e4e 0%,
-    #ffaeae 66.67%,
-    #ffc5c5 77.6%,
-    #ffd8d8 87.5%,
-    #ffffff 100%
-  );
+	background: linear-gradient(
+		180deg,
+		#ff4e4e 0%,
+		#ffaeae 66.67%,
+		#ffc5c5 77.6%,
+		#ffd8d8 87.5%,
+		#ffffff 100%
+	);
 }
 @media screen and (max-width: 850px) {
 	.fade {

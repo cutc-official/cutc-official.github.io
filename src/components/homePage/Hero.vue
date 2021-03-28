@@ -1,6 +1,6 @@
 <template>
 <div id="hero">
-	<div class="building">
+	<div class="building" v-cloak>
 		<countdown/>
 		<img src="../../assets/hero.svg" id="cutc-building-image">
 	</div>
@@ -66,14 +66,14 @@ export default {
 }
 
 .slogan {
-	font-size: 32px;
+	font-size: 2em;
 	font-weight: 400;
 	color: white;
 	margin: 0;
 }
 @media screen and (max-width: 850px) {
 	.slogan {
-		font-size: 24px;
+		font-size: 1.5em;
 	}
 }
 
@@ -98,7 +98,8 @@ button:focus {
 }
 
 input[type="email"] {
-	width: min(95%, 400px);
+	width: 95%;
+	max-width: 400px;
 	font-family: inherit;
 	border: 1px solid #A3241D;
 	border-style: solid;
@@ -116,10 +117,9 @@ input:focus {
 }
 
 a {
-	font-size: 22;
 	font-weight: 500;
 	display: block;
-	margin-bottom: 40px;
+	margin-bottom: 2em;
 }
 
 </style>
