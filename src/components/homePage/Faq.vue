@@ -138,7 +138,7 @@ button {
 	transition: all 0.5s;
 	max-height: 100vh;
 }
-.fadeHeight-enter,
+.fadeHeight-enter-from,
 .fadeHeight-leave-to {
 	opacity: 0;
 	max-height: 0px;
