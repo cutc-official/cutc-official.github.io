@@ -20,8 +20,8 @@
 		</div>
 		
 		<div v-for="(section, sectionName) in information" :key="section">
-			<swiper v-if="sectionName == currentPage" :loop="true" :autoHeight="true" :pagination="{ clickable: true }" navigation>
-        <!-- <div v-if="!mobileView"> 
+			<swiper v-if="sectionName == currentPage" :loop="true" :autoHeight="true" :pagination="{ clickable: true }" :navigation="!isMobile">
+        <!-- <div v-if="!isMobile"> 
 					<div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
 				</div> -->
@@ -46,7 +46,7 @@
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
-import SpeakerInfo from "../../content/speakers.json";
+import SpeakerInfo from "@/content/speakers.json";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -56,23 +56,19 @@ export default {
 	data: () => ({
 		information: SpeakerInfo,
 		currentPage: 'Speakers', // ! CONSTANT SHOULD BE DYNAMICALLY SET
-		slideRatio: 0,
-		mobileView: false
+		isMobile: false
 	}),
 	methods: {
 		getImage(pic) {
 			try {
-				return require("../../assets/speakers/" + pic);
+				return require("@/assets/speakers/" + pic);
 			} catch(e) {
 				// throw Error(`pic does not exist: ${pic}`);
 			}
 		},
 		handleResize() {
-			if (window.innerWidth <= 550)
-				this.slideRatio = 2.5/1
-			else
-				this.slideRatio = window.innerHeight / window.innerWidth
-			this.mobileView = window.innerWidth <= 550
+			this.isMobile = window.innerWidth <= 550
+			console.log(this.isMobile)
 		},
 	},
 	created() {
