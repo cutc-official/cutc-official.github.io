@@ -73,6 +73,7 @@ export default {
 #testimonials {
 	margin: 4em 0;
 	color: black;
+	--swiper-theme-color: #E84545;
 }
 
 .building {
