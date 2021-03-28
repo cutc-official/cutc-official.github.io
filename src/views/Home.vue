@@ -13,13 +13,8 @@
       <!-- Carousel -->
       <testimonials />
 
-      <!--<div id="sponsors">
-			<h2>Our 2020 Sponsors and Partners</h2>
-			<img
-				src="../assets/sponsors2020.png"
-				alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"
-			/>
-      </div>-->
+      <!-- Sponsorship -->
+      <sponsorship />
 
       <!-- Dropdown -->
       <faq />
@@ -36,9 +31,11 @@ import Hero from "../components/homePage/Hero.vue";
 import About from "../components/homePage/About.vue";
 import Speakers from "../components/homePage/Speakers.vue";
 import Testimonials from "../components/homePage/Testimonials.vue";
+import Sponsorship from '../components/homePage/Sponsorship.vue';
 import Faq from "../components/homePage/Faq.vue";
 import Contributors from "../components/homePage/Contributors.vue";
 import Bottom from "../components/homePage/Footer.vue";
+
 export default {
   name: "Home",
   components: {
@@ -47,12 +44,14 @@ export default {
     About,
     Speakers,
     Testimonials,
+    Sponsorship,
     Faq,
     Contributors,
     Bottom
   }
 };
-</script>
+</script>,
+    Sponsorship
 
 <style scoped>
 .home-content {
@@ -70,7 +69,6 @@ export default {
     #ffffff 100%
   );
 }
-
 @media screen and (max-width: 850px) {
 	.fade {
 		background: linear-gradient(
@@ -82,20 +80,5 @@ export default {
 		#ffffff 100%
 	);
 	}
-}
-
-#sponsors>img {
-	width: 90%;
-	margin: auto;
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  padding: 1% 0;
-  background: var(--nav-color);
-}
-.footer > a {
-  padding-left: 2em;
 }
 </style>
