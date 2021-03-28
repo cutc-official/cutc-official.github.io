@@ -1,26 +1,10 @@
 {
-	"Flik": {
-		"url": "https://weareflik.com/"
-	},
-	"Geotab": {
-		"url": "https://www.geotab.com/"
-	},
-	"lleTTonna": {
-		"url": "https://llettonna.com/"
-	},
-	"Flipp": {
-		"url": "https://flipp.com/home"
-	},
-	"FoundersBeta": {
-		"url": "https://www.foundersbeta.com/"
-	},
-	"RBC": {
-		"url": "https://www.rbcroyalbank.com/personal.html"
-	},
-	"jack.org": {
-		"url": "https://jack.org/Home"
-	},
-	"JobJunxion": {
-		"url": "https://www.jobjunxion.com/"
-	}
+	"Flik": "https://weareflik.com/",
+	"Geotab": "https://www.geotab.com/",
+	"lleTTonna": "https://llettonna.com/",
+	"Flipp": "https://flipp.com/home",
+	"FoundersBeta": "https://www.foundersbeta.com/",
+	"RBC": "https://www.rbcroyalbank.com/personal.html",
+	"jack.org": "https://jack.org/Home",
+	"JobJunxion": "https://www.jobjunxion.com/"
 }
