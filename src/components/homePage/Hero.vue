@@ -77,18 +77,19 @@ export default {
 	}
 }
 
+form {
+	display: flex;
+	position: relative;
+}
+
 button {
-  position: relative;
-  top: 6px;
-  right: 8.5%;
-  border: none;
-  background-color: #A3241D;
-  border-top-right-radius: 45%;
-  padding-right: 14px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 7px; 
-  border-bottom-right-radius: 45%;
+	height: 40px;
+	width: 50px;
+	border: none;
+	background-color:#A3241D;
+	border-top-right-radius: 45%;
+	border-bottom-right-radius: 45%;
+	margin: 0;
 }
 button:focus {
 	outline: none;
@@ -102,10 +103,5 @@ input[type="email"] {
 }
 input:focus {
 	outline:none;
-}
-
-a {
-	font-size: 22;
-  font-weight: 500;
-}
+} 
 </style>
