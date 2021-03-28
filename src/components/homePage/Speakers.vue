@@ -21,10 +21,6 @@
 		
 		<div v-for="(section, sectionName) in information" :key="section">
 			<swiper v-if="sectionName == currentPage" :loop="true" :autoHeight="true" :pagination="{ clickable: true }" :navigation="!isMobile">
-        <!-- <div v-if="!isMobile"> 
-					<div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-				</div> -->
 				<swiper-slide v-for="(slide, i) in section" :key="i">
 					<div class="slide-wrapper">
 						<img class="person" v-if="slide.image" :src="getImage(slide.image)" :alt="slide.name + '\'s Photo'" />
@@ -79,6 +75,10 @@ export default {
 </script>
 
 <style scoped>
+#speakers {
+	--swiper-theme-color: #E84545;
+}
+
 .info-2020 {
 	display: flex;
 	justify-content: space-around;
