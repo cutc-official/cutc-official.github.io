@@ -57,7 +57,7 @@ export default {
 	methods: {
 		getImage(pic) {
 			try {
-				return require("@/assets/speakers/" + pic);
+				return require("@/assets/" + pic);
 			} catch(e) {
 				// throw Error(`pic does not exist: ${pic}`);
 			}
@@ -133,7 +133,7 @@ export default {
 	max-width: 50%;
 	height: 50%; /* hacky way of doing the aspect ratio of 1-1 */
 	margin-right: 10%;
-	border-radius: 50%;
+	border-radius: 1em;
 	transform: scale(0.8);
 }
 .slide-wrapper>p {
