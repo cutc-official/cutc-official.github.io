@@ -118,6 +118,8 @@ button {
 	border-top: 0.5rem solid transparent;
 	border-bottom: 0.5rem solid transparent;
 	border-left: 1.1rem solid #C4C4C4;
+	height: 0;
+	margin-top: 0.15rem;
 }
 .arrow-active {
 	transform: matrix(0.02, 1, -1, 0.02, 0, 0);
