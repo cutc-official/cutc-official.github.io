@@ -1,4 +1,5 @@
-[{
+[
+	{
 		"name": "Ron Hyman",
 		"position": "Co-Chair",
 		"image": "Ron Hyman.jpg"
@@ -111,5 +112,40 @@
 		"name": "AKM Adib",
 		"position": "Technology Member",
 		"image": "AKM Adib.jpg"
+	},
+	{
+		"name": "Emily Louie",
+		"position": "Design Lead",
+		"image": "Emily Louie.jpg"
+	},
+	{
+		"name": "Jessica Li",
+		"position": "Campus Ambassador",
+		"image": "Jessica Li.png"
+	},
+	{
+		"name": "Erin Zhong",
+		"position": "Design Member",
+		"image": "Erin Zhong.png"
+	},
+	{
+		"name": "Bhrigu More",
+		"position": "Design Member",
+		"image": "Bhrigu More.jpg"
+	},
+	{
+		"name": "Eptehal Nashnoush",
+		"position": "Sponsorship Lead",
+		"image": "Eptehal Nashnoush.png"
+	},
+	{
+		"name": "Rafid Rahman",
+		"position": "Campus Ambassador",
+		"image": "Rafid Rahman.png"
+	},
+	{
+		"name": "Alyssa Lorenz",
+		"position": "Marketing Member",
+		"image": "Alyssa Lorenz.jpg"
 	}
 ]
