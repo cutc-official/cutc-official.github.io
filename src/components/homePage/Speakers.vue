@@ -64,7 +64,6 @@ export default {
 		},
 		handleResize() {
 			this.isMobile = window.innerWidth <= 550
-			console.log(this.isMobile)
 		},
 	},
 	created() {
