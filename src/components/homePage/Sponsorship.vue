@@ -1,7 +1,10 @@
 <template>
 <div id="sponsors">
 	<h2>Our 2020 Sponsors and Partners</h2>
-	<div class="sponsor-img" ref="parent">
+
+	<img v-if="isMobile" src="@/assets/sponsors2020-mobile.png" alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion">
+
+	<div v-else class="sponsor-img" ref="parent">
 		<img
 			src="@/assets/sponsors2020.png"
 			alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"
@@ -37,9 +40,19 @@ export default {
 				'RBC': ['61.3%', '1.4%'],
 				'jack.org': ['78.6%', '27.1%'],
 				'JobJunxion': ['83.7%', '43.9%'],
-			}
+			},
+			'isMobile': false,
 		}
 	},
+	methods: {
+		handleResize() {
+			this.isMobile = window.innerWidth <= 850;
+		},
+	},
+	created() {
+		this.handleResize();
+		window.addEventListener('resize', () => this.handleResize());
+	}
 }
 </script>
 
@@ -48,7 +61,7 @@ export default {
 	position: relative;
 }
 
-.sponsor-img > img {
+img {
 	width: 100%;
 	margin: auto;
 }
