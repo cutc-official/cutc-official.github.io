@@ -2,7 +2,7 @@
 	<div id="contributors">
 		<div>
 			<h2 style="display: inline;">Created with love in &nbsp;</h2>
-			<img style="display: inline;" src="../../assets/Canada.png" />
+			<img style="display: inline;" src="@/assets/Canada.png" />
 			<h2 style="display: inline;">&nbsp; by</h2>
 		</div>
 		<div class="gallery">
@@ -16,12 +16,7 @@
 						</div>
 					</transition>
 
-					<div v-if="'image' in member">
-						<img class="image" :src="require(`@/assets/contributors/${member.image}`)" />
-					</div>
-					<div v-else>
-						<img class="image" src="../../assets/contributors/anon.png" />
-					</div>
+					<img class="image" :src="getImage(member)"/>
 				</a>
 			</div>
 		</div>
@@ -29,7 +24,9 @@
 </template>
 
 <script>
-import Members from "../../content/contributors.json";
+import Members from "@/content/contributors.json";
+Members.sort((a, b) => a.name.localeCompare(b.name));
+
 export default {
 	name: "Contributors",
 	data() {
@@ -38,6 +35,12 @@ export default {
 	methods: {
 		open: function(popped) {
 			this.popUp = popped;
+		},
+		getImage(member) {
+			if ('image' in member)
+				return require(`@/assets/contributors/${member.image}`);
+			else
+				return require("@/assets/contributors/anon.png");
 		}
 	}
 };
