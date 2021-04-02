@@ -2,9 +2,7 @@
 	<div class="footer-wrapper">
 		<div class="footer">
 			<p class="title">CUTC 2021 &mdash; Amplify</p>
-			<a href="mailto:info@cutc.ca" style="text-decoration: none;">
-				<p class="contact">Contact us</p>
-			</a>
+			<p class="contact">Contact us</p>
 			<div class="cutc-icons">
 				<a
 					v-for="item in items"
@@ -22,9 +20,9 @@
 </template>
 
 <script>
-import Facebook from "../../assets/socials/facebook.svg";
-import Instagram from "../../assets/socials/instagram.svg";
-import Twitter from "../../assets/socials/twitter.svg";
+import Facebook from "@/assets/socials/facebook.svg";
+import Instagram from "@/assets/socials/instagram.svg";
+import Twitter from "@/assets/socials/twitter.svg";
 export default {
 	name: "Bottom",
 	data() {

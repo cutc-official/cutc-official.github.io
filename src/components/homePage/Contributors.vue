@@ -7,7 +7,7 @@
 		</div>
 		<div class="gallery">
 			<div class="parent" v-for="(member,index) in members" :key="member.name">
-				<a @mouseleave="popUp = -1" @mouseover="open(index)" style="text-decoration: none;">
+				<div @mouseleave="popUp = -1" @mouseover="open(index)" style="text-decoration: none;">
 					<transition name="fade">
 						<div class="dialog" v-if="popUp===index">
 							<div class="name">{{member.name}} {{member.emoji}}</div>
@@ -17,7 +17,7 @@
 					</transition>
 
 					<img class="image" :src="getImage(member)"/>
-				</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -62,8 +62,7 @@ export default {
 }
 .image {
 	max-height: 5rem;
-	margin-right: 3.5rem;
-	margin-bottom: 1rem;
+	margin: 1em 2em;
 	border-radius: 50%;
 }
 .dialog {

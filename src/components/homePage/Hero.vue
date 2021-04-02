@@ -16,10 +16,12 @@
 		<!-- Begin Mailchimp Signup Form -->
 		<form action="https://cutc.us10.list-manage.com/subscribe/post?u=73d566326ae6bb629b42fb5fd&amp;id=e28a4a51fe" method="post" 
 				target="_blank" novalidate>
-			<input type="email" name="EMAIL" placeholder="Enter your email for updates!" required>
-			<button type="submit">
-				<img src="../../assets/HeroArrow.svg">
-			</button>
+			<div class="email-input">
+				<input type="email" name="EMAIL" placeholder="Enter your email for updates!" required>
+				<button type="submit">
+					<img src="../../assets/HeroArrow.svg">
+				</button>
+			</div>
 			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_73d566326ae6bb629b42fb5fd_e28a4a51fe" tabindex="-1" value=""></div>
 		</form>
@@ -81,12 +83,17 @@ form {
 	display: flex;
 	position: relative;
 	justify-content: flex-start;
-	margin-bottom: 15px;
+	margin: 1em 0;
+}
+
+.email-input {
+	display: flex;
+	width: 100%;
 }
 
 button {
-	height: 40px;
-	width: 50px;
+	height: 100%;
+	width: 60px;
 	border: none;
 	background-color:#A3241D;
 	border-top-right-radius: 45%;
@@ -100,17 +107,12 @@ button:focus {
 input[type="email"] {
 	width: 95%;
 	max-width: 400px;
-	font-family: inherit;
 	border: 1px solid #A3241D;
-	border-style: solid;
+	border-right-width: 0;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
-	box-sizing: border-box;
-	height: 40px;
-	line-height: 40px;
-	padding: 0 15px;
+	padding: 1rem;
 	margin: 0;
-	border-right-width: 0;
 }
 input:focus {
 	outline:none;
