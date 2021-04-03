@@ -73,9 +73,11 @@ input::-ms-input-placeholder { color: var(--main-color) }
 input {
 	border: 0;
 	border-radius: 50em;
-	padding: 1em;
+	padding: 1.5em;
 	margin-top: .5em;
 	margin-bottom: 1em;
+	font-family: inherit;
+	font-size: 1rem;
 	color: var(--main-color);
 }
 

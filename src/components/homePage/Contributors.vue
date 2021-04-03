@@ -2,12 +2,12 @@
 	<div id="contributors">
 		<div>
 			<h2 style="display: inline;">Created with love in &nbsp;</h2>
-			<img style="display: inline;" src="../../assets/Canada.png" />
+			<img style="display: inline;" src="@/assets/Canada.png" />
 			<h2 style="display: inline;">&nbsp; by</h2>
 		</div>
 		<div class="gallery">
 			<div class="parent" v-for="(member,index) in members" :key="member.name">
-				<a @mouseleave="popUp = -1" @mouseover="open(index)" style="text-decoration: none;">
+				<div @mouseleave="popUp = -1" @mouseover="open(index)" style="text-decoration: none;">
 					<transition name="fade">
 						<div class="dialog" v-if="popUp===index">
 							<div class="name">{{member.name}} {{member.emoji}}</div>
@@ -16,20 +16,17 @@
 						</div>
 					</transition>
 
-					<div v-if="'image' in member">
-						<img class="image" :src="require(`@/assets/contributors/${member.image}`)" />
-					</div>
-					<div v-else>
-						<img class="image" src="../../assets/contributors/anon.png" />
-					</div>
-				</a>
+					<img class="image" :src="getImage(member)"/>
+				</div>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-import Members from "../../content/contributors.json";
+import Members from "@/content/contributors.json";
+Members.sort((a, b) => a.name.localeCompare(b.name));
+
 export default {
 	name: "Contributors",
 	data() {
@@ -38,6 +35,12 @@ export default {
 	methods: {
 		open: function(popped) {
 			this.popUp = popped;
+		},
+		getImage(member) {
+			if ('image' in member)
+				return require(`@/assets/contributors/${member.image}`);
+			else
+				return require("@/assets/contributors/anon.png");
 		}
 	}
 };
@@ -59,8 +62,7 @@ export default {
 }
 .image {
 	max-height: 5rem;
-	margin-right: 3.5rem;
-	margin-bottom: 1rem;
+	margin: 1em 2em;
 	border-radius: 50%;
 }
 .dialog {

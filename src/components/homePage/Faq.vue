@@ -1,11 +1,9 @@
 <template>
 	<div id="faq">
 		<h2>Ask us anything</h2>
-		<div class="content" :class="{'content-multiple': questions.length > 1}">
-			<div class="box" v-for="(questionSet, groupTitle) in questions" :key="groupTitle" :class="{'box-multiple': questions.length > 1}">
-				<div v-if="groupTitle" class="banner">
-					<div class="box-header">{{groupTitle}}</div>
-				</div>
+		<div class="content">
+			<div class="box" v-for="(questionSet, groupTitle) in questions" :key="groupTitle">
+				<h3 v-if="groupTitle" class="header">{{groupTitle}}</h3>
 				<div v-for="qa in questionSet" :key="qa">
 					<button @click="show(qa.question)" class="question">
 						<div :class="{'arrow-active': qa.question == currentQuestion, 'arrow-right': true}"></div>
@@ -24,7 +22,7 @@
 </template>
 
 <script>
-import Questions from "../../content/faq.json";
+import Questions from "@/content/faq.json";
 
 export default {
 	name: "Faq",
@@ -44,54 +42,22 @@ export default {
 </script>
 
 <style scoped>
-#faq {
-	line-height: 24px;
-	letter-spacing: 0.2px;
-}
 .content {
-	display: flex;
-	flex-wrap: wrap;
-}
-.content-multiple {
-	justify-content: space-evenly;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+	grid-gap: 1em;
 }
 
-.button-holder {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.ask {
-	margin-top: 2rem;
-	font-weight: 500;
-	color: white;
-	width: 13rem;
-	height: 3rem;
-	background: #e84545;
-	border-radius: 5px;
-	border: none;
-	cursor: pointer;
-	text-align: center;
-	display: block;
-	text-decoration: none;
-	line-height: 3rem;
-}
 .box {
 	margin-top: 1rem;
 }
-.box-multiple {
-	width: 45%;
-}
 
-.banner {
-	padding-left: 0.5rem;
+.header {
+	padding: .2em;
+	padding-left: .5em;
 	background: #e84545;
 	border-radius: 3px;
-}
-.box-header {
 	font-weight: 600;
-	font-size: 1.5em;
-	padding: .2em;
 }
 .question {
 	overflow-wrap: break-word;
@@ -102,15 +68,11 @@ export default {
 	cursor: pointer;
 	display: flex;
 	font-weight: 600;
-	text-align: left;
 }
 .p-content {
 	padding: 0rem 2rem;
 	overflow: hidden;
 	color: black;
-}
-button {
-	font-family: inherit;
 }
 
 .arrow-right {
@@ -118,21 +80,29 @@ button {
 	border-top: 0.5rem solid transparent;
 	border-bottom: 0.5rem solid transparent;
 	border-left: 1.1rem solid #C4C4C4;
-	height: 0;
 	margin-top: 0.15rem;
 }
 .arrow-active {
 	transform: matrix(0.02, 1, -1, 0.02, 0, 0);
 }
 
-@media screen and (max-width: 850px) {
-	.header {
-		margin-left: 0.8rem;
-		font-size: 1.5rem;
-	}
-	.box {
-		width: 90%;
-	}
+button {
+	font-family: inherit;
+}
+.button-holder {
+	margin-top: 2rem;
+	display: grid;
+	place-items: center;
+}
+.ask {
+	background: #e84545;
+	border-radius: 5px;
+	border: none;
+	padding: 1em 2em;
+	font-weight: 500;
+
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .fadeHeight-enter-active,
