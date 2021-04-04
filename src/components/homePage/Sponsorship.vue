@@ -1,31 +1,27 @@
 <template>
 <div id="sponsors">
 	<h2>Our 2020 Sponsors and Partners</h2>
+	<div class="sponsor-img">
+		<img v-if="isMobile" src="@/assets/sponsors2020-mobile.png" alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"/>
 
-	<img v-if="isMobile" src="@/assets/sponsors2020-mobile.png" alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion">
-
-	<div v-else class="sponsor-img" ref="parent">
-		<img
-			src="@/assets/sponsors2020.png"
-			alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"
-		/>
-
-		<div
-			v-for="(coords, name, i) in dotCoordinates"
-			:key="name"
-			class="dot"
-			:style="{'--dot-order': i, 'left': coords[0], 'top': coords[1]}">
-		</div>
+		<span v-else>
+			<img src="@/assets/sponsors2020.png" alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"/>
+			<div
+				v-for="(coords, name, i) in dotCoordinates"
+				:key="name"
+				class="dot"
+				:style="{'--dot-order': i, 'left': coords[0], 'top': coords[1]}">
+			</div>
+		</span>
 
 		<a
-			v-for="(coords, name) in linkCoordinates"
+			v-for="(coords, name) in (isMobile ? linkCoordinatesMobile : linkCoordinatesDesktop)"
 			:key="name"
 			class="link"
-			:style="{'left': coords[0], 'top': coords[1]}"
+			:style="coords"
 			:href="links[name]"
 			target="_blank">
 		</a>
-
 	</div>
 </div>
 </template>
@@ -48,15 +44,25 @@ export default {
 				'jack.org': ['78.6%', '27.1%'],
 				'JobJunxion': ['83.7%', '43.9%'],
 			},
-			'linkCoordinates': {
-				'Flik': ['6.8%', '40.2%'],
-				'Geotab': ['14.2%', '25%'],
-				'lleTTonna': ['31%', '36%'],
-				'Flipp': ['38.9%', '22.6%'],
-				'FoundersBeta': ['42.7%', '44.3%'],
-				'RBC': ['51.3%', '1.4%'],
-				'jack.org': ['70.2%', '26.1%'],
-				'JobJunxion': ['79.1%', '41.9%'],
+			'linkCoordinatesDesktop': {
+				'Flik':         {left: '6.80%', top: '40.2%', width: '10%',   height: '8%'},
+				'Geotab':       {left: '14%',   top: '25.0%', width: '11%',   height: '9%'},
+				'lleTTonna':    {left: '32.0%', top: '37.0%', width: '8.3%',  height: '7%'},
+				'Flipp':        {left: '39.5%', top: '23.6%', width: '8.5%',  height: '7%'},
+				'FoundersBeta': {left: '43.3%', top: '45%',   width: '9%',    height: '7%'},
+				'RBC':          {left: '48.5%', top: '0',     width: '15%',   height: '12%'},
+				'jack.org':     {left: '70%',   top: '26.1%', width: '11%',   height: '9%'},
+				'JobJunxion':   {left: '78.1%', top: '42.9%', width: '12%',   height: '7%'},
+			},
+			'linkCoordinatesMobile': {
+				'RBC':          {left: '0',     top: '0',     width: '100%',  height: '39%'},
+				'Geotab':       {left: '0',     top: '43%',   width: '48%',   height: '20%'},
+				'Flipp':        {left: '52%',   top: '43%',   width: '48%',   height: '20%'},
+				'Flik':         {left: '0',     top: '68%',   width: '31%',   height: '13%'},
+				'JobJunxion':   {left: '34%',   top: '68%',   width: '31%',   height: '13%'},
+				'jack.org':     {left: '68%',   top: '68%',   width: '31%',   height: '13%'},
+				'lleTTonna':    {left: '9%',    top: '85%',   width: '31%',   height: '13%'},
+				'FoundersBeta': {left: '60%',   top: '85%',   width: '31%',   height: '13%'},
 			},
 			'isMobile': false,
 		}
@@ -74,20 +80,16 @@ export default {
 </script>
 
 <style scoped>
-.sponsor-img {
-	position: relative;
-}
-
 img {
 	width: 100%;
 	margin: auto;
 }
 
+.sponsor-img {
+	position: relative;
+}
 .link {
 	position: absolute;
-	width: 8vw;
-	height: 6vw;
-	/* border: 1px solid black; */
 }
 
 .dot {
