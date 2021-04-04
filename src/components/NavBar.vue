@@ -49,7 +49,8 @@ export default {
 			this.isMenuOpen = false;
 		}
 	},
-	beforeCreate() {
+	created() {
+		this.handleResize();
 		window.addEventListener('resize', () => this.handleResize());
 	}
 }
