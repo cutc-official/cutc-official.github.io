@@ -146,5 +146,15 @@
 		"name": "Alyssa Lorenz",
 		"position": "Marketing Member",
 		"image": "Alyssa Lorenz.jpg"
+	},
+	{
+		"name": "Rifa Tamanna",
+		"position": "Operations Lead",
+		"image": "Rifa Tamanna.png"
+	},
+	{
+		"name": "Joshua Babalola",
+		"position": "Campus Ambassador",
+		"image": "Joshua Babalola.jpg"
 	}
 ]
