@@ -1,9 +1,14 @@
 <template>
 	<header id="nav-bar">
-		<img src="../assets/logo.svg">
+		<router-link to="/" v-slot="{href, navigate}" class="logo">
+			<a :href="href" @click="navigate">
+				<img src="../assets/logo.svg">
+			</a>
+		</router-link>
 
 		<button v-if="isMobile" @click="openMenu">&#9776;</button>
 		<nav v-else>
+			<router-link to='/registration'>REGISTER</router-link>
 			<a href="#about">ABOUT</a>
 			<a href="#speakers">SPEAKERS</a>
 			<a href="#testimonials">TESTIMONIALS</a>
@@ -70,7 +75,7 @@ button {
 	border: none;
 	color: white;
 }
-img {
+.logo {
 	padding: 0 7vw 0 var(--splash-page-inset);
 }
 
