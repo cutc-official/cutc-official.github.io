@@ -1,6 +1,7 @@
 <template>
 <div>
 	<nav-bar/>
+	<h2>Our Blog</h2>
 </div>
 </template>
 

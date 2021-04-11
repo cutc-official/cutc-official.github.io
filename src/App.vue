@@ -52,7 +52,6 @@ h2 {
 	font-size: 2.5em;
 	font-weight: 700;
 	color: black;
-	margin-top: 2em;
 }
 h1 {
 	font-size: 2.75em;

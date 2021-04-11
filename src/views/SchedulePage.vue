@@ -1,16 +1,19 @@
 <template>
 <div>
 	<nav-bar/>
+	<schedule/>
 </div>
 </template>
 
 <script>
 import NavBar from '@/components/general/NavBar.vue';
+import Schedule from '@/components/general/Schedule.vue';
 
 export default {
-	name: 'Schedule',
+	name: 'SchedulePage',
 	components: {
-		NavBar
+		NavBar,
+		Schedule
 	}
 }
 </script>
