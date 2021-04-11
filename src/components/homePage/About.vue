@@ -41,14 +41,14 @@
 	width: 100%;
 	overflow-x: auto;
 	scrollbar-width: thin;
-	scrollbar-color: #C8190F #FEF1F0;
+	scrollbar-color: var(--main-color) #FEF1F0;
 }
 /* Chrome scrollbars */
 .history-gallery-container::-webkit-scrollbar {
 	width: 0.33rem;
 }
 .history-gallery-container::-webkit-scrollbar-thumb {
-	background: #C8190F;
+	background: var(--main-color);
 	border-radius: 1rem;
 }
 .history-gallery-container::-webkit-scrollbar-track {

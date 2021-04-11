@@ -12,20 +12,7 @@
 		<div style="height: 1em"/>
 
 		<h3>Jul 24-25, 2021 • Virtual Event</h3>
-
-		<!-- Begin Mailchimp Signup Form -->
-		<form action="https://cutc.us10.list-manage.com/subscribe/post?u=73d566326ae6bb629b42fb5fd&amp;id=e28a4a51fe" method="post" 
-				target="_blank" novalidate>
-			<div class="email-input">
-				<input type="email" name="EMAIL" placeholder="Enter your email for updates!" required>
-				<button type="submit">
-					<img src="../../assets/HeroArrow.svg">
-				</button>
-			</div>
-			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_73d566326ae6bb629b42fb5fd_e28a4a51fe" tabindex="-1" value=""></div>
-		</form>
-		<!-- End Mailchimp Signup Form -->
+		<register-button/>
 
 		<!-- LINKS -->
 		<a href="https://2020.cutc.ca" target="_blank">Check out CUTC 2020</a>
@@ -34,12 +21,14 @@
 </template>
 
 <script>
-import Countdown from './Countdown.vue';
+import Countdown from '@/components/homePage/Countdown.vue';
+import RegisterButton from '@/components/general/RegisterButton.vue';
 
 export default {
 	name: 'Hero',
 	components: {
-		Countdown
+		Countdown,
+		RegisterButton
 	},
 	data: () => ({
 		email: '',

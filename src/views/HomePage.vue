@@ -26,15 +26,15 @@
 </template>
 
 <script>
-import NavBar from "../components/NavBar.vue";
-import Hero from "../components/homePage/Hero.vue";
-import About from "../components/homePage/About.vue";
-import Speakers from "../components/homePage/Speakers.vue";
-import Testimonials from "../components/homePage/Testimonials.vue";
+import NavBar from "@/components/general/NavBar.vue";
+import Hero from "@/components/homePage/Hero.vue";
+import About from "@/components/homePage/About.vue";
+import Speakers from "@/components/homePage/Speakers.vue";
+import Testimonials from "@/components/homePage/Testimonials.vue";
 import Sponsorship from '../components/homePage/Sponsorship.vue';
-import Faq from "../components/homePage/Faq.vue";
-import Contributors from "../components/homePage/Contributors.vue";
-import Bottom from "../components/homePage/Footer.vue";
+import Faq from "@/components/homePage/Faq.vue";
+import Contributors from "@/components/homePage/Contributors.vue";
+import Bottom from "@/components/homePage/Footer.vue";
 
 export default {
 	name: "Home",

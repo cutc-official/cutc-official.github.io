@@ -125,7 +125,7 @@ i.bullet {
 	border-radius: 50%;
 }
 i.bullet.active {
-	background: #C8190F;
+	background: var(--main-color);
 }
 
 @media screen and (max-width:850px) {

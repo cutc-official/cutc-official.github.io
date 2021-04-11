@@ -1,14 +1,14 @@
 <template>
 	<header id="nav-bar">
-		<img src="../assets/logo.svg">
+		<img src="@/assets/logo.svg">
 
 		<button v-if="isMobile" @click="openMenu">&#9776;</button>
 		<nav v-else>
-			<a href="#about">ABOUT</a>
-			<a href="#speakers">SPEAKERS</a>
-			<a href="#testimonials">TESTIMONIALS</a>
-			<a href="#sponsors">SPONSORS</a>
-			<a href="#faq">FAQ</a>
+			<router-link to="/">HOME</router-link>
+			<router-link to="/speakers">SPEAKERS</router-link>
+			<router-link to="/schedule">SCHEDULE</router-link>
+			<router-link to="/blog">BLOG</router-link>
+			<register-button/>
 		</nav>
 
 		<!-- MOBILE MENU -->
@@ -16,11 +16,10 @@
 			<div v-if="isMobile && isMenuOpen" class="mobileMenu">
 				<button class="close-button" @click="closeMenu">&#x2715;</button>
 				<nav>
-					<a @click="closeMenu" href="#about">ABOUT</a>
-					<a @click="closeMenu" href="#speakers">SPEAKERS</a>
-					<a @click="closeMenu" href="#testimonials">TESTIMONIALS</a>
-					<a @click="closeMenu" href="#sponsors">SPONSORS</a>
-					<a @click="closeMenu" href="#faq">FAQ</a>
+					<router-link @click="closeMenu" to="/">HOME</router-link>
+					<router-link @click="closeMenu" to="/speakers">SPEAKERS</router-link>
+					<router-link @click="closeMenu" to="/schedule">SCHEDULE</router-link>
+					<router-link @click="closeMenu" to="/blog">BLOG</router-link>
 				</nav>
 			</div>
 		</transition>
@@ -29,8 +28,13 @@
 
 
 <script>
+import RegisterButton from '@/components/general/RegisterButton.vue';
+
 export default {
 	name: 'NavBar',
+	components: {
+		RegisterButton
+	},
 	data() {
 		return {
 			// ! DOESN'T UPDATE ON SCREEN CHANGE
@@ -58,10 +62,10 @@ export default {
 
 <style scoped>
 #nav-bar {
-	padding: 1em;
 	display: flex;
-	max-width: 100%;
 	justify-content: space-between;
+	padding: 1em var(--splash-page-inset);
+	background: linear-gradient(180deg, #FB6262 0%, #FF6262 100%);
 }
 
 button {
@@ -71,7 +75,7 @@ button {
 	color: white;
 }
 img {
-	padding: 0 7vw 0 var(--splash-page-inset);
+	padding-right: 7vw;
 }
 
 nav {
