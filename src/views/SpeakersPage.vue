@@ -2,18 +2,21 @@
 <div>
 	<nav-bar/>
 	<speakers/>
+	<bottom/>
 </div>
 </template>
 
 <script>
 import NavBar from '@/components/general/NavBar.vue';
 import Speakers from '@/components/general/Speakers.vue';
+import Bottom from '@/components/general/Footer.vue'
 
 export default {
 	name: 'SpeakersPage',
 	components: {
 		NavBar,
-		Speakers
+		Speakers,
+		Bottom,
 	}
 }
 </script>
