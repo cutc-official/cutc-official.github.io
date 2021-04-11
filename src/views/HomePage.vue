@@ -1,18 +1,19 @@
 <template>
-	<span style="scroll">
+	<span style="scroll" id="home-page">
 		<div class="fade">
-			<nav-bar />
-			<hero />
+			<nav-bar/>
+			<hero/>
 		</div>
 
 		<div class="home-content">
-			<about />
+			<about/>
 			<speakers :limit="6"/>
-			<schedule/>
-			<testimonials />
-			<sponsorship />
-			<faq />
-			<contributors />
+			<schedule :link="true"/>
+			<testimonials/>
+			<sponsorship/>
+			<blog :limit="6"/>
+			<faq/>
+			<contributors/>
 		</div>
 		<bottom />
 	</span>
@@ -26,6 +27,7 @@ import Speakers from "@/components/general/Speakers.vue";
 import Schedule from '@/components/general/Schedule.vue';
 import Testimonials from "@/components/homePage/Testimonials.vue";
 import Sponsorship from '@/components/homePage/Sponsorship.vue';
+import Blog from '@/components/general/Blog.vue';
 import Faq from "@/components/homePage/Faq.vue";
 import Contributors from "@/components/homePage/Contributors.vue";
 import Bottom from "@/components/general/Footer.vue";
@@ -40,6 +42,7 @@ export default {
 		Schedule,
 		Testimonials,
 		Sponsorship,
+		Blog,
 		Faq,
 		Contributors,
 		Bottom,
@@ -55,7 +58,7 @@ export default {
 	margin: auto;
 }
 
-h2 {
+#home-page h2 {
 	margin-top: 2em;
 }
 

@@ -1,13 +1,13 @@
 <template>
-	<h2>Schedule</h2>
-	<router-link v-if="link" to="/schedule">View full schedule ></router-link>
+	<h2>Our Blog</h2>
+	<router-link v-if="limit" to="/blog">View all articles ></router-link>
 </template>
 
 <script>
 export default {
-	name: 'Schedule',
+	name: 'Blog',
 	props: {
-		link: Boolean
+		limit: Number
 	},
 }
 </script>

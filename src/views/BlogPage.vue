@@ -1,20 +1,22 @@
 <template>
 <div>
 	<nav-bar/>
-	<h2>Our Blog</h2>
+	<blog/>
 	<bottom/>
 </div>
 </template>
 
 <script>
 import NavBar from '@/components/general/NavBar.vue';
+import Blog from '@/components/general/Blog.vue'
 import Bottom from '@/components/general/Footer.vue'
 
 
 export default {
-	name: 'Blog',
+	name: 'BlogPage',
 	components: {
 		NavBar,
+		Blog,
 		Bottom,
 	},
 }
