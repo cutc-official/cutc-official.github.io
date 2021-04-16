@@ -1,57 +1,51 @@
 
-{
-	"Speakers": [
-		{
-			"name": "Dave Rensin",
-			"content": "David K. Rensin is the Senior Director of Engineering in the Office of the CFO. Dave provides guidance on the appropriate allocation of Google’s capital to its various businesses and long-term technical investments. Prior to that, Dave founded Customer Reliability Engineering (CRE) and also ran Google’s global network capacity planning. As an entrepreneur, he has co-founded and sold several businesses including one (Riverbed Technologies) for more than $1 billion. He is also a bestselling author and editor with 16 US patents to his name.",
-			"tagLine": "Senior Director of Engineering @ Google",
-			"image": "speakers/DaveRensin.jpg"
-		},
-		{
-			"name": "Ravi Mehta",
-			"tagLine": "Product @ Microsoft, Tinder, & Facebook",
-			"content": "Ravi is a consumer technology and product leader who has scaled products that have impacted millions of people and scaled teams to meet the challenge. He was Chief Product Officer @ Tinder, Product Director @ Facebook, and VP of Consumer Product at TripAdvisor.",
-			"image": "speakers/Ravi.jpg"
-		},
-		{
-			"name": "Tina Eskridge",
-			"tagLine": "Sr. Director of Marketing @ Microsoft",
-			"content": "Tina Eskridge serves as Sr. Director of Marketing at Microsoft where she is responsible for driving all aspects of inclusion product and marketing strategy across Microsoft’s cloud platforms. Before joining Microsoft in 2012, Tina spent more than 15 years in strategic roles, across the retail, financial services, software, consumer goods, and education industries.",
-			"image": "speakers/Tina Eskridge.jpg"
-		},
-		{
-			"name": "Claudel Kamgang",
-			"tagLine": "Product Manager @ Linkedin",
-			"content": "Previously a consultant at McKinsey & Company and a banker at J.P. Morgan, Claudel Kamgang is a LinkedIn Product Manager and host of The Atalaku Effect podcast. He holds a BSc and MSc from the University Paris Diderot, and a MBA from the Wharton School (UPenn).Previously a consultant at McKinsey & Company and a banker at J.P. Morgan, Claudel Kamgang is a LinkedIn Product Manager and host of The Atalaku Effect podcast. He holds a BSc and MSc from the University Paris Diderot, and a MBA from the Wharton School (UPenn).",
-			"image": "speakers/Claudel Kamgang.jpg"
-		},
-		{
-			"name": "Kristina Stephan",
-			"tagLine": "Recruiter @ BMO",
-			"content": "Kristina is an experienced Campus Recruitment specialist, passionate about technology, lifelong learning, and the future of work. Prior to her current role as a Sr. Technology Campus Recruiter at BMO, Kristina has also held roles recruiting top technology & innovation talent at global companies such as Deloitte, and Johnson & Johnson Inc. In addition to being a podcast and LinkedIn Learning addict, Kristina also DJ’s in her free time.",
-			"image": "speakers/Kristina_Stephan.jpg"
+[
+	{
+		"name": "Jim Henson",
+		"title": "Artist, CEO @ Microsoft",
+		"image": "TEST.png",
+		"links": {
+			"twitter": "hi"
 		}
-	],
-	"Events": [
-		{
-			"name": "Women in Tech Panel",
-			"content": "An insightful discussion on female leadership in tech. Hear how our panelists’ overcame obstacles in Data Science, Product Management, and Software Engineering.",
-			"image": "events/women_in_tech_panel.png"
-		},
-		{
-			"name": "Microsoft X Agorize - Sustainability Challenge",
-			"content": "Web and mobile development can be used to make people’s lives better, help the environment, and change mindsets. What can you build using Microsoft Azure that will make the world a safer, kinder, and more inclusive place to live? In this challenge, we’d like you to use these technologies to build a web site or mobile app for social good.",
-			"image": "events/MSxAgorize Challenge.jpg"
-		},
-		{
-			"name": "Jack.org \"Do Something\" Challenge",
-			"content": "Jack.org’s “Do-Something” gives you the resources you need to quickly and effectively stage a mental health initiative in your community, one that will have a measurable impact. The current platform provides users with a list of possible initiatives that they can take on as well as instructions on how to complete them.",
-			"image": "events/jack.org.png"
-		},
-		{
-			"name": "Shopify Design Workshop",
-			"content": "Work with a technique called Assumption Slam to learn more about research and how it is used to support product development with Sam and Ruben from Shopify!",
-			"image": "events/Shopify Workshop.png"
+	},
+	{
+		"name": "Henso0n",
+		"title": "Artist, CEO @ Microsoft",
+		"image": "TEST.png",
+		"links": {
+			"twitter": "hi"
 		}
-	]
-}
+	},
+	{
+		"name": "Jim",
+		"title": "Artist, CEO @ Microsoft",
+		"image": "TEST.png",
+		"links": {
+			"twitter": "hi"
+		}
+	},
+	{
+		"name": "Jim",
+		"title": "Artist, CEO @ Microsoft",
+		"image": "TEST.png",
+		"links": {
+			"twitter": "hi"
+		}
+	},
+	{
+		"name": "Jim",
+		"title": "Artist, CEO @ Microsoft",
+		"image": "TEST.png",
+		"links": {
+			"twitter": "hi"
+		}
+	},
+	{
+		"name": "Jim",
+		"title": "Artist, CEO @ Microsoft",
+		"image": "TEST.png",
+		"links": {
+			"twitter": "hi"
+		}
+	}
+]
