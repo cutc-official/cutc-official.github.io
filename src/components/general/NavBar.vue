@@ -1,5 +1,5 @@
 <template>
-	<header id="nav-bar">
+	<header id="nav-bar" :class="{'gradient': hasBackground}">
 		<img src="@/assets/logo.svg">
 
 		<button v-if="isMobile" @click="openMenu">&#9776;</button>
@@ -35,6 +35,12 @@ export default {
 	components: {
 		RegisterButton
 	},
+	props: {
+		hasBackground: {
+			default: true,
+			type: Boolean
+		}
+	},
 	data() {
 		return {
 			// ! DOESN'T UPDATE ON SCREEN CHANGE
@@ -65,6 +71,9 @@ export default {
 	display: flex;
 	justify-content: space-between;
 	padding: 1em var(--splash-page-inset);
+}
+
+.gradient {
 	background: linear-gradient(180deg, #FB6262 0%, #FF6262 100%);
 }
 

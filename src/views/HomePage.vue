@@ -1,7 +1,7 @@
 <template>
 	<span style="scroll" id="home-page">
 		<div class="fade">
-			<nav-bar/>
+			<nav-bar :hasBackground="false"/>
 			<hero/>
 		</div>
 
