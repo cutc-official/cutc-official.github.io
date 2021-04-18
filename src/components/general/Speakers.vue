@@ -7,21 +7,23 @@
 
 	<div class="grid" ref="grid">
 		<div class="tile" v-for="(speaker, i) in speakers" :key="speaker">
+			<!-- PHOTO -->
 			<div class="image" :style="{'display': showTile(i)}">
 				<div class="image-background" :style="{'background': getColor(i)}"/>
 				<img :src="getImage(speaker.image)" :alt="speaker.name + '\'s Photo'">
 			</div>
 
+			<!-- OVERLAY -->
 			<div class="overlay" :style="{'display': showTile(i)}">
 				<div class="text">
 					<h3>{{ speaker.name }}</h3>
 					<p>{{ speaker.title }}</p>
 				</div>
-
 				<a v-for="(link, linkType) in speaker.links" :key="link" :href="link" target="_blank">
 					<img :src="getLinkImage(linkType)" :alt="link">
 				</a>
 			</div>
+
 		</div>
 	</div>
 </div>
@@ -71,21 +73,25 @@ export default {
 		},
 
 		limitRows() {
-			if (this.limit) {
+			// Only limit rows if it's defined
+			if (this.limit && this.$refs.grid) {
 				const gridEl = this.$refs.grid.children;
 				let rows = this.limit;
 				let i = 0
+				// Count down until we've reached the row limit
 				while(rows != 0) {
 					const rowOffset = gridEl[i].offsetTop;
-					console.log(rowOffset);
+					// Increment the counter (i) until we've reached the next row
 					while (gridEl[i] && gridEl[i].offsetTop == rowOffset)
 						i++;
 					rows--;
 				}
+				// This is now the first index that is beyond our row limit
 				this.cutoff = i;
 			}
 		},
 	},
+	// Change the number of items shown whenever things resize
 	mounted() {
 		this.limitRows();
 		window.addEventListener('resize', () => this.limitRows());
