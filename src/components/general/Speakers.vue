@@ -5,14 +5,14 @@
 		<router-link v-if="limit" to="/speakers" class="view-more">View all speakers ></router-link>
 	</div>
 
-	<div class="grid">
+	<div class="grid" ref="grid">
 		<div class="tile" v-for="(speaker, i) in speakers" :key="speaker">
-			<div class="image">
+			<div class="image" :style="{'display': showTile(i)}">
 				<div class="image-background" :style="{'background': getColor(i)}"/>
 				<img :src="getImage(speaker.image)" :alt="speaker.name + '\'s Photo'">
 			</div>
 
-			<div class="overlay">
+			<div class="overlay" :style="{'display': showTile(i)}">
 				<div class="text">
 					<h3>{{ speaker.name }}</h3>
 					<p>{{ speaker.title }}</p>
@@ -38,6 +38,7 @@ export default {
 	data() {
 		return {
 			speakers: SpeakersContent,
+			cutoff: null,
 			colors: [
 				'#8394F2',
 				'#F57A75',
@@ -63,8 +64,31 @@ export default {
 			}
 		},
 		getColor(i) {
-			return this.colors[i % this.colors.length];
-		}
+			return this.colors[i % this.colors.length]
+		},
+		showTile(i) {
+			return this.cutoff != undefined && i >= this.cutoff ? 'none': ''
+		},
+
+		limitRows() {
+			if (this.limit) {
+				const gridEl = this.$refs.grid.children;
+				let rows = this.limit;
+				let i = 0
+				while(rows != 0) {
+					const rowOffset = gridEl[i].offsetTop;
+					console.log(rowOffset);
+					while (gridEl[i] && gridEl[i].offsetTop == rowOffset)
+						i++;
+					rows--;
+				}
+				this.cutoff = i;
+			}
+		},
+	},
+	mounted() {
+		this.limitRows();
+		window.addEventListener('resize', () => this.limitRows());
 	}
 }
 </script>

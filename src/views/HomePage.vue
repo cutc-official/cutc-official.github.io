@@ -7,7 +7,7 @@
 
 		<div class="home-content">
 			<about/>
-			<speakers :limit="6"/>
+			<speakers :limit="1"/>
 			<schedule :link="true"/>
 			<testimonials/>
 			<sponsorship/>
