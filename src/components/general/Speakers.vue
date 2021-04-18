@@ -6,18 +6,18 @@
 	</div>
 
 	<div class="grid">
-		<div class="tile" v-for="speaker in speakers" :key="speaker">
+		<div class="tile" v-for="(speaker, i) in speakers" :key="speaker">
 			<div class="image">
-				<div class="image-background"/>
+				<div class="image-background" :style="{'background': getColor(i)}"/>
 				<img :src="getImage(speaker.image)" :alt="speaker.name + '\'s Photo'">
 			</div>
 
-			<div class="text">
-				<h3>{{ speaker.name }}</h3>
-				<p>{{ speaker.title }}</p>
-			</div>
+			<div class="overlay">
+				<div class="text">
+					<h3>{{ speaker.name }}</h3>
+					<p>{{ speaker.title }}</p>
+				</div>
 
-			<div class="links">
 				<a v-for="(link, linkType) in speaker.links" :key="link" :href="link" target="_blank">
 					<img :src="getLinkImage(linkType)" :alt="link">
 				</a>
@@ -37,7 +37,14 @@ export default {
 	},
 	data() {
 		return {
-			speakers: SpeakersContent
+			speakers: SpeakersContent,
+			colors: [
+				'#8394F2',
+				'#F57A75',
+				'#17ADCE',
+				'#F9AFAB',
+				'#44AF69',
+			]
 		}
 	},
 	methods: {
@@ -50,16 +57,24 @@ export default {
 		},
 		getLinkImage(linkType) {
 			try {
-				return require("@/assets/socials/" + linkType + '.svg');
+				return require("@/assets/speakers/links/" + linkType + '.svg');
 			} catch(e) {
 				// throw Error(`link type does not exist: ${linkType}`);
 			}
+		},
+		getColor(i) {
+			return this.colors[i % this.colors.length];
 		}
 	}
 }
 </script>
 
 <style scoped>
+#speakers {
+	--icon-width: 1.5rem;
+	--tile-radius: 1rem;
+}
+
 .view-more {
 	color: var(--main-color);
 	text-decoration: underline;
@@ -74,21 +89,22 @@ export default {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-	gap: 3rem;
+	gap: 3rem 6rem;
 }
-
 .tile {
 	position: relative;
-	width: 100%;
 }
 
 .image {
 	position: relative;
-	width: fit-content;
-	border-radius: 4rem;
+	width: calc(100% - var(--icon-width) - .5rem);
+	height: 95%;
 }
 .image>img {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: var(--tile-radius);
 }
 .image-background {
 	position: absolute;
@@ -97,26 +113,27 @@ export default {
 	z-index: -1;
 	width: 100%;
 	height: 80%;
-
-	background: #F57A75;
-	border-radius: 1rem;
+	border-radius: var(--tile-radius);
 }
 
-.text {
+.tile>.overlay {
 	position: absolute;
 	right: 0;
 	bottom: 0;
 
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: flex-end;
+}
+.overlay>.text {
 	background: white;
 	box-shadow: 0 2px 4px #00000040;
 	border-radius: 1rem;
-
 	padding: 1rem;
 }
-
-.links {
-	position: absolute;
-	right: 0;
+/* Link image */
+.overlay>a>img {
+	width: var(--icon-width);
 }
 
 h3, p {

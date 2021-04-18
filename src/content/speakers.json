@@ -5,7 +5,9 @@
 		"title": "Artist, CEO @ Microsoft",
 		"image": "TEST.png",
 		"links": {
-			"twitter": "hi"
+			"Twitter": "hi",
+			"LinkedIn": "hi",
+			"Website": "hi"
 		}
 	},
 	{
@@ -13,7 +15,7 @@
 		"title": "Artist, CEO @ Microsoft",
 		"image": "TEST.png",
 		"links": {
-			"twitter": "hi"
+			"Twitter": "hi"
 		}
 	},
 	{
@@ -21,7 +23,7 @@
 		"title": "Artist, CEO @ Microsoft",
 		"image": "TEST.png",
 		"links": {
-			"twitter": "hi"
+			"Twitter": "hi"
 		}
 	},
 	{
@@ -29,7 +31,7 @@
 		"title": "Artist, CEO @ Microsoft",
 		"image": "TEST.png",
 		"links": {
-			"twitter": "hi"
+			"Twitter": "hi"
 		}
 	},
 	{
@@ -37,7 +39,7 @@
 		"title": "Artist, CEO @ Microsoft",
 		"image": "TEST.png",
 		"links": {
-			"twitter": "hi"
+			"Twitter": "hi"
 		}
 	},
 	{
@@ -45,7 +47,7 @@
 		"title": "Artist, CEO @ Microsoft",
 		"image": "TEST.png",
 		"links": {
-			"twitter": "hi"
+			"Twitter": "hi"
 		}
 	}
 ]
