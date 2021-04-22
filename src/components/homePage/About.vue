@@ -60,7 +60,7 @@
 	width: var(--width);
 	height: calc(var(--width) * 0.4);
 	box-sizing: content-box;
-	background-image: url(../../assets/Timeline.png);
+	background-image: url(../../assets/misc/Timeline.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;

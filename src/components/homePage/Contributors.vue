@@ -2,7 +2,7 @@
 	<div id="contributors">
 		<div>
 			<h2 style="display: inline;">Created with love in &nbsp;</h2>
-			<img style="display: inline;" src="@/assets/Canada.png" />
+			<img style="display: inline;" src="@/assets/misc/Canada.png" />
 			<h2 style="display: inline;">&nbsp; by</h2>
 		</div>
 		<div class="gallery">

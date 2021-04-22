@@ -2,10 +2,10 @@
 <div id="sponsors">
 	<h2>Our 2020 Sponsors and Partners</h2>
 	<div class="sponsor-img">
-		<img v-if="isMobile" src="@/assets/sponsors2020-mobile.png" alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"/>
+		<img v-if="isMobile" src="@/assets/misc/sponsors2020-mobile.png" alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"/>
 
 		<span v-else>
-			<img src="@/assets/sponsors2020.png" alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"/>
+			<img src="@/assets/misc/sponsors2020.png" alt="Flik, Geotab, lleTTonna, Flipp, FoundersBeta, RBC, jack.org, JobJunxion"/>
 			<div
 				v-for="(coords, name, i) in dotCoordinates"
 				:key="name"

@@ -2,7 +2,7 @@
 <div id="hero">
 	<div class="building" v-cloak>
 		<countdown/>
-		<img src="../../assets/hero.svg" id="cutc-building-image">
+		<img src="@/assets/misc/hero.svg" id="cutc-building-image">
 	</div>
 	<!-- TEXT COLUMN -->
 	<span>

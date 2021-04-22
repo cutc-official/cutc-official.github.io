@@ -1,11 +1,7 @@
 <template>
 	<div id="testimonials">
 		<h2>Hear what people have to say about CUTC!</h2>
-		<img src="../../assets/testimonials/testimonial_building.svg" class="building" />
-		<!-- :bullets="mobileView" :arrows="!mobileView" :slideRatio="slideRatio"
-		<template v-slot:bullet="{ active }">
-			<i class="bullet" :class="active ? 'active' : ''"></i>
-		</template> leaving this here because I haven't quite fiured out how to make bullets appear for mobile --> 
+		<img src="@/assets/testimonials/testimonial_building.svg" class="building" />
 		<swiper class="swiper-container" :loop="true" :autoHeight="true" :pagination="{ clickable: true }" :autoplay="{ delay: 10000 }">
 			<swiper-slide
 				v-for="(slide, i) in information" 
@@ -31,7 +27,7 @@
 import SwiperCore, { Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
-import TestimonialInfo from "../../content/testimonials.json";
+import TestimonialInfo from "@/content/testimonials.json";
 
 SwiperCore.use([Pagination, Autoplay]);
 
