@@ -3,7 +3,7 @@ import Home from '@/views/HomePage.vue';
 // import Schedule from '@/views/SchedulePage.vue';
 import Speakers from '@/views/SpeakersPage.vue';
 // import Blog from '@/views/BlogPage.vue';
-// import Ambassador from '@/views/AmbassadorPage.vue';
+import Ambassador from '@/views/AmbassadorPage.vue';
 
 export const routes = [
 	{
@@ -25,7 +25,12 @@ export const routes = [
 	// 	path: '/blog',
 	// 	name: 'Blog',
 	// 	component: Blog,
-	// }
+	// },
+	{
+		path: '/join',
+		name: 'network',
+		component: Ambassador,
+	}
 ];
 
 const router = createRouter({
