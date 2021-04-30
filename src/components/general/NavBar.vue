@@ -1,6 +1,6 @@
 <template>
 	<header id="nav-bar" :class="{'gradient': hasBackground}">
-		<img src="@/assets/misc/logo.svg">
+		<router-link to="/"><img src="@/assets/misc/logo.svg"></router-link>
 
 		<button v-if="isMobile" @click="openMenu">&#9776;</button>
 		<nav v-else>

@@ -26,6 +26,6 @@ export default {
 <style scoped>
 .speaker-wrapper {
 	width: 80%;
-	margin: auto;
+	margin: 2rem auto 5rem auto;
 }
 </style>

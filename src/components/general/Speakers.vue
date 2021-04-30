@@ -72,7 +72,8 @@ export default {
 
 <style scoped>
 #speakers {
-	max-width: 1440px;
+	max-width: 1120px;
+	margin: auto;
 	--icon-width: 1.5rem;
 	--tile-radius: 1rem;
 }
