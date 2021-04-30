@@ -1,6 +1,7 @@
 <template>
-	<a href="https://www.eventbrite.ca/e/canadian-undergraduate-technology-conference-cutc-2021-registration-151149800121">
-		REGISTER FOR FREE
+	<a href="https://www.eventbrite.ca/e/canadian-undergraduate-technology-conference-cutc-2021-registration-151149800121"
+		target="_blank"
+		>REGISTER FOR FREE
 	</a>
 </template>
 

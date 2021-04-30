@@ -9,7 +9,7 @@
 		<h3>Welcome to the 2021</h3>
 		<h1>Canadian Undergraduate Technology Conference</h1>
 		<h2 class="slogan">Possibility Taking Shape</h2>
-		<div style="height: 1em"/>
+		<div style="height: 2em"/>
 
 		<h3>Jul 24-25, 2021 • Virtual Event</h3>
 		<register-button/>
@@ -60,7 +60,7 @@ export default {
 	font-size: 2em;
 	font-weight: 400;
 	color: white;
-	margin: 0;
+	margin: 0 !important;
 }
 @media screen and (max-width: 850px) {
 	.slogan {

@@ -1,53 +1,28 @@
 
 [
 	{
-		"name": "Jim Henson",
-		"title": "Artist, CEO @ Microsoft",
-		"image": "TEST.png",
+		"name": "Daniel Huang",
+		"title": "CEO @ Monet",
+		"image": "danhuang.png",
 		"links": {
-			"Twitter": "hi",
-			"LinkedIn": "hi",
-			"Website": "hi"
+			"LinkedIn": "https://www.linkedin.com/in/danielhuangucsb/"
 		}
 	},
 	{
-		"name": "Henso0n",
-		"title": "Artist, CEO @ Microsoft",
-		"image": "TEST.png",
+		"name": "Justin Zheng",
+		"title": "CEO @ Matrix",
+		"image": "justinzheng.png",
 		"links": {
-			"Twitter": "hi"
+			"Twitter": "https://twitter.com/jzlegion",
+			"LinkedIn": "https://www.linkedin.com/in/zhengjustin/"
 		}
 	},
 	{
-		"name": "Jim",
-		"title": "Artist, CEO @ Microsoft",
-		"image": "TEST.png",
+		"name": "Crystal Hunt",
+		"title": "Senior PM @ Shopify",
+		"image": "crystalhunt.png",
 		"links": {
-			"Twitter": "hi"
-		}
-	},
-	{
-		"name": "Jim",
-		"title": "Artist, CEO @ Microsoft",
-		"image": "TEST.png",
-		"links": {
-			"Twitter": "hi"
-		}
-	},
-	{
-		"name": "Jim",
-		"title": "Artist, CEO @ Microsoft",
-		"image": "TEST.png",
-		"links": {
-			"Twitter": "hi"
-		}
-	},
-	{
-		"name": "Jim",
-		"title": "Artist, CEO @ Microsoft",
-		"image": "TEST.png",
-		"links": {
-			"Twitter": "hi"
+			"LinkedIn": "https://linkedin.com/in/crystal-hunt-0864471a/"
 		}
 	}
 ]

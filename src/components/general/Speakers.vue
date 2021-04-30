@@ -8,13 +8,12 @@
 	<div class="grid" ref="grid">
 		<div class="tile" v-for="(speaker, i) in speakers" :key="speaker">
 			<!-- PHOTO -->
-			<div class="image" :style="{'display': showTile(i)}">
+			<div class="image">
 				<div class="image-background" :style="{'background': getColor(i)}"/>
 				<img :src="getImage(speaker.image)" :alt="speaker.name + '\'s Photo'">
 			</div>
-
 			<!-- OVERLAY -->
-			<div class="overlay" :style="{'display': showTile(i)}">
+			<div class="overlay">
 				<div class="text">
 					<h3>{{ speaker.name }}</h3>
 					<p>{{ speaker.title }}</p>
@@ -39,8 +38,7 @@ export default {
 	},
 	data() {
 		return {
-			speakers: SpeakersContent,
-			cutoff: null,
+			speakers: this.limit ? SpeakersContent.slice(0, this.limit) : SpeakersContent,
 			colors: [
 				'#8394F2',
 				'#F57A75',
@@ -67,40 +65,14 @@ export default {
 		},
 		getColor(i) {
 			return this.colors[i % this.colors.length]
-		},
-		showTile(i) {
-			return this.cutoff != undefined && i >= this.cutoff ? 'none': ''
-		},
-
-		limitRows() {
-			// Only limit rows if it's defined
-			if (this.limit && this.$refs.grid) {
-				const gridEl = this.$refs.grid.children;
-				let rows = this.limit;
-				let i = 0
-				// Count down until we've reached the row limit
-				while(rows != 0) {
-					const rowOffset = gridEl[i].offsetTop;
-					// Increment the counter (i) until we've reached the next row
-					while (gridEl[i] && gridEl[i].offsetTop == rowOffset)
-						i++;
-					rows--;
-				}
-				// This is now the first index that is beyond our row limit
-				this.cutoff = i;
-			}
-		},
+		}
 	},
-	// Change the number of items shown whenever things resize
-	mounted() {
-		this.limitRows();
-		window.addEventListener('resize', () => this.limitRows());
-	}
 }
 </script>
 
 <style scoped>
 #speakers {
+	max-width: 1440px;
 	--icon-width: 1.5rem;
 	--tile-radius: 1rem;
 }
@@ -118,8 +90,8 @@ export default {
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-	gap: 3rem 6rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 3vh 6vw;
 }
 .tile {
 	position: relative;
@@ -159,7 +131,7 @@ export default {
 	background: white;
 	box-shadow: 0 2px 4px #00000040;
 	border-radius: 1rem;
-	padding: 1rem;
+	padding: .7rem;
 }
 /* Link image */
 .overlay>a>img {
@@ -168,5 +140,20 @@ export default {
 
 h3, p {
 	color: black;
+}
+
+@media screen and (max-width: 850px) {
+	.grid {
+		grid-template-columns: 1fr 1fr;
+	}
+	.overlay>.text {
+		padding: .5rem;
+		font-size: 2.4vw;
+	}
+}
+@media screen and (max-width: 550px) {
+	#speakers {
+		--icon-width: 1rem;
+	}
 }
 </style>

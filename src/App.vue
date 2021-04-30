@@ -20,7 +20,11 @@
 	color: white;
 }
 
-html { scroll-behavior: smooth }
+html {
+	scroll-behavior: smooth;
+	position: relative;
+	min-height: 100vh;
+}
 body {
 	margin: 0px;
 	background: #fff;
