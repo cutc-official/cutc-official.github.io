@@ -1,7 +1,9 @@
 <template>
 <div>
 	<nav-bar/>
-	<speakers/>
+	<div class="speaker-wrapper">
+		<speakers/>
+	</div>
 	<bottom/>
 </div>
 </template>
@@ -22,5 +24,8 @@ export default {
 </script>
 
 <style scoped>
-
+.speaker-wrapper {
+	width: 70%;
+	margin: auto;
+}
 </style>
