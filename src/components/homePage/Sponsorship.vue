@@ -1,6 +1,6 @@
 <template>
 <div id="sponsors">
-	<h2>Our 2020 Sponsors and Partners</h2>
+	<h2>Our 2021 Sponsors</h2>
 	<div class="sponsor-img">
 		<a target="_blank" href="https://www.geotab.com"><img src="@/assets/sponsors/geotab.png" alt="Geotab"></a>
 		<a target="_blank" href="https://www.shopify.com/"><img src="@/assets/sponsors/shopify.png" alt="Shopify" class="mini left"></a>
