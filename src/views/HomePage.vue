@@ -8,10 +8,10 @@
 		<div class="home-content">
 			<about/>
 			<speakers :limit="1"/>
-			<schedule :link="true"/>
+			<!-- <schedule :link="true"/> -->
 			<testimonials/>
 			<sponsorship/>
-			<blog :limit="6"/>
+			<!-- <blog :limit="6"/> -->
 			<faq/>
 			<contributors/>
 		</div>
