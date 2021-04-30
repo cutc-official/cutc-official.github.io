@@ -26,9 +26,19 @@ export const routes = [
 	// 	name: 'Blog',
 	// 	component: Blog,
 	// },
+	// {
+	// 	path: '/schedule',
+	// 	name: 'Schedule',
+	// 	component: Schedule,
+	// },
+	// {
+	// 	path: '/blog',
+	// 	name: 'Blog',
+	// 	component: Blog,
+	// },
 	{
 		path: '/join',
-		name: 'network',
+		name: 'Ambassador',
 		component: Ambassador,
 	}
 ];
