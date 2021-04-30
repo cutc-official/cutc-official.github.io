@@ -2,10 +2,10 @@
 <div id="sponsors">
 	<h2>Our 2020 Sponsors and Partners</h2>
 	<div class="sponsor-img">
-		<a href="https://www.geotab.com"><img src="@/assets/sponsors/geotab.png" alt="Geotab"></a>
-		<a href="https://www.shopify.com/"><img src="@/assets/sponsors/shopify.png" alt="Shopify" class="mini left"></a>
-		<a href="https://www.accenture.com/"><img src="@/assets/sponsors/accenture.png" alt="Accenture" class="mini right"></a>
-		<a href="http://flipp.com/"><img src="@/assets/sponsors/flipp.png" alt="Flipp" class="mini center"></a>
+		<a target="_blank" href="https://www.geotab.com"><img src="@/assets/sponsors/geotab.png" alt="Geotab"></a>
+		<a target="_blank" href="https://www.shopify.com/"><img src="@/assets/sponsors/shopify.png" alt="Shopify" class="mini left"></a>
+		<a target="_blank" href="https://www.accenture.com/"><img src="@/assets/sponsors/accenture.png" alt="Accenture" class="mini right"></a>
+		<a target="_blank" href="http://flipp.com/"><img src="@/assets/sponsors/flipp.png" alt="Flipp" class="mini center"></a>
 	</div>
 </div>
 </template>
