@@ -22,9 +22,12 @@
 					<img :src="getLinkImage(linkType)" :alt="link">
 				</a>
 			</div>
-
 		</div>
 	</div>
+
+	<h3 v-if="!limit" class="coming-soon">
+		and {{ 50 - speakers.length }}+ more speakers coming soon!
+	</h3>
 </div>
 </template>
 
@@ -141,6 +144,12 @@ export default {
 
 h3, p {
 	color: black;
+}
+
+.coming-soon {
+	margin-top: 1em;
+	text-align: center;
+	font-weight: 600;
 }
 
 @media screen and (max-width: 850px) {
