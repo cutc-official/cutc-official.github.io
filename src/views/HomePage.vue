@@ -8,10 +8,10 @@
 		<div class="home-content">
 			<about/>
 			<speakers :limit="6"/>
-			<schedule :link="true"/>
+			<!-- <schedule :link="true"/> -->
 			<testimonials/>
 			<sponsorship/>
-			<blog :limit="6"/>
+			<!-- <blog :limit="6"/> -->
 			<faq/>
 			<contributors/>
 		</div>
@@ -24,10 +24,10 @@ import NavBar from "@/components/general/NavBar.vue";
 import Hero from "@/components/homePage/Hero.vue";
 import About from "@/components/homePage/About.vue";
 import Speakers from "@/components/general/Speakers.vue";
-import Schedule from '@/components/general/Schedule.vue';
+// import Schedule from '@/components/general/Schedule.vue';
 import Testimonials from "@/components/homePage/Testimonials.vue";
 import Sponsorship from '@/components/homePage/Sponsorship.vue';
-import Blog from '@/components/general/Blog.vue';
+// import Blog from '@/components/general/Blog.vue';
 import Faq from "@/components/homePage/Faq.vue";
 import Contributors from "@/components/homePage/Contributors.vue";
 import Bottom from "@/components/general/Footer.vue";
@@ -39,10 +39,10 @@ export default {
 		Hero,
 		About,
 		Speakers,
-		Schedule,
+		// Schedule,
 		Testimonials,
 		Sponsorship,
-		Blog,
+		// Blog,
 		Faq,
 		Contributors,
 		Bottom,
