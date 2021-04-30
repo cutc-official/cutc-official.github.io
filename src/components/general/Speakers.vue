@@ -1,7 +1,7 @@
 <template>
 <div id="speakers">
 	<div class="header">
-		<h2>Take a Look at CUTC 2020</h2>
+		<h2>Our Speakers</h2>
 		<router-link v-if="limit" to="/speakers" class="view-more">View all speakers ></router-link>
 	</div>
 
