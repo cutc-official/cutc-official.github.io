@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import Home from '@/views/HomePage.vue';
 // import Schedule from '@/views/SchedulePage.vue';
 import Speakers from '@/views/SpeakersPage.vue';
@@ -45,7 +45,7 @@ export const routes = [
 
 const router = createRouter({
 	// Required for gh-pages deployment
-	history: createWebHistory('/'),
+	history: createWebHashHistory('/'),
 	routes
 });
 
