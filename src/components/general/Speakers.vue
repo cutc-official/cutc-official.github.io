@@ -32,6 +32,7 @@
 </template>
 
 <script>
+// Copied from https://www.notion.so/justinachua/c21925a8417546619ac10ecc28ebeba5?v=e69ab087042641d895b9ac9a4f233c9a
 import SpeakersContent from '@/content/speakers.json';
 
 export default {
@@ -84,12 +85,12 @@ export default {
 .view-more {
 	color: var(--main-color);
 	text-decoration: underline;
-	margin: 1.3em;
+	margin-left: 1rem;
 }
 
 .header {
 	display: flex;
-	align-items: flex-end;
+	align-items: baseline;
 }
 
 .grid {

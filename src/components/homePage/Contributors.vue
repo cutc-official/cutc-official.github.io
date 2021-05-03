@@ -1,10 +1,6 @@
 <template>
 	<div id="contributors">
-		<div>
-			<h2 style="display: inline;">Created with love in &nbsp;</h2>
-			<img style="display: inline;" src="@/assets/misc/Canada.png" />
-			<h2 style="display: inline;">&nbsp; by</h2>
-		</div>
+		<h2 style="display: inline;">Created with love by</h2>
 		<div class="gallery">
 			<div class="parent" v-for="(member,index) in members" :key="member.name">
 				<div @mouseleave="popUp = -1" @mouseover="open(index)" style="text-decoration: none;">

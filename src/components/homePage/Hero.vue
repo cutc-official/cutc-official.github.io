@@ -11,7 +11,10 @@
 		<h2 class="slogan">Possibility Taking Shape</h2>
 		<div style="height: 2em"/>
 
-		<h3>Jul 24-25, 2021 • Virtual Event</h3>
+		<h3>
+			Jul 24-25, 2021<br>
+			A free virtual event open to everyone worldwide
+		</h3>
 		<register-button/>
 
 		<!-- LINKS -->
