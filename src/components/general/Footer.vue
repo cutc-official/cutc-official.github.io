@@ -12,7 +12,7 @@
 						target="_blank"
 						class="icons"
 					>
-						<img :src="`${item.image}`" />
+						<img :src="getImage(item.image)" />
 					</a>
 				</div>
 				<p>&copy; Copyright 2021 CUTC</p>
@@ -22,9 +22,6 @@
 </template>
 
 <script>
-import Facebook from "@/assets/socials/facebook.svg";
-import Instagram from "@/assets/socials/instagram.svg";
-import Twitter from "@/assets/socials/twitter.svg";
 export default {
 	name: "Bottom",
 	data() {
@@ -32,18 +29,27 @@ export default {
 			items: [
 				{
 					link: "https://www.facebook.com/cutc2021/",
-					image: Facebook
+					image: "facebook.svg"
 				},
 				{
 					link: "https://www.instagram.com/cutc2021/",
-					image: Instagram
+					image: "instagram.svg"
 				},
 				{
 					link: "https://twitter.com/CUTC2021",
-					image: Twitter
+					image: "twitter.svg"
+				},
+				{
+					link: "https://www.linkedin.com/company/canadian-undergraduate-technology-conference/",
+					image: "linkedin.svg"
 				}
 			]
 		};
+	},
+	methods: {
+		getImage(name) {
+			return require("@/assets/socials/" + name);
+		}
 	}
 };
 </script>

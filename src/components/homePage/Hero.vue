@@ -8,13 +8,11 @@
 	<span>
 		<h3>Welcome to the 2021</h3>
 		<h1>Canadian Undergraduate Technology Conference</h1>
-		<h2 class="slogan">Possibility Taking Shape</h2>
+		<h2 class="slogan">Amplify</h2>
 		<div style="height: 2em"/>
 
-		<h3>
-			Jul 24-25, 2021<br>
-			A free virtual event open to everyone worldwide
-		</h3>
+		<h3 style="font-weight: bold">Jul 24-25, 2021</h3>
+		<h3>A free virtual event open to everyone worldwide</h3>
 		<register-button/>
 
 		<!-- LINKS -->
