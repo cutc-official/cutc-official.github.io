@@ -39,12 +39,17 @@ export default {
 <style scoped>
 a {
 	color: var(--main-color);
+}
+
+router-link {
 	text-decoration: underline;
 }
 
 .header {
 	display: flex;
 	align-items: baseline;
+	grid-column-gap: 40px;
+	font-weight: 600px;
 }
 
 .grid {
@@ -55,5 +60,31 @@ a {
 
 .tile {
 	position: relative;
+}
+
+.text {
+	color: black;
+	text-decoration: none;
+}
+
+.image {
+	position: relative;
+	width: 50%;
+	height: 90%;
+}
+
+@media screen and (max-width: 850px) {
+	.grid {
+		display: table;
+		grid-template-columns: 1fr 1fr;
+	}
+	.header {
+		white-space: pre-line;
+	}
+}
+@media screen and (max-width: 550px) {
+	.image {
+		--icon-width: 1rem;
+	}
 }
 </style>
