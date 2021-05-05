@@ -12,7 +12,7 @@
 			<!-- <schedule :link="true"/> -->
 			<testimonials/>
 			<sponsorship/>
-			<!-- <blog :limit="6"/> -->
+			<blog :limit="6"/>
 			<faq/>
 			<contributors/>
 		</div>
@@ -28,7 +28,7 @@ import Speakers from "@/components/general/Speakers.vue";
 // import Schedule from '@/components/general/Schedule.vue';
 import Testimonials from "@/components/homePage/Testimonials.vue";
 import Sponsorship from '@/components/homePage/Sponsorship.vue';
-// import Blog from '@/components/general/Blog.vue';
+import Blog from '@/components/general/Blog.vue';
 import Faq from "@/components/homePage/Faq.vue";
 import Contributors from "@/components/homePage/Contributors.vue";
 import Bottom from "@/components/general/Footer.vue";
@@ -43,7 +43,7 @@ export default {
 		// Schedule,
 		Testimonials,
 		Sponsorship,
-		// Blog,
+		Blog,
 		Faq,
 		Contributors,
 		Bottom,
