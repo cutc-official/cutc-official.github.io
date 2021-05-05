@@ -59,7 +59,7 @@ export default {
 
 .slogan {
 	font-size: 2em;
-	font-weight: 400;
+	font-weight: 600;
 	color: white;
 	margin: 0 !important;
 }
