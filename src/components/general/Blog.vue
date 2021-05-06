@@ -1,5 +1,5 @@
 <template>
-	<div class="blog">
+	<div id="blog">
 		<div class="header">
 			<h2>Our Blog</h2>
 			<router-link v-if="limit" to="/blog">View all articles ></router-link>
@@ -8,11 +8,10 @@
 		<div class="grid" ref="grid">
 			<div class="tile" v-for="blog in blogData" :key="blog">
 				<a :href="blog.url" target="_blank">
-					<div class="image">
-						<img :src="blog.image" :alt="blog.title">
-					</div>
+					<img :src="blog.image" :alt="blog.title" class="image">
 					<div class="text">
-						<h3>{{ blog.title }}</h3>
+						<span><strong>{{ blog.title }} &ndash; </strong></span>
+						<span>{{ toText(blog.description).slice(0, 100) }}...</span>
 					</div>
 				</a>
 			</div>
@@ -32,11 +31,23 @@ export default {
 		return {
 			blogData: blogData
 		}
+	},
+	methods: {
+		toText(htmlText) {
+			let plainText = document.createElement('div')
+			plainText.innerHTML = htmlText
+			htmlText = plainText.innerText
+			return htmlText
+		}
 	}
 }
 </script>
 
 <style scoped>
+#blog {
+	max-width: 1120px;
+}
+
 a {
 	color: var(--main-color);
 }
@@ -69,7 +80,7 @@ router-link {
 
 .image {
 	position: relative;
-	width: 50%;
+	width: 90%;
 	height: 90%;
 }
 

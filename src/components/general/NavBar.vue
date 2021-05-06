@@ -6,8 +6,8 @@
 		<nav v-else>
 			<router-link to="/">HOME</router-link>
 			<router-link to="/speakers">SPEAKERS</router-link>
-			<!-- <router-link to="/schedule">SCHEDULE</router-link>
-			<router-link to="/blog">BLOG</router-link> -->
+			<!-- <router-link to="/schedule">SCHEDULE</router-link> -->
+			<router-link to="/blog">BLOG</router-link>
 			<register-button/>
 		</nav>
 
@@ -18,8 +18,8 @@
 				<nav>
 					<router-link @click="closeMenu" to="/">HOME</router-link>
 					<router-link @click="closeMenu" to="/speakers">SPEAKERS</router-link>
-					<!-- <router-link @click="closeMenu" to="/schedule">SCHEDULE</router-link>
-					<router-link @click="closeMenu" to="/blog">BLOG</router-link> -->
+					<!-- <router-link @click="closeMenu" to="/schedule">SCHEDULE</router-link> -->
+					<router-link @click="closeMenu" to="/blog">BLOG</router-link>
 				</nav>
 			</div>
 		</transition>
