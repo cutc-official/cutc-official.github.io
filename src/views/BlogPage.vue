@@ -1,7 +1,7 @@
 <template>
 <div>
 	<nav-bar/>
-	<blog/>
+	<blog class="blog-wrapper"/>
 	<bottom/>
 </div>
 </template>
@@ -23,5 +23,11 @@ export default {
 </script>
 
 <style scoped>
+
+.blog-wrapper {
+	padding-left: 20%;
+	padding-right: 20%;
+	gap: 5vh 10vw;
+}
 
 </style>
