@@ -92,6 +92,7 @@ router-link {
 	position: relative;
 	max-width: 100%;
 	height: auto;
+	transition: transform .2s;
 }
 
 .image:hover {
