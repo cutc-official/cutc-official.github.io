@@ -25,9 +25,9 @@ export default {
 <style scoped>
 
 .blog-wrapper {
-	padding-left: 20%;
-	padding-right: 20%;
-	gap: 5vh 10vw;
+	max-width: 1120px;
+	padding: 1.5rem;
+	margin: auto;
 }
 
 </style>

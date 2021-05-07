@@ -46,17 +46,13 @@ export default {
 				referenceThis.blogData = JSON.parse(this.responseText);
 			}
 		};
-		httpRequest.open("GET", "http://test.cutc.ca/mediumPosts.php", true);
+		httpRequest.open("GET", "http://api.cutc.ca/mediumPosts.php", true);
 		httpRequest.send();
 	}
 }
 </script>
 
 <style scoped>
-#blog {
-	max-width: 1120px;
-}
-
 a {
 	color: var(--main-color);
 }
@@ -79,7 +75,7 @@ router-link {
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 5vh 10vw;
+	gap: 3rem 4rem;
 }
 
 .tile {
@@ -100,17 +96,11 @@ router-link {
 
 @media screen and (max-width: 850px) {
 	.grid {
-		gap: 3vh 6vw;
-		grid-template-columns: 1fr 1fr;
+		row-gap: 2rem;
+		grid-template-columns: 1fr;
 	}
 	.header {
 		white-space: pre-line;
-	}
-}
-
-@media screen and (max-width: 550px) {
-	.image {
-		--icon-width: 1rem;
 	}
 }
 </style>
