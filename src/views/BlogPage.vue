@@ -25,7 +25,8 @@ export default {
 <style scoped>
 
 .blog-wrapper {
-	padding-left: 150px;
+	padding-left: 20%;
+	padding-right: 20%;
 	gap: 5vh 10vw;
 }
 

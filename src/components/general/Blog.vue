@@ -2,10 +2,10 @@
 	<div id="blog">
 		<div class="header">
 			<h2>Our Blog</h2>
-			<router-link v-if="limit" to="/blog">View all articles ></router-link>
+			<router-link v-if="limit" to="/blog" class="more">View all articles ></router-link>
 		</div>
 
-		<div class="grid" ref="grid">
+		<div class="grid">
 			<div class="tile" v-for="blog in blogData" :key="blog">
 				<a :href="blog.url" target="_blank">
 					<img :src="blog.image" :alt="blog.title" class="image">
@@ -72,6 +72,10 @@ router-link {
 	font-weight: 600px;
 }
 
+.more {
+	text-decoration: underline;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -91,50 +95,16 @@ router-link {
 .image {
 	position: relative;
 	max-width: 100%;
-  height: auto;
+	height: auto;
 }
 
 @media screen and (max-width: 850px) {
 	.grid {
-		display: table;
 		gap: 3vh 6vw;
 		grid-template-columns: 1fr 1fr;
 	}
 	.header {
 		white-space: pre-line;
-	}
-}
-
-
-@media screen and (max-width: 750px) {
-	.grid {
-		display: table;
-		gap: 3vh 6vw;
-		grid-template-columns: 1fr 1fr;
-	}
-	.header {
-		white-space: pre-line;
-	}
-	.image {
-	position: relative;
-	width: 100%;
-	height: 10%;
-	}
-}
-
-@media screen and (max-width: 650px) {
-	.grid {
-		display: table;
-		gap: 3vh 6vw;
-		grid-template-columns: 1fr 1fr;
-	}
-	.header {
-		white-space: pre-line;
-	}
-	.image {
-	position: relative;
-	width: 100%;
-	height: 10%;
 	}
 }
 
