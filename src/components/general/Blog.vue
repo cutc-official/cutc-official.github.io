@@ -66,7 +66,8 @@ router-link {
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 3vh 6vw;
+	gap: 5vh 10vw;
+	padding-bottom: 100px;
 }
 
 .tile {
@@ -87,12 +88,47 @@ router-link {
 @media screen and (max-width: 850px) {
 	.grid {
 		display: table;
+		gap: 3vh 6vw;
 		grid-template-columns: 1fr 1fr;
 	}
 	.header {
 		white-space: pre-line;
 	}
 }
+
+
+@media screen and (max-width: 750px) {
+	.grid {
+		display: table;
+		gap: 3vh 6vw;
+		grid-template-columns: 1fr 1fr;
+	}
+	.header {
+		white-space: pre-line;
+	}
+	.image {
+	position: relative;
+	width: 100%;
+	height: 10%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.grid {
+		display: table;
+		gap: 3vh 6vw;
+		grid-template-columns: 1fr 1fr;
+	}
+	.header {
+		white-space: pre-line;
+	}
+	.image {
+	position: relative;
+	width: 100%;
+	height: 10%;
+	}
+}
+
 @media screen and (max-width: 550px) {
 	.image {
 		--icon-width: 1rem;
