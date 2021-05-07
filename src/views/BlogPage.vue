@@ -1,9 +1,7 @@
 <template>
 <div>
 	<nav-bar/>
-	<div class="blog-wrapper">
-	<blog/>
-	</div>
+	<blog class="blog-wrapper"/>
 	<bottom/>
 </div>
 </template>
