@@ -20,8 +20,6 @@
 </template>
 
 <script>
-import blogData from '@/content/blogData.json';
-
 export default {
 	name: 'Blog',
 	props: {
@@ -29,7 +27,7 @@ export default {
 	},
 	data() {
 		return {
-			blogData: blogData
+			blogData: []
 		}
 	},
 	methods: {
@@ -39,6 +37,17 @@ export default {
 			htmlText = plainText.innerText
 			return htmlText
 		}
+	},
+	beforeMount() {
+		let referenceThis = this
+		let httpRequest = new XMLHttpRequest();
+		httpRequest.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				referenceThis.blogData = JSON.parse(this.responseText);
+			}
+		};
+		httpRequest.open("GET", "http://test.cutc.ca/mediumPosts.php", true);
+		httpRequest.send();
 	}
 }
 </script>
@@ -77,12 +86,13 @@ router-link {
 .text {
 	color: black;
 	text-decoration: none;
+	margin-bottom: 5%;
 }
 
 .image {
 	position: relative;
-	width: 90%;
-	height: 90%;
+	max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 850px) {
