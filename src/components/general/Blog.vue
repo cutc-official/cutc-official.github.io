@@ -76,7 +76,6 @@ router-link {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 5vh 10vw;
-	padding-bottom: 100px;
 }
 
 .tile {
