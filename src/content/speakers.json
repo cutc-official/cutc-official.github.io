@@ -24,29 +24,5 @@
 		"links": {
 			"LinkedIn": "https://linkedin.com/in/crystal-hunt-0864471a/"
 		}
-	},
-	{
-		"name": "Michael Ioffe",
-		"title": "CEO @ Arist (YC20)",
-		"image": "michaelioffe.png",
-		"links": {
-			"Twitter": "https://twitter.com/realioffe",
-			"LinkedIn": "https://www.linkedin.com/in/michaelaioffe/"
-		}
-	},
-	{
-		"name": "Yash Godiwala",
-		"title": "CoS @ Fion Technologies",
-		"image": "yashgodiwala.png",
-		"links": {
-			"Twitter": "https://twitter.com/yashgodiwala",
-			"LinkedIn": "https://www.linkedin.com/in/yashgodiwala/"
-		}
-	},
-	{
-		"name": "Jenn Henley",
-		"title": "VP of Infrastructure/TPM @ Facebook",
-		"image": "jennhenley.png",
-		"links": {}
 	}
 ]
