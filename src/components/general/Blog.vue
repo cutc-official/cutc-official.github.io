@@ -46,7 +46,7 @@ export default {
 				referenceThis.blogData = JSON.parse(this.responseText);
 			}
 		};
-		httpRequest.open("GET", "http://api.cutc.ca/mediumPosts.php", true);
+		httpRequest.open("GET", "http://test.cutc.ca/mediumPosts.php", true);
 		httpRequest.send();
 	}
 }
@@ -75,7 +75,7 @@ router-link {
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 3rem 4rem;
+	gap: 3rem;
 }
 
 .tile {
@@ -92,6 +92,11 @@ router-link {
 	position: relative;
 	max-width: 100%;
 	height: auto;
+	transition: transform .2s;
+}
+
+.image:hover {
+	transform: scale(0.9);
 }
 
 @media screen and (max-width: 850px) {
