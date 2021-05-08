@@ -1,0 +1,33 @@
+{
+	"8:00": [
+		{
+			"title": "",
+			"description": "",
+			"type": "",
+			"location": "",
+			"timestamp": "",
+			"tags": [""],
+			"speakers": [""]
+		},
+		{
+			"title": "",
+			"description": "",
+			"type": "",
+			"location": "",
+			"timestamp": "",
+			"tags": [""],
+			"speakers": [""]
+		}
+	],
+	"9:30": [
+		{
+			"title": "",
+			"description": "",
+			"type": "",
+			"location": "",
+			"timestamp": "",
+			"tags": [""],
+			"speakers": [""]
+		}
+	]
+}
