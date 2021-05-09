@@ -46,7 +46,7 @@ export default {
 				referenceThis.blogData = JSON.parse(this.responseText);
 			}
 		};
-		httpRequest.open("GET", "http://api.cutc.ca/mediumPosts.php", true);
+		httpRequest.open("GET", "https://cutc.ca/api/html/mediumPosts.php", true);
 		httpRequest.send();
 	}
 }
