@@ -43,6 +43,16 @@ img {
 	justify-content: space-between;
 }
 
+a {
+	margin-top: .5rem;
+	margin-bottom: 0;
+	transition: all .3s ease;
+}
+a:hover {
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+
 .gold {
 	width: var(--total-width);
 	max-width: 100%;
