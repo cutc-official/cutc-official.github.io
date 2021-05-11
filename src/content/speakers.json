@@ -66,5 +66,30 @@
 		"links": {
 			"LinkedIn": "https://www.linkedin.com/in/danielhuangucsb/"
 		}
+	},
+	{
+		"name": "Sophia Dhrolia",
+		"title": "Director of DEI @ Toronto Region Board of Trade",
+		"image": "Sophia Dhrolia.png",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/sophia-dhrolia/"
+		}
+	},
+	{
+		"name": "Omna Toshniwal",
+		"title": "Senior PM @ Consensys",
+		"image": "Omna Toshniwal.png",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/omnat/"
+		}
+	},
+	{
+		"name": "Rahul Rana",
+		"title": "Summer Associate @ Lux Capital",
+		"image": "Rahul Rana.png",
+		"links": {
+			"Twitter": "https://twitter.com/rrana03_",
+			"LinkedIn": "https://www.linkedin.com/in/rahul-rana-99b338169/"
+		}
 	}
 ]
