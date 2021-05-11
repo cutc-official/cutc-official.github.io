@@ -3,7 +3,7 @@
 	{
 		"name": "Daniel Huang",
 		"title": "CEO @ Monet",
-		"image": "danhuang.png",
+		"image": "Daniel Huang.png",
 		"links": {
 			"LinkedIn": "https://www.linkedin.com/in/danielhuangucsb/"
 		}
@@ -11,7 +11,7 @@
 	{
 		"name": "Justin Zheng",
 		"title": "CEO @ Matrix",
-		"image": "justinzheng.png",
+		"image": "Justin Zheng.png",
 		"links": {
 			"Twitter": "https://twitter.com/jzlegion",
 			"LinkedIn": "https://www.linkedin.com/in/zhengjustin/"
@@ -20,9 +20,51 @@
 	{
 		"name": "Crystal Hunt",
 		"title": "Senior PM @ Shopify",
-		"image": "crystalhunt.png",
+		"image": "Crystal Hunt.png",
 		"links": {
 			"LinkedIn": "https://linkedin.com/in/crystal-hunt-0864471a/"
+		}
+	},
+	{
+		"name": "Michael Ioffe",
+		"title": "CEO @ Arist (YC20)",
+		"image": "Michael Ioffe.png",
+		"links": {
+			"Twitter": "https://twitter.com/realioffe",
+			"LinkedIn": "https://www.linkedin.com/in/michaelaioffe/"
+		}
+	},
+	{
+		"name": "Ge Wang",
+		"title": "Professor @ Standford",
+		"image": "Ge Wang.png",
+		"links": {
+			"Website": "https://en.wikipedia.org/wiki/Ge_Wang"
+		}
+	},
+	{
+		"name": "Vivian Li",
+		"title": "Senior D&I Leader @ RBC",
+		"image": "Vivian Li.png",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/vivian-li-03b92411/"
+		}
+	},
+	{
+		"name": "Yash Godiwala",
+		"title": "CoS @ Fion Technologies",
+		"image": "Yash Godiwala.png",
+		"links": {
+			"Twitter": "https://twitter.com/yashgodiwala",
+			"LinkedIn": "https://www.linkedin.com/in/yashgodiwala/"
+		}
+	},
+	{
+		"name": "Daniel Huang",
+		"title": "CEO @ Monet",
+		"image": "Daniel Huang.png",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/danielhuangucsb/"
 		}
 	}
 ]

@@ -105,7 +105,7 @@ export default {
 .image {
 	position: relative;
 	width: calc(100% - var(--icon-width) - .5rem);
-	height: 95%;
+	height: 100%;
 }
 .image>img {
 	width: 100%;
