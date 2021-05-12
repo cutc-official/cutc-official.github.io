@@ -126,7 +126,8 @@ export default {
 .tile>.overlay {
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: -1rem;
+	width: 90%;
 
 	display: flex;
 	flex-direction: column-reverse;
@@ -135,8 +136,11 @@ export default {
 .overlay>.text {
 	background: white;
 	box-shadow: 0 2px 4px #00000040;
-	border-radius: 1rem;
-	padding: .7rem;
+	border-radius: 16px;
+	padding: .7rem 1.2rem;
+}
+.text>p {
+	line-height: 1.3;
 }
 /* Link image */
 .overlay>a>img {
