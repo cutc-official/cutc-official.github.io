@@ -8,9 +8,10 @@
 	<div class="grid" ref="grid">
 		<div class="tile" v-for="(speaker, name, i) in speakers" :key="speaker">
 			<!-- PHOTO -->
-			<div class="image">
-				<div class="image-background" :style="{'background': getColor(i)}"/>
-				<img :src="getImage(speaker.image)" :alt="name + '\'s Photo'">
+			<div class="image-wrapper">
+				<p class="bio positioning">lorem ipsum dolor blah lorem ipsum dolor blah lorem ipsum dolor blah lorem ipsum dolor lorem ipsum dolor blah lorem ipsum dolor blah lorem ipsum dolor blah</p>
+				<div class="image-background positioning" :style="{'background': getColor(i)}"/>
+				<img :src="getImage(speaker.image)" :alt="speaker.name + '\'s Photo'" class="image-speaker">
 			</div>
 			<!-- OVERLAY -->
 			<div class="overlay">
@@ -80,6 +81,7 @@ export default {
 	margin: auto;
 	--icon-width: 1.5rem;
 	--tile-radius: 1rem;
+	--bio-transition: all .5s ease;
 }
 
 .view-more {
@@ -102,26 +104,51 @@ export default {
 	position: relative;
 }
 
-.image {
+.image-wrapper {
 	position: relative;
 	width: calc(100% - var(--icon-width) - .5rem);
 	height: 100%;
+	overflow: hidden;
 }
-.image>img {
+.image-wrapper>.positioning {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 80%;
+}
+.image-background {
+	border-radius: var(--tile-radius);
+	z-index: -1;
+	transition: var(--bio-transition);
+}
+.image-speaker {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border-radius: var(--tile-radius);
+	transition: var(--bio-transition);
 }
-.image-background {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	z-index: -1;
-	width: 100%;
-	height: 80%;
-	border-radius: var(--tile-radius);
-	background: #8394F2;
+
+.bio {
+	box-sizing: border-box;
+	padding: 1rem;
+	z-index: 2;
+
+	opacity: 0;
+	color: whitesmoke;
+	transition: var(--bio-transition);
+}
+.bio:hover{
+	opacity: 100%;
+}
+.bio:hover ~ .image-speaker {
+	/* filter: invert(51%) sepia(61%) saturate(3831%) hue-rotate(162deg) brightness(96%) contrast(101%); */
+	/* filter: drop-shadow(0 -10px var(--img-color)); */
+	filter: brightness(0);
+}
+.bio:hover ~ .image-background {
+	background: black !important;
 }
 
 .tile>.overlay {
