@@ -53,6 +53,11 @@ export default {
 </script>
 
 <style scoped>
+#blog {
+	max-width: 1120px;
+	margin: auto;
+}
+
 a {
 	color: var(--main-color);
 }
@@ -65,7 +70,7 @@ router-link {
 	display: flex;
 	align-items: baseline;
 	grid-column-gap: 40px;
-	font-weight: 600px;
+	margin-bottom: 0.5rem;
 }
 
 .more {
@@ -85,7 +90,8 @@ router-link {
 .text {
 	color: black;
 	text-decoration: none;
-	margin-bottom: 5%;
+	margin-top: 0.5rem;
+	line-height: 130%;
 }
 
 .image {
