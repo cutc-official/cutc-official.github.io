@@ -36,63 +36,7 @@
 		--width: 60rem;
 	}
 }
-/* Firefox scrollbars */
-.history-gallery-container {
-	width: 100%;
-	overflow-x: auto;
-	scrollbar-width: thin;
-	scrollbar-color: var(--main-color) #FEF1F0;
-}
-/* Chrome scrollbars */
-.history-gallery-container::-webkit-scrollbar {
-	width: 0.33rem;
-}
-.history-gallery-container::-webkit-scrollbar-thumb {
-	background: var(--main-color);
-	border-radius: 1rem;
-}
-.history-gallery-container::-webkit-scrollbar-track {
-	background: #FEF1F0;
-	border-radius: 1rem;
-}
-.history-gallery {
-	position: relative;
-	width: var(--width);
-	height: calc(var(--width) * 0.4);
-	box-sizing: content-box;
-	background-image: url(../../assets/misc/Timeline.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.history-item {
-	position: absolute;
-}
-.history-item h3 {
-	font-weight: bold;
-	font-size: 20px;
-}
-.history-item p {
-	font-size: 90%;
-}
-.history-beginning {
-	top: 4%;
-	left: 4.58%;
-	width: 16.67%;
-}
-.history-growth {
-	top: 2%;
-	left: 26.67%;
-	width: 20%;
-}
-.history-decade {
-	top: 6%;
-	left: 50.83%;
-	width: 20%;
-}
-.history-digital {
-	top: 1.25%;
-	left: 81.67%;
-	width: 18.33%;
+p{
+	float: none;
 }
 </style>
