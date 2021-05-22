@@ -9,7 +9,7 @@
 		<div class="tile" v-for="(speaker, name, i) in speakers" :key="speaker">
 			<!-- PHOTO -->
 			<div class="image-wrapper">
-				<p class="bio positioning">lorem ipsum dolor blah lorem ipsum dolor blah lorem ipsum dolor blah lorem ipsum dolor lorem ipsum dolor blah lorem ipsum dolor blah lorem ipsum dolor blah</p>
+				<p class="bio positioning">{{ speaker.bio }}</p>
 				<div class="image-background positioning" :style="{'background': getColor(i)}"/>
 				<img :src="getImage(speaker.image)" :alt="speaker.name + '\'s Photo'" class="image-speaker">
 			</div>
