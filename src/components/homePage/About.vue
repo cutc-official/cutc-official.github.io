@@ -1,24 +1,13 @@
 <template>
 <div id="about">
-	<h1>Our History</h1>
-	<div class="history-gallery-container">
-		<div class="history-gallery">
-			<div class="history-item history-beginning">
-				<h3>The Beginning</h3>
-				<p>Our first conference was held in March 2000 at the University of Waterloo.</p>
-			</div>
-			<div class="history-item history-growth">
-				<h3>Rapid Growth</h3>
-				<p>We consistently sold out every conference, tripling our initial attendance within a couple of years.</p>
-			</div>
-			<div class="history-item history-decade">
-				<h3>The First Decade</h3>
-				<p>We celebrated our 10th anniversary by passing the 2500th CUTC attendee milestone!</p>
-			</div>
-			<div class="history-item history-digital">
-				<h3>Going Digital</h3>
-				<p>CUTC 2020: Reconnect marked our first all-virtual conference, with 2100+ attendees from 14 countries.</p>
-			</div>
+	<div class="about_section">
+		<img src="@/assets/misc/about.svg" alt="about image" class="about_image">
+		<div class="about_text">
+			<h1>Canada’s largest student-run conference</h1>
+			<p>
+				For over 20 years, our conferences have represented opportunities to connect with industry leaders, gain valuable tech experience, network with like-minded people, and more.<br>
+				This year, we want to be an amplifier for unexplored opportunities, undiscovered interests, and unheard voices in tech. We'll have something in store for every type of student, no matter your background, location, program, or interests.
+			</p>
 		</div>
 	</div>
 </div>
@@ -31,12 +20,33 @@
 	margin: auto;
 	color: black;
 }
-@media screen and (max-width:1250px) {
+.about_section{
+	display: flex;
+	flex-direction: row;
+}
+.about_image{
+	width: 80vh;
+	height: auto;
+	margin-right: 10vh;
+}
+@media screen and (max-width:880px) {
 	#about {
 		--width: 60rem;
 	}
+	h1{
+		font-size: 2em;
+	}
+	.about_section{
+		flex-direction: column-reverse;
+	}
+	.about_image{
+		width: 80%;
+		height: auto;
+		margin: auto;
+		margin-top: 5vh;
+	}
 }
 p{
-	float: none;
+	flex: none;
 }
 </style>
