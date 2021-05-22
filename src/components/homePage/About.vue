@@ -47,6 +47,6 @@
 	}
 }
 p{
-	flex: none;
+	float: none;
 }
 </style>
