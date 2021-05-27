@@ -1,7 +1,7 @@
 <template>
 <div id="about">
 	<div class="about_section">
-		<img src="@/assets/about/about_image.svg" alt="about image" class="about_image">
+		<img src="@/assets/misc/about.svg" alt="about image" class="about_image">
 		<div class="about_text">
 			<h1>Canada’s largest student-run conference</h1>
 			<p>
