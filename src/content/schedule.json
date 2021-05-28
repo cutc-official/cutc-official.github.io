@@ -1,21 +1,21 @@
 {
 	"8:00": [
 		{
-			"title": "",
-			"description": "",
-			"type": "",
+			"title": "title 1",
+			"description": "desc",
+			"format": "workshop",
 			"location": "",
 			"timestamp": "",
-			"tags": [""],
+			"topics": ["t1", "t2"],
 			"speakers": [""]
 		},
 		{
 			"title": "",
 			"description": "",
-			"type": "",
+			"format": "talk",
 			"location": "",
 			"timestamp": "",
-			"tags": [""],
+			"topics": ["t3", "t4"],
 			"speakers": [""]
 		}
 	],
@@ -23,10 +23,10 @@
 		{
 			"title": "",
 			"description": "",
-			"type": "",
+			"format": "",
 			"location": "",
 			"timestamp": "",
-			"tags": [""],
+			"topics": ["t3", "t2"],
 			"speakers": [""]
 		}
 	]
