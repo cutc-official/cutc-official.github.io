@@ -1,5 +1,4 @@
 <template>
-<div id="about">
 	<div class="about_section">
 		<img src="@/assets/misc/about.svg" alt="about image" class="about_image">
 		<div class="about_text">
@@ -10,40 +9,29 @@
 			</p>
 		</div>
 	</div>
-</div>
 </template>
 
 <style scoped>
-#about {
-	--width: 75vw;
-	max-width: var(--width);
-	margin: auto;
-	color: black;
-}
 .about_section{
 	display: flex;
 	flex-direction: row;
+	color: black;
 }
 .about_image{
-	width: 80vh;
-	height: auto;
-	margin-right: 10vh;
+	width: 50%;
+	margin-right: 5%;
 }
 @media screen and (max-width:880px) {
-	#about {
-		--width: 60rem;
+	.about_section{
+		flex-wrap: wrap-reverse;
 	}
 	h1{
 		font-size: 2em;
 	}
-	.about_section{
-		flex-direction: column-reverse;
-	}
 	.about_image{
 		width: 80%;
-		height: auto;
 		margin: auto;
-		margin-top: 5vh;
+		margin-top: 5%;
 	}
 }
 p{
