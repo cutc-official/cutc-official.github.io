@@ -109,20 +109,20 @@ export default {
   margin: 1rem;
   border: 1px solid grey;
   border-radius: 16px;
+  display: grid;
+  grid-template-columns: minmax(20px, 2%) auto;
 }
 
 .strip {
   border-radius: 16px 0 0 16px;
-  position: absolute;
   z-index: 5;
-  height: 32%;
-  margin-right: 1rem;
+  height: 100%;
   width: 1rem;
   background-color: var(--type-color);
 }
 
 .content {
-  padding: 1rem 1rem 1rem 1.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
   color: black;
 }
 
