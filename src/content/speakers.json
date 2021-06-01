@@ -1,15 +1,14 @@
+{
 
-[
-	{
-		"name": "Daniel Huang",
+	"Daniel Huang": {
 		"title": "CEO @ Monet",
 		"image": "Daniel Huang.png",
 		"links": {
 			"LinkedIn": "https://www.linkedin.com/in/danielhuangucsb/"
 		}
 	},
-	{
-		"name": "Justin Zheng",
+
+	"Justin Zheng": {
 		"title": "CEO @ Matrix",
 		"image": "Justin Zheng.png",
 		"links": {
@@ -17,16 +16,15 @@
 			"LinkedIn": "https://www.linkedin.com/in/zhengjustin/"
 		}
 	},
-	{
-		"name": "Crystal Hunt",
+
+	"Crystal Hunt": {
 		"title": "Senior PM @ Shopify",
 		"image": "Crystal Hunt.png",
 		"links": {
 			"LinkedIn": "https://linkedin.com/in/crystal-hunt-0864471a/"
 		}
 	},
-	{
-		"name": "Michael Ioffe",
+	"Michael Ioffe": {
 		"title": "CEO @ Arist (YC20)",
 		"image": "Michael Ioffe.png",
 		"links": {
@@ -34,24 +32,21 @@
 			"LinkedIn": "https://www.linkedin.com/in/michaelaioffe/"
 		}
 	},
-	{
-		"name": "Ge Wang",
+	"Ge Wang": {
 		"title": "Professor @ Stanford",
 		"image": "Ge Wang.png",
 		"links": {
 			"Website": "https://en.wikipedia.org/wiki/Ge_Wang"
 		}
 	},
-	{
-		"name": "Vivian Li",
+	"Vivian Li": {
 		"title": "Senior D&I Leader @ RBC",
 		"image": "Vivian Li.png",
 		"links": {
 			"LinkedIn": "https://www.linkedin.com/in/vivian-li-03b92411/"
 		}
 	},
-	{
-		"name": "Yash Godiwala",
+	"Yash Godiwala": {
 		"title": "CoS @ Fion Technologies",
 		"image": "Yash Godiwala.png",
 		"links": {
@@ -59,24 +54,21 @@
 			"LinkedIn": "https://www.linkedin.com/in/yashgodiwala/"
 		}
 	},
-	{
-		"name": "Sophia Dhrolia",
+	"Sophia Dhrolia": {
 		"title": "Director of D&I and Engagement @ Toronto Region Board of Trade",
 		"image": "Sophia Dhrolia.png",
 		"links": {
 			"LinkedIn": "https://www.linkedin.com/in/sophia-dhrolia/"
 		}
 	},
-	{
-		"name": "Omna Toshniwal",
+	"Omna Toshniwal": {
 		"title": "Senior PM @ Consensys",
 		"image": "Omna Toshniwal.png",
 		"links": {
 			"LinkedIn": "https://www.linkedin.com/in/omnat/"
 		}
 	},
-	{
-		"name": "Rahul Rana",
+	"Rahul Rana": {
 		"title": "Summer Associate @ Lux Capital",
 		"image": "Rahul Rana.png",
 		"links": {
@@ -84,4 +76,4 @@
 			"LinkedIn": "https://www.linkedin.com/in/rahul-rana-99b338169/"
 		}
 	}
-]
+}
