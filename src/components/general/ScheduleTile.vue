@@ -1,13 +1,13 @@
 <template>
-  <div class="background" :style="{'--type-color': colors[type]}">
+  <div class="tile" :style="{'--type-color': colors[type]}">
     <div class="strip"></div>
     <div class="content">
       <div class="top-bar">
         <button>
           <div @mouseenter="showDropdown = true" @mouseleave="showDropdown = false">
             <img src="@/assets/schedule/addButton.svg" alt="Add to Calendar" />
-            <div class="dropdown" v-if="showDropdown">
-              <div class="child" v-for="calendar in calendars" :key="calendar.name">
+            <div class="calendar" v-if="showDropdown">
+              <div class="child"> v-for="calendar in calendars" :key="calendar.name">
                 <img class="icon" :src="calendar.icon" />
                 <div>{{calendar.name}}</div>
               </div>
@@ -30,20 +30,26 @@
         </div>
       </div>
       <p>{{ description }}</p>
-      <div class="speakers">
-        <div v-for="(speaker,index) in speakers" :key="speaker">
-          <div class="image-container" @mouseleave="popUp = -1" @mouseover="open(index)">
-            <transition name="fade">
-              <div class="dialog" v-if="popUp===index">
-                <div class="name">{{speaker}}</div>
-                <div class="company">{{speakerInfo[speaker]["title"].split("@")[1]}}</div>
-                <div class="rectangle"></div>
-              </div>
-            </transition>
-            <img class="image" :src="getImage(speaker)" />
-          </div>
+    
+      <div class="speakers-container">
+        <div 
+          v-for="(speaker,index) in speakers"
+          :key="speaker"
+          class="speaker"
+          @mouseleave="popUp = -1"
+          @mouseover="open(index)"
+        >
+          <transition name="fade">
+            <div class="dialog" v-if="popUp===index">
+              <div class="name">{{speaker}}</div>
+              <div class="company">{{speakerInfo[speaker]["title"].split("@")[1]}}</div>
+              <div class="dialog-diamond"></div>
+            </div>
+          </transition>
+          <div class="speaker-img"><img :src="getImage(speaker)"/></div>
         </div>
       </div>
+
     </div>
   </div>
 </template>
@@ -105,42 +111,33 @@ export default {
 </script>
 
 <style scoped>
-.background {
-  margin: 1rem;
+.tile {
+  position: relative;
   border: 1px solid grey;
-  border-radius: 16px;
+  --b-radius: 16px;
+  border-radius: var(--b-radius);
+  margin: 1rem;
+
   display: grid;
-  grid-template-columns: minmax(20px, 2%) auto;
+  grid-template-columns: var(--b-radius) auto;
 }
 
 .strip {
-  border-radius: 16px 0 0 16px;
-  z-index: 5;
+  border-radius: var(--b-radius) 0 0 var(--b-radius);
   height: 100%;
-  width: 1rem;
+  width: 100%;
   background-color: var(--type-color);
 }
 
 .content {
-  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+  padding: 1rem;
   color: black;
 }
 
 /* .top-bar {} */
-.dialog {
+.calendar {
   position: absolute;
-  top: 13rem;
-  left: 3rem;
-  z-index: 5;
-  padding: 0.2rem 1% 1% 0.5rem;
-  width: max-content;
-  max-width: 100%;
-  color: black;
-  background: #b3160d;
-}
-.dropdown {
-  position: absolute;
-  left: 88%;
+  right: 0.5rem;
   border: 0.2px gray solid;
   border-radius: 8px;
   padding: 0.5rem;
@@ -148,28 +145,19 @@ export default {
   z-index: 10;
   background: white;
 }
-.child {
+.calendar>.child {
   display: flex;
   align-items: center;
   justify-content: start;
 }
-
-.icon {
-  width: 1.1rem;
-  height: 1.1rem;
+.calendar>.child>.icon {
+  width: 1rem;
+  height: 1rem;
   margin-right: 0.5rem;
 }
-.rectangle {
-  width: 0.75rem;
-  height: 1.5rem;
-  position: absolute;
-  background: #b3160d;
-  transform: rotate(45deg);
-  top: 70%;
-  left: 10%;
-  z-index: -1;
-}
+
 .top-bar > button {
+  padding: 0;
   float: right;
   background: none;
   border: none;
@@ -203,22 +191,46 @@ export default {
   color: white;
   font-size: 0.8rem;
 }
-.image-container {
-  width: 3em;
-  height: 3em;
+
+.speakers-container {
+  display: grid;
+  --speaker-size: 4rem;
+  grid-template-columns: repeat(auto-fit, var(--speaker-size));
+  gap: 1rem;
+}
+.speaker {
+  position: relative;
+}
+.speaker-img {
+  width: var(--speaker-size);
+  height: var(--speaker-size);
   overflow: hidden;
   border-radius: 50%;
 }
-.image {
+.speaker-img>img {
   width: 100%;
 }
-.name {
+.speaker>.dialog {
+  position: absolute;
+  top: -4rem;
+  left: 1rem;
+  z-index: 1;
+  padding: 0.5rem;
+  width: max-content;
   color: white;
-  font-weight: bold;
+  background: #b3160d;
 }
-
-.position {
-  color: white;
-  font-size: 0.8rem;
+.dialog-diamond {
+  width: 1rem;
+  height: 1.5rem;
+  position: absolute;
+  background: #b3160d;
+  transform: rotate(45deg);
+  top: 70%;
+  left: 10%;
+  z-index: -1;
+}
+.name {
+  font-weight: bold;
 }
 </style>
