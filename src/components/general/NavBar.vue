@@ -6,7 +6,7 @@
 		<nav v-else>
 			<router-link to="/">HOME</router-link>
 			<router-link to="/speakers">SPEAKERS</router-link>
-			<router-link to="/schedule">SCHEDULE</router-link>
+			<!-- <router-link to="/schedule">SCHEDULE</router-link> -->
 			<router-link to="/blog">BLOG</router-link>
 			<register-button/>
 		</nav>
