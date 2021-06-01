@@ -1,5 +1,5 @@
 <template>
-  <div class="tile" :style="{'--type-color': colors[type]}">
+  <div class="tile" :style="{'--type-color': colors[format]}">
     <div class="strip"></div>
     <div class="content">
       <div class="top-bar">
@@ -7,7 +7,7 @@
           <div @mouseenter="showDropdown = true" @mouseleave="showDropdown = false">
             <img src="@/assets/schedule/addButton.svg" alt="Add to Calendar" />
             <div class="calendar" v-if="showDropdown">
-              <div class="child"> v-for="calendar in calendars" :key="calendar.name">
+              <div class="child" v-for="calendar in calendars" :key="calendar.name">
                 <img class="icon" :src="calendar.icon" />
                 <div>{{calendar.name}}</div>
               </div>
@@ -25,7 +25,7 @@
             <p>{{ location }}</p>
           </div>
           <div class="top-info-section">
-            <p v-for="tag in tags" :key="tag" class="tag">{{ tag }}</p>
+            <p v-for="tag in topics" :key="tag" class="tag">{{ tag }}</p>
           </div>
         </div>
       </div>
@@ -65,13 +65,13 @@ export default {
   props: {
     title: String,
     description: String,
-    type: {
+    format: {
       default: "",
       type: String
     },
     location: String,
     timestamp: String,
-    tags: Array,
+    topics: Array,
     speakers: Array
   },
 
