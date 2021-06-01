@@ -55,7 +55,7 @@ export default {
 	methods: {
 		getImage(pic) {
 			try {
-				return require("@/assets/speakers/" + pic);
+				return require("@/assets/speakers/Speaker=" + pic);
 			} catch(e) {
 				// throw Error(`pic does not exist: ${pic}`);
 			}

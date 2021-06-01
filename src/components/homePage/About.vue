@@ -1,98 +1,40 @@
 <template>
-<div id="about">
-	<h1>Our History</h1>
-	<div class="history-gallery-container">
-		<div class="history-gallery">
-			<div class="history-item history-beginning">
-				<h3>The Beginning</h3>
-				<p>Our first conference was held in March 2000 at the University of Waterloo.</p>
-			</div>
-			<div class="history-item history-growth">
-				<h3>Rapid Growth</h3>
-				<p>We consistently sold out every conference, tripling our initial attendance within a couple of years.</p>
-			</div>
-			<div class="history-item history-decade">
-				<h3>The First Decade</h3>
-				<p>We celebrated our 10th anniversary by passing the 2500th CUTC attendee milestone!</p>
-			</div>
-			<div class="history-item history-digital">
-				<h3>Going Digital</h3>
-				<p>CUTC 2020: Reconnect marked our first all-virtual conference, with 2100+ attendees from 14 countries.</p>
-			</div>
+	<div class="about_section">
+		<img src="@/assets/misc/about.svg" alt="about image" class="about_image">
+		<div class="about_text">
+			<h1>Canada’s largest student-run conference</h1>
+			<p>
+				For over 20 years, our conferences have represented opportunities to connect with industry leaders, gain valuable tech experience, network with like-minded people, and more.<br>
+				This year, we want to be an amplifier for unexplored opportunities, undiscovered interests, and unheard voices in tech. We'll have something in store for every type of student, no matter your background, location, program, or interests.
+			</p>
 		</div>
 	</div>
-</div>
 </template>
 
 <style scoped>
-#about {
-	--width: 75vw;
-	max-width: var(--width);
-	margin: auto;
+.about_section{
+	display: flex;
+	flex-direction: row;
 	color: black;
 }
-@media screen and (max-width:1250px) {
-	#about {
-		--width: 60rem;
+.about_image{
+	width: 50%;
+	margin-right: 5%;
+}
+@media screen and (max-width:880px) {
+	.about_section{
+		flex-wrap: wrap-reverse;
+	}
+	h1{
+		font-size: 2em;
+	}
+	.about_image{
+		width: 80%;
+		margin: auto;
+		margin-top: 5%;
 	}
 }
-/* Firefox scrollbars */
-.history-gallery-container {
-	width: 100%;
-	overflow-x: auto;
-	scrollbar-width: thin;
-	scrollbar-color: var(--main-color) #FEF1F0;
-}
-/* Chrome scrollbars */
-.history-gallery-container::-webkit-scrollbar {
-	width: 0.33rem;
-}
-.history-gallery-container::-webkit-scrollbar-thumb {
-	background: var(--main-color);
-	border-radius: 1rem;
-}
-.history-gallery-container::-webkit-scrollbar-track {
-	background: #FEF1F0;
-	border-radius: 1rem;
-}
-.history-gallery {
-	position: relative;
-	width: var(--width);
-	height: calc(var(--width) * 0.4);
-	box-sizing: content-box;
-	background-image: url(../../assets/misc/Timeline.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.history-item {
-	position: absolute;
-}
-.history-item h3 {
-	font-weight: bold;
-	font-size: 20px;
-}
-.history-item p {
-	font-size: 90%;
-}
-.history-beginning {
-	top: 4%;
-	left: 4.58%;
-	width: 16.67%;
-}
-.history-growth {
-	top: 2%;
-	left: 26.67%;
-	width: 20%;
-}
-.history-decade {
-	top: 6%;
-	left: 50.83%;
-	width: 20%;
-}
-.history-digital {
-	top: 1.25%;
-	left: 81.67%;
-	width: 18.33%;
+p{
+	float: none;
 }
 </style>
