@@ -1,30 +1,33 @@
 {
-	"8:00": [{
-			"title": "This is a really title for a talk that someone is going to be speaking at uwu ahhhh",
-			"description": "Description of the talk uwu ahhh i need some more sentences but i can’t think of any help ahhhhhhhhhhhhhh lorem ipsum it up",
-			"type": "topic 1",
-			"location": "Center Stage",
-			"timestamp": "8:15 - 8:30",
-			"tags": ["IoT", "Social Good", "Design"],
-			"speakers": ["Daniel Huang"]
+	"8:00": [
+		{
+			"title": "title 1",
+			"description": "desc",
+			"format": "workshop",
+			"location": "",
+			"timestamp": "",
+			"topics": ["t1", "t2"],
+			"speakers": [""]
 		},
 		{
 			"title": "",
 			"description": "",
-			"type": "",
+			"format": "talk",
 			"location": "",
 			"timestamp": "",
-			"tags": [""],
+			"topics": ["t3", "t4"],
 			"speakers": [""]
 		}
 	],
-	"9:30": [{
-		"title": "",
-		"description": "",
-		"type": "",
-		"location": "",
-		"timestamp": "",
-		"tags": [""],
-		"speakers": [""]
-	}]
+	"9:30": [
+		{
+			"title": "",
+			"description": "",
+			"format": "",
+			"location": "",
+			"timestamp": "",
+			"topics": ["t3", "t2"],
+			"speakers": [""]
+		}
+	]
 }
