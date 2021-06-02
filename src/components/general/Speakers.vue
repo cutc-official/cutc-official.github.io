@@ -6,16 +6,16 @@
 	</div>
 
 	<div class="grid" ref="grid">
-		<div class="tile" v-for="(speaker, i) in speakers" :key="speaker">
+		<div class="tile" v-for="(speaker, name, i) in speakers" :key="speaker">
 			<!-- PHOTO -->
 			<div class="image">
 				<div class="image-background" :style="{'background': getColor(i)}"/>
-				<img :src="getImage(speaker.image)" :alt="speaker.name + '\'s Photo'">
+				<img :src="getImage(speaker.image)" :alt="name + '\'s Photo'">
 			</div>
 			<!-- OVERLAY -->
 			<div class="overlay">
 				<div class="text">
-					<h3>{{ speaker.name }}</h3>
+					<h3>{{ name }}</h3>
 					<p>{{ speaker.title }}</p>
 				</div>
 				<a v-for="(link, linkType) in speaker.links" :key="link" :href="link" target="_blank">
@@ -26,7 +26,7 @@
 	</div>
 
 	<h3 v-if="!limit" class="coming-soon">
-		and {{ 50 - speakers.length }}+ more speakers coming soon!
+		and {{ 50 - Object.entries(speakers).length }}+ more speakers coming soon!
 	</h3>
 </div>
 </template>
@@ -121,6 +121,7 @@ export default {
 	width: 100%;
 	height: 80%;
 	border-radius: var(--tile-radius);
+	background: #8394F2;
 }
 
 .tile>.overlay {
