@@ -66,8 +66,8 @@
 		}
 	},
 	"Sophia Dhrolia": {
-		"title": "Director of D&I and Engagement",
-		"org": "Toronto Region Board of Trade",
+		"title": "Director of D&I",
+		"org": "Toronto Board of Trade",
 		"image": "Sophia Dhrolia.png",
 		"bio": "Sophia Dhrolia (she/they) is passionate about building a culture that values diversity, champions inclusion, and promotes collaboration to drive results. They are committed to developing environments where differences are respected and valued and where people are empowered to be their authentic selves and have equitable opportunities to thrive.",
 		"links": {
@@ -95,6 +95,7 @@
 	},
 	"Michelle Qin": {
 		"title": "Intern",
+		"org": "Floodgate",
 		"image": "Michelle Qin.png",
 		"bio": "Michelle's a rising junior at Stanford University studying CS. She's interested in tech and entrepreneurship, which led her to internships investing at Floodgate and building products at Quaestor.",
 		"links": {
@@ -103,6 +104,7 @@
 	},
 	"Akshaya Dinesh": {
 		"title": "Co-Founder",
+		"org": "Ladder",
 		"image": "Akshaya Dinesh.png",
 		"bio": "Akshaya is the Co-Founder of Ladder, the VC-backed professional community platform for the next generation. She is currently on leave from studying Computer Science at Stanford, and previously did engineering work at Bloomberg, Microsoft, Oath, Godiva, Kitty Hawk, and more. She also previously founded a national nonprofit dedicated to closing the gender gap in tech.",
 		"links": {
@@ -112,6 +114,7 @@
 	},
 	"Iris Guo": {
 		"title": "Product Manager Intern",
+		"org": "X, the moonshot factory",
 		"image": "Iris Guo.png",
 		"bio": "As a Product Manager Intern at Google X and Founder/ CEO of a sustainability startup Neutrify, Iris is passionate about building products with a scalable social impact. With the mission of empowering individuals to take action to fight climate change, Iris founded Neutrify to shift food consumption towards sustainable food with a browser extension that educates users on food carbon footprints and suggests alternatives.",
 		"links": {
@@ -121,6 +124,7 @@
 	},
 	"Priya Ghose": {
 		"title": "Founder",
+		"org": "Qrono",
 		"image": "Priya Ghose.png",
 		"bio": "Priya is the co-founder and CTO of Qrono, making it ridiculously easy for startups to build booking and reservation systems. Previously, she was the first engineering hire at AirGarage, a parking startup reimagining the way we use parking space in our cities.",
 		"links": {
@@ -129,6 +133,7 @@
 	},
 	"Vivian Phung": {
 		"title": "Software Engineer ",
+		"org": "Instagram",
 		"image": "Vivian Phung.png",
 		"bio": "Vivian is an iOS Developer working on Instagram Feed, Creation, and Interactions. Before dropping out of her sophomore year, she interned at Eventbrite, Apple, and Facebook. In her free time, she enjoys cooking, baking, and shitposting on Twitter.",
 		"links": {
