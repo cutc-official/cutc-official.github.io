@@ -8,15 +8,16 @@
 	<div class="grid" ref="grid">
 		<div class="tile" v-for="(speaker, name, i) in speakers" :key="speaker">
 			<!-- PHOTO -->
-			<div class="image">
-				<div class="image-background" :style="{'background': getColor(i)}"/>
-				<img :src="getImage(speaker.image)" :alt="name + '\'s Photo'">
+			<div class="image-wrapper">
+				<!-- <p class="bio positioning">{{ speaker.bio }}</p> -->
+				<div class="image-background positioning" :style="{'background': getColor(i)}"/>
+				<img :src="getImage(speaker.image)" :alt="name + '\'s Photo'" class="image-speaker">
 			</div>
 			<!-- OVERLAY -->
 			<div class="overlay">
 				<div class="text">
 					<h3>{{ name }}</h3>
-					<p>{{ speaker.title }}</p>
+					<p>{{ speaker.title }}{{ speaker.org ? ' @ ' + speaker.org : '' }}</p>
 				</div>
 				<a v-for="(link, linkType) in speaker.links" :key="link" :href="link" target="_blank">
 					<img :src="getLinkImage(linkType)" :alt="link">
@@ -42,7 +43,7 @@ export default {
 	},
 	data() {
 		return {
-			speakers: this.limit ? SpeakersContent.slice(0, this.limit) : SpeakersContent,
+			speakers: SpeakersContent,
 			colors: [
 				'#8394F2',
 				'#F57A75',
@@ -71,6 +72,12 @@ export default {
 			return this.colors[i % this.colors.length]
 		}
 	},
+	beforeMount() {
+		if (this.limit) {
+			let sp = Object.entries(this.speakers).slice(0, this.limit);
+			this.speakers = Object.fromEntries(sp);
+		}
+	}
 }
 </script>
 
@@ -80,6 +87,7 @@ export default {
 	margin: auto;
 	--icon-width: 1.5rem;
 	--tile-radius: 1rem;
+	--bio-transition: all .5s ease;
 }
 
 .view-more {
@@ -102,27 +110,51 @@ export default {
 	position: relative;
 }
 
-.image {
+.image-wrapper {
 	position: relative;
 	width: calc(100% - var(--icon-width) - .5rem);
 	height: 100%;
+	overflow: hidden;
 }
-.image>img {
+.image-wrapper>.positioning {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 80%;
+}
+.image-background {
+	border-radius: var(--tile-radius);
+	z-index: -1;
+	transition: var(--bio-transition);
+}
+.image-speaker {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border-radius: var(--tile-radius);
+	transition: var(--bio-transition);
 }
-.image-background {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	z-index: -1;
-	width: 100%;
-	height: 80%;
-	border-radius: var(--tile-radius);
-	background: #8394F2;
+
+.bio {
+	font-size: 80%;
+	box-sizing: border-box;
+	padding: 1rem;
+	z-index: 2;
+
+	opacity: 0;
+	color: whitesmoke;
+	transition: var(--bio-transition);
 }
+/* .bio:hover{
+	opacity: 100%;
+}
+.bio:hover ~ .image-speaker {
+	filter: brightness(0);
+}
+.bio:hover ~ .image-background {
+	background: black !important;
+} */
 
 .tile>.overlay {
 	position: absolute;
