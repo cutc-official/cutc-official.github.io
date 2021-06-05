@@ -11,7 +11,7 @@
 			<div class="tile" v-for="(speaker, name, i) in speakers" :key="speaker">
 				<!-- PHOTO -->
 				<div class="image-wrapper">
-					<!-- <p class="bio positioning">{{ speaker.bio }}</p> -->
+					<p class="bio positioning">{{ speaker.bio }}</p>
 					<div
 						class="image-background positioning"
 						:style="{ background: getColor(i) }"
@@ -85,7 +85,7 @@ export default {
 	},
 	beforeMount() {
 		if (this.limit) {
-			let sp = Object.entries(this.speakers).slice(0, this.limit);
+			const sp = Object.entries(this.speakers).slice(0, this.limit);
 			this.speakers = Object.fromEntries(sp);
 		}
 	},
@@ -148,7 +148,8 @@ export default {
 }
 
 .bio {
-	font-size: 80%;
+	/* Font size for 1050px+ */
+	font-size: .83vw;
 	box-sizing: border-box;
 	padding: 1rem;
 	z-index: 2;
@@ -157,15 +158,17 @@ export default {
 	color: whitesmoke;
 	transition: var(--bio-transition);
 }
-/* .bio:hover{
-	opacity: 100%;
+@media screen and (min-width: 850px) {
+	.bio:hover{
+		opacity: 100%;
+	}
+	.bio:hover ~ .image-speaker {
+		filter: brightness(0);
+	}
+	.bio:hover ~ .image-background {
+		background: black !important;
+	}
 }
-.bio:hover ~ .image-speaker {
-	filter: brightness(0);
-}
-.bio:hover ~ .image-background {
-	background: black !important;
-} */
 
 .tile > .overlay {
 	position: absolute;
@@ -202,7 +205,10 @@ p {
 	font-weight: 600;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1050px) {
+	.bio {
+		font-size: calc(.8vw + .5vh + .5vmin);
+	}
 	.grid {
 		grid-template-columns: 1fr 1fr;
 	}
