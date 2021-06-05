@@ -42,7 +42,7 @@
           <transition name="fade">
             <div class="dialog" v-if="popUp===index">
               <div class="name">{{speaker}}</div>
-              <div class="company">{{speakerInfo[speaker]["title"].split("@")[1]}}</div>
+              <div class="company">{{speakerInfo[speaker].org}}</div>
               <div class="dialog-diamond"></div>
             </div>
           </transition>
