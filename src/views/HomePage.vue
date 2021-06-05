@@ -7,9 +7,9 @@
 
     <div class="home-content">
       <about />
-      <!-- <speakers :limit="6" /> -->
+      <speakers :limit="6" />
       <h4 class="schedule-placeholder">Schedule coming soon!</h4>
-      <schedule :link="true" />
+      <!-- <schedule :link="true" /> -->
       <testimonials />
       <sponsorship />
       <blog :limit="6" />
@@ -24,8 +24,8 @@
 import NavBar from "@/components/general/NavBar.vue";
 import Hero from "@/components/homePage/Hero.vue";
 import About from "@/components/homePage/About.vue";
-// import Speakers from "@/components/general/Speakers.vue";
-import Schedule from "@/components/general/Schedule.vue";
+import Speakers from "@/components/general/Speakers.vue";
+// import Schedule from "@/components/general/Schedule.vue";
 import Testimonials from "@/components/homePage/Testimonials.vue";
 import Sponsorship from "@/components/homePage/Sponsorship.vue";
 import Blog from "@/components/general/Blog.vue";
@@ -39,8 +39,8 @@ export default {
     NavBar,
     Hero,
     About,
-    // Speakers,
-    Schedule,
+    Speakers,
+    // Schedule,
     Testimonials,
     Sponsorship,
     Blog,

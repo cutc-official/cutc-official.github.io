@@ -1,0 +1,49 @@
+{
+	"Robyn Orsini": {
+		"title": "Business Development Consultant",
+		"image": "Robyn Orsini.png",
+		"bio": "Robyn Orsini has been working in the tech industry for almost 10 years. She is currently the Founder of Lunas Consulting, which is a Business Development Consulting firm for Tech Startups,and Co-Founder of Loadly, a Freight Tech startup.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/robyn-orsini/"
+		}
+	},
+	"Mark Patterson": {
+		"title": "Executive Director",
+		"image": "Mark Patterson.png",
+		"bio": "Mark Patterson is pioneering new approaches in career development, inclusive recruitment and labour market information to drive change. As Executive Director, Mark leads Magnet, a technology enabled social innovation project based at Ryerson University.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/mark-patterson-a761ab/"
+		}
+	},
+	"Sarah Du": {
+		"title": "CEO & Cofounder",
+		"image": "Sarah Du.png",
+		"bio": "Sara is the founder of Alloy Automation (YC W20), an ecommerce automation platform that helps brands eliminate manual work across fulfillments, marketing, & more. Before Alloy, she was an engineer at Snap and had dropped out of her undergrad at Harvard.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/saradu"
+		}
+	},
+	"Amjad Masad": {
+		"title": "CEO and Co-Founder",
+		"image": "Amjad Masad.png",
+		"bio": "Amjad was born in the Middle Eastern country of Jordan. He started work on Repl.it as a personal project in late 2009 while he was working at Facebook with his college friend Max Shawabkeh (former Google software engineer). He's a new father with his wife and Repl.it co-Founder Haya Odeh. Amjad's hobbies include grilling fat steaks and power lifting.",
+		"links": {
+			"Twitter": "https://twitter.com/amasad"
+		}
+	},
+	"Alison Evans Adnani": {
+		"title": "Dev Degree Program Lead",
+		"image": "Allison Evans Adnani.png",
+		"bio": "Alison Evans Adnani leads the Dev Degree team at Shopify. She has over 25 years of experience as a developer and lead of education and training from global technology companies. In her free time, she powers Maker Junior, an organization that uses \"Maker\" inspired projects to help kids learn about technology.  Alison is also a published author, researcher, and is a passionate advocate for integrated learning.",
+		"links": {}
+	},
+	"Parth Sareen": {
+		"title": "Software Engineer",
+		"image": "Parth Sareen.png",
+		"bio": "Parth is a Mechatronics Engineering student at the University of Waterloo. He co-founded Augment, a platform to help students with internships which ran during summer 2020. Parth has done many coops at companies such as Apple, Tesla, and Deloitte. He's also given many presentations and been on panels with organizations such as Hack the North and Wonsulting.",
+		"links": {
+			"Twitter": "https://twitter.com/ParthSareen_",
+			"LinkedIn": "https://www.linkedin.com/in/parthsareen/"
+		}
+	}
+}

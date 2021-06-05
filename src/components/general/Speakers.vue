@@ -9,15 +9,15 @@
 		<div class="tile" v-for="(speaker, name, i) in speakers" :key="speaker">
 			<!-- PHOTO -->
 			<div class="image-wrapper">
-				<p class="bio positioning">{{ speaker.bio }}</p>
+				<!-- <p class="bio positioning">{{ speaker.bio }}</p> -->
 				<div class="image-background positioning" :style="{'background': getColor(i)}"/>
-				<img :src="getImage(speaker.image)" :alt="speaker.name + '\'s Photo'" class="image-speaker">
+				<img :src="getImage(speaker.image)" :alt="name + '\'s Photo'" class="image-speaker">
 			</div>
 			<!-- OVERLAY -->
 			<div class="overlay">
 				<div class="text">
 					<h3>{{ name }}</h3>
-					<p>{{ speaker.title }}</p>
+					<p>{{ speaker.title }}{{ speaker.org ? ' @ ' + speaker.org : '' }}</p>
 				</div>
 				<a v-for="(link, linkType) in speaker.links" :key="link" :href="link" target="_blank">
 					<img :src="getLinkImage(linkType)" :alt="link">
@@ -43,7 +43,7 @@ export default {
 	},
 	data() {
 		return {
-			speakers: this.limit ? SpeakersContent.slice(0, this.limit) : SpeakersContent,
+			speakers: SpeakersContent,
 			colors: [
 				'#8394F2',
 				'#F57A75',
@@ -72,6 +72,12 @@ export default {
 			return this.colors[i % this.colors.length]
 		}
 	},
+	beforeMount() {
+		if (this.limit) {
+			let sp = Object.entries(this.speakers).slice(0, this.limit);
+			this.speakers = Object.fromEntries(sp);
+		}
+	}
 }
 </script>
 
@@ -131,6 +137,7 @@ export default {
 }
 
 .bio {
+	font-size: 80%;
 	box-sizing: border-box;
 	padding: 1rem;
 	z-index: 2;
@@ -139,17 +146,15 @@ export default {
 	color: whitesmoke;
 	transition: var(--bio-transition);
 }
-.bio:hover{
+/* .bio:hover{
 	opacity: 100%;
 }
 .bio:hover ~ .image-speaker {
-	/* filter: invert(51%) sepia(61%) saturate(3831%) hue-rotate(162deg) brightness(96%) contrast(101%); */
-	/* filter: drop-shadow(0 -10px var(--img-color)); */
 	filter: brightness(0);
 }
 .bio:hover ~ .image-background {
 	background: black !important;
-}
+} */
 
 .tile>.overlay {
 	position: absolute;
