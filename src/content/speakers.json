@@ -1,5 +1,4 @@
 {
-
 	"Daniel Huang": {
 		"title": "CEO @ Monet",
 		"image": "Daniel Huang.png",
@@ -8,17 +7,15 @@
 			"LinkedIn": "https://www.linkedin.com/in/danielhuangucsb/"
 		}
 	},
-
 	"Justin Zheng": {
 		"title": "CEO @ Matrix",
 		"image": "Justin Zheng.png",
-		"bio": "JZ is the CEO of Matrix, where he works on esports, crypto, and creating a better fan/creator experience. He's also previously done several crypto fellowships at IDEO CoLab.",
+		"bio": "Justin Zheng is the CEO of Matrix, where he works on esports, crypto, and creating a better fan/creator experience. He's also previously done several crypto fellowships at IDEO CoLab.",
 		"links": {
 			"Twitter": "https://twitter.com/jzlegion",
 			"LinkedIn": "https://www.linkedin.com/in/zhengjustin/"
 		}
 	},
-
 	"Crystal Hunt": {
 		"title": "Senior PM @ Shopify",
 		"image": "Crystal Hunt.png",
@@ -84,6 +81,95 @@
 		"links": {
 			"Twitter": "https://twitter.com/rrana03_",
 			"LinkedIn": "https://www.linkedin.com/in/rahul-rana-99b338169/"
+		}
+	},
+	"Robyn Orsini": {
+		"title": "Business Development Consultant",
+		"image": "Robyn Orsini.png",
+		"bio": "Robyn Orsini has been working in the tech industry for almost 10 years. She is currently the Founder of Lunas Consulting, which is a Business Development Consulting firm for Tech Startups,and Co-Founder of Loadly, a Freight Tech startup.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/robyn-orsini/"
+		}
+	},
+	"Mark Patterson": {
+		"title": "Executive Director",
+		"image": "Mark Patterson.png",
+		"bio": "Mark Patterson is pioneering new approaches in career development, inclusive recruitment and labour market information to drive change. As Executive Director, Mark leads Magnet, a technology enabled social innovation project based at Ryerson University.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/mark-patterson-a761ab/"
+		}
+	},
+	"Parth Sareen": {
+		"title": "Software Engineer",
+		"image": "Parth Sareen.png",
+		"bio": "Parth is a Mechatronics Engineering student at the University of Waterloo. He co-founded Augment, a platform to help students with internships which ran during summer 2020. Parth has done many coops at companies such as Apple, Tesla, and Deloitte. He's also given many presentations and been on panels with organizations such as Hack the North and Wonsulting.",
+		"links": {
+			"Twitter": "https://twitter.com/ParthSareen_",
+			"LinkedIn": "https://www.linkedin.com/in/parthsareen/"
+		}
+	},
+	"Michelle Qin": {
+		"title": "Intern",
+		"image": "Michelle Qin.png",
+		"bio": "Michelle's a rising junior at Stanford University studying CS. She's interested in tech and entrepreneurship, which led her to internships investing at Floodgate and building products at Quaestor.",
+		"links": {
+			"Twitter": "https://twitter.com/michelleqin_"
+		}
+	},
+	"Sarah Du": {
+		"title": "CEO & Cofounder",
+		"image": "Sarah Du.png",
+		"bio": "Sara is the founder of Alloy Automation (YC W20), an ecommerce automation platform that helps brands eliminate manual work across fulfillments, marketing, & more. Before Alloy, she was an engineer at Snap and had dropped out of her undergrad at Harvard.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/saradu"
+		}
+	},
+	"Akshaya Dinesh": {
+		"title": "Co-Founder",
+		"image": "Akshaya Dinesh.png",
+		"bio": "Akshaya is the Co-Founder of Ladder, the VC-backed professional community platform for the next generation. She is currently on leave from studying Computer Science at Stanford, and previously did engineering work at Bloomberg, Microsoft, Oath, Godiva, Kitty Hawk, and more. She also previously founded a national nonprofit dedicated to closing the gender gap in tech. Akshaya got her first foray into tech by attending 45+ hackathons, and winning the Grand Prize at major hackathons like PennApps XIV and TechCrunch Disrupt.",
+		"links": {
+			"Twitter": "https://twitter.com/akshayadinesh19",
+			"LinkedIn": "https://www.linkedin.com/in/akshayadinesh/"
+		}
+	},
+	"Amjad Masad": {
+		"title": "CEO and Co-Founder",
+		"image": "Amjad Masad.png",
+		"bio": "Amjad was born in the Middle Eastern country of Jordan. He started work on Repl.it as a personal project in late 2009 while he was working at Facebook with his college friend Max Shawabkeh (former Google software engineer). He's a new father with his wife and Repl.it co-Founder Haya Odeh. Amjad's hobbies include grilling fat steaks and power lifting.",
+		"links": {
+			"Twitter": "https://twitter.com/amasad"
+		}
+	},
+	"Iris Guo": {
+		"title": "Product Manager Intern",
+		"image": "Iris Guo.png",
+		"bio": "As a Product Manager Intern at Google X and Founder/ CEO of a sustainability startup Neutrify, Iris is passionate about building products with a scalable social impact. With the mission of empowering individuals to take action to fight climate change, Iris founded Neutrify to shift food consumption towards sustainable food with a browser extension that educates users on food carbon footprints and suggests alternatives. During covid, she started a non-profit OpenMeal to alleviate hunger and support POC-owned businesses by ordering food from struggling restaurants for people in need, which has offered 3300 free meals with $24,000 raised. As a career coach, she mentor aspiring PMs and has helped many people land PM offers successfully.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/iris-guo/",
+			"Twitter": "https://twitter.com/IrisGuoo"
+		}
+	},
+	"Alison Evans Adnani": {
+		"title": "Dev Degree Program Lead",
+		"image": "Allison Evans Adnani.png",
+		"bio": "Alison Evans Adnani leads the Dev Degree team at Shopify. She has over 25 years of experience as a developer and lead of education and training from global technology companies. In her free time, she powers Maker Junior, an organization that uses \"Maker\" inspired projects to help kids learn about technology.  Alison is also a published author, researcher, and is a passionate advocate for integrated learning.",
+		"links": {}
+	},
+	"Priya Ghose": {
+		"title": "Founder",
+		"image": "Priya Ghose.png",
+		"bio": "Priya is the co-founder and CTO of Qrono, making it ridiculously easy for startups to build booking and reservation systems. Previously, she was the first engineering hire at AirGarage, a parking startup reimagining the way we use parking space in our cities.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/priyaghose/"
+		}
+	},
+	"Vivian Phung": {
+		"title": "Software Engineer ",
+		"image": "Vivian Phung.png",
+		"bio": "Vivian is an iOS Developer working on Instagram Feed, Creation, and Interactions. Before dropping out of her sophomore year, she interned at Eventbrite, Apple, and Facebook. In her free time, she enjoys cooking, baking, and shitposting on Twitter.",
+		"links": {
+			"Twitter": "https://twitter.com/vivianphung"
 		}
 	}
 }
