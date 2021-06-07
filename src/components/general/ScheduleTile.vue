@@ -148,7 +148,7 @@ export default {
 .calendar>.child {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .calendar>.child>.icon {
   width: 1rem;

@@ -1,4 +1,50 @@
 {
+	"Akshaya Dinesh": {
+		"title": "Co-Founder",
+		"org": "Ladder",
+		"image": "Akshaya Dinesh.png",
+		"bio": "Akshaya is the Co-Founder of Ladder, the VC-backed professional community platform for the next generation. She is currently on leave from studying Computer Science at Stanford, and previously did engineering work at Bloomberg, Microsoft, Oath, Godiva, Kitty Hawk, and more. She also previously founded a national nonprofit dedicated to closing the gender gap in tech.",
+		"links": {
+			"Twitter": "https://twitter.com/akshayadinesh19",
+			"LinkedIn": "https://www.linkedin.com/in/akshayadinesh/"
+		}
+	},
+	"Crystal Hunt": {
+		"title": "Senior PM",
+		"org": "Shopify",
+		"image": "Crystal Hunt.png",
+		"bio": "Crystal Hunt is a Senior Program Manager - Partnerships, on the Diversity and Belonging team at Shopify. Crystal is bringing more voices to entrepreneurship and is reducing the barriers to entry for people from underrepresented communities, and is building partnerships with organizations to help further our mission.",
+		"links": {
+			"LinkedIn": "https://linkedin.com/in/crystal-hunt-0864471a/"
+		}
+	},
+	"Ge Wang": {
+		"title": "Professor",
+		"org": "Stanford",
+		"image": "Ge Wang.png",
+		"bio": "Ge Wang is an Associate Professor at Stanford University’s Center for Computer Research in Music and Acoustics. He is the Co-founder of Smule and the designer of the Ocarina and Magic Piano apps for mobile phones. A 2016 Guggenheim Fellow, Ge is the author of Artful Design: Technology in Search of the Sublime.",
+		"links": {
+			"Website": "https://en.wikipedia.org/wiki/Ge_Wang"
+		}
+	},
+	"Sophia Dhrolia": {
+		"title": "Director of D&I",
+		"org": "Toronto Board of Trade",
+		"image": "Sophia Dhrolia.png",
+		"bio": "Sophia Dhrolia (she/they) is passionate about building a culture that values diversity, champions inclusion, and promotes collaboration to drive results. They are committed to developing environments where differences are respected and valued and where people are empowered to be their authentic selves and have equitable opportunities to thrive.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/sophia-dhrolia/"
+		}
+	},
+	"Vivian Li": {
+		"title": "Senior D&I Leader",
+		"org": "RBC",
+		"image": "Vivian Li.png",
+		"bio": "Vivian Li is a senior Diversity and Inclusion leader working for Canada’s best diversity employer.  Vivian and her team has supported over 5000 candidates from diverse communities in their job search over the past 4 years. Vivian has over 15 years of experience in HR and HR technology. Vivian holds a Master’s Degree from China.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/vivian-li-03b92411/"
+		}
+	},
 	"Daniel Huang": {
 		"title": "CEO",
 		"org": "Monet",
@@ -6,6 +52,16 @@
 		"bio": "Daniel Huang is a 20 year-old self-taught mobile / web developer and mechanical engineering student. In 2020, he co-founded Monet, a doodle-based dating and friend making mobile app which hit Apple's TestFlight limit of 10,000 users and received venture funding within weeks of its beta launch.",
 		"links": {
 			"LinkedIn": "https://www.linkedin.com/in/danielhuangucsb/"
+		}
+	},
+	"Iris Guo": {
+		"title": "Product Manager Intern",
+		"org": "X, the moonshot factory",
+		"image": "Iris Guo.png",
+		"bio": "As a Product Manager Intern at Google X and Founder/ CEO of a sustainability startup Neutrify, Iris is passionate about building products with a scalable social impact. With the mission of empowering individuals to take action to fight climate change, Iris founded Neutrify to shift food consumption towards sustainable food with a browser extension that educates users on food carbon footprints and suggests alternatives.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/iris-guo/",
+			"Twitter": "https://twitter.com/IrisGuoo"
 		}
 	},
 	"Justin Zheng": {
@@ -18,15 +74,6 @@
 			"LinkedIn": "https://www.linkedin.com/in/zhengjustin/"
 		}
 	},
-	"Crystal Hunt": {
-		"title": "Senior PM",
-		"org": "Shopify",
-		"image": "Crystal Hunt.png",
-		"bio": "Crystal Hunt is a Senior Program Manager - Partnerships, on the Diversity and Belonging team at Shopify. Crystal is bringing more voices to entrepreneurship and is reducing the barriers to entry for people from underrepresented communities, and is building partnerships with organizations to help further our mission.",
-		"links": {
-			"LinkedIn": "https://linkedin.com/in/crystal-hunt-0864471a/"
-		}
-	},
 	"Michael Ioffe": {
 		"title": "CEO",
 		"org": "Arist (YC20)",
@@ -37,24 +84,6 @@
 			"LinkedIn": "https://www.linkedin.com/in/michaelaioffe/"
 		}
 	},
-	"Ge Wang": {
-		"title": "Professor",
-		"org": "Stanford",
-		"image": "Ge Wang.png",
-		"bio": "Ge Wang is an Associate Professor at Stanford University’s Center for Computer Research in Music and Acoustics. He is the Co-founder of Smule and the designer of the Ocarina and Magic Piano apps for mobile phones. A 2016 Guggenheim Fellow, Ge is the author of Artful Design: Technology in Search of the Sublime.",
-		"links": {
-			"Website": "https://en.wikipedia.org/wiki/Ge_Wang"
-		}
-	},
-	"Vivian Li": {
-		"title": "Senior D&I Leader",
-		"org": "RBC",
-		"image": "Vivian Li.png",
-		"bio": "Vivian Li is a senior Diversity and Inclusion leader working for Canada’s best diversity employer.  Vivian and her team has supported over 5000 candidates from diverse communities in their job search over the past 4 years. Vivian has over 15 years of experience in HR and HR technology. Vivian holds a Master’s Degree from China.",
-		"links": {
-			"LinkedIn": "https://www.linkedin.com/in/vivian-li-03b92411/"
-		}
-	},
 	"Yash Godiwala": {
 		"title": "CoS",
 		"org": "Fion Technologies",
@@ -63,15 +92,6 @@
 		"links": {
 			"Twitter": "https://twitter.com/yashgodiwala",
 			"LinkedIn": "https://www.linkedin.com/in/yashgodiwala/"
-		}
-	},
-	"Sophia Dhrolia": {
-		"title": "Director of D&I",
-		"org": "Toronto Board of Trade",
-		"image": "Sophia Dhrolia.png",
-		"bio": "Sophia Dhrolia (she/they) is passionate about building a culture that values diversity, champions inclusion, and promotes collaboration to drive results. They are committed to developing environments where differences are respected and valued and where people are empowered to be their authentic selves and have equitable opportunities to thrive.",
-		"links": {
-			"LinkedIn": "https://www.linkedin.com/in/sophia-dhrolia/"
 		}
 	},
 	"Omna Toshniwal": {
@@ -100,26 +120,6 @@
 		"bio": "Michelle's a rising junior at Stanford University studying CS. She's interested in tech and entrepreneurship, which led her to internships investing at Floodgate and building products at Quaestor.",
 		"links": {
 			"Twitter": "https://twitter.com/michelleqin_"
-		}
-	},
-	"Akshaya Dinesh": {
-		"title": "Co-Founder",
-		"org": "Ladder",
-		"image": "Akshaya Dinesh.png",
-		"bio": "Akshaya is the Co-Founder of Ladder, the VC-backed professional community platform for the next generation. She is currently on leave from studying Computer Science at Stanford, and previously did engineering work at Bloomberg, Microsoft, Oath, Godiva, Kitty Hawk, and more. She also previously founded a national nonprofit dedicated to closing the gender gap in tech.",
-		"links": {
-			"Twitter": "https://twitter.com/akshayadinesh19",
-			"LinkedIn": "https://www.linkedin.com/in/akshayadinesh/"
-		}
-	},
-	"Iris Guo": {
-		"title": "Product Manager Intern",
-		"org": "X, the moonshot factory",
-		"image": "Iris Guo.png",
-		"bio": "As a Product Manager Intern at Google X and Founder/ CEO of a sustainability startup Neutrify, Iris is passionate about building products with a scalable social impact. With the mission of empowering individuals to take action to fight climate change, Iris founded Neutrify to shift food consumption towards sustainable food with a browser extension that educates users on food carbon footprints and suggests alternatives.",
-		"links": {
-			"LinkedIn": "https://www.linkedin.com/in/iris-guo/",
-			"Twitter": "https://twitter.com/IrisGuoo"
 		}
 	},
 	"Priya Ghose": {
