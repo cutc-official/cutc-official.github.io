@@ -149,7 +149,7 @@ export default {
 
 .bio {
 	/* Font size for 1050px+ */
-	font-size: .83vw;
+	font-size: .8vw;
 	box-sizing: border-box;
 	padding: 1rem;
 	z-index: 2;
@@ -158,23 +158,13 @@ export default {
 	color: whitesmoke;
 	transition: var(--bio-transition);
 }
-@media screen and (min-width: 850px) {
-	.bio:hover{
-		opacity: 100%;
-	}
-	.bio:hover ~ .image-speaker {
-		filter: brightness(0);
-	}
-	.bio:hover ~ .image-background {
-		background: black !important;
-	}
-}
 
 .tile > .overlay {
 	position: absolute;
 	right: 0;
 	bottom: -1rem;
 	width: 90%;
+	max-width: 80%;
 
 	display: flex;
 	flex-direction: column-reverse;
@@ -185,6 +175,8 @@ export default {
 	box-shadow: 0 2px 4px #00000040;
 	border-radius: 16px;
 	padding: 0.7rem 1.2rem;
+	width: max-content;
+	max-width: 100%;
 }
 .text > p {
 	line-height: 1.3;
@@ -207,7 +199,7 @@ p {
 
 @media screen and (max-width: 1050px) {
 	.bio {
-		font-size: calc(.8vw + .5vh + .5vmin);
+		font-size: 1.5vw;
 	}
 	.grid {
 		grid-template-columns: 1fr 1fr;
@@ -220,6 +212,18 @@ p {
 @media screen and (max-width: 550px) {
 	#speakers {
 		--icon-width: 1rem;
+	}
+}
+/* Only show bios for desktop */
+@media screen and (min-width: 850px) {
+	.image-wrapper:hover > .bio{
+		opacity: 100%;
+	}
+	.image-wrapper:hover > .image-speaker {
+		filter: brightness(0);
+	}
+	.image-wrapper:hover > .image-background {
+		background: black !important;
 	}
 }
 </style>
