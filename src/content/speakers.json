@@ -1,143 +1,181 @@
 {
-	"Akshaya Dinesh": {
-		"title": "Co-Founder",
-		"org": "Ladder",
-		"image": "Akshaya Dinesh.png",
-		"bio": "Akshaya is the Co-Founder of Ladder, the VC-backed professional community platform for the next generation. She is currently on leave from studying Computer Science at Stanford, and previously did engineering work at Bloomberg, Microsoft, Oath, Godiva, Kitty Hawk, and more. She also previously founded a national nonprofit dedicated to closing the gender gap in tech.",
-		"links": {
-			"Twitter": "https://twitter.com/akshayadinesh19",
-			"LinkedIn": "https://www.linkedin.com/in/akshayadinesh/"
-		}
-	},
-	"Crystal Hunt": {
-		"title": "Senior PM",
-		"org": "Shopify",
-		"image": "Crystal Hunt.png",
-		"bio": "Crystal Hunt is a Senior Program Manager - Partnerships, on the Diversity and Belonging team at Shopify. Crystal is bringing more voices to entrepreneurship and is reducing the barriers to entry for people from underrepresented communities, and is building partnerships with organizations to help further our mission.",
-		"links": {
-			"LinkedIn": "https://linkedin.com/in/crystal-hunt-0864471a/"
-		}
-	},
-	"Ge Wang": {
-		"title": "Professor",
-		"org": "Stanford",
-		"image": "Ge Wang.png",
-		"bio": "Ge Wang is an Associate Professor at Stanford University’s Center for Computer Research in Music and Acoustics. He is the Co-founder of Smule and the designer of the Ocarina and Magic Piano apps for mobile phones. A 2016 Guggenheim Fellow, Ge is the author of Artful Design: Technology in Search of the Sublime.",
-		"links": {
-			"Website": "https://en.wikipedia.org/wiki/Ge_Wang"
-		}
-	},
-	"Sophia Dhrolia": {
-		"title": "Director of D&I",
-		"org": "Toronto Board of Trade",
-		"image": "Sophia Dhrolia.png",
-		"bio": "Sophia Dhrolia (she/they) is passionate about building a culture that values diversity, champions inclusion, and promotes collaboration to drive results. They are committed to developing environments where differences are respected and valued and where people are empowered to be their authentic selves and have equitable opportunities to thrive.",
-		"links": {
-			"LinkedIn": "https://www.linkedin.com/in/sophia-dhrolia/"
-		}
-	},
-	"Vivian Li": {
-		"title": "Senior D&I Leader",
-		"org": "RBC",
-		"image": "Vivian Li.png",
-		"bio": "Vivian Li is a senior Diversity and Inclusion leader working for Canada’s best diversity employer.  Vivian and her team has supported over 5000 candidates from diverse communities in their job search over the past 4 years. Vivian has over 15 years of experience in HR and HR technology. Vivian holds a Master’s Degree from China.",
-		"links": {
-			"LinkedIn": "https://www.linkedin.com/in/vivian-li-03b92411/"
-		}
-	},
-	"Daniel Huang": {
-		"title": "CEO",
-		"org": "Monet",
-		"image": "Daniel Huang.png",
-		"bio": "Daniel Huang is a 20 year-old self-taught mobile / web developer and mechanical engineering student. In 2020, he co-founded Monet, a doodle-based dating and friend making mobile app which hit Apple's TestFlight limit of 10,000 users and received venture funding within weeks of its beta launch.",
-		"links": {
-			"LinkedIn": "https://www.linkedin.com/in/danielhuangucsb/"
-		}
-	},
-	"Iris Guo": {
-		"title": "Product Manager Intern",
-		"org": "X, the moonshot factory",
-		"image": "Iris Guo.png",
-		"bio": "As a Product Manager Intern at Google X and Founder/ CEO of a sustainability startup Neutrify, Iris is passionate about building products with a scalable social impact. With the mission of empowering individuals to take action to fight climate change, Iris founded Neutrify to shift food consumption towards sustainable food with a browser extension that educates users on food carbon footprints and suggests alternatives.",
-		"links": {
-			"LinkedIn": "https://www.linkedin.com/in/iris-guo/",
-			"Twitter": "https://twitter.com/IrisGuoo"
-		}
-	},
-	"Justin Zheng": {
-		"title": "CEO",
-		"org": "Matrix",
-		"image": "Justin Zheng.png",
-		"bio": "Justin Zheng is the CEO of Matrix, where he works on esports, crypto, and creating a better fan/creator experience. He's also previously done several crypto fellowships at IDEO CoLab.",
-		"links": {
-			"Twitter": "https://twitter.com/jzlegion",
-			"LinkedIn": "https://www.linkedin.com/in/zhengjustin/"
-		}
-	},
-	"Michael Ioffe": {
-		"title": "CEO",
-		"org": "Arist (YC20)",
-		"image": "Michael Ioffe.png",
-		"bio": "Michael Ioffe is the co-founder and CEO of Arist, a platform that helps leading companies and nonprofits rapidly create, launch, and assess text message-based courses. For his work on Arist, Michael has been named a Forbes 30 under 30. Previously, Michael founded TILE.org, an entrepreneurship education nonprofit with over 450 locations.",
-		"links": {
-			"Twitter": "https://twitter.com/realioffe",
-			"LinkedIn": "https://www.linkedin.com/in/michaelaioffe/"
-		}
-	},
-	"Yash Godiwala": {
-		"title": "CoS",
-		"org": "Fion Technologies",
-		"image": "Yash Godiwala.png",
-		"bio": "Yash Godiwala is Chief of Staff at Fion Technologies, a deeptech co (backed by Justin Kan, Sahil Lavingia and more) using GIS-enabled machine learning models to identify and analyze wildfires. He also works part-time on the platform team at Contrary, a venture firm investing in top early career talent.",
-		"links": {
-			"Twitter": "https://twitter.com/yashgodiwala",
-			"LinkedIn": "https://www.linkedin.com/in/yashgodiwala/"
-		}
-	},
-	"Omna Toshniwal": {
-		"title": "Senior PM",
-		"org": "Consensys",
-		"image": "Omna Toshniwal.png",
-		"bio": "Omna does Product Management at MetaMask / ConsenSys. She has an unwavering focus on social responsibility and is attracted to products that help improve people’s lives in real and significant ways. She has a background in HCI, and has worked mainly in FinTech & HealthTech, for global markets.",
-		"links": {
-			"LinkedIn": "https://www.linkedin.com/in/omnat/"
-		}
-	},
-	"Rahul Rana": {
-		"title": "Summer Associate",
-		"org": "Lux Capital",
-		"image": "Rahul Rana.png",
-		"bio": "Rahul Rana is an Associate at Lux Capital, a $2.5bn deeptech VC firm. He is the author of Making Moonshots—a deep dive into the mindsets, philosophies, and strategies conducive to building impactful moonshot companies. Also, he is a sophomore at Rutgers University studying Astrophysics and Finance.",
-		"links": {
-			"Twitter": "https://twitter.com/rrana03_",
-			"LinkedIn": "https://www.linkedin.com/in/rahul-rana-99b338169/"
-		}
-	},
-	"Michelle Qin": {
-		"title": "Intern",
-		"org": "Floodgate",
-		"image": "Michelle Qin.png",
-		"bio": "Michelle's a rising junior at Stanford University studying CS. She's interested in tech and entrepreneurship, which led her to internships investing at Floodgate and building products at Quaestor.",
-		"links": {
-			"Twitter": "https://twitter.com/michelleqin_"
-		}
-	},
-	"Priya Ghose": {
-		"title": "Founder",
-		"org": "Qrono",
-		"image": "Priya Ghose.png",
-		"bio": "Priya is the co-founder and CTO of Qrono, making it ridiculously easy for startups to build booking and reservation systems. Previously, she was the first engineering hire at AirGarage, a parking startup reimagining the way we use parking space in our cities.",
-		"links": {
-			"LinkedIn": "https://www.linkedin.com/in/priyaghose/"
-		}
-	},
-	"Vivian Phung": {
-		"title": "Software Engineer ",
-		"org": "Instagram",
-		"image": "Vivian Phung.png",
-		"bio": "Vivian is an iOS Developer working on Instagram Feed, Creation, and Interactions. Before dropping out of her sophomore year, she interned at Eventbrite, Apple, and Facebook. In her free time, she enjoys cooking, baking, and shitposting on Twitter.",
-		"links": {
-			"Twitter": "https://twitter.com/vivianphung"
-		}
-	}
+  "Akshaya Dinesh": {
+    "title": "Co-Founder",
+    "org": "Ladder",
+    "bio": "Akshaya is the Co-Founder of Ladder, the VC-backed professional community platform for the next generation. She is currently on leave from studying Computer Science at Stanford, and previously did engineering work at Bloomberg, Microsoft, Oath, Godiva, Kitty Hawk, and more. She also previously founded a national nonprofit dedicated to closing the gender gap in tech.",
+    "links": {
+      "Twitter": "https://twitter.com/akshayadinesh19",
+      "LinkedIn": "https://www.linkedin.com/in/akshayadinesh/"
+    }
+  },
+  "Crystal Hunt": {
+    "title": "Senior PM",
+    "org": "Shopify",
+    "bio": "Crystal Hunt is a Senior Program Manager - Partnerships, on the Diversity and Belonging team at Shopify. Crystal is bringing more voices to entrepreneurship and is reducing the barriers to entry for people from underrepresented communities, and is building partnerships with organizations to help further our mission.",
+    "links": {
+      "LinkedIn": "https://linkedin.com/in/crystal-hunt-0864471a/"
+    }
+  },
+  "Ge Wang": {
+    "title": "Professor",
+    "org": "Stanford",
+    "bio": "Ge Wang is an Associate Professor at Stanford University’s Center for Computer Research in Music and Acoustics. He is the Co-founder of Smule and the designer of the Ocarina and Magic Piano apps for mobile phones. A 2016 Guggenheim Fellow, Ge is the author of Artful Design: Technology in Search of the Sublime.",
+    "links": {
+      "Website": "https://en.wikipedia.org/wiki/Ge_Wang"
+    }
+  },
+  "Michael Ioffe": {
+    "title": "CEO",
+    "org": "Arist (YC 20)",
+    "bio": "Michael Ioffe is the co-founder and CEO of Arist, a platform that helps leading companies and nonprofits rapidly create, launch, and assess text message-based courses. For his work on Arist, Michael has been named a Forbes 30 under 30. Previously, Michael founded TILE.org, an entrepreneurship education nonprofit with over 450 locations.",
+    "links": {
+      "Twitter": "https://twitter.com/realioffe",
+      "LinkedIn": "https://www.linkedin.com/in/michaelaioffe/"
+    }
+  },
+  "Vivian Li": {
+    "title": "Senior D&I Leader",
+    "org": "RBC",
+    "bio": "Vivian Li is a senior Diversity and Inclusion leader working for Canada’s best diversity employer.  Vivian and her team has supported over 5000 candidates from diverse communities in their job search over the past 4 years. Vivian has over 15 years of experience in HR and HR technology. Vivian holds a Master’s Degree from China.",
+    "links": {
+      "LinkedIn": "https://www.linkedin.com/in/vivian-li-03b92411/"
+    }
+  },
+  "Jenn Henley": {
+    "title": "VP of Infrastructure / Technical PM",
+    "org": "Facebook",
+    "bio": "Jenn Henley has been at Facebook for 10 years. She is currently a Vice President, supporting Technical Program Management (TPM) where she is responsible for leadership, development, and growth of the global Infrastructure organization."
+  },
+  "Sophia Dhrolia": {
+    "title": "Director of D&I",
+    "org": "Toronto Board of Trade",
+    "bio": "Sophia Dhrolia (she/they) is passionate about building a culture that values diversity, champions inclusion, and promotes collaboration to drive results. They are committed to developing environments where differences are respected and valued and where people are empowered to be their authentic selves and have equitable opportunities to thrive.",
+    "links": {
+      "LinkedIn": "https://www.linkedin.com/in/sophia-dhrolia/"
+    }
+  },
+
+  "Daniel Huang": {
+    "title": "CEO",
+    "org": "Monet",
+    "bio": "Daniel Huang is a 20 year-old self-taught mobile / web developer and mechanical engineering student. In 2020, he co-founded Monet, a doodle-based dating and friend making mobile app which hit Apple's TestFlight limit of 10,000 users and received venture funding within weeks of its beta launch.",
+    "links": {
+      "LinkedIn": "https://www.linkedin.com/in/danielhuangucsb/"
+    }
+  },
+  "Iris Guo": {
+    "title": "PM Intern",
+    "org": "X, the moonshot factory",
+    "bio": "As a Product Manager Intern at Google X and Founder/ CEO of a sustainability startup Neutrify, Iris is passionate about building products with a scalable social impact. With the mission of empowering individuals to take action to fight climate change, Iris founded Neutrify to shift food consumption towards sustainable food with a browser extension that educates users on food carbon footprints and suggests alternatives.",
+    "links": {
+      "LinkedIn": "https://www.linkedin.com/in/iris-guo/",
+      "Twitter": "https://twitter.com/IrisGuoo"
+    }
+  },
+  "Justin Zheng": {
+    "title": "CEO",
+    "org": "Matrix",
+    "bio": "Justin Zheng is the CEO of Matrix, where he works on esports, crypto, and creating a better fan/creator experience. He's also previously done several crypto fellowships at IDEO CoLab.",
+    "links": {
+      "Twitter": "https://twitter.com/jzlegion",
+      "LinkedIn": "https://www.linkedin.com/in/zhengjustin/"
+    }
+  },
+  "Yash Godiwala": {
+    "title": "CoS",
+    "org": "Fion Technologies",
+    "bio": "Yash Godiwala is Chief of Staff at Fion Technologies, a deeptech co (backed by Justin Kan, Sahil Lavingia and more) using GIS-enabled machine learning models to identify and analyze wildfires. He also works part-time on the platform team at Contrary, a venture firm investing in top early career talent.",
+    "links": {
+      "Twitter": "https://twitter.com/yashgodiwala",
+      "LinkedIn": "https://www.linkedin.com/in/yashgodiwala/"
+    }
+  },
+  "Omna Toshniwal": {
+    "title": "Senior PM",
+    "org": "Consensys",
+    "bio": "Omna does Product Management at MetaMask / ConsenSys. She has an unwavering focus on social responsibility and is attracted to products that help improve people’s lives in real and significant ways. She has a background in HCI, and has worked mainly in FinTech & HealthTech, for global markets.",
+    "links": {
+      "LinkedIn": "https://www.linkedin.com/in/omnat/"
+    }
+  },
+  "Rahul Rana": {
+    "title": "Summer Associate",
+    "org": "Lux Capital",
+    "bio": "Rahul Rana is an Associate at Lux Capital, a $2.5bn deeptech VC firm. He is the author of Making Moonshots—a deep dive into the mindsets, philosophies, and strategies conducive to building impactful moonshot companies. Also, he is a sophomore at Rutgers University studying Astrophysics and Finance.",
+    "links": {
+      "Twitter": "https://twitter.com/rrana03_",
+      "LinkedIn": "https://www.linkedin.com/in/rahul-rana-99b338169/"
+    }
+  },
+  "Michelle Qin": {
+    "title": "Intern",
+    "org": "Floodgate",
+    "bio": "Michelle's a rising junior at Stanford University studying CS. She's interested in tech and entrepreneurship, which led her to internships investing at Floodgate and building products at Quaestor.",
+    "links": {
+      "Twitter": "https://twitter.com/michelleqin_"
+    }
+  },
+  "Priya Ghose": {
+    "title": "Founder",
+    "org": "Qrono",
+    "bio": "Priya is the co-founder and CTO of Qrono, making it ridiculously easy for startups to build booking and reservation systems. Previously, she was the first engineering hire at AirGarage, a parking startup reimagining the way we use parking space in our cities.",
+    "links": {
+      "LinkedIn": "https://www.linkedin.com/in/priyaghose/"
+    }
+  },
+  "Vivian Phung": {
+    "title": "Software Engineer",
+    "org": "Instagram",
+    "bio": "Vivian is an iOS Developer working on Instagram Feed, Creation, and Interactions. Before dropping out of her sophomore year, she interned at Eventbrite, Apple, and Facebook. In her free time, she enjoys cooking, baking, and shitposting on Twitter.",
+    "links": {
+      "Twitter": "https://twitter.com/vivianphung"
+    }
+  },
+  "Alison Adnani": {
+    "title": "Dev Degree Program Lead",
+    "org": "Shopify",
+    "bio": "Vivian is an iOS Developer working on Instagram Feed, Creation, and Interactions. Before dropping out of her sophomore year, she interned at Eventbrite, Apple, and Facebook. In her free time, she enjoys cooking, baking, and shitposting on Twitter.",
+    "links": {
+      "Instagram": "https://www.instagram.com/alison_evans_adnani/"
+    }
+  },
+  "Sara Du": {
+    "title": "CEO & Cofounder",
+    "org": "Alloy Automation",
+    "bio": "Sara is the founder of Alloy Automation (YC W20), an ecommerce automation platform that helps brands eliminate manual work across fulfillments, marketing, & more. Before Alloy, she was an engineer at Snap and had dropped out of her undergrad at Harvard.",
+    "links": {
+      "Twitter": "https://twitter.com/saraduit",
+      "LinkedIn": "https://www.linkedin.com/in/saradu"
+    }
+  },
+  "Robyn Orsini": {
+    "title": "Business Development Consultant",
+    "org": "Martal Group",
+    "bio": "Robyn Orsini has been working in the tech industry for almost 10 years. She is currently the Founder of Lunas Consulting, which is a Business Development Consulting firm for Tech Startups,and Co-Founder of Loadly, a Freight Tech startup.",
+    "links": {
+      "LinkedIn": "https://www.linkedin.com/in/robyn-orsini/"
+    }
+  },
+  "Mark Patterson": {
+    "title": "Executive Director",
+    "org": "Magnet",
+    "bio": "As Executive Director, Mark leads Magnet based at Ryerson University. Magnet harnesses intelligent matching technology to effectively connect people, businesses, and organizations to opportunity; with the goal of helping regions and communities collaborate and grow.",
+    "links": {
+      "LinkedIn": "https://www.linkedin.com/in/mark-patterson-a761ab/"
+    }
+  },
+  "Amjad Masad": {
+    "title": "CEO and Co-Founder",
+    "org": "Replit",
+    "bio": "As Executive Director, Mark leads Magnet based at Ryerson University. Magnet harnesses intelligent matching technology to effectively connect people, businesses, and organizations to opportunity; with the goal of helping regions and communities collaborate and grow.",
+    "links": {
+      "Twitter": "https://twitter.com/amasad",
+      "Website": "https://amasad.me/"
+    }
+  },
+  "Jihoon Jeong": {
+    "title": "CEO",
+    "org": "EM.Works",
+    "bio": "Dr. Jihoon Jeong received his MD from Hanyang University and PhD in Biomedical Engineering from University of Southern California. He is currently the CEO of EM.Works, Managing Partner of BigBang Angels and Chief Vision Officer of ModuLabs."
+  }
 }
