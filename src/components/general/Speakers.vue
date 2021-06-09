@@ -1,84 +1,95 @@
 <template>
-<div id="speakers">
-	<div class="header">
-		<h2>Our Speakers</h2>
-		<router-link v-if="limit" to="/speakers" class="view-more">View all speakers ></router-link>
-	</div>
+	<div id="speakers">
+		<div class="header">
+			<h2>Our Speakers</h2>
+			<router-link v-if="limit" to="/speakers" class="view-more"
+				>View all speakers ></router-link
+			>
+		</div>
 
-	<div class="grid" ref="grid">
-		<div class="tile" v-for="(speaker, name, i) in speakers" :key="speaker">
-			<!-- PHOTO -->
-			<div class="image-wrapper">
-				<!-- <p class="bio positioning">{{ speaker.bio }}</p> -->
-				<div class="image-background positioning" :style="{'background': getColor(i)}"/>
-				<img :src="getImage(speaker.image)" :alt="name + '\'s Photo'" class="image-speaker">
-			</div>
-			<!-- OVERLAY -->
-			<div class="overlay">
-				<div class="text">
-					<h3>{{ name }}</h3>
-					<p>{{ speaker.title }}{{ speaker.org ? ' @ ' + speaker.org : '' }}</p>
+		<div class="grid" ref="grid">
+			<div class="tile" v-for="(speaker, name, i) in speakers" :key="speaker">
+				<!-- PHOTO -->
+				<div class="image-wrapper">
+					<!-- <p class="bio positioning">{{ speaker.bio }}</p> -->
+					<div
+						class="image-background positioning"
+						:style="{ background: getColor(i) }"
+					/>
+					<img
+						:src="getImage(name)"
+						:alt="name + '\'s Photo'"
+						class="image-speaker"
+					/>
 				</div>
-				<a v-for="(link, linkType) in speaker.links" :key="link" :href="link" target="_blank">
-					<img :src="getLinkImage(linkType)" :alt="link">
-				</a>
+				<!-- OVERLAY -->
+				<div class="overlay">
+					<div class="text">
+						<h3>{{ name }}</h3>
+						<p>
+							{{ speaker.title }}{{ speaker.org ? " @ " + speaker.org : "" }}
+						</p>
+					</div>
+					<a
+						v-for="(link, linkType) in speaker.links"
+						:key="link"
+						:href="link"
+						target="_blank"
+					>
+						<img :src="getLinkImage(linkType)" :alt="link" />
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<h3 v-if="!limit" class="coming-soon">
-		and {{ 50 - Object.entries(speakers).length }}+ more speakers coming soon!
-	</h3>
-</div>
+		<h3 v-if="!limit" class="coming-soon">
+			and {{ 50 - Object.entries(speakers).length }}+ more speakers coming soon!
+		</h3>
+	</div>
 </template>
 
 <script>
 // Copied from https://www.notion.so/justinachua/c21925a8417546619ac10ecc28ebeba5?v=e69ab087042641d895b9ac9a4f233c9a
-import SpeakersContent from '@/content/speakers.json';
+import SpeakersContent from "@/content/speakers.json";
 
 export default {
-	name: 'Speakers',
+	name: "Speakers",
 	props: {
-		limit: Number
+		limit: Number,
 	},
 	data() {
 		return {
 			speakers: SpeakersContent,
-			colors: [
-				'#8394F2',
-				'#F57A75',
-				'#17ADCE',
-				'#F9AFAB',
-				'#44AF69',
-			]
-		}
+			colors: ["#8394F2", "#F57A75", "#17ADCE", "#F9AFAB", "#44AF69"],
+		};
 	},
 	methods: {
-		getImage(pic) {
+		getImage(name) {
 			try {
-				return require("@/assets/speakers/Speaker=" + pic);
-			} catch(e) {
-				// throw Error(`pic does not exist: ${pic}`);
+				// speaker name is the exact same as the file path in speaker assets
+				return require(`@/assets/speakers/Speaker=${name}.png`);
+			} catch (e) {
+				// throw Error(`pic does not exist: ${name}`);
 			}
 		},
 		getLinkImage(linkType) {
 			try {
-				return require("@/assets/speakers/links/" + linkType + '.svg');
-			} catch(e) {
+				return require("@/assets/speakers/links/" + linkType + ".svg");
+			} catch (e) {
 				// throw Error(`link type does not exist: ${linkType}`);
 			}
 		},
 		getColor(i) {
-			return this.colors[i % this.colors.length]
-		}
+			return this.colors[i % this.colors.length];
+		},
 	},
 	beforeMount() {
 		if (this.limit) {
 			let sp = Object.entries(this.speakers).slice(0, this.limit);
 			this.speakers = Object.fromEntries(sp);
 		}
-	}
-}
+	},
+};
 </script>
 
 <style scoped>
@@ -87,7 +98,7 @@ export default {
 	margin: auto;
 	--icon-width: 1.5rem;
 	--tile-radius: 1rem;
-	--bio-transition: all .5s ease;
+	--bio-transition: all 0.5s ease;
 }
 
 .view-more {
@@ -104,7 +115,7 @@ export default {
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 3vh 6vw;
+	gap: 2rem 6vw;
 }
 .tile {
 	position: relative;
@@ -112,11 +123,11 @@ export default {
 
 .image-wrapper {
 	position: relative;
-	width: calc(100% - var(--icon-width) - .5rem);
+	width: calc(100% - var(--icon-width) - 0.5rem);
 	height: 100%;
 	overflow: hidden;
 }
-.image-wrapper>.positioning {
+.image-wrapper > .positioning {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -156,7 +167,7 @@ export default {
 	background: black !important;
 } */
 
-.tile>.overlay {
+.tile > .overlay {
 	position: absolute;
 	right: 0;
 	bottom: -1rem;
@@ -166,26 +177,27 @@ export default {
 	flex-direction: column-reverse;
 	align-items: flex-end;
 }
-.overlay>.text {
+.overlay > .text {
 	background: white;
 	box-shadow: 0 2px 4px #00000040;
 	border-radius: 16px;
-	padding: .7rem 1.2rem;
+	padding: 0.7rem 1.2rem;
 }
-.text>p {
+.text > p {
 	line-height: 1.3;
 }
 /* Link image */
-.overlay>a>img {
+.overlay > a > img {
 	width: var(--icon-width);
 }
 
-h3, p {
+h3,
+p {
 	color: black;
 }
 
 .coming-soon {
-	margin-top: 1em;
+	margin-top: 3rem;
 	text-align: center;
 	font-weight: 600;
 }
@@ -194,8 +206,8 @@ h3, p {
 	.grid {
 		grid-template-columns: 1fr 1fr;
 	}
-	.overlay>.text {
-		padding: .5rem;
+	.overlay > .text {
+		padding: 0.5rem;
 		font-size: 2.4vw;
 	}
 }
