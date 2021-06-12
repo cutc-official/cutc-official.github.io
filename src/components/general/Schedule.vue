@@ -1,46 +1,50 @@
 <template>
 	<router-link v-if="link" to="/schedule">View full schedule ></router-link>
-	<div class="sidebar">
-		<h4 class="word">Topics <img :class="displayTopics ? 'arrow' : 'arrow-flipped'" src="@/assets/misc/CloseArrow.svg" @click="displayTopics = !displayTopics"></h4>
-		<span v-if="displayTopics">
-			<div style="color: black;" v-for="i in allTopics" :key="i">
-				<input type="checkbox" :id="i" :value="i" v-model="checkedTopics" class="checkbox">
-				<label for="i" class="checkboxText">{{ i }}</label>
-				<br>
-			</div>
-		</span>
-		<hr class="sidebar-hr" />
+	<span style="display: flex;">
+		<div class="sidebar">
+			<h4 class="word">Topics <img :class="displayTopics ? 'arrow' : 'arrow-flipped'" src="@/assets/misc/CloseArrow.svg" @click="displayTopics = !displayTopics"></h4>
+			<span v-if="displayTopics">
+				<div style="color: black;" v-for="i in allTopics" :key="i">
+					<input type="checkbox" :id="i" :value="i" v-model="checkedTopics" class="checkbox">
+					<label for="i" class="checkboxText">{{ i }}</label>
+					<br>
+				</div>
+			</span>
+			<hr class="sidebar-hr" />
 
-		<h4 class="word">Format <img :class="displayFormats ? 'arrow' : 'arrow-flipped'" src="@/assets/misc/CloseArrow.svg" alt="" @click="displayFormats = !displayFormats"></h4>
-		<span v-if="displayFormats">
-			<div style="color: black;" v-for="i in allFormats" :key="i">
-				<input type="checkbox" :id="i" :value="i" v-model="checkedFormats" class="checkbox">
-				<label for="i" class="checkboxText">{{ i }}</label>
-				<br>
-			</div>
-		</span>
-	</div>
-	<div>
-		<div class="top">
-			<span :class="active1 ? 'dateButton-active' : 'dateButton'" @click="active1 = true, active2 = false">JULY 24</span>
-			<span :class="active2 ? 'dateButton-active': 'dateButton'" @click="active2 = true, active1 = false">JULY 25</span>
-		<!-- <span style="position: absolute; display: inline;">
-			<h4>Timezone: </h4>
-			<select id="timezones" @change="onChange($event)">
-				<option v-for="n in 26" :key="n" :value="n">{{ n - 13 }}</option>
-			</select>
-		</span> -->
-			<hr class="top-hr" />
+			<h4 class="word">Format <img :class="displayFormats ? 'arrow' : 'arrow-flipped'" src="@/assets/misc/CloseArrow.svg" alt="" @click="displayFormats = !displayFormats"></h4>
+			<span v-if="displayFormats">
+				<div style="color: black;" v-for="i in allFormats" :key="i">
+					<input type="checkbox" :id="i" :value="i" v-model="checkedFormats" class="checkbox">
+					<label for="i" class="checkboxText">{{ i }}</label>
+					<br>
+				</div>
+			</span>
 		</div>
-		<div class="schedule">
-			<div v-for="(events, time) in scheduleData" :key="time">
-				<h4 class="time">{{ time }} <hr class="time-hr" /></h4>
-				<div v-for="tileInfo in events" :key="tileInfo">
-					<schedule-tile class="tile" v-bind="tileInfo"/>
+
+		<div>
+			<div class="top">
+				<span :class="active1 ? 'dateButton-active' : 'dateButton'" @click="active1 = true, active2 = false">JULY 24</span>
+				<span :class="active2 ? 'dateButton-active': 'dateButton'" @click="active2 = true, active1 = false">JULY 25</span>
+				<span style="position: absolute; display:flex; margin-left: 20%;">
+					<h4>Timezone: </h4>
+					<select id="timezones" @change="onChange($event)">
+						<!-- <option v-for="n in 26" :key="n" :value="n">{{ n - 13 }}</option> -->
+						<option value="time"> America/Toronto </option>
+					</select>
+				</span>
+				<hr class="top-hr" />
+			</div>
+			<div class="schedule">
+				<div v-for="(events, time) in scheduleData" :key="time">
+					<h4 class="time">{{ time }} <hr class="time-hr" /></h4>
+					<div v-for="tileInfo in events" :key="tileInfo">
+						<schedule-tile v-if="isChecked(tileInfo.topics, tileInfo.format)" class="tile" v-bind="tileInfo"/>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</span>
 </template>
 
 <script>
@@ -68,16 +72,18 @@ export default {
 			displayFormats: true
 		}
 	},
-	// methods: {
-	// 	onChange(event) {
-	// 		console.log(event.target.value);
-	// 		const dateString = '2019-04-17 05:20:37';
-	// 		const localDate = new Date(`${dateString} UTC${event.target.value}:00`);
-	// 		console.log(localDate)
-	// 		this.time = localDate
-	// 		console.log(this.time)
-	// 	},
-	// },
+	methods: {
+		onChange(event) {
+			console.log(event.target.value);
+			// var time = moment()
+		},
+		isChecked(topics, format) {
+			if(this.checkedTopics.length || this.checkedFormats.length ){
+				return ((this.checkedFormats.includes(format)) || topics.some(topic => (this.checkedTopics.includes(topic))))
+			}
+			return true
+		},
+	},
 	beforeMount() {
 		let topics = []
 		let formats = []
@@ -119,9 +125,9 @@ h4 {
 
 .top-hr {
 	position: absolute;
-	width: 78%;
+	width: 70%;
 	margin-top: 2%;
-	margin-left: 370px;
+	margin-left: -49px;
 	border: 2px solid #CCCCCC;
 }
 
@@ -174,8 +180,8 @@ h4 {
 }
 
 .schedule {
-	margin-top: 5%;
-	margin-left: 25%;
+	margin-top: 12%;
+	margin-left: 15%;
 }
 
 .tile {
