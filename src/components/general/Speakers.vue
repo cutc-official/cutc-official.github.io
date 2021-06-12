@@ -214,8 +214,8 @@ p {
 }
 /* Only show bios for desktop */
 @media screen and (min-width: 850px) {
-	.image-wrapper:hover > .bio{
-		opacity: 100%;
+	.image-wrapper:hover > .bio {
+		opacity: 1;
 	}
 	.image-wrapper:hover > .image-speaker {
 		filter: brightness(0);
