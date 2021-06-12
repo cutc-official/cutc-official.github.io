@@ -16,6 +16,7 @@
 	display: flex;
 	flex-direction: row;
 	color: black;
+	align-items: center;
 }
 .about_image{
 	width: 50%;
