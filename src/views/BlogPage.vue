@@ -26,8 +26,8 @@ export default {
 
 .blog-wrapper {
 	max-width: 1120px;
-	padding: 1.5rem;
-	margin: auto;
+	width: 80%;
+	margin: 2rem auto 5rem auto;
 }
 
 </style>

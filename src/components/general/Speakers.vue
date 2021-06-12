@@ -2,9 +2,9 @@
 	<div id="speakers">
 		<div class="header">
 			<h2>Our Speakers</h2>
-			<router-link v-if="limit" to="/speakers" class="view-more"
-				>View all speakers ></router-link
-			>
+			<router-link v-if="limit" to="/speakers" class="view-more">
+				View all speakers >
+			</router-link>
 		</div>
 
 		<div class="grid" ref="grid">
@@ -94,8 +94,6 @@ export default {
 
 <style scoped>
 #speakers {
-	max-width: 1120px;
-	margin: auto;
 	--icon-width: 1.5rem;
 	--tile-radius: 1rem;
 	--bio-transition: all 0.5s ease;

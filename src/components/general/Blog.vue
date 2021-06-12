@@ -53,11 +53,6 @@ export default {
 </script>
 
 <style scoped>
-#blog {
-	max-width: 1120px;
-	margin: auto;
-}
-
 a {
 	color: var(--main-color);
 }
