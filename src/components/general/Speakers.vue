@@ -172,7 +172,7 @@ export default {
 	background: white;
 	box-shadow: 0 2px 4px #00000040;
 	border-radius: 16px;
-	padding: 0.7rem 1.2rem;
+	padding: 0.5rem 1rem;
 	width: max-content;
 	max-width: 100%;
 }
