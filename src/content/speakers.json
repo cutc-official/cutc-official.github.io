@@ -177,5 +177,61 @@
 		"title": "CEO",
 		"org": "EM.Works",
 		"bio": "Dr. Jihoon Jeong received his MD from Hanyang University and PhD in Biomedical Engineering from University of Southern California. He is currently the CEO of EM.Works, Managing Partner of BigBang Angels and Chief Vision Officer of ModuLabs."
+	},
+	"Arielle Lok": {
+		"title": "Founder, VC Analyst",
+		"org": "Peko Produce, Ripple Ventures", 
+		"bio": "Arielle ate CPG brands @ District Ventures Capital, and now eats SaaS companies @ Ripple Ventures. She currently makes people eat weirdly shaped produce at Peko Produce, Canada’s leading “imperfect” online grocery delivery service.  She also builds a lot of mechanical keyboards.",
+		"links": {
+			"Twitter": "https://twitter.com/ariellelok",
+			"LinkedIn": "https://www.linkedin.com/in/ariellelok/"
+		}
+	}, 
+	"Aubrey de Grey": {
+		"title": "Chief Science Officer",
+		"org": "SENS Research Foundation",
+		"bio": "Dr. Aubrey de Grey is a biomedical gerontologist based in Mountain View, California, USA, and is the Chief Science Officer of SENS Research Foundation, a California-based 501(c)(3) biomedical research charity that performs and funds laboratory research dedicated to combating aging."
+	},
+	"Bernard Moon": {
+		"title": "Co-founder & Partner",
+		"org": "SparkLabs Group",
+		"bio": "Bernard Moon is a Co-founder & Partner at SparkLabs Group, which is a network of accelerators and venture capital funds that has invested in over 280 companies across 6 continents since 2013. Previously, he was a Managing Director at the Lunsford Group, which is a private investment firm with holdings in real estate, healthcare and other industries. He serves on the advisory boards to Seoul National University’s Graduate School of Data Science and Nanyang Technological University’s EcoLabs (Centre of Innovation for Energy).",
+		"links": {
+			"Twitter": "https://twitter.com/bernardmoon"
+		}
+	},
+	"Bryan Pham": {
+		"title": "CEO",
+		"org": "Asian Hustle Network",
+		"bio": "Bryan is the founder of Asian Hustle Network (AHN), Crushing it in Real Estate (CIIRE), HateIsAVirus, and a venture partner at Outliers Fund. He is passionate about bringing together communities of like-minded individuals through growing AHN to over 100,000+ members in a year and managing an active CIIRE group of over 2,000 investors. Bryan and his co-founder, Maggie Chui, are also the hosts of the Asian Hustle Network Podcast and community leaders bringing onboard AAPI entrepreneurs.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/bryanvuongpham/",
+			"Twitter": "https://twitter.com/bryanvuongpham"
+		}
+	},
+	"Malte Lauterbach": {
+		"title": "Head Analyst",
+		"org": "Reason21", 
+		"bio": "Malte 'Ian' Lauterbach is a hacktivist, analyst, photographer, storyteller and, as the Guardian deems it, a 'One man film studio'.  Contact: ian@milc.xyz",
+		"links": {
+			"Twitter": "https://twitter.com/iananalyse"
+		}
+	},
+	"Serena McDonnell": {
+		"title": "Senior Data Scientist",
+		"org": "Delphia",
+		"bio": "Serena is a Senior Data Scientist at Delphia, where she works on developing machine learning models for asset management. Serena comes from a multidisciplinary background, and holds an MSc in Mathematics, focussed on geophysical fluid dynamics and physical oceanography from the Hong Kong University of Science and Technology, and a BSc in Mathematics and Biology from McGill University.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/serenamcdonnell/"
+		}
+	},
+	"Zach Latta": {
+		"title": "CEO",
+		"org": "Hack Club",
+		"bio": "Zach Latta dropped out of high school after his freshman year to work in the technology industry and had over 5 million people using apps he worked on when he was 16. He founded Hack Club to build the program and community he wished he had in high school. He was awarded the Thiel Fellowship when he was 17 and was featured in Forbes 30 Under 30 when he was 18.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/zachlatta/",
+			"Twitter": "https://twitter.com/zachlatta"
+		}
 	}
 }
