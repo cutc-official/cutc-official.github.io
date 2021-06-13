@@ -112,8 +112,9 @@ export default {
 
 .grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 2rem 6vw;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem 4vw;
+	font-size: min(1vw, .8rem);
 }
 .tile {
 	position: relative;
@@ -146,8 +147,7 @@ export default {
 }
 
 .bio {
-	/* Font size for 1050px+ */
-	font-size: .8vw;
+	font-size: .7em;
 	box-sizing: border-box;
 	padding: 1rem;
 	z-index: 2;
@@ -172,7 +172,7 @@ export default {
 	background: white;
 	box-shadow: 0 2px 4px #00000040;
 	border-radius: 16px;
-	padding: 0.5rem 1rem;
+	padding: 0.5em 1em;
 	width: max-content;
 	max-width: 100%;
 }
@@ -188,6 +188,12 @@ h3,
 p {
 	color: black;
 }
+p {
+	font-size: 1em;
+}
+h3 {
+	font-size: 1.5em;
+}
 
 .coming-soon {
 	margin-top: 3rem;
@@ -195,18 +201,22 @@ p {
 	font-weight: 600;
 }
 
-@media screen and (max-width: 1050px) {
-	.bio {
-		font-size: 1.5vw;
+@media screen and (max-width: 1200px) {
+	.grid {
+		grid-template-columns: 1fr 1fr 1fr;
+		font-size: 1.4vw;
 	}
+}
+@media screen and (max-width: 850px) {
 	.grid {
 		grid-template-columns: 1fr 1fr;
+		font-size: 2.25vw;
 	}
 	.overlay > .text {
 		padding: 0.5rem;
-		font-size: 2.4vw;
 	}
 }
+
 @media screen and (max-width: 550px) {
 	#speakers {
 		--icon-width: 1rem;
