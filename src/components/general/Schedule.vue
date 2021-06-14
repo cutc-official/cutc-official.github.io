@@ -29,18 +29,21 @@
 				<span style="position: absolute; display:flex; margin-left: 20%;">
 					<h4>Timezone: </h4>
 					<select id="timezones" @change="onChange($event)">
-						<!-- <option v-for="n in 26" :key="n" :value="n">{{ n - 13 }}</option> -->
-						<option value="time"> America/Toronto </option>
+						<option v-for="zone in timezones" :key="zone" :value="zone">{{ zone }}</option>
 					</select>
 				</span>
 				<hr class="top-hr" />
 			</div>
 			<div class="schedule">
-				<div v-for="(events, time) in scheduleData" :key="time">
-					<h4 class="time">{{ time }} <hr class="time-hr" /></h4>
-					<div v-for="tileInfo in events" :key="tileInfo">
-						<schedule-tile v-if="isChecked(tileInfo.topics, tileInfo.format)" class="tile" v-bind="tileInfo"/>
-					</div>
+				<div v-for="(schedule, day) in scheduleData" :key="day">
+					<span v-if="isDay(day)">
+						<div v-for="(events, time) in schedule" :key="time">
+							<h4 class="time" id="time">{{ time }}</h4> <hr class="time-hr" />
+							<div v-for="tileInfo in events" :key="tileInfo">
+								<schedule-tile v-if="isChecked(tileInfo.topics, tileInfo.format)" class="tile" v-bind="tileInfo"/>
+							</div>
+						</div>
+					</span>
 				</div>
 			</div>
 		</div>
@@ -50,6 +53,7 @@
 <script>
 import ScheduleTile from "@/components/general/ScheduleTile.vue";
 import ScheduleContent from '@/content/schedule.json';
+var moment = require('moment-timezone');
 
 export default {
 	name: 'Schedule',
@@ -69,13 +73,38 @@ export default {
 			active1: true,
 			active2: false,
 			displayTopics: true,
-			displayFormats: true
+			displayFormats: true,
+			timezones: [
+				'Africa/Lagos',
+				'America/Argentina/Rio_Gallegos',
+				'America/Buenos_Aires',
+				'America/Chicago',
+				'America/Costa_Rica',
+				'America/Detroit',
+				'America/Edmonton',
+				'America/Halifax',
+				'America/Jamaica',
+				'America/Los_Angeles',
+				'America/Montreal',
+				'America/Sao_Paulo',
+				'America/Toronto',
+				'Asia/Beirut',
+				'Asia/Dubai',
+				'Asia/Qatar',
+				'Atlantic/Bermuda',
+				'Australia/Melbourne',
+				'Brazil/East',
+				'Canada/Central',
+				'Canada/Eastern',
+				'Europe/Amsterdam',
+			],
 		}
 	},
 	methods: {
 		onChange(event) {
-			console.log(event.target.value);
-			// var time = moment()
+			const time = document.getElementById("time");
+			const date = (moment(time.innerHTML, 'hh:mm')).toDate()
+			time.innerHTML = moment.tz(date, event.target.value).format("hh:mm")
 		},
 		isChecked(topics, format) {
 			if(this.checkedTopics.length || this.checkedFormats.length ){
@@ -83,16 +112,26 @@ export default {
 			}
 			return true
 		},
+		isDay(day){
+			if(this.active1 && day == "July 24"){
+				return true
+			} else if (this.active2 && day == "July 25"){
+				return true
+			}
+			return false
+		}
 	},
 	beforeMount() {
 		let topics = []
 		let formats = []
 		for(let i in this.scheduleData){
 			for(let j in this.scheduleData[i]){
-				for(let k in this.scheduleData[i][j]["topics"]){
-					topics.push(this.scheduleData[i][j]["topics"][k])
+				for(let k in this.scheduleData[i][j]){
+					for(let l in this.scheduleData[i][j][k]["topics"]){
+						topics.push(this.scheduleData[i][j][k]["topics"][l])
+					}
+					formats.push(this.scheduleData[i][j][k]["format"])
 				}
-				formats.push(this.scheduleData[i][j]["format"])
 			}
 		}
 		this.allTopics = [...new Set(topics)]
@@ -154,6 +193,7 @@ h4 {
 
 .time {
 	margin-top: 2%;
+	display: inline;
 }
 
 .top {

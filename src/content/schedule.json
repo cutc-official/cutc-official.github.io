@@ -1,33 +1,68 @@
 {
-	"8:00": [
-		{
-			"title": "title 1",
-			"description": "desc",
-			"format": "workshop",
-			"location": "",
-			"timestamp": "",
-			"topics": ["t1", "t2"],
-			"speakers": [""]
-		},
-		{
-			"title": "",
-			"description": "",
-			"format": "talk",
-			"location": "",
-			"timestamp": "",
-			"topics": ["t3", "t4"],
-			"speakers": [""]
-		}
-	],
-	"9:30": [
-		{
-			"title": "",
-			"description": "",
-			"format": "",
-			"location": "",
-			"timestamp": "",
-			"topics": ["t3", "t2"],
-			"speakers": [""]
-		}
-	]
+	"July 24": {
+		"8:00": [
+			{
+				"title": "title 1",
+				"description": "desc",
+				"format": "workshop",
+				"location": "",
+				"timestamp": "",
+				"topics": ["t1", "t2"],
+				"speakers": [""]
+			},
+			{
+				"title": "",
+				"description": "",
+				"format": "talk",
+				"location": "",
+				"timestamp": "",
+				"topics": ["t3", "t4"],
+				"speakers": [""]
+			}
+		],
+		"9:30": [
+			{
+				"title": "",
+				"description": "",
+				"format": "",
+				"location": "",
+				"timestamp": "",
+				"topics": ["t3", "t2"],
+				"speakers": [""]
+			}
+		]
+	},
+	"July 25": {
+		"10:00": [
+			{
+				"title": "title 1",
+				"description": "desc",
+				"format": "workshop",
+				"location": "",
+				"timestamp": "",
+				"topics": ["t1", "t2"],
+				"speakers": [""]
+			},
+			{
+				"title": "",
+				"description": "",
+				"format": "talk",
+				"location": "",
+				"timestamp": "",
+				"topics": ["t3", "t4"],
+				"speakers": [""]
+			}
+		],
+		"11:30": [
+			{
+				"title": "",
+				"description": "",
+				"format": "",
+				"location": "",
+				"timestamp": "",
+				"topics": ["t3", "t2"],
+				"speakers": [""]
+			}
+		]
+	}
 }
