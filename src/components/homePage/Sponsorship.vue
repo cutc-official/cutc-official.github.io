@@ -5,7 +5,7 @@
 		<a target="_blank" href="https://www.geotab.com"     class="gold">   <img src="@/assets/sponsors/geotab.png"    alt="Geotab"></a>
 		<a target="_blank" href="https://www.shopify.com/"   class="silver"> <img src="@/assets/sponsors/shopify.png"   alt="Shopify"></a>
 		<a target="_blank" href="https://www.accenture.com/" class="silver"> <img src="@/assets/sponsors/accenture.png" alt="Accenture"></a>
-		<a target="_blank" href="http://flipp.com/"          class="bronze"> <img src="@/assets/sponsors/flipp.png"     alt="Flipp"></a>
+		<a target="_blank" href="http://flipp.com/home"      class="bronze"> <img src="@/assets/sponsors/flipp.png"     alt="Flipp"></a>
 		<a target="_blank" href="http://copysmith.ai/"       class="partner"><img src="@/assets/sponsors/copysmith.png" alt="Copysmith"></a>
 	</div>
 	<div class="desktop">
