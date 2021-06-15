@@ -7,7 +7,7 @@
 
 		<div class="home-content">
 			<about />
-			<speakers :limit="6" />
+			<speakers :limit="8" />
 			<!-- <h4 class="schedule-placeholder">Schedule coming soon!</h4> -->
 			<schedule-preview />
 			<testimonials />

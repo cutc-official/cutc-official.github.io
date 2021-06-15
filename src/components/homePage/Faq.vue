@@ -10,13 +10,13 @@
 						{{qa.question}}
 					</button>
 					<transition name="fadeHeight">
-						<p v-if="qa.question == currentQuestion" class="p-content">{{qa.answer}}</p>
+						<p v-if="qa.question == currentQuestion" class="p-content" v-html="qa.answer"></p>
 					</transition>
 				</div>
 			</div>
 		</div>
 		<div class="button-holder">
-			<a class="ask button" href="mailto:info@cutc.ca">Send us a question!</a>
+			<a class="ask" href="mailto:info@cutc.ca">Send us a question!</a>
 		</div>
 	</div>
 </template>
@@ -61,6 +61,7 @@ export default {
 }
 .question {
 	overflow-wrap: break-word;
+	font-family: inherit;
 	background: none;
 	border: none;
 	padding: 1rem 0.5rem;
@@ -86,9 +87,6 @@ export default {
 	transform: matrix(0.02, 1, -1, 0.02, 0, 0);
 }
 
-button {
-	font-family: inherit;
-}
 .button-holder {
 	margin-top: 2rem;
 	display: grid;
@@ -103,6 +101,7 @@ button {
 
 	cursor: pointer;
 	text-decoration: none;
+	color: white;
 }
 
 .fadeHeight-enter-active,
@@ -115,5 +114,12 @@ button {
 	opacity: 0;
 	max-height: 0px;
 	overflow: hidden;
+}
+
+/* Deep selector due to dynamic content */
+.p-content >>> a {
+	color: var(--main-color);
+	text-decoration: underline;
+	text-decoration-color: var(--main-color);
 }
 </style>

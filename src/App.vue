@@ -33,9 +33,6 @@ body {
 
 /* GLOBAL STYLES */
 
-a {
-	color: white;
-}
 p {
 	font-size: 1em;
 }

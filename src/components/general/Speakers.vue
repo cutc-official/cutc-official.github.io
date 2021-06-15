@@ -51,6 +51,11 @@
 			and {{ 50 - Object.entries(speakers).length }}+ more speakers coming
 			soon!
 		</h3>
+		<!-- <h3 v-else>
+			<router-link v-if="limit" to="/speakers" class="view-more">
+				View all speakers
+			</router-link>
+		</h3> -->
 	</div>
 </template>
 
