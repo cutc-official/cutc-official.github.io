@@ -7,7 +7,7 @@
 
     <div class="home-content">
       <about />
-      <speakers :limit="6" />
+      <speakers :limit="8" />
       <h4 class="schedule-placeholder">Schedule coming soon!</h4>
       <!-- <schedule :link="true" /> -->
       <testimonials />
@@ -46,11 +46,11 @@ export default {
     Blog,
     Faq,
     Contributors,
-    Bottom
-  }
+    Bottom,
+  },
 };
-</script>,
-		Sponsorship
+</script>
+, Sponsorship
 
 <style>
 .home-content {
