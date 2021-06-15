@@ -5,18 +5,20 @@
 		<hero />
 	</div>
 
-	<div class="home-content">
-		<about />
-		<speakers :limit="8" />
-		<h4 class="schedule-placeholder">Schedule coming soon!</h4>
-		<!-- <schedule :link="true" /> -->
-		<testimonials />
-		<sponsorship />
-		<blog :limit="6" />
-		<faq />
-		<contributors />
-	</div>
-	<bottom />
+		<div class="home-content">
+			<about />
+			<speakers :limit="6" />
+			<!-- <h4 class="schedule-placeholder">Schedule coming soon!</h4> -->
+			<div style="margin: 2rem; display: block;">
+				<schedule :link="true" />
+			</div>
+			<testimonials />
+			<sponsorship />
+			<blog :limit="6" />
+			<faq />
+			<contributors />
+		</div>
+		<bottom />
 	</span>
 </template>
 
@@ -25,7 +27,7 @@ import NavBar from "@/components/general/NavBar.vue";
 import Hero from "@/components/homePage/Hero.vue";
 import About from "@/components/homePage/About.vue";
 import Speakers from "@/components/general/Speakers.vue";
-// import Schedule from "@/components/general/Schedule.vue";
+import Schedule from "@/components/general/Schedule.vue";
 import Testimonials from "@/components/homePage/Testimonials.vue";
 import Sponsorship from "@/components/homePage/Sponsorship.vue";
 import Blog from "@/components/general/Blog.vue";
@@ -36,18 +38,18 @@ import Bottom from "@/components/general/Footer.vue";
 export default {
 	name: "Home",
 	components: {
-	NavBar,
-	Hero,
-	About,
-	Speakers,
-	// Schedule,
-	Testimonials,
-	Sponsorship,
-	Blog,
-	Faq,
-	Contributors,
-	Bottom,
-	},
+		NavBar,
+		Hero,
+		About,
+		Speakers,
+		Schedule,
+		Testimonials,
+		Sponsorship,
+		Blog,
+		Faq,
+		Contributors,
+		Bottom
+	}
 };
 </script>
 
