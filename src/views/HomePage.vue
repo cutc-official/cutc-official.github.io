@@ -9,9 +9,7 @@
 			<about />
 			<speakers :limit="6" />
 			<!-- <h4 class="schedule-placeholder">Schedule coming soon!</h4> -->
-			<div style="margin: 2rem; display: block;">
-				<schedule :link="true" />
-			</div>
+			<schedule-preview />
 			<testimonials />
 			<sponsorship />
 			<blog :limit="6" />
@@ -27,7 +25,7 @@ import NavBar from "@/components/general/NavBar.vue";
 import Hero from "@/components/homePage/Hero.vue";
 import About from "@/components/homePage/About.vue";
 import Speakers from "@/components/general/Speakers.vue";
-import Schedule from "@/components/general/Schedule.vue";
+import SchedulePreview from "@/components/homePage/SchedulePreview.vue";
 import Testimonials from "@/components/homePage/Testimonials.vue";
 import Sponsorship from "@/components/homePage/Sponsorship.vue";
 import Blog from "@/components/general/Blog.vue";
@@ -42,7 +40,7 @@ export default {
 		Hero,
 		About,
 		Speakers,
-		Schedule,
+		SchedulePreview,
 		Testimonials,
 		Sponsorship,
 		Blog,
