@@ -233,5 +233,39 @@
 			"LinkedIn": "https://www.linkedin.com/in/zachlatta/",
 			"Twitter": "https://twitter.com/zachlatta"
 		}
+	},
+	"Leonard Lee": {
+		"title": "Managing Director",
+		"org": "neXt Curve",
+		"bio": "Leonard Lee is the managing director and founder of neXt Curve, a research advisory firm focused on cross-domain ICT technology and industry research. neXt Curve advises some of the leading technology companies, regulators and enterprises. Leonard has worked closely with numerous Global 500 companies in driving business innovation and value through digital technologies and reinvention, and has helped top technology vendors with their go-to-market strategies for their digital products and services.",
+		"links": {
+			"LinkedIn": "http://linkedin.com/in/leonard-lee-nextcurve"
+		}
+
+	},
+	"Ryan D'Silva": {
+		"title": "Startup Advisor & Mentor",
+		"org": "PerkupApp & ScaleGrowth",
+		"bio": "Ryan is a startup advisor & mentor with 15 years experience as a product manager, driving growth via fintech for Yelp, Eventbrite & PayPal. With an engineering background, he’s an expert on product-led growth, positioning, fintech, lean methods, user research and has helped to take 2 companies to IPO. On weekends, you can find Ryan hiking with his wife and pup near San Francisco, out surfing or building something in his garage.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/dsilva/"
+		}
+	},
+	"Parth Sareen": {
+		"title": "Software Engineer",
+		"org": "Apple",
+		"bio": "Parth is a Mechatronics Engineering student at the University of Waterloo. He co-founded Augment, a platform to help students with internships which ran during summer 2020. Parth has done many coops at companies such as Apple, Tesla, and Deloitte. He’s also given many presentations and been on panels with organizations such as Hack the North and Wonsulting.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/parthsareen/",
+			"Twitter": "https://twitter.com/ParthSareen_"
+		}
+	},
+	"Wendy Cukier": {
+		"title": "Founder",
+		"org": "Diversity Institute",
+		"bio": "Dr. Wendy Cukier is the Diversity Institute Founder, Academic Director of the Women Entrepreneurship Knowledge Hub and Research Lead of the Future Skills Centre. She is the co-author of the bestseller, Innovation Nation: Canadian Leadership from Java to Jurassic Park and former VP of Research and Innovation. She has been named a YWCA Woman of Distinction and one of the International Women’s Forum 2020 Women Who Make a Difference, a Woman of Influence and one of the '100 Alumni who shaped the Century' by the University of Toronto.",
+		"links": {
+			"LinkedIn": "https://www.linkedin.com/in/wendy-cukier-9aa85910/"
+		}
 	}
 }
