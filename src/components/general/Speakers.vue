@@ -1,12 +1,6 @@
 <template>
 	<div id="speakers">
-		<div class="header">
-			<h2>Our Speakers</h2>
-			<router-link v-if="limit" to="/speakers" class="view-more">
-				View all speakers >
-			</router-link>
-		</div>
-
+		<h2>Our Speakers</h2>
 		<div class="grid" ref="grid">
 			<div
 				class="tile"
@@ -31,8 +25,8 @@
 					<div class="text">
 						<h3>{{ name }}</h3>
 						<p>
-							{{ speaker.title
-							}}{{ speaker.org ? " @ " + speaker.org : "" }}
+							{{ speaker.title }}
+							{{ speaker.org ? " @ " + speaker.org : "" }}
 						</p>
 					</div>
 					<a
@@ -51,11 +45,9 @@
 			and {{ 50 - Object.entries(speakers).length }}+ more speakers coming
 			soon!
 		</h3>
-		<!-- <h3 v-else>
-			<router-link v-if="limit" to="/speakers" class="view-more">
-				View all speakers
-			</router-link>
-		</h3> -->
+		<div v-else class="view-more">
+			<router-link to="/speakers">View all speakers</router-link>
+		</div>
 	</div>
 </template>
 
@@ -110,22 +102,11 @@ export default {
 	--bio-transition: all 0.5s ease;
 }
 
-.view-more {
-	color: var(--main-color);
-	text-decoration: underline;
-	margin-left: 1rem;
-}
-
-.header {
-	display: flex;
-	align-items: baseline;
-}
-
 .grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 2rem 4vw;
-	font-size: min(1vw, 0.8rem);
+	font-size: min(1vw, 0.85rem);
 }
 .tile {
 	position: relative;
@@ -158,7 +139,7 @@ export default {
 }
 
 .bio {
-	font-size: 0.7em;
+	font-size: 0.75em;
 	box-sizing: border-box;
 	padding: 1rem;
 	z-index: 2;
@@ -173,7 +154,7 @@ export default {
 	right: 0;
 	bottom: -1rem;
 	width: 90%;
-	max-width: 80%;
+	max-width: 85%;
 
 	display: flex;
 	flex-direction: column-reverse;
@@ -210,6 +191,20 @@ h3 {
 	margin-top: 3rem;
 	text-align: center;
 	font-weight: 600;
+}
+
+.view-more {
+	margin-top: 3rem;
+	display: flex;
+	justify-content: center;
+}
+.view-more > a {
+	background: #e84545;
+	border-radius: .5rem;
+	padding: 1em 2em;
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
 }
 
 @media screen and (max-width: 1200px) {

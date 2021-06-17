@@ -8,7 +8,6 @@
 		<div class="home-content">
 			<about />
 			<speakers :limit="8" />
-			<h4 class="schedule-placeholder">Schedule coming soon!</h4>
 			<schedule-preview />
 			<testimonials />
 			<sponsorship />
@@ -60,13 +59,6 @@ export default {
 
 #home-page h2 {
 	margin-top: 2em;
-}
-
-.schedule-placeholder {
-	margin-top: 2em;
-	text-align: center;
-	color: black;
-	font-weight: bold;
 }
 
 .fade {
