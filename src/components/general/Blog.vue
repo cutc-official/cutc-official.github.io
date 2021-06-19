@@ -1,10 +1,6 @@
 <template>
 	<div id="blog">
-		<div class="header">
-			<h2>Our Blog</h2>
-			<router-link v-if="limit" to="/blog" class="more">View all articles ></router-link>
-		</div>
-
+		<h2>Our Blog</h2>
 		<div class="grid">
 			<div class="tile" v-for="blog in blogData" :key="blog">
 				<a :href="blog.url" target="_blank">
@@ -15,6 +11,9 @@
 					</div>
 				</a>
 			</div>
+		</div>
+		<div v-if="limit" class="view-more">
+			<router-link v-if="limit" to="/blog" class="more">View all articles</router-link>
 		</div>
 	</div>
 </template>
@@ -57,17 +56,6 @@ a {
 	color: var(--main-color);
 }
 
-router-link {
-	text-decoration: underline;
-}
-
-.header {
-	display: flex;
-	align-items: baseline;
-	grid-column-gap: 40px;
-	margin-bottom: 0.5rem;
-}
-
 .more {
 	text-decoration: underline;
 }
@@ -100,13 +88,24 @@ router-link {
 	transform: scale(0.9);
 }
 
+.view-more {
+	margin-top: 3rem;
+	display: flex;
+	justify-content: center;
+}
+.view-more > a {
+	background: #e84545;
+	border-radius: .5rem;
+	padding: 1em 2em;
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+}
+
 @media screen and (max-width: 850px) {
 	.grid {
 		row-gap: 2rem;
 		grid-template-columns: 1fr;
-	}
-	.header {
-		white-space: pre-line;
 	}
 }
 </style>
