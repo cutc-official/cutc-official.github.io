@@ -13,7 +13,7 @@
 			</div>
 		</div>
 		<div v-if="limit" class="view-more">
-			<router-link v-if="limit" to="/blog" class="more">View all articles</router-link>
+			<router-link to="/blog">View all articles</router-link>
 		</div>
 	</div>
 </template>
@@ -56,10 +56,6 @@ a {
 	color: var(--main-color);
 }
 
-.more {
-	text-decoration: underline;
-}
-
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -86,20 +82,6 @@ a {
 
 .image:hover {
 	transform: scale(0.9);
-}
-
-.view-more {
-	margin-top: 3rem;
-	display: flex;
-	justify-content: center;
-}
-.view-more > a {
-	background: #e84545;
-	border-radius: .5rem;
-	padding: 1em 2em;
-	color: white;
-	text-decoration: none;
-	font-weight: 500;
 }
 
 @media screen and (max-width: 850px) {

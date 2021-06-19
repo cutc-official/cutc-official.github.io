@@ -102,4 +102,19 @@ input {
 .fade-leave-to {
   opacity: 0;
 }
+
+/* ! Extract to a component, rather than global CSS */
+.view-more {
+	margin-top: 3rem;
+	display: flex;
+	justify-content: center;
+}
+.view-more > a {
+	background: #e84545;
+	border-radius: .5rem;
+	padding: 1em 2em;
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+}
 </style>

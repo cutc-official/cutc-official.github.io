@@ -193,20 +193,6 @@ h3 {
 	font-weight: 600;
 }
 
-.view-more {
-	margin-top: 3rem;
-	display: flex;
-	justify-content: center;
-}
-.view-more > a {
-	background: #e84545;
-	border-radius: .5rem;
-	padding: 1em 2em;
-	color: white;
-	text-decoration: none;
-	font-weight: 500;
-}
-
 @media screen and (max-width: 1200px) {
 	.grid {
 		grid-template-columns: 1fr 1fr 1fr;

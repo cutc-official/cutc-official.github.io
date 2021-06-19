@@ -1,10 +1,5 @@
 <template>
-<div class="header">
-	<h2>Featured Events</h2>
-	<!--<router-link to="./views/schedule" class="schedule-link">
-		View all events and full schedule >
-	</router-link>-->
-</div>
+<h2>Featured Events</h2>
 <div class="content">
 	<div class="box pink">
 		<div class="pinkText">
@@ -39,6 +34,9 @@
 		<img id="illustration" src="@/assets/schedule/illustration.svg" alt="illustration">
 	</div>
 </div>
+<!-- <div class="view-more">
+	<router-link to="/schedule">View full schedule</router-link>
+</div> -->
 </template>
 
 <script>
@@ -51,94 +49,70 @@ export default {
 </script>
 
 <style scoped>
-.schedule-link {
-	color: var(--main-color);
-	text-decoration: underline;
-}
-.header {
-	display: flex;
-	align-items: baseline;
-	column-gap: 40px;
-}
-.content{
+.content {
 	display: grid;
-	grid-template-columns: 40% 55%;
-	grid-auto-rows: 50% 50%;
-	grid-gap: 0% 4%;
+	grid-template-columns: 45% 1fr;
+	grid-gap: 2rem;
 	grid-template-areas: 
 		"pink blue"
 		"pink green";
 }
-.box{
-	border-radius: 10px;
+
+.box {
+	border-radius: 1rem;
 	display: flex;
-}
-.pink{
-	background-color: #ED7C77;
 	width: 100%;
+}
+.pink {
+	background-color: #ED7C77;
 	grid-area: pink;
 	flex-direction: column;
+	justify-content: space-between;
 }
-.blue{
+.blue {
 	background-color: #0094B5;
-	width: 100%;
 	grid-area: blue;
 	flex-direction: row;
-	margin-bottom: 5%;
 }
-.green{
+.green {
 	background-color: #44AF69;
-	width: 100%;
 	grid-area: green;
 	flex-direction: row-reverse;
 }
-h3{
+
+h3 {
 	font-weight: bold;
-	padding: 25px 25px 5px 25px;
+	padding: 1.5rem;
+	padding-bottom: 0;
 }
-ul{
-	padding: 0px 50px 10px 50px;
+ul {
+	padding: 0 3rem;
 }
-li{
-	padding: 5px 0px;
+li {
+	padding: .25rem;
 }
 #astronaut, #illustration{
-	padding: 0px 20px;
+	padding: 0 1rem;
 	height: 80%;
-	margin: auto 0px;
+	margin: auto 0;
 }
+
 @media screen and (max-width:1250px) {
-	ul{
-		padding-bottom: 0px;
-	}
-	#astronaut, #illustration{
-		padding: 0px 20px;
+	#astronaut, #illustration {
 		width: 20%;
 		margin: auto;
 	}
 }
-@media screen and (max-width:880px) {
-	.header{
+@media screen and (max-width:850px)  {
+	.content {
 		display: flex;
 		flex-direction: column;
 	}
-	.content{
-		display: flex;
+	.box {
 		flex-direction: column;
 	}
-	.content > div{
-		margin: 3% auto;
-	}
-	.box{
-		flex-direction: column;
-	}
-	ul{
-		padding-bottom: 0px;
-	}
-	#astronaut, #illustration{
-		padding: 0px 0px 20px 0px;
-		width: 20%;
-		margin: auto;
+	#astronaut, #illustration {
+		padding-bottom: 1rem;
 	}
 }
 </style>
