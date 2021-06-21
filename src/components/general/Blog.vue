@@ -52,10 +52,6 @@ export default {
 </script>
 
 <style scoped>
-a {
-	color: var(--main-color);
-}
-
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
