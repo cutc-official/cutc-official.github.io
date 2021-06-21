@@ -1,53 +1,51 @@
 <template>
-<div>
+<div id="schedule">
 	<nav-bar/>
 	<span style="display: flex;">
 		<div class="sidebar">
-			<h4 class="word">Topics <img :class="displayTopics ? 'arrow' : 'arrow-flipped'" src="@/assets/misc/CloseArrow.svg" @click="displayTopics = !displayTopics"></h4>
+			<h4>Topics</h4>
 			<span v-if="displayTopics">
-				<div style="color: black;" v-for="i in allTopics" :key="i">
+				<div class="checkbox-row" v-for="i in allTopics" :key="i">
 					<input type="checkbox" :id="i" :value="i" v-model="checkedTopics" class="checkbox">
 					<label for="i" class="checkboxText">{{ i }}</label>
-					<br>
 				</div>
 			</span>
-			<hr class="sidebar-hr" />
 
-			<h4 class="word">Format <img :class="displayFormats ? 'arrow' : 'arrow-flipped'" src="@/assets/misc/CloseArrow.svg" alt="" @click="displayFormats = !displayFormats"></h4>
+			<h4>Format</h4>
 			<span v-if="displayFormats">
-				<div style="color: black;" v-for="i in allFormats" :key="i">
+				<div class="checkbox-row" v-for="i in allFormats" :key="i">
 					<input type="checkbox" :id="i" :value="i" v-model="checkedFormats" class="checkbox">
 					<label for="i" class="checkboxText">{{ i }}</label>
-					<br>
 				</div>
 			</span>
 		</div>
 
-		<div>
+		<div class="content">
 			<div class="top">
 				<span :class="active1 ? 'dateButton-active' : 'dateButton'" @click="active1 = true, active2 = false">JULY 24</span>
 				<span :class="active2 ? 'dateButton-active': 'dateButton'" @click="active2 = true, active1 = false">JULY 25</span>
-				<span style="position: absolute; display:flex; margin-left: 20%;">
+				<!-- <span>
 					<h4>Timezone: </h4>
 					<select id="timezones" @change="onChange($event)">
 						<option v-for="zone in timezones" :key="zone" :value="zone">{{ zone }}</option>
 					</select>
-				</span>
-				<hr class="top-hr" />
+				</span> -->
 			</div>
+
 			<div class="schedule">
 				<div v-for="(schedule, day) in scheduleData" :key="day">
 					<span v-if="isDay(day)">
 						<div v-for="(events, time) in schedule" :key="time">
-							<h4 class="time" id="time">{{ time }}</h4> <hr class="time-hr" />
+							<h4 class="time" id="time" v-if="events && events.length">{{ time }}</h4>
 							<div v-for="tileInfo in events" :key="tileInfo">
-								<schedule-tile v-if="isChecked(tileInfo.topics, tileInfo.format)" class="tile" v-bind="tileInfo"/>
+								<schedule-tile v-if="isChecked(tileInfo.topics, tileInfo.format)" v-bind="tileInfo"/>
 							</div>
 						</div>
 					</span>
 				</div>
 			</div>
-		</div>
+
+		</div>	
 	</span>
 	<bottom/>
 </div>
@@ -75,7 +73,7 @@ export default {
 			checkedTopics: [],
 			allFormats: [],
 			checkedFormats: [],
-			active1: true,
+			active1: true, // ! Change to activeDay
 			active2: false,
 			displayTopics: true,
 			displayFormats: true,
@@ -133,9 +131,11 @@ export default {
 			for(let j in this.scheduleData[i]){
 				for(let k in this.scheduleData[i][j]){
 					for(let l in this.scheduleData[i][j][k]["topics"]){
-						topics.push(this.scheduleData[i][j][k]["topics"][l])
+						const topic = this.scheduleData[i][j][k]["topics"][l];
+						if (topic) topics.push(topic)
 					}
-					formats.push(this.scheduleData[i][j][k]["format"])
+					const format = this.scheduleData[i][j][k]["format"];
+					if (format) formats.push(format)
 				}
 			}
 		}
@@ -146,6 +146,10 @@ export default {
 </script>
 
 <style scoped>
+#schedule {
+	--desktop-sidebar-width: 20rem;
+}
+
 a {
 	color: var(--main-color);
 	text-decoration: underline;
@@ -155,10 +159,21 @@ h4 {
 	color: black;
 }
 
-.word {
-	margin: 2rem 0 2rem 2rem;
+.sidebar {
+	width: var(--desktop-sidebar-width);
+	height: 100vh;
+	border-right: 1px solid rgb(0, 0, 0, 0.25);
+	padding: 1rem;
 }
 
+.content {
+	width: 100%;
+}
+
+.time {
+	margin-top: 2%;
+	display: inline;
+}
 .time-hr {
 	display: inline;
 	position: absolute;
@@ -167,42 +182,8 @@ h4 {
 	border: 2px solid #CCCCCC;
 }
 
-.top-hr {
-	position: absolute;
-	width: 70%;
-	margin-top: 2%;
-	margin-left: -49px;
-	border: 2px solid #CCCCCC;
-}
-
-.sidebar {
-	width: 400px;
-	float: left;
-	height: 1000px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	margin-right: 1rem;
-}
-
-.arrow {
-	margin-left: 30%;
-	width: 20px;
-	height: 15px;
-}
-
-.arrow-flipped {
-	margin-left: 30%;
-	width: 20px;
-	height: 15px;
-	transform: rotate(180deg);
-}
-
-.time {
-	margin-top: 2%;
-	display: inline;
-}
-
 .top {
-	margin: 2rem;
+	display: flex;
 }
 
 .dateButton {
@@ -225,24 +206,22 @@ h4 {
 }
 
 .schedule {
-	margin-top: 12%;
-	margin-left: 15%;
+	margin: 1rem;
 }
 
-.tile {
-	margin-left: 5%;
+.checkbox-row {
+	color: black;
+	font-size: .8rem;
 }
 
 .checkbox {
-	margin-left: 8%;
-	margin-right: 2%;
+	margin: 0 1rem;
 	-webkit-appearance: none;
 	border: 2px solid #666666;
-	padding: 5px;
+	padding: .5rem;
 	border-radius: 2px;
-	display: inline-block;
-	width: 24px;
-	height: 24px;
+	width: 1rem;
+	height: 1rem;
 }
 
 .checkbox:checked {
@@ -251,18 +230,17 @@ h4 {
 	color: white;
 }
 
-.checkbox:checked:after {
-	font-family: FontAwesome;
-	content: '\f00c';
-	font-weight: 900;
-	background: #C8190F;
-	color: white;
-	font-size: 12px;
+.checkboxText {
+	margin-top: .2rem;
 	position: absolute;
 }
 
-.checkboxText {
-	margin-top: 10px;
-	position: absolute;
+@media screen and (max-width: 850px) {
+	.sidebar {
+		position: absolute;
+		top: 80%;
+		width: 100%;
+		background: white;
+	}
 }
 </style>

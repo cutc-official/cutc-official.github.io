@@ -1,68 +1,31 @@
 {
 	"July 24": {
-		"8:00": [
+		"": [
 			{
-				"title": "title 1",
-				"description": "desc",
-				"format": "workshop",
-				"location": "",
-				"timestamp": "",
-				"topics": ["t1", "t2"],
-				"speakers": [""]
+				"title": "Different Paths into SWE",
+				"format": "Panel",
+				"speakers": ["Priya Ghose", "Vivian Phung", "Faisal Abid"]
 			},
 			{
-				"title": "",
-				"description": "",
-				"format": "talk",
-				"location": "",
-				"timestamp": "",
-				"topics": ["t3", "t4"],
-				"speakers": [""]
-			}
-		],
-		"9:30": [
+				"title": "Women in Tech",
+				"format": "Panel"
+			},
+			{
+				"title": "Recruiter Session",
+				"format": "Workshop"
+			},
 			{
 				"title": "",
 				"description": "",
 				"format": "",
 				"location": "",
 				"timestamp": "",
-				"topics": ["t3", "t2"],
+				"topics": [""],
 				"speakers": [""]
 			}
 		]
 	},
 	"July 25": {
-		"10:00": [
-			{
-				"title": "title 1",
-				"description": "desc",
-				"format": "workshop",
-				"location": "",
-				"timestamp": "",
-				"topics": ["t1", "t2"],
-				"speakers": [""]
-			},
-			{
-				"title": "",
-				"description": "",
-				"format": "talk",
-				"location": "",
-				"timestamp": "",
-				"topics": ["t3", "t4"],
-				"speakers": [""]
-			}
-		],
-		"11:30": [
-			{
-				"title": "",
-				"description": "",
-				"format": "",
-				"location": "",
-				"timestamp": "",
-				"topics": ["t3", "t2"],
-				"speakers": [""]
-			}
-		]
-	}
+		"": []
+	} 
 }
