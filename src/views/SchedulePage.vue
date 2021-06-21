@@ -22,8 +22,13 @@
 
 		<div class="content">
 			<div class="top">
-				<span :class="active1 ? 'dateButton-active' : 'dateButton'" @click="active1 = true, active2 = false">JULY 24</span>
-				<span :class="active2 ? 'dateButton-active': 'dateButton'" @click="active2 = true, active1 = false">JULY 25</span>
+				<div
+					v-for="(_, day) in scheduleData"
+					:key="day"
+					:class="{'dateButton': true, 'dateButton-active': day == activeDay}"
+					@click="activeDay = day"
+					>{{ day }}
+				</div>
 				<!-- <span>
 					<h4>Timezone: </h4>
 					<select id="timezones" @change="onChange($event)">
@@ -34,10 +39,13 @@
 
 			<div class="schedule">
 				<div v-for="(schedule, day) in scheduleData" :key="day">
-					<span v-if="isDay(day)">
+					<span v-if="day == activeDay">
 						<div v-for="(events, time) in schedule" :key="time">
-							<h4 class="time" id="time" v-if="events && events.length">{{ time }}</h4>
-							<div v-for="tileInfo in events" :key="tileInfo">
+							<div class="time" v-if="time && events && events.length">
+								<h4 id="time">{{ time }}</h4>
+								<hr class="time-hr">
+							</div>
+							<div v-for="tileInfo in events" :key="tileInfo.title">
 								<schedule-tile v-if="isChecked(tileInfo.topics, tileInfo.format)" v-bind="tileInfo"/>
 							</div>
 						</div>
@@ -73,8 +81,7 @@ export default {
 			checkedTopics: [],
 			allFormats: [],
 			checkedFormats: [],
-			active1: true, // ! Change to activeDay
-			active2: false,
+			activeDay: '',
 			displayTopics: true,
 			displayFormats: true,
 			timezones: [
@@ -111,17 +118,12 @@ export default {
 		},
 		isChecked(topics, format) {
 			if(this.checkedTopics.length || this.checkedFormats.length ){
-				return ((this.checkedFormats.includes(format)) || topics.some(topic => (this.checkedTopics.includes(topic))))
+				return (
+					(format && this.checkedFormats.includes(format)) || 
+					(topics && topics.some(topic => this.checkedTopics.includes(topic)))
+				)
 			}
 			return true
-		},
-		isDay(day){
-			if(this.active1 && day == "July 24"){
-				return true
-			} else if (this.active2 && day == "July 25"){
-				return true
-			}
-			return false
 		}
 	},
 	beforeMount() {
@@ -141,6 +143,8 @@ export default {
 		}
 		this.allTopics = [...new Set(topics)]
 		this.allFormats = [...new Set(formats)]
+		this.activeDay = Object.keys(this.scheduleData)[0]
+		console.log(this.activeDay)
 	}
 }
 </script>
@@ -148,11 +152,6 @@ export default {
 <style scoped>
 #schedule {
 	--desktop-sidebar-width: 20rem;
-}
-
-a {
-	color: var(--main-color);
-	text-decoration: underline;
 }
 
 h4 {
@@ -171,14 +170,13 @@ h4 {
 }
 
 .time {
+	display: flex;
+	align-items: center;
 	margin-top: 2%;
-	display: inline;
 }
 .time-hr {
-	display: inline;
-	position: absolute;
-	margin-left: 20px;
-	width: 60%;
+	width: 90%;
+	height: .1rem;
 	border: 2px solid #CCCCCC;
 }
 
@@ -189,7 +187,6 @@ h4 {
 .dateButton {
 	color: black;
 	border: 3px solid #DADCE5;
-	box-sizing: border-box;
 	border-radius: 60px;
 	margin: 1rem;
 	padding: 15px 40px;
@@ -199,10 +196,6 @@ h4 {
 	color: white;
 	background:  #C8190F;
 	border: 3px solid #C8190F;
-	box-sizing: border-box;
-	border-radius: 60px;
-	margin: 1rem;
-	padding: 15px 40px;
 }
 
 .schedule {

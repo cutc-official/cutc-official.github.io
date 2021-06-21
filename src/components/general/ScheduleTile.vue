@@ -40,7 +40,7 @@
 					@mouseover="open(index)"
 				>
 					<transition name="fade">
-						<div class="dialog" v-if="popUp===index">
+						<div class="dialog" v-if="popUp===index && speakerInfo[speaker]">
 							<div class="name">{{speaker}}</div>
 							<div class="company">{{speakerInfo[speaker].org}}</div>
 							<div class="dialog-diamond"></div>
@@ -70,8 +70,14 @@ export default {
 		},
 		location: String,
 		timestamp: String,
-		topics: Array,
-		speakers: Array
+		topics: {
+			default: () => [],
+			type: Array
+		},
+		speakers: {
+			default: () => [],
+			type: Array
+		},
 	},
 
 	data() {
