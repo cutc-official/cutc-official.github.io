@@ -2,29 +2,36 @@
 <div id="sponsors">
 	<h2>Our 2021 Sponsors and Partners</h2>
 	<div class="mobile">
-		<a target="_blank" href="https://www.huawei.com/en/" class="gold">   <img src="@/assets/sponsors/huawei.png"    alt="Huawei"></a>
-		<a target="_blank" href="https://www.bdo.com"        class="gold">   <img src="@/assets/sponsors/bdo.png"       alt="BDO"></a>
-		<a target="_blank" href="https://www.geotab.com"     class="gold">   <img src="@/assets/sponsors/geotab.png"    alt="Geotab"></a>
-		<a target="_blank" href="https://www.shopify.com/"   class="silver"> <img src="@/assets/sponsors/shopify.png"   alt="Shopify"></a>
-		<a target="_blank" href="https://www.accenture.com/" class="silver"> <img src="@/assets/sponsors/accenture.png" alt="Accenture"></a>
-		<a target="_blank" href="http://flipp.com/home"      class="bronze"> <img src="@/assets/sponsors/flipp.png"     alt="Flipp"></a>
-		<a target="_blank" href="http://copysmith.ai/"       class="partner"><img src="@/assets/sponsors/copysmith.png" alt="Copysmith"></a>
+		<a
+			v-for="(info, sponsor) in sponsors"
+			:key="sponsor"
+			:href="info.link"
+			:class="info.class"
+			target="_blank"
+		>
+			<img :src="getImage(sponsor)" :alt="sponsor">
+		</a>
 	</div>
 	<div class="desktop">
 		<img src="@/assets/sponsors/desktop.png" alt="Huawei, BDO, Geotab, Shopify, Accenture, Flipp, Copysmith"/>
 		<div
-			v-for="(coords, name, i) in dotCoordinates"
+			v-for="(info, name, i) in sponsors"
 			:key="name"
 			class="dot"
-			:style="{'--dot-order': i, 'left': coords[0], 'top': coords[1]}">
+			:style="{'--dot-order': i, left: info.dot[0], top: info.dot[1]}">
 		</div>
 
 		<a
-			v-for="(coords, name) in linkCoordinates"
+			v-for="(info, name) in sponsors"
 			:key="name"
 			class="link"
-			:style="coords"
-			:href="links[name]"
+			:style="{
+				left: info.dtCoords[0], 
+				top: info.dtCoords[1], 
+				width: width[info.class],
+				height: height[info.class]
+			}"
+			:href="info.link"
 			target="_blank">
 		</a>
 	</div>
@@ -38,28 +45,27 @@ export default {
 	name: 'Sponsorship',
 	data() {
 		return {
-			links: sponsorData,
-			dotCoordinates: {
-				// '': ['13.8%', '41.2%'],
-				'Accenture': ['23.0%', '23.5%'],
-				'Huawei':    ['37.1%', '10.5%'],
-				'Flipp':     ['38.8%', '35.5%'],
-				'Copysmith': ['49.8%', '44.6%'],
-				'Geotab':    ['51.3%', '2%'],
-				'BDO':       ['60.1%', '10.0%'],
-				'Shopify':   ['78.6%', '21.1%'],
-				// '': ['83.7%', '43.9%'],
+			sponsors: sponsorData,
+			width: {
+				gold: "13%",
+				silver: "11%",
+				bronze: "9%",
+				partner: "9%"
 			},
-			linkCoordinates: {
-				// '':       {left: '6.80%', top: '40.2%', width: '10%',   height: '8%'},
-				'Accenture': {left: '14%',   top: '21.0%', width: '11%',   height: '10%'},
-				'Huawei':    {left: '27.0%', top: '8.5%',  width: '13%',   height: '11%'},
-				'Flipp':     {left: '31.6%', top: '34.0%', width: '9%',    height: '8%'},
-				'Copysmith': {left: '43.5%', top: '43%',   width: '9%',    height: '8%'},
-				'Geotab':    {left: '42.5%', top: '0',     width: '13.5%', height: '11%'},
-				'BDO':       {left: '57.5%', top: '8.5%',  width: '13.5%', height: '11%'},
-				'Shopify':   {left: '71.4%', top: '19.0%', width: '12%',   height: '10%'},
-				// '':       {left: '78.1%', top: '42.9%', width: '12%',   height: '7%'},
+			height: {
+				gold: "11%",
+				silver: "10%",
+				bronze: "8%",
+				partner: "8%"
+			}
+		}
+	},
+	methods: {
+		getImage(name) {
+			try {
+				return require(`@/assets/sponsors/${name}.png`);
+			} catch (e) {
+				// throw Error(`pic does not exist: ${name}`);
 			}
 		}
 	}
