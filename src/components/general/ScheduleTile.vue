@@ -82,6 +82,7 @@ export default {
 
 	data() {
 		return {
+			// ! Duplicated in SchedulePage.vue
 			colors: {
 				"Workshop": "#8394F2",
 				"Panel": "#F57A75",

@@ -2,7 +2,7 @@
 <div id="schedule">
 	<nav-bar/>
 	<span style="display: flex;">
-		<div class="sidebar">
+		<div class="sidebar" v-if="!isMobile || showMobileMenu">
 			<h4>Topics</h4>
 			<span v-if="displayTopics">
 				<div class="checkbox-row" v-for="i in allTopics" :key="i">
@@ -15,10 +15,12 @@
 			<span v-if="displayFormats">
 				<div class="checkbox-row" v-for="i in allFormats" :key="i">
 					<input type="checkbox" :id="i" :value="i" v-model="checkedFormats" class="checkbox">
+					<div class="dot" :style="{'--format-color': colors[i]}"></div>
 					<label for="i" class="checkboxText">{{ i }}</label>
 				</div>
 			</span>
 		</div>
+		<div class="mobile-menu-button" @click="showMobileMenu = !showMobileMenu">&#9776;</div>
 
 		<div class="content">
 			<div class="top">
@@ -53,7 +55,8 @@
 				</div>
 			</div>
 
-		</div>	
+		</div>
+
 	</span>
 	<bottom/>
 </div>
@@ -84,6 +87,8 @@ export default {
 			activeDay: '',
 			displayTopics: true,
 			displayFormats: true,
+			isMobile: false,
+			showMobileMenu: false,
 			timezones: [
 				'Africa/Lagos',
 				'America/Argentina/Rio_Gallegos',
@@ -108,6 +113,15 @@ export default {
 				'Canada/Eastern',
 				'Europe/Amsterdam',
 			],
+			colors: {
+				"Workshop": "#8394F2",
+				"Panel": "#F57A75",
+				"Keynote": "#17ADCE",
+				"Lightning Talk": "#F9AFAB",
+				"Fireside Chat": "#E28383",
+				"Breakout Session": "#98D485",
+				"Default": "#44AF69" // Misc
+			},
 		}
 	},
 	methods: {
@@ -124,7 +138,14 @@ export default {
 				)
 			}
 			return true
-		}
+		},
+		handleResize() {
+			this.isMobile = window.innerWidth <= 850;
+		},
+	},
+	created() {
+		this.handleResize();
+		window.addEventListener('resize', () => this.handleResize());
 	},
 	beforeMount() {
 		let topics = []
@@ -144,7 +165,6 @@ export default {
 		this.allTopics = [...new Set(topics)]
 		this.allFormats = [...new Set(formats)]
 		this.activeDay = Object.keys(this.scheduleData)[0]
-		console.log(this.activeDay)
 	}
 }
 </script>
@@ -192,6 +212,10 @@ h4 {
 	padding: 15px 40px;
 }
 
+.dateButton:hover {
+	cursor: pointer;
+}
+
 .dateButton-active {
 	color: white;
 	background:  #C8190F;
@@ -203,18 +227,19 @@ h4 {
 }
 
 .checkbox-row {
+	display: flex;
+	align-items: center;
 	color: black;
 	font-size: .8rem;
 }
 
 .checkbox {
-	margin: 0 1rem;
+	margin: 0;
+	margin-left: 1rem;
 	-webkit-appearance: none;
 	border: 2px solid #666666;
-	padding: .5rem;
+	padding: .4rem;
 	border-radius: 2px;
-	width: 1rem;
-	height: 1rem;
 }
 
 .checkbox:checked {
@@ -223,17 +248,49 @@ h4 {
 	color: white;
 }
 
-.checkboxText {
-	margin-top: .2rem;
-	position: absolute;
+.checkbox-row>label {
+	margin-top: .1rem;
+}
+
+.checkbox-row>.dot {
+	background: var(--format-color);
+	height: .4rem;
+	width: .4rem;
+	margin: 0 .2rem;
+	border-radius: 20rem;
+}
+
+.mobile-menu-button {
+	display: none;		
 }
 
 @media screen and (max-width: 850px) {
 	.sidebar {
 		position: absolute;
-		top: 80%;
+		bottom: 0;
+		z-index: 5;
 		width: 100%;
+		height: fit-content;
+
 		background: white;
+		border-top-left-radius: 1rem;
+		border-top-right-radius: 1rem;
+	}
+
+	.mobile-menu-button {
+		position: absolute;
+		z-index: 10;
+		display: grid;
+		place-items: center;
+
+		font-size: 1.5rem;
+
+		bottom: 5%;
+		right: 5%;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 20rem;
+		background: red;
 	}
 }
 </style>
