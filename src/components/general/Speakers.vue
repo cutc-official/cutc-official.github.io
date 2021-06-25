@@ -18,6 +18,8 @@
 						:src="getImage(name)"
 						:alt="name + '\'s Photo'"
 						class="image-speaker"
+						width="288"
+						height="432"
 					/>
 				</div>
 				<!-- OVERLAY -->
