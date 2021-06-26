@@ -117,7 +117,7 @@ export default {
 }
 
 /* Deep selector due to dynamic content */
-.p-content >>> a {
+.p-content:deep() a {
 	color: var(--main-color);
 	text-decoration: underline;
 	text-decoration-color: var(--main-color);
