@@ -34,9 +34,15 @@ export const routes = [
 ];
 
 const router = createRouter({
-	// Required for gh-pages deployment
 	history: createWebHashHistory('/'),
-	routes
+	routes,
+	scrollBehavior (to, from, savedPosition) {
+		if (savedPosition) {
+			return savedPosition
+		} else {
+			return { top: 0 }
+		}
+	}
 });
 
 export default router;
