@@ -6,7 +6,7 @@
 			<h4>Topics</h4>
 			<span v-if="displayTopics">
 				<div class="checkbox-row" v-for="i in allTopics" :key="i">
-					<input type="checkbox" :id="i" :value="i" v-model="checkedTopics" class="checkbox">
+					<input type="checkbox" :id="i" :value="i" v-model="checkedTopics">
 					<label for="i" class="checkboxText">{{ i }}</label>
 				</div>
 			</span>
@@ -211,11 +211,9 @@ h4 {
 	margin: 1rem;
 	padding: 15px 40px;
 }
-
 .dateButton:hover {
 	cursor: pointer;
 }
-
 .dateButton-active {
 	color: white;
 	background:  #C8190F;
@@ -231,9 +229,9 @@ h4 {
 	align-items: center;
 	color: black;
 	font-size: .8rem;
+	margin-bottom: .25rem;
 }
-
-.checkbox {
+.checkbox-row>input {
 	margin: 0;
 	margin-left: 1rem;
 	-webkit-appearance: none;
@@ -241,23 +239,22 @@ h4 {
 	padding: .4rem;
 	border-radius: 2px;
 }
-
-.checkbox:checked {
+.checkbox-row>input:checked {
 	border: 2px solid #C8190F;
 	background: #C8190F;
 	color: white;
 }
-
 .checkbox-row>label {
 	margin-top: .1rem;
 }
-
 .checkbox-row>.dot {
 	background: var(--format-color);
 	height: .4rem;
 	width: .4rem;
-	margin: 0 .2rem;
 	border-radius: 20rem;
+}
+.checkbox-row>:not(:last-child) {
+	margin-right: .25rem;
 }
 
 .mobile-menu-button {
@@ -265,12 +262,14 @@ h4 {
 }
 
 @media screen and (max-width: 850px) {
-	.sidebar {
+	/* .sidebar {
 		position: absolute;
 		bottom: 0;
 		z-index: 5;
 		width: 100%;
 		height: fit-content;
+		padding-bottom: 20%;
+		border: 1px solid grey;
 
 		background: white;
 		border-top-left-radius: 1rem;
@@ -291,6 +290,26 @@ h4 {
 		height: 3rem;
 		border-radius: 20rem;
 		background: red;
+	}
+
+	.fadeHeight-enter-active,
+	.fadeHeight-leave-active {
+		transition: all 0.5s;
+		max-height: 100vh;
+	}
+	.fadeHeight-enter-from,
+	.fadeHeight-leave-to {
+		opacity: 0;
+		max-height: 0px;
+		overflow: hidden;
+	} */
+
+	.sidebar {
+		display: none;
+	}
+
+	.dateButton {
+		padding: .75rem 1rem;
 	}
 }
 </style>

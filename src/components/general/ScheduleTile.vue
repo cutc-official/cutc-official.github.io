@@ -24,8 +24,8 @@
 						<img src="@/assets/schedule/location.svg" alt="Location" />
 						<p>{{ location }}</p>
 					</div>
-					<div class="top-info-section" v-if="tags && tags.length">
-						<p v-for="tag in topics" :key="tag" class="tag">{{ tag }}</p>
+					<div class="top-info-section" v-if="topics && topics.length">
+						<p v-for="topic in topics" :key="topic" class="topic-tag">{{ topic }}</p>
 					</div>
 				</div>
 			</div>
@@ -196,7 +196,7 @@ export default {
 	width: 0.7rem;
 }
 
-.tag {
+.topic-tag {
 	padding: 0.25rem 1rem;
 	border-radius: 50rem;
 	background: var(--type-color);

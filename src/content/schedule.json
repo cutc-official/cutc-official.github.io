@@ -3,11 +3,14 @@
 		"": [
 			{
 				"title": "Different Paths into SWE",
+				"description": "Lorem Ipsum delore",
+				"topics": ["Amplify"],
 				"format": "Panel",
 				"speakers": ["Priya Ghose", "Vivian Phung", "Faisal Abid"]
 			},
 			{
 				"title": "Women in Tech",
+				"topics": ["Diversity"],
 				"format": "Panel"
 			},
 			{
