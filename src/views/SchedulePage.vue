@@ -48,7 +48,7 @@
 								<hr class="time-hr">
 							</div>
 							<div v-for="tileInfo in events" :key="tileInfo.title">
-								<schedule-tile v-if="isChecked(tileInfo.topics, tileInfo.format)" v-bind="tileInfo"/>
+								<schedule-tile v-if="isChecked(tileInfo.topics, tileInfo.format)" v-bind="tileInfo" :day="day"/>
 							</div>
 						</div>
 					</span>

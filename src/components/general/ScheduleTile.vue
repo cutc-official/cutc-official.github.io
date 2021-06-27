@@ -3,14 +3,20 @@
 		<div class="strip"></div>
 		<div class="content">
 			<div class="top-bar">
-				<button>
+				<button v-if="timestamp">
 					<div @mouseenter="showDropdown = true" @mouseleave="showDropdown = false">
 						<img src="@/assets/schedule/addButton.svg" alt="Add to Calendar" />
 						<div class="calendar" v-if="showDropdown">
-							<div class="child" v-for="calendar in calendars" :key="calendar.name">
-								<img class="icon" :src="calendar.icon" />
+							<a
+								v-for="calendar in calendars"
+								:key="calendar.name"
+								class="child"
+								:href="addCalendar(calendar.name)"
+								target="_blank"
+							>
+								<img class="icon" :src="calendar.icon"/>
 								<div>{{calendar.name}}</div>
-							</div>
+							</a>
 						</div>
 					</div>
 				</button>
@@ -63,13 +69,22 @@ export default {
 	name: "ScheduleTile",
 	props: {
 		title: String,
-		description: String,
+		description: {
+			default: "",
+			type: String
+		},
 		format: {
 			default: "",
 			type: String
 		},
-		location: String,
-		timestamp: String,
+		location: {
+			default: "",
+			type: String
+		},
+		timestamp: {
+			default: "",
+			type: String
+		},
 		topics: {
 			default: () => [],
 			type: Array
@@ -78,6 +93,10 @@ export default {
 			default: () => [],
 			type: Array
 		},
+		day: {
+			default: "24",
+			type: String
+		}
 	},
 
 	data() {
@@ -118,6 +137,22 @@ export default {
 		},
 		open(popped) {
 			this.popUp = popped;
+		},
+		addCalendar(calendar) {
+			let startDate = "";
+			let endDate = ""
+			switch(calendar) {
+				case "Google Calendar":
+					startDate = `20220112T180000Z`
+					endDate = `20220112T200000Z`
+					return `https://calendar.google.com/calendar/render?action=TEMPLATE&dates=${startDate}$2F${endDate}&details=${this.description}&location=${this.location}&text=${this.title}`				
+				case "Outlook":
+					startDate = `2022-01-12T18%3A00%3A00%2B00%3A00`
+					endDate = `2022-01-12T20%3A00%3A00%2B00%3A00`
+					return `https://outlook.office.com/calendar/0/deeplink/compose?body=${this.description}&startdt=${startDate}&enddt=${endDate}&location=${this.location}&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&subject=${this.title}`;
+				case "Apple Calendar":
+					return;
+			}
 		}
 	}
 };
