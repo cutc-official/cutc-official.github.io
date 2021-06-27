@@ -75,6 +75,8 @@ export default {
 				return require(`@/assets/speakers/Speaker=${name}.png`);
 			} catch (e) {
 				// throw Error(`pic does not exist: ${name}`);
+				// image placeholder when name does not match the filename of a headshot
+				return require(`@/assets/speakers/Speaker=Default.png`);
 			}
 		},
 		getLinkImage(linkType) {
