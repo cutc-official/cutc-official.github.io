@@ -64,7 +64,7 @@
 import Speakers from "@/content/speakers.json";
 import GoogleCalendar from "@/assets/schedule/GoogleCalendar.png";
 import OutlookCalendar from "@/assets/schedule/OutlookCalendar.png";
-import AppleCalendar from "@/assets/schedule/AppleCalendar.png";
+// import AppleCalendar from "@/assets/schedule/AppleCalendar.png";
 export default {
 	name: "ScheduleTile",
 	props: {
@@ -117,7 +117,7 @@ export default {
 			calendars: [
 				{ name: "Google Calendar", icon: GoogleCalendar },
 				{ name: "Outlook", icon: OutlookCalendar },
-				{ name: "Apple Calendar", icon: AppleCalendar }
+				// { name: "Other", icon: AppleCalendar }
 			]
 		};
 	},
@@ -143,16 +143,43 @@ export default {
 			let endDate = ""
 			switch(calendar) {
 				case "Google Calendar":
-					startDate = `20220112T180000Z`
-					endDate = `20220112T200000Z`
-					return `https://calendar.google.com/calendar/render?action=TEMPLATE&dates=${startDate}$2F${endDate}&details=${this.description}&location=${this.location}&text=${this.title}`				
+					startDate = `202107${this.getDay()}T${this.getStartTime()}00`
+					endDate = `202107${this.getDay()}T${this.getStartTime()}00`
+					return `https://calendar.google.com/calendar/render?action=TEMPLATE&dates=${startDate}$/${endDate}&details=${this.description}&location=${this.location}&text=${this.title}`				
 				case "Outlook":
-					startDate = `2022-01-12T18%3A00%3A00%2B00%3A00`
-					endDate = `2022-01-12T20%3A00%3A00%2B00%3A00`
+					startDate = `2021-07-${this.getDay()}T${this.timestamp}:00+00:00`
+					endDate = `2021-07-${this.getDay()}T${this.timestamp}:00+00:00`
+					// Switch to ascii codes
+					startDate = startDate.replace(':', '%3A')
+					startDate = startDate.replace('+', '%2B')
+					endDate = endDate.replace(':', '%3A')
+					endDate = endDate.replace('+', '%2B')
 					return `https://outlook.office.com/calendar/0/deeplink/compose?body=${this.description}&startdt=${startDate}&enddt=${endDate}&location=${this.location}&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&subject=${this.title}`;
-				case "Apple Calendar":
+				default:
+					// ICS.addEvent('EN', this.title, this.description, this.location, startDate, endDate, 'https://cutc.ca', 'CUTC')
+					// ICS.download(this.title)
+					// ICS.removeAllEvents()
 					return;
 			}
+		},
+		getDay() {
+			return this.day.split(' ')[1];
+		},
+		getStartTime() {
+			let stamps = this.timestamp.split('-');
+			let stamp = stamps[0].trim().replace(':', '');
+			if (stamp.length < 4)
+				stamp = '0' + stamp;
+			return stamp;
+		},
+		getEndTime() {
+			let stamps = this.timestamp.split('-');
+			if (stamps.length <= 1) return this.getStartTime();
+			
+			let stamp = stamps[1].trim().replace(':', '');
+			if (stamp.length < 4)
+				stamp = '0' + stamp;
+			return stamp;
 		}
 	}
 };
