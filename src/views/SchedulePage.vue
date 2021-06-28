@@ -10,7 +10,7 @@
 					<label for="i" class="checkboxText">{{ i }}</label>
 				</div>
 			</span>
-
+			<div class="spacer"/>
 			<h4>Format</h4>
 			<span v-if="displayFormats">
 				<div class="checkbox-row" v-for="i in allFormats" :key="i">
@@ -45,7 +45,7 @@
 						<div v-for="(events, time) in schedule" :key="time">
 							<div class="time" v-if="time && events && events.length">
 								<h4 id="time">{{ time }}</h4>
-								<hr class="time-hr">
+								<hr>
 							</div>
 							<div v-for="tileInfo in events" :key="tileInfo.title">
 								<schedule-tile v-if="isChecked(tileInfo.topics, tileInfo.format)" v-bind="tileInfo" :day="day"/>
@@ -185,8 +185,16 @@ h4 {
 	padding: 1rem;
 }
 
+.spacer {
+	margin: 1rem;
+}
+
 .content {
 	width: 100%;
+}
+
+.top {
+	display: flex;
 }
 
 .time {
@@ -194,14 +202,10 @@ h4 {
 	align-items: center;
 	margin-top: 2%;
 }
-.time-hr {
+.time hr {
 	width: 90%;
 	height: .1rem;
 	border: 2px solid #CCCCCC;
-}
-
-.top {
-	display: flex;
 }
 
 .dateButton {
@@ -209,7 +213,7 @@ h4 {
 	border: 3px solid #DADCE5;
 	border-radius: 60px;
 	margin: 1rem;
-	padding: 15px 40px;
+	padding: .5rem 2rem;
 }
 .dateButton:hover {
 	cursor: pointer;
