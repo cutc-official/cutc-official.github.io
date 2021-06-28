@@ -4,7 +4,9 @@
 		<div class="about_text">
 			<h1>Canada’s largest student-run conference</h1>
 			<p>
-				For over 20 years, our conferences have represented opportunities to connect with industry leaders, gain valuable tech experience, network with like-minded people, and more.<br>
+				For over 20 years, our conferences have represented opportunities to connect with industry leaders, gain valuable tech experience, network with like-minded people, and more.
+			</p>
+			<p>
 				This year, we want to be an amplifier for unexplored opportunities, undiscovered interests, and unheard voices in tech. We'll have something in store for every type of student, no matter your background, location, program, or interests.
 			</p>
 		</div>
@@ -20,8 +22,15 @@
 }
 .about_image{
 	width: 50%;
+	max-height: 24rem;
 	margin-right: 5%;
 }
+
+br {
+	display: block;
+	padding-top: 1rem;
+}
+
 @media screen and (max-width:880px) {
 	.about_section{
 		flex-wrap: wrap-reverse;

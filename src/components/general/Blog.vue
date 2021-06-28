@@ -4,7 +4,7 @@
 		<div class="grid">
 			<div class="tile" v-for="blog in blogData" :key="blog">
 				<a :href="blog.url" target="_blank">
-					<img :src="blog.image" :alt="blog.title" class="image">
+					<img :src="blog.image" :alt="blog.title" class="image" width="305" height="175">
 					<div class="text">
 						<span><strong>{{ blog.title }} &ndash; </strong></span>
 						<span>{{ toText(blog.description).slice(0, 100) }}...</span>

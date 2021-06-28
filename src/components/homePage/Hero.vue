@@ -4,19 +4,14 @@
 		<countdown/>
 		<img src="@/assets/misc/hero.svg" id="cutc-building-image">
 	</div>
-	<!-- TEXT COLUMN -->
-	<span>
-		<h3>Welcome to the 2021</h3>
-		<h1>Canadian Undergraduate Technology Conference</h1>
-		<h2 class="slogan">Amplify</h2>
-		<div style="height: 2em"/>
-
-		<h3 style="font-weight: bold">Jul 24-25, 2021</h3>
-		<h3>A free virtual event open to everyone worldwide</h3>
+	<div class="spacer"></div>
+	<span class ="hero-info">
+		<div class="hero-text">
+			<h1 class="hero-title">Canadian Undergraduate Technology Conference</h1>
+			<h3><strong>Jul 24-25, 2021</strong></h3>
+			<h3>A free virtual event open to everyone worldwide</h3>
+		</div>
 		<register-button/>
-
-		<!-- LINKS -->
-		<a href="https://2020.cutc.ca" target="_blank">Check out CUTC 2020</a>
 	</span>
 </div>
 </template>
@@ -40,16 +35,45 @@ export default {
 
 <style scoped>
 #hero {
-	display: grid;
+	/* display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	/* align-items: center; */
-	column-gap: 1em;
-	padding: 10% var(--splash-page-inset);
-	box-sizing: border-box;
+	column-gap: 1em; */
+	display: flex;
+	align-items: center;
+	padding: 1rem var(--splash-page-inset) 5rem;
+}
+@media screen and (max-width: 850px) {
+	#hero {
+		flex-direction: column;
+	}
+}
+
+.spacer {
+	margin: 1rem;
+}
+@media screen and (max-width: 850px) {
+	.spacer {
+		margin: 0.5rem;
+	}
+}
+
+.hero-text {
+	margin-bottom: 1.5rem;
+}
+
+.hero-title {
+	margin-bottom: 1rem;
+}
+
+.hero-info {
+  flex-basis: 100%;
+  flex: 1;
 }
 .building {
 	position: relative;
 	height: min-content;
+  flex-basis: 100%;
+  flex: 1;
 }
 #cutc-building-image {
 	max-height: 50vh;

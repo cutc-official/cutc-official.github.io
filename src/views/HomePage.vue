@@ -1,9 +1,9 @@
 <template>
 	<span style="scroll" id="home-page">
-	<div class="fade">
-		<nav-bar :hasBackground="false" />
-		<hero />
-	</div>
+		<div class="fade">
+			<nav-bar :hasBackground="false" />
+			<hero />
+		</div>
 
 		<div class="home-content">
 			<about />

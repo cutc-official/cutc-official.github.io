@@ -52,7 +52,7 @@ export default {
 			this.isMobile = window.innerWidth <= 850;
 		},
 		openMenu() {
-			this.isMenuOpen = true; 
+			this.isMenuOpen = true;
 		},
 		closeMenu() {
 			this.isMenuOpen = false;
@@ -69,7 +69,7 @@ export default {
 #nav-bar {
 	display: flex;
 	justify-content: space-between;
-	padding: 1em var(--splash-page-inset);
+	padding: 0.75rem var(--splash-page-inset);
 }
 
 .gradient {

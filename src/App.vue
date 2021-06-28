@@ -21,7 +21,7 @@
 }
 
 html {
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 	position: relative;
 	min-height: 100vh;
 }
@@ -55,14 +55,15 @@ h2 {
 	color: black;
 }
 h1 {
-	font-size: 2.75em;
+	font-size: 2.5em;
 	font-weight: 700;
+	line-height: 1.15;
 }
 
 /* Make links look like links even with no href */
 a {
-	text-decoration: underline;     
-	text-decoration-color: rgba(255, 255, 255, 0.5);  
+	text-decoration: underline;
+	text-decoration-color: rgba(255, 255, 255, 0.5);
 	cursor: pointer;
 }
 
