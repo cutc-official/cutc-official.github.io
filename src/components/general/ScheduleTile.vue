@@ -65,30 +65,21 @@ import Speakers from "@/content/speakers.json";
 import GoogleCalendar from "@/assets/schedule/GoogleCalendar.png";
 import OutlookCalendar from "@/assets/schedule/OutlookCalendar.png";
 // import AppleCalendar from "@/assets/schedule/AppleCalendar.png";
+
+const stringDefault = {
+	default: "",
+	type: String
+}
+
 export default {
 	name: "ScheduleTile",
 	props: {
 		title: String,
-		description: {
-			default: "",
-			type: String
-		},
-		format: {
-			default: "",
-			type: String
-		},
-		location: {
-			default: "",
-			type: String
-		},
-		start: {
-			default: "",
-			type: String
-		},
-		stop: {
-			default: "",
-			type: String
-		},
+		description: stringDefault,
+		format: stringDefault,
+		location: stringDefault,
+		start: stringDefault,
+		stop: stringDefault,
 		topics: {
 			default: () => [],
 			type: Array
@@ -183,7 +174,7 @@ export default {
 .tile {
 	position: relative;
 	border: 1px solid grey;
-	--b-radius: 16px;
+	--b-radius: 1rem;
 	border-radius: var(--b-radius);
 	margin: 1rem;
 
@@ -208,7 +199,7 @@ export default {
 	position: absolute;
 	right: 0.5rem;
 	border: 0.2px gray solid;
-	border-radius: 8px;
+	border-radius: .5rem;
 	padding: 0.5rem;
 	text-align: left;
 	z-index: 10;
@@ -258,7 +249,7 @@ export default {
 	background: var(--type-color);
 
 	color: white;
-	font-size: 0.8rem;
+	font-size: 0.8em;
 }
 
 .speakers-container {
@@ -301,5 +292,12 @@ export default {
 }
 .name {
 	font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+	.tile {
+		margin: 1rem 0.25rem;
+		font-size: .75rem;
+	}
 }
 </style>

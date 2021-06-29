@@ -1,7 +1,7 @@
 <template>
 <div id="schedule">
 	<nav-bar/>
-	<span style="display: flex;">
+	<div class="page">
 		<div class="sidebar" v-if="!isMobile || showMobileMenu">
 			<h4>Topics</h4>
 			<span v-if="displayTopics">
@@ -37,7 +37,7 @@
 				<span class="timezone">
 					<h4>Timezone: </h4>
 					<select ref="timezones" v-model="timezone">
-						<option v-for="zone in timezoneOptions" :key="zone">{{ zone }}</option>
+						<option v-for="zone in timezoneOptions" :key="zone">{{ zone.replace('_', ' ') }}</option>
 					</select>
 				</span>
 			</div>
@@ -64,9 +64,10 @@
 			</div>
 
 		</div>
-
-	</span>
+	</div>
 	<bottom/>
+
+	<div class="dimmer" v-if="isMobile && showMobileMenu" @click="showMobileMenu = false"/>
 </div>
 </template>
 
@@ -136,8 +137,8 @@ export default {
 	methods: {
 		getTime(stamp) {
 			if (stamp) {
-				const date = moment(stamp, 'hh:mm').utcOffset(8).toDate()
-				return moment.tz(date, this.timezone).format("hh:mm")
+				const date = moment(stamp, 'H:mm').utcOffset(8).toDate()
+				return moment.tz(date, this.timezone).format("H:mm")
 			}
 			return ''
 		},
@@ -186,6 +187,10 @@ export default {
 	--border-divider-color: #CCCCCC;
 }
 
+.page {
+	display: flex;
+}
+
 h4 {
 	color: black;
 }
@@ -210,6 +215,7 @@ h4 {
 .top {
 	display: flex;
 	border-bottom: 1px solid var(--border-divider-color);
+	flex-wrap: wrap;
 }
 .top > .days {
 	display: flex;
@@ -219,10 +225,12 @@ h4 {
 }
 .top > .timezone {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
+	margin: .5rem;
 }
 .timezone > select {
-	margin: 1rem;
+	margin: .25rem;
 	padding: .25rem;
 	border: 1px solid var(--border-divider-color);
 	border-radius: .25rem;
@@ -297,22 +305,33 @@ h4 {
 }
 
 @media screen and (max-width: 850px) {
-	/* .sidebar {
-		position: absolute;
+	.sidebar {
+		position: fixed;
 		bottom: 0;
+		left: 0;
 		z-index: 5;
-		width: 100%;
+		width: 100vw;
 		height: fit-content;
 		padding-bottom: 20%;
-		border: 1px solid grey;
+		box-sizing: border-box;
 
+		border: 1px solid grey;
 		background: white;
 		border-top-left-radius: 1rem;
 		border-top-right-radius: 1rem;
 	}
+	.dimmer {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.1643) 0%, rgba(0, 0, 0, 0.53) 25%);	
+		z-index: 3;
+	}
 
 	.mobile-menu-button {
-		position: absolute;
+		position: fixed;
 		z-index: 10;
 		display: grid;
 		place-items: center;
@@ -337,14 +356,13 @@ h4 {
 		opacity: 0;
 		max-height: 0px;
 		overflow: hidden;
-	} */
-
-	.sidebar {
-		display: none;
 	}
 
 	.dateButton {
 		padding: .75rem 1rem;
+	}
+	.schedule {
+		margin: .5rem;
 	}
 }
 </style>
