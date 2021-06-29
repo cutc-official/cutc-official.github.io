@@ -35,12 +35,9 @@ export default {
 
 <style scoped>
 #hero {
-	/* display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	column-gap: 1em; */
 	display: flex;
 	align-items: center;
-	padding: 1rem var(--splash-page-inset) 5rem;
+	padding: 4rem var(--splash-page-inset) 8rem;
 }
 @media screen and (max-width: 850px) {
 	#hero {
@@ -70,8 +67,8 @@ export default {
   flex: 1;
 }
 .building {
-	position: relative;
-	height: min-content;
+  position: relative;
+  height: min-content;
   flex-basis: 100%;
   flex: 1;
 }
