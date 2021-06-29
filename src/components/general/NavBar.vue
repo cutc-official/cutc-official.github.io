@@ -69,6 +69,7 @@ export default {
 #nav-bar {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 0.75rem var(--splash-page-inset);
 }
 
@@ -111,10 +112,10 @@ a {
 }
 
 .mobileMenu>nav {
-		flex-direction: column;
-		align-items: flex-start;
-		width: 100vw;
-	}
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100vw;
+}
 .mobileMenu>nav>a {
 	padding: 1em 2em;
 	color: var(--nav-color);
