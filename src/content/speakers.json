@@ -326,13 +326,18 @@
         }
     },
     "Victor Kovalev": {
-        "title": "Former CTO",
-        "org": "Redbubble",
-        "bio": "Bio coming soon!"
+        "title": "Co-founder",
+        "org": "ScaleGrowth",
+        "bio": "Victor was 3x CTO including Redbubble & Indiegogo, and also led all of Yelp’s mobile app teams (top 10 iOS & Android apps in the world at the time). His background is deeply rooted in Data Science, ML & AI, and he’s gone through 3 IPOs (VMware, Yelp, Redbubble) in his career."
     },
     "Ralf Klinkenberg": {
         "title": "Co-founder",
         "org": "Rapid Minder",
+        "bio": "Bio coming soon!"
+    },
+    "Neil Sharma": {
+        "title": "Technical PM",
+        "org": "Facebook",
         "bio": "Bio coming soon!"
     },
     "Susan Shu Chang": {
@@ -345,24 +350,19 @@
         "org": "Eireen",
         "bio": "Bio coming soon!"
     },
-    "Shannon Lal": {
-        "title": "Director",
-        "org": "RBC",
-        "bio": "Bio coming soon!"
-    },
     "Jamie Quint": {
         "title": "Former Head of Growth",
         "org": "Notion",
         "bio": "Bio coming soon!"
     },
+    "Shannon Lal": {
+        "title": "Director",
+        "org": "RBC",
+        "bio": "Bio coming soon!"
+    },
     "David Thompson": {
         "title": "Product Director",
         "org": "TurboTax",
-        "bio": "Bio coming soon!"
-    },
-    "Neil Sharma": {
-        "title": "Technical PM",
-        "org": "Facebook",
         "bio": "Bio coming soon!"
     }
 }
