@@ -88,13 +88,32 @@
             "LinkedIn": "https://linkedin.com/in/crystal-hunt-0864471a/"
         }
     },
+    "Jerry Lee": {
+        "title": "COO",
+        "org": "Wonsulting",
+        "bio": "Jerry is the COO of Wonsulting and an ex-Senior Strategy & Operations Manager at Google & used to lead Product Strategy at Lucid. Jerry partners with universities & organizations (220+ to date) to help others land into their dream careers. He's amassed 250,000+ followers across LinkedIn, TikTok & Instagram and has reached 40M+ professionals.",
+        "links": {
+            "Instagram": "https://www.instagram.com/iamjerrry",
+            "LinkedIn": "https://www.linkedin.com/in/jehakjerrylee/"
+        }
+    },
+    "Jonathan Javier": {
+        "title": "CEO",
+        "org": "Wonsulting",
+        "bio": "Jonathan Javier is the CEO/Founder of Wonsulting, which mission is to “turn underdogs into winners”. He's worked at Snap, Google, and Cisco being featured on Forbes, Business Insider, Yahoo News, and more as a top job search expert and amassed 1M+ followers on LinkedIn, Instagram, TikTok + 30+ million impressions monthly on his content.",
+        "links": {
+            "Twitter": "https://twitter.com/AmandaDoAmanda",
+            "LinkedIn": "https://www.linkedin.com/in/jonathan-wonsulting/",
+            "Instagram": "https://www.instagram.com/jonathanwordsofwisdom/"
+        }
+    },
     "Iris Guo": {
         "title": "PM Intern",
         "org": "X, the moonshot factory",
         "bio": "Iris is a Product Manager Intern at Google X and Founder / CEO of a sustainability startup Neutrify. With the mission of empowering individuals to take action to fight climate change, Iris founded Neutrify to shift food consumption towards sustainable food.",
         "links": {
-            "LinkedIn": "https://www.linkedin.com/in/iris-guo/",
-            "Twitter": "https://twitter.com/IrisGuoo"
+            "Twitter": "https://twitter.com/IrisGuoo",
+            "LinkedIn": "https://www.linkedin.com/in/iris-guo/"
         }
     },
     "Aubrey de Grey": {
@@ -209,8 +228,8 @@
         "org": "Hack Club",
         "bio": "Zach Latta dropped out of high school after his freshman year to work in the technology industry and had over 5 million people using apps he worked on when he was 16. He was awarded the Thiel Fellowship when he was 17 and was featured in Forbes 30 Under 30 when he was 18.",
         "links": {
-            "LinkedIn": "https://www.linkedin.com/in/zachlatta/",
-            "Twitter": "https://twitter.com/zachlatta"
+            "Twitter": "https://twitter.com/zachlatta",
+            "LinkedIn": "https://www.linkedin.com/in/zachlatta/"
         }
     },
     "Michelle Qin": {
@@ -253,8 +272,8 @@
         "org": "Asian Hustle Network",
         "bio": "Bryan is the founder of Asian Hustle Network (AHN), Crushing it in Real Estate (CIIRE), HateIsAVirus, and a venture partner at Outliers Fund. He is passionate about bringing together individuals through growing AHN to over 100,000+ members in a year.",
         "links": {
-            "LinkedIn": "https://www.linkedin.com/in/bryanvuongpham/",
-            "Twitter": "https://twitter.com/bryanvuongpham"
+            "Twitter": "https://twitter.com/bryanvuongpham",
+            "LinkedIn": "https://www.linkedin.com/in/bryanvuongpham/"
         }
     },
     "Priya Ghose": {
@@ -286,8 +305,8 @@
         "org": "Apple",
         "bio": "Parth co-founded Augment, a platform to help students with internships which ran during summer 2020. Parth has done many coops at companies such as Apple, Tesla, and Deloitte. He’s also given many presentations and been on panels with organizations such as Hack the North and Wonsulting.",
         "links": {
-            "LinkedIn": "https://www.linkedin.com/in/parthsareen/",
-            "Twitter": "https://twitter.com/ParthSareen_"
+            "Twitter": "https://twitter.com/ParthSareen_",
+            "LinkedIn": "https://www.linkedin.com/in/parthsareen/"
         }
     },
     "Wendy Cukier": {
@@ -296,6 +315,14 @@
         "bio": "Dr. Wendy Cukier is the Diversity Institute Founder, Academic Director of the Women Entrepreneurship Knowledge Hub and Research Lead of the Future Skills Centre.",
         "links": {
             "LinkedIn": "https://www.linkedin.com/in/wendy-cukier-9aa85910/"
+        }
+    },
+    "Amanda DoAmaral": {
+        "title": "CEO",
+        "org": "Fiveable",
+        "bio": "Amanda DoAmaral is an educator, activist, and co-founder of Fiveable - a social learning network for students. She spent a half a decade teaching high school history in Oakland, CA, where her passion for creating equitable educational opportunities was ignited.",
+        "links": {
+            "Twitter": "https://twitter.com/AmandaDoAmanda"
         }
     },
     "Victor Kovalev": {
@@ -323,14 +350,19 @@
         "org": "Wealthsimple",
         "bio": "Bio coming soon!"
     },
-    "Josh Sirefman": {
-        "title": "Founder",
-        "org": "Sidewalk Labs",
+    "David Thompson": {
+        "title": "Product Director",
+        "org": "TurboTax",
         "bio": "Bio coming soon!"
     },
-    "Amanda DoAmaral": {
+    "Neil Sharma": {
+        "title": "Technical PM",
+        "org": "Facebook",
+        "bio": "Bio coming soon!"
+    },
+    "Faisal Abid": {
         "title": "CEO",
-        "org": "Fiveable",
+        "org": "Eireen",
         "bio": "Bio coming soon!"
     }
 }
