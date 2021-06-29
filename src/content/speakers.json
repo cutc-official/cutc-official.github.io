@@ -328,7 +328,10 @@
     "Victor Kovalev": {
         "title": "Co-founder",
         "org": "ScaleGrowth",
-        "bio": "Victor was 3x CTO including Redbubble & Indiegogo, and also led all of Yelp’s mobile app teams (top 10 iOS & Android apps in the world at the time). His background is deeply rooted in Data Science, ML & AI, and he’s gone through 3 IPOs (VMware, Yelp, Redbubble) in his career."
+        "bio": "Victor was 3x CTO including Redbubble & Indiegogo, and also led all of Yelp’s mobile app teams (top 10 iOS & Android apps in the world at the time). His background is deeply rooted in Data Science, ML & AI, and he’s gone through 3 IPOs (VMware, Yelp, Redbubble) in his career.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/kovalevvictor/"
+        }
     },
     "Ralf Klinkenberg": {
         "title": "Co-founder",
