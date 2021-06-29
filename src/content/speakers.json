@@ -330,16 +330,6 @@
         "org": "Redbubble",
         "bio": "Bio coming soon!"
     },
-    "Shannon Lal": {
-        "title": "Director",
-        "org": "RBC",
-        "bio": "Bio coming soon!"
-    },
-    "Jamie Quint": {
-        "title": "Former Head of Growth",
-        "org": "Notion",
-        "bio": "Bio coming soon!"
-    },
     "Ralf Klinkenberg": {
         "title": "Co-founder",
         "org": "Rapid Minder",
@@ -350,6 +340,21 @@
         "org": "Wealthsimple",
         "bio": "Bio coming soon!"
     },
+    "Faisal Abid": {
+        "title": "CEO",
+        "org": "Eireen",
+        "bio": "Bio coming soon!"
+    },
+    "Shannon Lal": {
+        "title": "Director",
+        "org": "RBC",
+        "bio": "Bio coming soon!"
+    },
+    "Jamie Quint": {
+        "title": "Former Head of Growth",
+        "org": "Notion",
+        "bio": "Bio coming soon!"
+    },
     "David Thompson": {
         "title": "Product Director",
         "org": "TurboTax",
@@ -358,11 +363,6 @@
     "Neil Sharma": {
         "title": "Technical PM",
         "org": "Facebook",
-        "bio": "Bio coming soon!"
-    },
-    "Faisal Abid": {
-        "title": "CEO",
-        "org": "Eireen",
         "bio": "Bio coming soon!"
     }
 }
