@@ -3,7 +3,7 @@
 		<div class="strip"></div>
 		<div class="content">
 			<div class="top-bar">
-				<button v-if="timestamp">
+				<button v-if="start">
 					<div @mouseenter="showDropdown = true" @mouseleave="showDropdown = false">
 						<img src="@/assets/schedule/addButton.svg" alt="Add to Calendar" />
 						<div class="calendar" v-if="showDropdown">
@@ -22,9 +22,9 @@
 				</button>
 				<h3>{{ title }}</h3>
 				<div class="top-info">
-					<div class="top-info-section" v-if="timestamp">
+					<div class="top-info-section" v-if="start">
 						<img src="@/assets/schedule/clock.svg" alt="Time" />
-						<p>{{ timestamp }}</p>
+						<p>{{ start + (stop ? ' - ' : '') + stop }}</p>
 					</div>
 					<div class="top-info-section" v-if="location">
 						<img src="@/assets/schedule/location.svg" alt="Location" />
@@ -81,7 +81,11 @@ export default {
 			default: "",
 			type: String
 		},
-		timestamp: {
+		start: {
+			default: "",
+			type: String
+		},
+		stop: {
 			default: "",
 			type: String
 		},
@@ -143,12 +147,12 @@ export default {
 			let endDate = ""
 			switch(calendar) {
 				case "Google Calendar":
-					startDate = `202107${this.getDay()}T${this.getStartTime()}00`
-					endDate = `202107${this.getDay()}T${this.getStartTime()}00`
+					startDate = `202107${this.getDay()}T${this.cleanTimeStamp(this.start)}00`
+					endDate = `202107${this.getDay()}T${this.cleanTimeStamp(this.stop)}00`
 					return `https://calendar.google.com/calendar/render?action=TEMPLATE&dates=${startDate}$/${endDate}&details=${this.description}&location=${this.location}&text=${this.title}`				
 				case "Outlook":
-					startDate = `2021-07-${this.getDay()}T${this.timestamp}:00+00:00`
-					endDate = `2021-07-${this.getDay()}T${this.timestamp}:00+00:00`
+					startDate = `2021-07-${this.getDay()}T${this.start}:00+00:00`
+					endDate = `2021-07-${this.getDay()}T${this.stop}:00+00:00`
 					// Switch to ascii codes
 					startDate = startDate.replace(':', '%3A')
 					startDate = startDate.replace('+', '%2B')
@@ -165,18 +169,8 @@ export default {
 		getDay() {
 			return this.day.split(' ')[1];
 		},
-		getStartTime() {
-			let stamps = this.timestamp.split('-');
-			let stamp = stamps[0].trim().replace(':', '');
-			if (stamp.length < 4)
-				stamp = '0' + stamp;
-			return stamp;
-		},
-		getEndTime() {
-			let stamps = this.timestamp.split('-');
-			if (stamps.length <= 1) return this.getStartTime();
-			
-			let stamp = stamps[1].trim().replace(':', '');
+		cleanTimeStamp(val) {
+			let stamp = val.trim().replace(':', '');
 			if (stamp.length < 4)
 				stamp = '0' + stamp;
 			return stamp;

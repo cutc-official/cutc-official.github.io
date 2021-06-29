@@ -11,7 +11,8 @@
 			{
 				"title": "Women in Tech",
 				"topics": ["Diversity"],
-				"timestamp": "9:30 - 10:00",
+				"start": "9:30",
+				"stop": "10:00",
 				"format": "Panel"
 			},
 			{
@@ -23,7 +24,8 @@
 				"description": "",
 				"format": "",
 				"location": "",
-				"timestamp": "",
+				"start": "",
+				"stop": "",
 				"topics": [""],
 				"speakers": [""]
 			}

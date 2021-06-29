@@ -24,19 +24,22 @@
 
 		<div class="content">
 			<div class="top">
-				<div
-					v-for="(_, day) in scheduleData"
-					:key="day"
-					:class="{'dateButton': true, 'dateButton-active': day == activeDay}"
-					@click="activeDay = day"
-					>{{ day }}
-				</div>
-				<!-- <span>
+				<span class="days">
+					<div
+						v-for="(_, day) in scheduleData"
+						:key="day"
+						:class="{'dateButton': true, 'dateButton-active': day == activeDay}"
+						@click="activeDay = day"
+						>{{ day }}
+					</div>
+				</span>
+				<div class="filler"></div>
+				<span class="timezone">
 					<h4>Timezone: </h4>
-					<select id="timezones" @change="onChange($event)">
-						<option v-for="zone in timezones" :key="zone" :value="zone">{{ zone }}</option>
+					<select ref="timezones" v-model="timezone">
+						<option v-for="zone in timezoneOptions" :key="zone">{{ zone }}</option>
 					</select>
-				</span> -->
+				</span>
 			</div>
 
 			<div class="schedule">
@@ -44,11 +47,16 @@
 					<span v-if="day == activeDay">
 						<div v-for="(events, time) in schedule" :key="time">
 							<div class="time" v-if="time && events && events.length">
-								<h4 id="time">{{ time }}</h4>
+								<h4 ref="time">{{ getTime(time) }}</h4>
 								<hr>
 							</div>
 							<div v-for="tileInfo in events" :key="tileInfo.title">
-								<schedule-tile v-if="isChecked(tileInfo.topics, tileInfo.format)" v-bind="tileInfo" :day="day"/>
+								<schedule-tile
+									v-if="isChecked(tileInfo.topics, tileInfo.format)"
+									v-bind="tileInfo"
+									:start="getTime(tileInfo.start)"
+									:stop="getTime(tileInfo.stop)"
+									:day="day"/>
 							</div>
 						</div>
 					</span>
@@ -89,7 +97,8 @@ export default {
 			displayFormats: true,
 			isMobile: false,
 			showMobileMenu: false,
-			timezones: [
+			timezone: 'Canada/Eastern',
+			timezoneOptions: [
 				'Africa/Lagos',
 				'America/Argentina/Rio_Gallegos',
 				'America/Buenos_Aires',
@@ -125,13 +134,15 @@ export default {
 		}
 	},
 	methods: {
-		onChange(event) {
-			const time = document.getElementById("time");
-			const date = (moment(time.innerHTML, 'hh:mm')).toDate()
-			time.innerHTML = moment.tz(date, event.target.value).format("hh:mm")
+		getTime(stamp) {
+			if (stamp) {
+				const date = moment(stamp, 'hh:mm').utcOffset(8).toDate()
+				return moment.tz(date, this.timezone).format("hh:mm")
+			}
+			return ''
 		},
 		isChecked(topics, format) {
-			if(this.checkedTopics.length || this.checkedFormats.length ){
+			if(this.checkedTopics.length || this.checkedFormats.length){
 				return (
 					(format && this.checkedFormats.includes(format)) || 
 					(topics && topics.some(topic => this.checkedTopics.includes(topic)))
@@ -172,6 +183,7 @@ export default {
 <style scoped>
 #schedule {
 	--desktop-sidebar-width: 20rem;
+	--border-divider-color: #CCCCCC;
 }
 
 h4 {
@@ -186,7 +198,9 @@ h4 {
 }
 
 .spacer {
-	margin: 1rem;
+	width: 100%;
+	margin: 2rem 0;
+	border-bottom: 1px solid var(--border-divider-color);
 }
 
 .content {
@@ -195,6 +209,23 @@ h4 {
 
 .top {
 	display: flex;
+	border-bottom: 1px solid var(--border-divider-color);
+}
+.top > .days {
+	display: flex;
+}
+.top > .filler {
+	flex-grow: 1;
+}
+.top > .timezone {
+	display: flex;
+	align-items: center;
+}
+.timezone > select {
+	margin: 1rem;
+	padding: .25rem;
+	border: 1px solid var(--border-divider-color);
+	border-radius: .25rem;
 }
 
 .time {
@@ -204,8 +235,8 @@ h4 {
 }
 .time hr {
 	width: 90%;
-	height: .1rem;
-	border: 2px solid #CCCCCC;
+	border: none;
+	border-bottom: 2px solid var(--border-divider-color);
 }
 
 .dateButton {
