@@ -300,15 +300,6 @@
             "LinkedIn": "https://www.linkedin.com/in/dsilva/"
         }
     },
-    "Parth Sareen": {
-        "title": "Software Engineer",
-        "org": "Apple",
-        "bio": "Parth co-founded Augment, a platform to help students with internships which ran during summer 2020. Parth has done many coops at companies such as Apple, Tesla, and Deloitte. He’s also given many presentations and been on panels with organizations such as Hack the North and Wonsulting.",
-        "links": {
-            "Twitter": "https://twitter.com/ParthSareen_",
-            "LinkedIn": "https://www.linkedin.com/in/parthsareen/"
-        }
-    },
     "Wendy Cukier": {
         "title": "Founder",
         "org": "Diversity Institute",
@@ -333,19 +324,19 @@
             "LinkedIn": "https://www.linkedin.com/in/kovalevvictor/"
         }
     },
-    "Ralf Klinkenberg": {
-        "title": "Co-founder",
-        "org": "Rapid Minder",
-        "bio": "Bio coming soon!"
-    },
-    "Neil Sharma": {
-        "title": "Technical PM",
-        "org": "Facebook",
-        "bio": "Bio coming soon!"
-    },
     "Susan Shu Chang": {
         "title": "Principle Data Scientist",
         "org": "Wealthsimple",
+        "bio": "Susan is a principal data scientist in fintech, where she builds machine learning models and infrastructure at scale. In her previous role, she developed the company’s very first ML powered website recommender system and deployed to millions of customers.",
+        "links": {
+            "Website": "https://www.susanshu.com/",
+            "Twitter": "https://twitter.com/susan_shuc",
+            "LinkedIn": "https://ca.linkedin.com/in/susan-shu-chang"
+        }
+    },
+    "Ralf Klinkenberg": {
+        "title": "Co-founder",
+        "org": "Rapid Minder",
         "bio": "Bio coming soon!"
     },
     "Faisal Abid": {
@@ -366,6 +357,11 @@
     "David Thompson": {
         "title": "Product Director",
         "org": "TurboTax",
+        "bio": "Bio coming soon!"
+    },
+    "Serena Li": {
+        "title": "Product Developer and Marketer",
+        "org": "HackerOne",
         "bio": "Bio coming soon!"
     }
 }
