@@ -44,8 +44,7 @@
 		</div>
 
 		<h3 v-if="!limit" class="coming-soon">
-			and {{ 50 - Object.entries(speakers).length }}+ more speakers coming
-			soon!
+			More speakers coming soon!
 		</h3>
 		<div v-else class="view-more">
 			<router-link to="/speakers">View all speakers</router-link>

@@ -56,8 +56,8 @@ export default {
 
 <style scoped>
 .footer-position {
-	--footer-height: 12rem;
-	height: calc(var(--footer-height) + 1rem);
+	--footer-height: 15rem;
+	height: calc(var(--footer-height) + 5rem);
 }
 
 .footer-background {
@@ -67,7 +67,7 @@ export default {
 
 	display: flex;
 	align-items: center;
-	/* padding: 1% 0; */
+	padding-top: 6rem;
 	background: linear-gradient(
 		180deg,
 		#ffffff -0.11%,
@@ -82,16 +82,19 @@ export default {
 	width: 50%;
 	min-width: max-content;
 }
-.icons {
-	margin-left: 0.7rem;
+.cutc-icons {
+	margin-bottom: 0.5rem;
+}
+.icons:not(:first-child) {
+	margin-left: 0.75rem;
 }
 .title {
 	font-size: 1.3rem;
-	margin-bottom: 0;
+	margin-bottom: 0.25rem;
 	font-weight: bold;
 }
 .contact {
-	margin: 0.1rem 0rem 0.5rem 0rem;
+	margin: 0.5rem 0;
 	font-weight: bold;
 }
 </style>

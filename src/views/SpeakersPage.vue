@@ -2,7 +2,7 @@
 <div>
 	<nav-bar/>
 	<div class="speaker-wrapper">
-		<speakers/>
+		<speakers />
 	</div>
 	<bottom/>
 </div>
