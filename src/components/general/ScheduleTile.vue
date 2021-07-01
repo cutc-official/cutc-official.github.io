@@ -111,7 +111,7 @@ export default {
 			showDropdown: false,
 			calendars: [
 				{ name: "Google Calendar", icon: GoogleCalendar },
-				{ name: "Outlook", icon: OutlookCalendar },
+				// { name: "Outlook", icon: OutlookCalendar },
 				// { name: "Other", icon: AppleCalendar }
 			]
 		};
