@@ -34,9 +34,9 @@
 		<img id="illustration" src="@/assets/schedule/illustration.svg" alt="illustration">
 	</div>
 </div>
-<!-- <div class="view-more">
+<div class="view-more">
 	<router-link to="/schedule">View full schedule</router-link>
-</div> -->
+</div>
 </template>
 
 <script>

@@ -1,67 +1,62 @@
 {
-	"July 24": {
-		"8:00": [
+	"": {
+		"": [
 			{
-				"title": "title 1",
-				"description": "desc",
-				"format": "workshop",
-				"location": "",
-				"timestamp": "",
-				"topics": ["t1", "t2"],
-				"speakers": [""]
+				"title": "Building Happy Engineering Teams at Scale",
+				"format": "Breakout Session",
+				"topics": [
+						"Leadership",
+						"SWE"
+				],
+				"description": "Leadership in technology integrates both aspects of software engineering and leadership. Come out to learn more about how to foster a positive work environment in a SWE team.",
+				"speakers": ["Victor Kovalev"]
 			},
 			{
-				"title": "",
-				"description": "",
-				"format": "talk",
-				"location": "",
-				"timestamp": "",
-				"topics": ["t3", "t4"],
-				"speakers": [""]
-			}
-		],
-		"9:30": [
-			{
-				"title": "",
-				"description": "",
-				"format": "",
-				"location": "",
-				"timestamp": "",
-				"topics": ["t3", "t2"],
-				"speakers": [""]
-			}
-		]
-	},
-	"July 25": {
-		"10:00": [
-			{
-				"title": "title 1",
-				"description": "desc",
-				"format": "workshop",
-				"location": "",
-				"timestamp": "",
-				"topics": ["t1", "t2"],
-				"speakers": [""]
+				"title": "Gen Z Entrepreneurship",
+				"format": "Panel",
+				"topics": [
+						"Entrepeneurship",
+						"Amplify"
+				],
+				"description": "Join founders of viral social apps and startups backed by the most prolific investors in Silicon Valley as they discuss the ups and downs of building a company as a Zoomer.",
+				"speakers": ["Michael Ioffe",	"Sara Du", "Akshaya Dinesh", "Daniel Huang", "Justin Zheng"]
 			},
 			{
-				"title": "",
-				"description": "",
-				"format": "talk",
-				"location": "",
-				"timestamp": "",
-				"topics": ["t3", "t4"],
-				"speakers": [""]
-			}
-		],
-		"11:30": [
+				"title": "Breaking into PM From a Non-technical Background",
+				"format": "Workshop",
+				"topics": [
+						"Product",
+						"Amplify"
+				],
+				"description": "Learn about how to tap into product management from a, non-technical background"
+			},
 			{
-				"title": "",
-				"description": "",
-				"format": "",
-				"location": "",
-				"timestamp": "",
-				"topics": ["t3", "t2"],
-				"speakers": [""]
+				"title": "The Future of Education, Today",
+				"format": "Panel",
+				"topics": [
+						"Education"
+				],
+				"description": "Education hasn't seen much innovation for the past 100 years. With the initiatives our panelists are part of, it'll look radically different within the next 10.",
+				"speakers": ["Alison Adnani", "Zach Latta", "Amanda DoAmaral"]
+			},
+			{
+				"title": "Arming the Rebels with Commerce",
+				"format": "Fireside Chat",
+				"topics": [
+						"E-Commerce",
+						"Amplify"
+				],
+				"description": "The president of Shopify sits down with one of their largest merchants do discuss how Shopify's helping anyone get started with entreprenuership, no matter how small.",
+				"speakers": ["Harley Finkelstein"]
+			},
+			{
+				"title": "Creating a More Diverse Work Landscape",
+				"format": "Fireside Chat",
+				"topics": [
+						"D&I"
+				],
+				"description": "Join us in conversation with 2 senior leaders who’ve been fighting to promote diversity at big organizations. With tech growing rapidly, it's important we focus on diversity first.",
+				"speakers": ["Mark Patterson", "Sophia Dhrolia"]
 			}
 		]
 	}

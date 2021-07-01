@@ -1,55 +1,78 @@
 <template>
-<div>
+<div id="schedule">
 	<nav-bar/>
-	<span style="display: flex;">
-		<div class="sidebar">
-			<h4 class="word">Topics <img :class="displayTopics ? 'arrow' : 'arrow-flipped'" src="@/assets/misc/CloseArrow.svg" @click="displayTopics = !displayTopics"></h4>
-			<span v-if="displayTopics">
-				<div style="color: black;" v-for="i in allTopics" :key="i">
-					<input type="checkbox" :id="i" :value="i" v-model="checkedTopics" class="checkbox">
-					<label for="i" class="checkboxText">{{ i }}</label>
-					<br>
-				</div>
-			</span>
-			<hr class="sidebar-hr" />
+	<div class="page">
+		<transition name="pop-up">
+			<div class="sidebar" v-if="!isMobile || showMobileMenu">
+				<h4>Topics</h4>
+				<span v-if="displayTopics">
+					<div class="checkbox-row" v-for="i in allTopics" :key="i">
+						<input type="checkbox" :id="i" :value="i" v-model="checkedTopics">
+						<label for="i" class="checkboxText">{{ i }}</label>
+					</div>
+				</span>
+				<div class="spacer"/>
+				<h4>Format</h4>
+				<span v-if="displayFormats">
+					<div class="checkbox-row" v-for="i in allFormats" :key="i">
+						<input type="checkbox" :id="i" :value="i" v-model="checkedFormats" class="checkbox">
+						<div class="dot" :style="{'--format-color': colors[i]}"></div>
+						<label for="i" class="checkboxText">{{ i }}</label>
+					</div>
+				</span>
+			</div>
+		</transition>
+			<div class="mobile-menu-button" @click="showMobileMenu = !showMobileMenu">&#9776;</div>
 
-			<h4 class="word">Format <img :class="displayFormats ? 'arrow' : 'arrow-flipped'" src="@/assets/misc/CloseArrow.svg" alt="" @click="displayFormats = !displayFormats"></h4>
-			<span v-if="displayFormats">
-				<div style="color: black;" v-for="i in allFormats" :key="i">
-					<input type="checkbox" :id="i" :value="i" v-model="checkedFormats" class="checkbox">
-					<label for="i" class="checkboxText">{{ i }}</label>
-					<br>
-				</div>
-			</span>
-		</div>
-
-		<div>
+		<div class="content">
 			<div class="top">
-				<span :class="active1 ? 'dateButton-active' : 'dateButton'" @click="active1 = true, active2 = false">JULY 24</span>
-				<span :class="active2 ? 'dateButton-active': 'dateButton'" @click="active2 = true, active1 = false">JULY 25</span>
-				<span style="position: absolute; display:flex; margin-left: 20%;">
+				<span class="days">
+					<span v-for="(_, day) in scheduleData" :key="day">
+						<div
+							:class="{'dateButton': true, 'dateButton-active': day == activeDay}"
+							@click="activeDay = day"
+							v-if="day.length"
+							>{{ day }}
+						</div>
+					</span>
+				</span>
+				<div class="filler"></div>
+				<span class="timezone">
 					<h4>Timezone: </h4>
-					<select id="timezones" @change="onChange($event)">
-						<option v-for="zone in timezones" :key="zone" :value="zone">{{ zone }}</option>
+					<select ref="timezones" v-model="timezone">
+						<option v-for="zone in timezoneOptions" :key="zone">{{ zone.replace('_', ' ') }}</option>
 					</select>
 				</span>
-				<hr class="top-hr" />
 			</div>
+
 			<div class="schedule">
 				<div v-for="(schedule, day) in scheduleData" :key="day">
-					<span v-if="isDay(day)">
+					<span v-if="day == activeDay">
 						<div v-for="(events, time) in schedule" :key="time">
-							<h4 class="time" id="time">{{ time }}</h4> <hr class="time-hr" />
-							<div v-for="tileInfo in events" :key="tileInfo">
-								<schedule-tile v-if="isChecked(tileInfo.topics, tileInfo.format)" class="tile" v-bind="tileInfo"/>
+							<div class="time" v-if="time && events && events.length">
+								<h4 ref="time">{{ getTime(time) }}</h4>
+								<hr>
+							</div>
+							<div v-for="tileInfo in events" :key="tileInfo.title">
+								<schedule-tile
+									v-if="isChecked(tileInfo.topics, tileInfo.format)"
+									v-bind="tileInfo"
+									:start="getTime(tileInfo.start)"
+									:stop="getTime(tileInfo.stop)"
+									:day="day"/>
 							</div>
 						</div>
 					</span>
 				</div>
 			</div>
+
 		</div>
-	</span>
+	</div>
 	<bottom/>
+
+	<transition name="fade-in">
+		<div class="dimmer" v-if="isMobile && showMobileMenu" @click="showMobileMenu = false"/>
+	</transition>
 </div>
 </template>
 
@@ -75,11 +98,13 @@ export default {
 			checkedTopics: [],
 			allFormats: [],
 			checkedFormats: [],
-			active1: true,
-			active2: false,
+			activeDay: '',
 			displayTopics: true,
 			displayFormats: true,
-			timezones: [
+			isMobile: false,
+			showMobileMenu: false,
+			timezone: 'Canada/Eastern',
+			timezoneOptions: [
 				'Africa/Lagos',
 				'America/Argentina/Rio_Gallegos',
 				'America/Buenos_Aires',
@@ -103,28 +128,41 @@ export default {
 				'Canada/Eastern',
 				'Europe/Amsterdam',
 			],
+			colors: {
+				"Workshop": "#8394F2",
+				"Panel": "#F57A75",
+				"Keynote": "#17ADCE",
+				"Lightning Talk": "#F9AFAB",
+				"Fireside Chat": "#E28383",
+				"Breakout Session": "#98D485",
+				"Default": "#44AF69" // Misc
+			},
 		}
 	},
 	methods: {
-		onChange(event) {
-			const time = document.getElementById("time");
-			const date = (moment(time.innerHTML, 'hh:mm')).toDate()
-			time.innerHTML = moment.tz(date, event.target.value).format("hh:mm")
+		getTime(stamp) {
+			if (stamp) {
+				const date = moment(stamp, 'H:mm').utcOffset(8).toDate()
+				return moment.tz(date, this.timezone).format("H:mm")
+			}
+			return ''
 		},
 		isChecked(topics, format) {
-			if(this.checkedTopics.length || this.checkedFormats.length ){
-				return ((this.checkedFormats.includes(format)) || topics.some(topic => (this.checkedTopics.includes(topic))))
+			if(this.checkedTopics.length || this.checkedFormats.length){
+				return (
+					(format && this.checkedFormats.includes(format)) || 
+					(topics && topics.some(topic => this.checkedTopics.includes(topic)))
+				)
 			}
 			return true
 		},
-		isDay(day){
-			if(this.active1 && day == "July 24"){
-				return true
-			} else if (this.active2 && day == "July 25"){
-				return true
-			}
-			return false
-		}
+		handleResize() {
+			this.isMobile = window.innerWidth <= 850;
+		},
+	},
+	created() {
+		this.handleResize();
+		window.addEventListener('resize', () => this.handleResize());
 	},
 	beforeMount() {
 		let topics = []
@@ -133,136 +171,210 @@ export default {
 			for(let j in this.scheduleData[i]){
 				for(let k in this.scheduleData[i][j]){
 					for(let l in this.scheduleData[i][j][k]["topics"]){
-						topics.push(this.scheduleData[i][j][k]["topics"][l])
+						const topic = this.scheduleData[i][j][k]["topics"][l];
+						if (topic) topics.push(topic)
 					}
-					formats.push(this.scheduleData[i][j][k]["format"])
+					const format = this.scheduleData[i][j][k]["format"];
+					if (format) formats.push(format)
 				}
 			}
 		}
 		this.allTopics = [...new Set(topics)]
 		this.allFormats = [...new Set(formats)]
+		this.activeDay = Object.keys(this.scheduleData)[0]
 	}
 }
 </script>
 
 <style scoped>
-a {
-	color: var(--main-color);
-	text-decoration: underline;
+#schedule {
+	--desktop-sidebar-width: 20rem;
+	--border-divider-color: #CCCCCC;
+}
+
+.page {
+	display: flex;
 }
 
 h4 {
 	color: black;
 }
 
-.word {
-	margin: 2rem 0 2rem 2rem;
-}
-
-.time-hr {
-	display: inline;
-	position: absolute;
-	margin-left: 20px;
-	width: 60%;
-	border: 2px solid #CCCCCC;
-}
-
-.top-hr {
-	position: absolute;
-	width: 70%;
-	margin-top: 2%;
-	margin-left: -49px;
-	border: 2px solid #CCCCCC;
-}
-
 .sidebar {
-	width: 400px;
-	float: left;
-	height: 1000px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	margin-right: 1rem;
+	width: var(--desktop-sidebar-width);
+	height: 100vh;
+	border-right: 1px solid rgb(0, 0, 0, 0.25);
+	padding: 1rem;
 }
 
-.arrow {
-	margin-left: 30%;
-	width: 20px;
-	height: 15px;
+.spacer {
+	width: 100%;
+	margin: 2rem 0;
+	border-bottom: 1px solid var(--border-divider-color);
 }
 
-.arrow-flipped {
-	margin-left: 30%;
-	width: 20px;
-	height: 15px;
-	transform: rotate(180deg);
-}
-
-.time {
-	margin-top: 2%;
-	display: inline;
+.content {
+	width: 100%;
 }
 
 .top {
-	margin: 2rem;
+	display: flex;
+	border-bottom: 1px solid var(--border-divider-color);
+	flex-wrap: wrap;
+}
+.top > .days {
+	display: flex;
+}
+.top > .filler {
+	flex-grow: 1;
+}
+.top > .timezone {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: .5rem;
+}
+.timezone > select {
+	margin: .25rem;
+	padding: .25rem;
+	border: 1px solid var(--border-divider-color);
+	border-radius: .25rem;
+}
+
+.time {
+	display: flex;
+	align-items: center;
+	margin-top: 2%;
+}
+.time hr {
+	width: 90%;
+	border: none;
+	border-bottom: 2px solid var(--border-divider-color);
 }
 
 .dateButton {
 	color: black;
 	border: 3px solid #DADCE5;
-	box-sizing: border-box;
 	border-radius: 60px;
 	margin: 1rem;
-	padding: 15px 40px;
+	padding: .5rem 2rem;
 }
-
+.dateButton:hover {
+	cursor: pointer;
+}
 .dateButton-active {
 	color: white;
 	background:  #C8190F;
 	border: 3px solid #C8190F;
-	box-sizing: border-box;
-	border-radius: 60px;
-	margin: 1rem;
-	padding: 15px 40px;
 }
 
 .schedule {
-	margin-top: 12%;
-	margin-left: 15%;
+	margin: 1rem;
 }
 
-.tile {
-	margin-left: 5%;
+.checkbox-row {
+	display: flex;
+	align-items: center;
+	color: black;
+	font-size: .8rem;
+	margin-bottom: .25rem;
 }
-
-.checkbox {
-	margin-left: 8%;
-	margin-right: 2%;
+.checkbox-row>input {
+	margin: 0;
+	margin-left: 1rem;
 	-webkit-appearance: none;
 	border: 2px solid #666666;
-	padding: 5px;
+	padding: .4rem;
 	border-radius: 2px;
-	display: inline-block;
-	width: 24px;
-	height: 24px;
 }
-
-.checkbox:checked {
+.checkbox-row>input:checked {
 	border: 2px solid #C8190F;
 	background: #C8190F;
 	color: white;
 }
-
-.checkbox:checked:after {
-	font-family: FontAwesome;
-	content: '\f00c';
-	font-weight: 900;
-	background: #C8190F;
-	color: white;
-	font-size: 12px;
-	position: absolute;
+.checkbox-row>label {
+	margin-top: .1rem;
+}
+.checkbox-row>.dot {
+	background: var(--format-color);
+	height: .4rem;
+	width: .4rem;
+	border-radius: 20rem;
+}
+.checkbox-row>:not(:last-child) {
+	margin-right: .25rem;
 }
 
-.checkboxText {
-	margin-top: 10px;
-	position: absolute;
+.mobile-menu-button {
+	display: none;		
+}
+
+@media screen and (max-width: 850px) {
+	.sidebar {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 5;
+		width: 100vw;
+		height: fit-content;
+		padding-bottom: 20%;
+		box-sizing: border-box;
+
+		border: 1px solid grey;
+		background: white;
+		border-top-left-radius: 1rem;
+		border-top-right-radius: 1rem;
+	}
+	.dimmer {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.1643) 0%, rgba(0, 0, 0, 0.53) 25%);	
+		z-index: 3;
+		opacity: 1;
+	}
+
+	.mobile-menu-button {
+		position: fixed;
+		z-index: 10;
+		display: grid;
+		place-items: center;
+
+		font-size: 1.5rem;
+
+		bottom: 5%;
+		right: 5%;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 20rem;
+		background: red;
+	}
+
+	.dateButton {
+		padding: .75rem 1rem;
+	}
+	.schedule {
+		margin: .5rem;
+	}
+}
+
+.fade-in-enter-active,
+.fade-in-leave-active {
+	transition: all 0.5s;
+}
+.fade-in-enter-from,
+.fade-in-leave-to {
+	opacity: 0;
+}
+.pop-up-enter-active,
+.pop-up-leave-active {
+	transition: bottom 0.5s;
+}
+.pop-up-enter-from,
+.pop-up-leave-to {
+	/* // ! This could appear when it's not supposed to */
+	bottom: -100vh;
 }
 </style>
