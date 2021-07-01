@@ -2,25 +2,27 @@
 <div id="schedule">
 	<nav-bar/>
 	<div class="page">
-		<div class="sidebar" v-if="!isMobile || showMobileMenu">
-			<h4>Topics</h4>
-			<span v-if="displayTopics">
-				<div class="checkbox-row" v-for="i in allTopics" :key="i">
-					<input type="checkbox" :id="i" :value="i" v-model="checkedTopics">
-					<label for="i" class="checkboxText">{{ i }}</label>
-				</div>
-			</span>
-			<div class="spacer"/>
-			<h4>Format</h4>
-			<span v-if="displayFormats">
-				<div class="checkbox-row" v-for="i in allFormats" :key="i">
-					<input type="checkbox" :id="i" :value="i" v-model="checkedFormats" class="checkbox">
-					<div class="dot" :style="{'--format-color': colors[i]}"></div>
-					<label for="i" class="checkboxText">{{ i }}</label>
-				</div>
-			</span>
-		</div>
-		<div class="mobile-menu-button" @click="showMobileMenu = !showMobileMenu">&#9776;</div>
+		<transition name="pop-up">
+			<div class="sidebar" v-if="!isMobile || showMobileMenu">
+				<h4>Topics</h4>
+				<span v-if="displayTopics">
+					<div class="checkbox-row" v-for="i in allTopics" :key="i">
+						<input type="checkbox" :id="i" :value="i" v-model="checkedTopics">
+						<label for="i" class="checkboxText">{{ i }}</label>
+					</div>
+				</span>
+				<div class="spacer"/>
+				<h4>Format</h4>
+				<span v-if="displayFormats">
+					<div class="checkbox-row" v-for="i in allFormats" :key="i">
+						<input type="checkbox" :id="i" :value="i" v-model="checkedFormats" class="checkbox">
+						<div class="dot" :style="{'--format-color': colors[i]}"></div>
+						<label for="i" class="checkboxText">{{ i }}</label>
+					</div>
+				</span>
+			</div>
+		</transition>
+			<div class="mobile-menu-button" @click="showMobileMenu = !showMobileMenu">&#9776;</div>
 
 		<div class="content">
 			<div class="top">
@@ -67,7 +69,9 @@
 	</div>
 	<bottom/>
 
-	<div class="dimmer" v-if="isMobile && showMobileMenu" @click="showMobileMenu = false"/>
+	<transition name="fade-in">
+		<div class="dimmer" v-if="isMobile && showMobileMenu" @click="showMobileMenu = false"/>
+	</transition>
 </div>
 </template>
 
@@ -328,6 +332,7 @@ h4 {
 		height: 100vh;
 		background: linear-gradient(180deg, rgba(0, 0, 0, 0.1643) 0%, rgba(0, 0, 0, 0.53) 25%);	
 		z-index: 3;
+		opacity: 1;
 	}
 
 	.mobile-menu-button {
@@ -346,23 +351,29 @@ h4 {
 		background: red;
 	}
 
-	.fadeHeight-enter-active,
-	.fadeHeight-leave-active {
-		transition: all 0.5s;
-		max-height: 100vh;
-	}
-	.fadeHeight-enter-from,
-	.fadeHeight-leave-to {
-		opacity: 0;
-		max-height: 0px;
-		overflow: hidden;
-	}
-
 	.dateButton {
 		padding: .75rem 1rem;
 	}
 	.schedule {
 		margin: .5rem;
 	}
+}
+
+.fade-in-enter-active,
+.fade-in-leave-active {
+	transition: all 0.5s;
+}
+.fade-in-enter-from,
+.fade-in-leave-to {
+	opacity: 0;
+}
+.pop-up-enter-active,
+.pop-up-leave-active {
+	transition: bottom 0.5s;
+}
+.pop-up-enter-from,
+.pop-up-leave-to {
+	/* // ! This could appear when it's not supposed to */
+	bottom: -100vh;
 }
 </style>
