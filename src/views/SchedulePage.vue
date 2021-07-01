@@ -27,13 +27,14 @@
 		<div class="content">
 			<div class="top">
 				<span class="days">
-					<div
-						v-for="(_, day) in scheduleData"
-						:key="day"
-						:class="{'dateButton': true, 'dateButton-active': day == activeDay}"
-						@click="activeDay = day"
-						>{{ day }}
-					</div>
+					<span v-for="(_, day) in scheduleData" :key="day">
+						<div
+							:class="{'dateButton': true, 'dateButton-active': day == activeDay}"
+							@click="activeDay = day"
+							v-if="day.length"
+							>{{ day }}
+						</div>
+					</span>
 				</span>
 				<div class="filler"></div>
 				<span class="timezone">

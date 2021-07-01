@@ -1,5 +1,5 @@
 {
-	"JULY 24": {
+	"": {
 		"": [
 			{
 				"title": "Building Happy Engineering Teams at Scale",
@@ -38,11 +38,7 @@
 				],
 				"description": "Education hasn't seen much innovation for the past 100 years. With the initiatives our panelists are part of, it'll look radically different within the next 10.",
 				"speakers": ["Alison Adnani", "Zach Latta", "Amanda DoAmaral"]
-			}
-		]
-	},
-	"JULY 25": {
-		"": [
+			},
 			{
 				"title": "Arming the Rebels with Commerce",
 				"format": "Fireside Chat",
@@ -51,7 +47,7 @@
 						"Amplify"
 				],
 				"description": "The president of Shopify sits down with one of their largest merchants do discuss how Shopify's helping anyone get started with entreprenuership, no matter how small.",
-				"speakers": []
+				"speakers": ["Harley Finkelstein"]
 			},
 			{
 				"title": "Creating a More Diverse Work Landscape",
@@ -60,7 +56,7 @@
 						"D&I"
 				],
 				"description": "Join us in conversation with 2 senior leaders who’ve been fighting to promote diversity at big organizations. With tech growing rapidly, it's important we focus on diversity first.",
-				"speakers": []
+				"speakers": ["Mark Patterson", "Sophia Dhrolia"]
 			}
 		]
 	}
