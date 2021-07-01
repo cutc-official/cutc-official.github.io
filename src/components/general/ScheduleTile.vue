@@ -121,6 +121,8 @@ export default {
 			try {
 				return require("@/assets/speakers/Speaker=" + speaker + ".png");
 			} catch (e) {
+				if (speaker != 'Default')
+					return this.getImage('Default')
 				// throw Error(`pic does not exist: ${speaker}`);
 			}
 		},
