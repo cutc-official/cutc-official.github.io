@@ -63,7 +63,7 @@
 <script>
 import Speakers from "@/content/speakers.json";
 import GoogleCalendar from "@/assets/schedule/GoogleCalendar.png";
-import OutlookCalendar from "@/assets/schedule/OutlookCalendar.png";
+// import OutlookCalendar from "@/assets/schedule/OutlookCalendar.png";
 // import AppleCalendar from "@/assets/schedule/AppleCalendar.png";
 
 const stringDefault = {
