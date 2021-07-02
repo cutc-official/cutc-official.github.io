@@ -320,7 +320,7 @@ h4 {
 		padding-bottom: 20%;
 		box-sizing: border-box;
 
-		border: 1px solid grey;
+		border: 1px solid #CCCCCC;
 		background: white;
 		border-top-left-radius: 1rem;
 		border-top-right-radius: 1rem;

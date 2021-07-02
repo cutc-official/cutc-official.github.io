@@ -175,7 +175,7 @@ export default {
 <style scoped>
 .tile {
 	position: relative;
-	border: 1px solid grey;
+	border: 1px solid #CCCCCC;
 	--b-radius: 1rem;
 	border-radius: var(--b-radius);
 	margin: 1rem;
