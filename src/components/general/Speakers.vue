@@ -1,6 +1,9 @@
 <template>
 	<div id="speakers">
 		<h2>Our Speakers</h2>
+		<!-- <v-lazy-image
+			src="src/assets/events/jack.org.png"
+		/> -->
 		<div class="grid" ref="grid">
 			<div
 				class="tile"
@@ -14,9 +17,17 @@
 						class="image-background positioning"
 						:style="{ background: getColor(i) }"
 					/>
-					<img
+					<!-- <img
 						:src="getImage(name)"
 						:alt="name + '\'s Photo'"
+						class="image-speaker"
+						width="288"
+						height="432"
+						loading="lazy"
+					/> -->
+					<v-lazy-image
+						:src="getImage(name)"
+						:src-placeholder="require('@/assets/speakers/Speaker=Default.png')"
 						class="image-speaker"
 						width="288"
 						height="432"
@@ -55,11 +66,15 @@
 <script>
 // Copied from https://www.notion.so/justinachua/c21925a8417546619ac10ecc28ebeba5?v=e69ab087042641d895b9ac9a4f233c9a
 import SpeakersContent from "@/content/speakers.json";
+import { VLazyImage } from "v-lazy-image";
 
 export default {
 	name: "Speakers",
 	props: {
 		limit: Number,
+	},
+	components: {
+		VLazyImage
 	},
 	data() {
 		return {
