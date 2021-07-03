@@ -2,20 +2,20 @@
 <div class="slider" style="--animationSpeed: 14s; --slideWidth: 200px" :style="{'--numOfLogos': logos.length}">
 	<div class="slide-track">
 		<!-- loop twice so there's logos to cover the end -->
-		<div
-			class="slide"
-			v-for="logo in logos"
-			:key="logo"
-		>
-			<img :src="getImage(logo)" height="88" width="88" alt="" />
-		</div>
-		<div
-			class="slide"
-			v-for="logo in logos"
-			:key="logo"
-		>
-			<img :src="getImage(logo)" height="88" width="88" alt="" />
-		</div>
+    <div
+      class="slide"
+      v-for="logo in logos"
+      :key="logo"
+    >
+      <img :src="getImage(logo)" height="88" width="88" :alt="logo + ' logo'" />
+    </div>
+    <div
+      class="slide"
+      v-for="logo in logos"
+      :key="logo"
+    >
+      <img :src="getImage(logo)" height="88" width="88" :alt="logo + ' logo'" />
+    </div>
 	</div>
 </div>
 </template>
