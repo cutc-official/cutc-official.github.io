@@ -1,5 +1,5 @@
 <template>
-<div class="slider" style="--animationSpeed: 14s; --slideWidth: 200px; --gradientWidth: 100px" :style="{'--numOfLogos': logos.length}">
+<div class="slider" style="--animationSpeed: 14s; --slideWidth: 200px; --gradientWidth: 100px; --logoWH: 88px" :style="{'--numOfLogos': logos.length}">
 	<div class="slide-track">
 		<!-- loop twice so there's logos to cover the end -->
     <div
@@ -7,14 +7,14 @@
       v-for="logo in logos"
       :key="logo"
     >
-      <img :src="getImage(logo)" height="88" width="88" :alt="logo + ' logo'" />
+      <img :src="getImage(logo)" class="logo" :alt="logo + ' logo'" />
     </div>
     <div
       class="slide"
       v-for="logo in logos"
       :key="logo"
     >
-      <img :src="getImage(logo)" height="88" width="88" :alt="logo + ' logo'" />
+      <img :src="getImage(logo)" class="logo" :alt="logo + ' logo'" />
     </div>
 	</div>
 </div>
@@ -46,8 +46,9 @@ export default {
 /* shrink logo and gradient width on mobile */
 @media screen and (max-width: 850px) {
   .slider {
-    --slideWidth: 132px !important;
+    --slideWidth: 104px !important;
     --gradientWidth: 50px !important;
+    --logoWH: 64px !important;
   }
 }
 
@@ -71,7 +72,7 @@ export default {
 
 .slider {
   background: white;
-  height: 100px;
+  height: var(--logoWH);
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -80,7 +81,7 @@ export default {
 .slider::before, .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 100px;
+  height: 100%;
   position: absolute;
   width: var(--gradientWidth);
   z-index: 2;
@@ -101,9 +102,14 @@ export default {
   width: calc(var(--slideWidth) * var(--numOfLogos) * 2);
 }
 .slider .slide {
-  height: 100px;
+  height: var(--logoWH);
   width: var(--slideWidth);
 	display: flex;
 	align-items: center;
+}
+
+.logo {
+  width: var(--logoWH);
+  height: 100%;
 }
 </style>
