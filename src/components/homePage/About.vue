@@ -1,5 +1,5 @@
 <template>
-<div class="slider" style="--animationSpeed: 10s; --slideWidth: 200px" :style="{'--numOfLogos': logos.length}">
+<div class="slider" style="--animationSpeed: 14s; --slideWidth: 200px" :style="{'--numOfLogos': logos.length}">
 	<div class="slide-track">
 		<!-- loop twice so there's logos to cover the end -->
 		<div

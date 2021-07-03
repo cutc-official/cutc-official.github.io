@@ -12,6 +12,14 @@
         "org": "Facebook",
         "bio": "Jenn Henley has been at Facebook for 10 years. She is currently a Vice President, supporting Technical Program Management (TPM) where she is responsible for leadership, development, and growth of the global Infrastructure organization."
     },
+    "Victor Kovalev": {
+        "title": "Co-founder",
+        "org": "ScaleGrowth",
+        "bio": "Victor was 3x CTO including Redbubble & Indiegogo, and also led all of Yelp’s mobile app teams (top 10 iOS & Android apps in the world at the time). His background is deeply rooted in Data Science, ML & AI, and he’s gone through 3 IPOs (VMware, Yelp, Redbubble) in his career.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/kovalevvictor/"
+        }
+    },
     "Ge Wang": {
         "title": "Professor",
         "org": "Stanford",
@@ -70,14 +78,6 @@
         "bio": "Sophia Dhrolia (she/they) is passionate about building a culture that values diversity, champions inclusion, and promotes collaboration to drive results. They are committed to developing environments where differences are valued and where people have equitable opportunities to thrive.",
         "links": {
             "LinkedIn": "https://www.linkedin.com/in/sophia-dhrolia/"
-        }
-    },
-    "Victor Kovalev": {
-        "title": "Co-founder",
-        "org": "ScaleGrowth",
-        "bio": "Victor was 3x CTO including Redbubble & Indiegogo, and also led all of Yelp’s mobile app teams (top 10 iOS & Android apps in the world at the time). His background is deeply rooted in Data Science, ML & AI, and he’s gone through 3 IPOs (VMware, Yelp, Redbubble) in his career.",
-        "links": {
-            "LinkedIn": "https://www.linkedin.com/in/kovalevvictor/"
         }
     },
     "Daniel Huang": {
