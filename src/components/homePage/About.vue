@@ -1,5 +1,5 @@
 <template>
-<div class="slider" style="--animationSpeed: 14s; --slideWidth: 200px" :style="{'--numOfLogos': logos.length}">
+<div class="slider" style="--animationSpeed: 14s; --slideWidth: 200px; --gradientWidth: 100px" :style="{'--numOfLogos': logos.length}">
 	<div class="slide-track">
 		<!-- loop twice so there's logos to cover the end -->
     <div
@@ -43,6 +43,14 @@ export default {
 
 <style scoped>
 
+/* shrink logo and gradient width on mobile */
+@media screen and (max-width: 850px) {
+  .slider {
+    --slideWidth: 132px !important;
+    --gradientWidth: 50px !important;
+  }
+}
+
 @-webkit-keyframes scroll {
   0% {
     transform: translateX(0);
@@ -74,7 +82,7 @@ export default {
   content: "";
   height: 100px;
   position: absolute;
-  width: 100px;
+  width: var(--gradientWidth);
   z-index: 2;
 }
 .slider::after {
