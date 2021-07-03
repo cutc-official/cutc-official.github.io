@@ -1,50 +1,101 @@
 <template>
-	<div class="about_section">
-		<img src="@/assets/misc/about.svg" alt="about image" class="about_image">
-		<div class="about_text">
-			<h1>Canada’s largest student-run conference</h1>
-			<p>
-				For over 20 years, our conferences have represented opportunities to connect with industry leaders, gain valuable tech experience, network with like-minded people, and more.
-			</p>
-			<p>
-				This year, we want to be an amplifier for unexplored opportunities, undiscovered interests, and unheard voices in tech. We'll have something in store for every type of student, no matter your background, location, program, or interests.
-			</p>
+<div class="slider" style="--animationSpeed: 10s; --slideWidth: 200px" :style="{'--numOfLogos': logos.length}">
+	<div class="slide-track">
+		<!-- loop twice so there's logos to cover the end -->
+		<div
+			class="slide"
+			v-for="logo in logos"
+			:key="logo"
+		>
+			<img :src="getImage(logo)" height="88" width="88" alt="" />
+		</div>
+		<div
+			class="slide"
+			v-for="logo in logos"
+			:key="logo"
+		>
+			<img :src="getImage(logo)" height="88" width="88" alt="" />
 		</div>
 	</div>
+</div>
 </template>
 
+<script>
+export default {
+	data() {
+		return {
+			logos: ["amazon", "facebook", "github", "google", "notion", "rbc", "shopify", "stanford", "ycombinator"]
+		};
+	},
+	methods: {
+		getImage(logo) {
+			try {
+				// speaker name is the exact same as the file path in speaker assets
+				return require(`@/assets/about/${logo}.png`);
+			} catch (e) {
+				throw Error(`pic does not exist: ${logo}`);
+				// image placeholder when name does not match the filename of a headshot
+			}
+		}
+	}
+}
+</script>
+
 <style scoped>
-.about_section{
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(var(--slideWidth) * var(--numOfLogos) * -1));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(var(--slideWidth) * var(--numOfLogos) * -1));
+  }
+}
+
+.slider {
+  background: white;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll var(--animationSpeed) linear infinite;
+          animation: scroll var(--animationSpeed) linear infinite;
+  display: flex;
+  width: calc(var(--slideWidth) * var(--numOfLogos) * 2);
+}
+.slider .slide {
+  height: 100px;
+  width: var(--slideWidth);
 	display: flex;
-	flex-direction: row;
-	color: black;
 	align-items: center;
-}
-.about_image{
-	width: 50%;
-	max-height: 24rem;
-	margin-right: 5%;
-}
-
-br {
-	display: block;
-	padding-top: 1rem;
-}
-
-@media screen and (max-width:880px) {
-	.about_section{
-		flex-wrap: wrap-reverse;
-	}
-	h1{
-		font-size: 2em;
-	}
-	.about_image{
-		width: 80%;
-		margin: auto;
-		margin-top: 5%;
-	}
-}
-p{
-	float: none;
 }
 </style>
