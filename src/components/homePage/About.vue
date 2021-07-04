@@ -1,5 +1,5 @@
 <template>
-<div class="slider" style="--animationSpeed: 14s; --slideWidth: 200px; --gradientWidth: 100px; --logoWH: 88px" :style="{'--numOfLogos': logos.length}">
+<div class="slider" style="--animationSpeed: 14s; --slideWidth: 108px; --gradientWidth: 100px; --logoWH: 56px" :style="{'--numOfLogos': logos.length}">
 	<div class="slide-track">
 		<!-- loop twice so there's logos to cover the end -->
     <div
@@ -46,9 +46,9 @@ export default {
 /* shrink logo and gradient width on mobile */
 @media screen and (max-width: 850px) {
   .slider {
-    --slideWidth: 104px !important;
+    --slideWidth: 80px !important;
     --gradientWidth: 50px !important;
-    --logoWH: 64px !important;
+    --logoWH: 48px !important;
   }
 }
 
