@@ -1,6 +1,6 @@
 <template>
 <div class="slider-wrapper">
-  <div class="slider" style="--animationDuration: 17s; --gradientWidth: 100px; --logoWH: 56px; --textSize: 1.5rem; --animationDirection: reverse; --spacing: 1.5rem" :style="{'--numOfLogos': metrics.length}">
+  <div class="slider" style="--animationDuration: 17s; --gradientWidth: 100px; --logoWH: 56px; --textSize: 1.5rem; --animationDirection: normal; --spacing: 1.5rem" :style="{'--numOfLogos': metrics.length}">
     <div class="slide-track">
       <template v-for="n in 3" :key="n">
         <div
@@ -13,7 +13,7 @@
       </template>
     </div>
   </div>
-  <div class="slider" style="--animationDuration: 14s; --gradientWidth: 100px; --logoWH: 56px; --animationDirection: normal; --spacing: 1.5rem" :style="{'--numOfLogos': logos.length}">
+  <div class="slider" style="--animationDuration: 14s; --gradientWidth: 100px; --logoWH: 56px; --animationDirection: reversed; --spacing: 1.5rem" :style="{'--numOfLogos': logos.length}">
     <div class="slide-track">
       <template v-for="n in 3" :key="n">
         <div
