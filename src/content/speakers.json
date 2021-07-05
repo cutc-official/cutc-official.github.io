@@ -12,9 +12,19 @@
         "org": "Facebook",
         "bio": "Jenn Henley has been at Facebook for 10 years. She is currently a Vice President, supporting Technical Program Management (TPM) where she is responsible for leadership, development, and growth of the global Infrastructure organization."
     },
+    "Aarthi Scott": {
+        "title": "Director of Global Customer Success",
+        "org": "Google",
+        "bio": "Bio coming soon!"
+    },
     "Jamie Quint": {
         "title": "Former Head of Growth",
         "org": "Notion",
+        "bio": "Bio coming soon!"
+    },
+    "Kevin Xu": {
+        "title": "Senior Director of International Expansion Strategy",
+        "org": "Github",
         "bio": "Bio coming soon!"
     },
     "Aubrey de Grey": {
@@ -46,6 +56,11 @@
         "links": {
             "LinkedIn": "https://www.linkedin.com/in/kovalevvictor/"
         }
+    },
+    "Josh Sirefman": {
+        "title": "President",
+        "org": "Sidewalk Labs",
+        "bio": "Bio coming soon!"
     },
     "Ryan D'Silva": {
         "title": "Startup Advisor & Mentor",

@@ -34,7 +34,7 @@ export default {
 	data() {
 		return {
 			logos: ["amazon", "facebook", "github", "google", "notion", "rbc", "shopify", "stanford", "ycombinator"],
-			metrics: ["21st conference", "250+ past industry leaders", "60+ speakers", "5000+ students reached", "30+ companies represented"]
+			metrics: ["21st conference", "250+ featured industry leaders", "60+ speakers", "5000+ students reached", "30+ companies represented"]
 		};
 	},
 	methods: {
