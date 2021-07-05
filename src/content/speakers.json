@@ -164,7 +164,7 @@
         }
     },
     "Crystal Hunt": {
-        "title": "Senior PM",
+        "title": "Senior Program Manager",
         "org": "Shopify",
         "bio": "Crystal Hunt is a Senior Program Manager - Partnerships, on the Diversity and Belonging team at Shopify. Crystal is bringing more voices to entrepreneurship and is reducing the barriers to entry for people from underrepresented communities.",
         "links": {
@@ -190,8 +190,8 @@
         }
     },
     "Iris Guo": {
-        "title": "PM Intern",
-        "org": "X, the moonshot factory",
+        "title": "Product Manager Intern",
+        "org": "Google X, the Moonshot Factory",
         "bio": "Iris is a Product Manager Intern at Google X and Founder / CEO of a sustainability startup Neutrify. With the mission of empowering individuals to take action to fight climate change, Iris founded Neutrify to shift food consumption towards sustainable food.",
         "links": {
             "Twitter": "https://twitter.com/IrisGuoo",
@@ -318,7 +318,7 @@
         }
     },
     "Omna Toshniwal": {
-        "title": "Senior PM",
+        "title": "Senior Product Manager",
         "org": "Consensys",
         "bio": "Omna does Product Management at MetaMask / ConsenSys. She has an unwavering focus on social responsibility, helping improve people’s lives in real and significant ways. She has a background in HCI, and has worked mainly in FinTech & HealthTech, for global markets.",
         "links": {
@@ -364,6 +364,14 @@
         "bio": "Amanda DoAmaral is an educator, activist, and co-founder of Fiveable - a social learning network for students. She spent a half a decade teaching high school history in Oakland, CA, where her passion for creating equitable educational opportunities was ignited.",
         "links": {
             "Twitter": "https://twitter.com/AmandaDoAmanda"
+        }
+    },
+    "Jonny Hsu": {
+        "title": "Intern Analyst",
+        "org": "Esplanade Ventures",
+        "bio": "Jonny is currently a final year student studying in the Science and Business co-op program, specializing in Biochemistry at the University of Waterloo. Currently, he’s an intern analyst at Esplanade Ventures and leading a team of 19 investment associates at Front Row Ventures, Canada’s first student run VC fund.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/jonathanhsuuw/"
         }
     },
     "Benjamin Sehl": {
