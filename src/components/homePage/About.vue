@@ -1,22 +1,57 @@
 <template>
-<div class="slider" style="--animationSpeed: 14s; --slideWidth: 108px; --gradientWidth: 100px; --logoWH: 56px" :style="{'--numOfLogos': logos.length}">
-	<div class="slide-track">
-		<!-- loop twice so there's logos to cover the end -->
-    <div
-      class="slide"
-      v-for="logo in logos"
-      :key="logo"
-    >
-      <img :src="getImage(logo)" class="logo" :alt="logo + ' logo'" />
+<div class="slider-wrapper">
+  <div class="slider" style="--animationSpeed: 14s; --slideWidth: 250px; --gradientWidth: 100px; --logoWH: 56px; --animationDirection: reverse" :style="{'--numOfLogos': metrics.length}">
+    <div class="slide-track">
+      <!-- loop twice so there's logos to cover the end -->
+      <div
+        class="slide"
+        v-for="metric in metrics"
+        :key="metric"
+      >
+        <p class="slide-content">{{metric}}</p>
+      </div>
+      <div
+        class="slide"
+        v-for="metric in metrics"
+        :key="metric"
+      >
+        <p class="slide-content">{{metric}}</p>
+      </div>
+      <div
+        class="slide"
+        v-for="metric in metrics"
+        :key="metric"
+      >
+        <p class="slide-content">{{metric}}</p>
+      </div>
     </div>
-    <div
-      class="slide"
-      v-for="logo in logos"
-      :key="logo"
-    >
-      <img :src="getImage(logo)" class="logo" :alt="logo + ' logo'" />
+  </div>
+  <div class="slider" style="--animationSpeed: 14s; --slideWidth: 108px; --gradientWidth: 100px; --logoWH: 56px; --animationDirection: normal" :style="{'--numOfLogos': logos.length}">
+    <div class="slide-track">
+      <!-- loop twice so there's logos to cover the end -->
+      <div
+        class="slide"
+        v-for="logo in logos"
+        :key="logo"
+      >
+        <img :src="getImage(logo)" class="logo" :alt="logo + ' logo'" />
+      </div>
+      <div
+        class="slide"
+        v-for="logo in logos"
+        :key="logo"
+      >
+        <img :src="getImage(logo)" class="logo" :alt="logo + ' logo'" />
+      </div>
+      <div
+        class="slide"
+        v-for="logo in logos"
+        :key="logo"
+      >
+        <img :src="getImage(logo)" class="logo" :alt="logo + ' logo'" />
+      </div>
     </div>
-	</div>
+  </div>
 </div>
 </template>
 
@@ -24,7 +59,8 @@
 export default {
 	data() {
 		return {
-			logos: ["amazon", "facebook", "github", "google", "notion", "rbc", "shopify", "stanford", "ycombinator"]
+			logos: ["amazon", "facebook", "github", "google", "notion", "rbc", "shopify", "stanford", "ycombinator"],
+			metrics: ["21st conference", "250+ past industry leaders", "60+ speakers", "5000+ students reached", "30+ companies represented"]
 		};
 	},
 	methods: {
@@ -52,13 +88,8 @@ export default {
   }
 }
 
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(var(--slideWidth) * var(--numOfLogos) * -1));
-  }
+.slider:first-of-type {
+  margin-bottom: 1rem;
 }
 
 @keyframes scroll {
@@ -66,18 +97,28 @@ export default {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(var(--slideWidth) * var(--numOfLogos) * -1));
+    /* since we're tripling the elements in the DOM, translate a negative third of that */
+    transform: translateX(-33.33%);
+  }
+}
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
   }
 }
 
 .slider {
-  background: white;
   height: var(--logoWH);
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 100%;
+  color: black;
 }
+
 .slider::before, .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
@@ -86,6 +127,7 @@ export default {
   width: var(--gradientWidth);
   z-index: 2;
 }
+
 .slider::after {
   right: 0;
   top: 0;
@@ -95,21 +137,35 @@ export default {
   left: 0;
   top: 0;
 }
+
 .slider .slide-track {
-  -webkit-animation: scroll var(--animationSpeed) linear infinite;
-          animation: scroll var(--animationSpeed) linear infinite;
+  -webkit-animation: scroll var(--animationSpeed) linear infinite var(--animationDirection);
+          animation: scroll var(--animationSpeed) linear infinite var(--animationDirection);
   display: flex;
-  width: calc(var(--slideWidth) * var(--numOfLogos) * 2);
+  position: absolute;
+  /* width: calc(var(--slideWidth) * var(--numOfLogos) * 2); */
 }
+
+.slide-track * {
+  margin-right: 1.5rem;
+}
+
 .slider .slide {
   height: var(--logoWH);
-  width: var(--slideWidth);
+  /* width: var(--slideWidth); */
 	display: flex;
 	align-items: center;
+}
+
+.slide-content {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: max-content;
 }
 
 .logo {
   width: var(--logoWH);
   height: 100%;
 }
+
 </style>
