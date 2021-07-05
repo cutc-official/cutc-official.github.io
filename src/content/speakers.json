@@ -12,13 +12,15 @@
         "org": "Facebook",
         "bio": "Jenn Henley has been at Facebook for 10 years. She is currently a Vice President, supporting Technical Program Management (TPM) where she is responsible for leadership, development, and growth of the global Infrastructure organization."
     },
-    "Victor Kovalev": {
-        "title": "Co-founder",
-        "org": "ScaleGrowth",
-        "bio": "Victor was 3x CTO including Redbubble & Indiegogo, and also led all of Yelp’s mobile app teams (top 10 iOS & Android apps in the world at the time). His background is deeply rooted in Data Science, ML & AI, and he’s gone through 3 IPOs (VMware, Yelp, Redbubble) in his career.",
-        "links": {
-            "LinkedIn": "https://www.linkedin.com/in/kovalevvictor/"
-        }
+    "Jamie Quint": {
+        "title": "Former Head of Growth",
+        "org": "Notion",
+        "bio": "Bio coming soon!"
+    },
+    "Aubrey de Grey": {
+        "title": "Chief Science Officer",
+        "org": "SENS Research Foundation",
+        "bio": "Dr. Grey is a biomedical gerontologist based in Mountain View, California, USA, and is the Chief Science Officer of SENS Research Foundation, a California-based biomedical research charity that performs laboratory research dedicated to combating aging."
     },
     "Ge Wang": {
         "title": "Professor",
@@ -26,15 +28,6 @@
         "bio": "Ge Wang is an Associate Professor at Stanford University’s Center for Computer Research in Music and Acoustics. A 2016 Guggenheim Fellow, Ge is the author of 'Artful Design: Technology in Search of the Sublime.'",
         "links": {
             "Website": "https://en.wikipedia.org/wiki/Ge_Wang"
-        }
-    },
-    "Amjad Masad": {
-        "title": "CEO and Co-Founder",
-        "org": "Replit",
-        "bio": "Amjad was born in the Middle Eastern country of Jordan. He started work on Repl.it as a personal project in late 2009 while he was working at Facebook with his college friend Max Shawabkeh (former Google software engineer).",
-        "links": {
-            "Twitter": "https://twitter.com/amasad",
-            "Website": "https://amasad.me/"
         }
     },
     "Akshaya Dinesh": {
@@ -46,6 +39,46 @@
             "LinkedIn": "https://www.linkedin.com/in/akshayadinesh/"
         }
     },
+    "Victor Kovalev": {
+        "title": "Co-founder",
+        "org": "ScaleGrowth",
+        "bio": "Victor was 3x CTO including Redbubble & Indiegogo, and also led all of Yelp’s mobile app teams (top 10 iOS & Android apps in the world at the time). His background is deeply rooted in Data Science, ML & AI, and he’s gone through 3 IPOs (VMware, Yelp, Redbubble) in his career.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/kovalevvictor/"
+        }
+    },
+    "Ryan D'Silva": {
+        "title": "Startup Advisor & Mentor",
+        "org": "PerkupApp & ScaleGrowth",
+        "bio": "Ryan is a startup advisor & mentor with 15 years experience as a PM, driving growth via fintech for Yelp, Eventbrite & PayPal. With an engineering background, he’s an expert on product-led growth, positioning, fintech, lean methods, user research and has helped to take 2 companies to IPO.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/dsilva/"
+        }
+    },
+
+    "Amjad Masad": {
+        "title": "CEO and Co-Founder",
+        "org": "Replit",
+        "bio": "Amjad was born in the Middle Eastern country of Jordan. He started work on Repl.it as a personal project in late 2009 while he was working at Facebook with his college friend Max Shawabkeh (former Google software engineer).",
+        "links": {
+            "Twitter": "https://twitter.com/amasad",
+            "Website": "https://amasad.me/"
+        }
+    },
+    "Vivian Phung": {
+        "title": "Software Engineer",
+        "org": "Instagram",
+        "bio": "Vivian is an iOS Developer working on Instagram Feed, Creation, and Interactions. Before dropping out of her sophomore year, she interned at Eventbrite, Apple, and Facebook. In her free time, she enjoys cooking, baking, and shitposting on Twitter.",
+        "links": {
+            "Twitter": "https://twitter.com/vivianphung"
+        }
+    },
+    "Faisal Abid": {
+        "title": "CEO",
+        "org": "Eireen",
+        "bio": "Bio coming soon!"
+    },
+
     "Jean-Michel Lemieux": {
         "title": "Chief Technology Officer",
         "org": "Shopify",
@@ -55,6 +88,45 @@
             "LinkedIn": "https://www.linkedin.com/in/jean-michel-lemieux-3756a81a/"
         }
     },
+    "Susan Shu Chang": {
+        "title": "Principle Data Scientist",
+        "org": "Wealthsimple",
+        "bio": "Susan is a principal data scientist in fintech, where she builds machine learning models and infrastructure at scale. In her previous role, she developed the company’s very first ML powered website recommender system and deployed to millions of customers.",
+        "links": {
+            "Website": "https://www.susanshu.com/",
+            "Twitter": "https://twitter.com/susan_shuc",
+            "LinkedIn": "https://ca.linkedin.com/in/susan-shu-chang"
+        }
+    },
+    "Carl Barrelet": {
+        "title": "Head of Data Science",
+        "org": "KPMG",
+        "bio": "Carl is Head of Data Science at KPMG’s Deal Advisory team. Carl spent 5 years in leadership position with the firm's Lighthouse team, KPMG's Data & Analytics Center of Excellence. He combines years of experience in finance and an extended academic experience in pure science and applied data analytics."
+    },
+    "David Thompson": {
+        "title": "Product Director",
+        "org": "TurboTax",
+        "bio": "Bio coming soon!"
+    },
+    "Zach Latta": {
+        "title": "CEO",
+        "org": "Hack Club",
+        "bio": "Zach Latta dropped out of high school after his freshman year to work in the technology industry and had over 5 million people using apps he worked on when he was 16. He was awarded the Thiel Fellowship when he was 17 and was featured in Forbes 30 Under 30 when he was 18.",
+        "links": {
+            "Twitter": "https://twitter.com/zachlatta",
+            "LinkedIn": "https://www.linkedin.com/in/zachlatta/"
+        }
+    },
+    "Sophia Dhrolia": {
+        "title": "Director of D&I",
+        "org": "Toronto Board of Trade",
+        "bio": "Sophia Dhrolia (she/they) is passionate about building a culture that values diversity, champions inclusion, and promotes collaboration to drive results. They are committed to developing environments where differences are valued and where people have equitable opportunities to thrive.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/sophia-dhrolia/"
+        }
+    },
+
+
     "Vivian Li": {
         "title": "Senior D&I Leader",
         "org": "RBC",
@@ -72,14 +144,7 @@
             "LinkedIn": "https://www.linkedin.com/in/michaelaioffe/"
         }
     },
-    "Sophia Dhrolia": {
-        "title": "Director of D&I",
-        "org": "Toronto Board of Trade",
-        "bio": "Sophia Dhrolia (she/they) is passionate about building a culture that values diversity, champions inclusion, and promotes collaboration to drive results. They are committed to developing environments where differences are valued and where people have equitable opportunities to thrive.",
-        "links": {
-            "LinkedIn": "https://www.linkedin.com/in/sophia-dhrolia/"
-        }
-    },
+
     "Daniel Huang": {
         "title": "CEO",
         "org": "Monet",
@@ -124,11 +189,6 @@
             "LinkedIn": "https://www.linkedin.com/in/iris-guo/"
         }
     },
-    "Aubrey de Grey": {
-        "title": "Chief Science Officer",
-        "org": "SENS Research Foundation",
-        "bio": "Dr. Grey is a biomedical gerontologist based in Mountain View, California, USA, and is the Chief Science Officer of SENS Research Foundation, a California-based biomedical research charity that performs laboratory research dedicated to combating aging."
-    },
     "Minjun Chen": {
         "title": "UX Designer",
         "org": "Amazon",
@@ -154,11 +214,7 @@
             "LinkedIn": "https://www.linkedin.com/in/rahul-rana-99b338169/"
         }
     },
-    "Carl Barrelet": {
-        "title": "Head of Data Science",
-        "org": "KPMG",
-        "bio": "Carl is Head of Data Science at KPMG’s Deal Advisory team. Carl spent 5 years in leadership position with the firm's Lighthouse team, KPMG's Data & Analytics Center of Excellence. He combines years of experience in finance and an extended academic experience in pure science and applied data analytics."
-    },
+
     "Sara Du": {
         "title": "CEO & Cofounder",
         "org": "Alloy Automation",
@@ -177,14 +233,7 @@
             "LinkedIn": "https://www.linkedin.com/in/ariellelok/"
         }
     },
-    "Vivian Phung": {
-        "title": "Software Engineer",
-        "org": "Instagram",
-        "bio": "Vivian is an iOS Developer working on Instagram Feed, Creation, and Interactions. Before dropping out of her sophomore year, she interned at Eventbrite, Apple, and Facebook. In her free time, she enjoys cooking, baking, and shitposting on Twitter.",
-        "links": {
-            "Twitter": "https://twitter.com/vivianphung"
-        }
-    },
+
     "Robyn Orsini": {
         "title": "Business Consultant",
         "org": "Martal Group",
@@ -231,15 +280,7 @@
             "Instagram": "https://www.instagram.com/alison_evans_adnani/"
         }
     },
-    "Zach Latta": {
-        "title": "CEO",
-        "org": "Hack Club",
-        "bio": "Zach Latta dropped out of high school after his freshman year to work in the technology industry and had over 5 million people using apps he worked on when he was 16. He was awarded the Thiel Fellowship when he was 17 and was featured in Forbes 30 Under 30 when he was 18.",
-        "links": {
-            "Twitter": "https://twitter.com/zachlatta",
-            "LinkedIn": "https://www.linkedin.com/in/zachlatta/"
-        }
-    },
+
     "Michelle Qin": {
         "title": "Intern",
         "org": "Floodgate",
@@ -300,14 +341,6 @@
             "LinkedIn": "http://linkedin.com/in/leonard-lee-nextcurve"
         }
     },
-    "Ryan D'Silva": {
-        "title": "Startup Advisor & Mentor",
-        "org": "PerkupApp & ScaleGrowth",
-        "bio": "Ryan is a startup advisor & mentor with 15 years experience as a PM, driving growth via fintech for Yelp, Eventbrite & PayPal. With an engineering background, he’s an expert on product-led growth, positioning, fintech, lean methods, user research and has helped to take 2 companies to IPO.",
-        "links": {
-            "LinkedIn": "https://www.linkedin.com/in/dsilva/"
-        }
-    },
     "Wendy Cukier": {
         "title": "Founder",
         "org": "Diversity Institute",
@@ -322,16 +355,6 @@
         "bio": "Amanda DoAmaral is an educator, activist, and co-founder of Fiveable - a social learning network for students. She spent a half a decade teaching high school history in Oakland, CA, where her passion for creating equitable educational opportunities was ignited.",
         "links": {
             "Twitter": "https://twitter.com/AmandaDoAmanda"
-        }
-    },
-    "Susan Shu Chang": {
-        "title": "Principle Data Scientist",
-        "org": "Wealthsimple",
-        "bio": "Susan is a principal data scientist in fintech, where she builds machine learning models and infrastructure at scale. In her previous role, she developed the company’s very first ML powered website recommender system and deployed to millions of customers.",
-        "links": {
-            "Website": "https://www.susanshu.com/",
-            "Twitter": "https://twitter.com/susan_shuc",
-            "LinkedIn": "https://ca.linkedin.com/in/susan-shu-chang"
         }
     },
     "Benjamin Sehl": {
@@ -349,16 +372,7 @@
         "org": "Rapid Minder",
         "bio": "Bio coming soon!"
     },
-    "Faisal Abid": {
-        "title": "CEO",
-        "org": "Eireen",
-        "bio": "Bio coming soon!"
-    },
-    "Jamie Quint": {
-        "title": "Former Head of Growth",
-        "org": "Notion",
-        "bio": "Bio coming soon!"
-    },
+
     "Helen Huang": {
         "title": "Founder",
         "org": "Co.Lab",
@@ -367,11 +381,6 @@
     "Shannon Lal": {
         "title": "Director",
         "org": "RBC",
-        "bio": "Bio coming soon!"
-    },
-    "David Thompson": {
-        "title": "Product Director",
-        "org": "TurboTax",
         "bio": "Bio coming soon!"
     },
     "Serena Li": {

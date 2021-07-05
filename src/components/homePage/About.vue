@@ -1,55 +1,29 @@
 <template>
 <div class="slider-wrapper">
-  <div class="slider" style="--animationSpeed: 14s; --slideWidth: 250px; --gradientWidth: 100px; --logoWH: 56px; --animationDirection: reverse" :style="{'--numOfLogos': metrics.length}">
+  <div class="slider" style="--animationDuration: 17s; --gradientWidth: 100px; --logoWH: 56px; --animationDirection: reverse" :style="{'--numOfLogos': metrics.length}">
     <div class="slide-track">
-      <!-- loop twice so there's logos to cover the end -->
-      <div
-        class="slide"
-        v-for="metric in metrics"
-        :key="metric"
-      >
-        <p class="slide-content">{{metric}}</p>
-      </div>
-      <div
-        class="slide"
-        v-for="metric in metrics"
-        :key="metric"
-      >
-        <p class="slide-content">{{metric}}</p>
-      </div>
-      <div
-        class="slide"
-        v-for="metric in metrics"
-        :key="metric"
-      >
-        <p class="slide-content">{{metric}}</p>
-      </div>
+      <template v-for="n in 3" :key="n">
+        <div
+          class="slide"
+          v-for="metric in metrics"
+          :key="metric"
+        >
+          <p class="slide-content">{{metric}}</p>
+        </div>
+      </template>
     </div>
   </div>
-  <div class="slider" style="--animationSpeed: 14s; --slideWidth: 108px; --gradientWidth: 100px; --logoWH: 56px; --animationDirection: normal" :style="{'--numOfLogos': logos.length}">
+  <div class="slider" style="--animationDuration: 14s; --gradientWidth: 100px; --logoWH: 56px; --animationDirection: normal" :style="{'--numOfLogos': logos.length}">
     <div class="slide-track">
-      <!-- loop twice so there's logos to cover the end -->
-      <div
-        class="slide"
-        v-for="logo in logos"
-        :key="logo"
-      >
-        <img :src="getImage(logo)" class="logo" :alt="logo + ' logo'" />
-      </div>
-      <div
-        class="slide"
-        v-for="logo in logos"
-        :key="logo"
-      >
-        <img :src="getImage(logo)" class="logo" :alt="logo + ' logo'" />
-      </div>
-      <div
-        class="slide"
-        v-for="logo in logos"
-        :key="logo"
-      >
-        <img :src="getImage(logo)" class="logo" :alt="logo + ' logo'" />
-      </div>
+      <template v-for="n in 3" :key="n">
+        <div
+          class="slide"
+          v-for="logo in logos"
+          :key="logo"
+        >
+          <img :src="getImage(logo)" class="logo" :alt="logo + ' logo'" />
+        </div>
+      </template>
     </div>
   </div>
 </div>
@@ -139,11 +113,10 @@ export default {
 }
 
 .slider .slide-track {
-  -webkit-animation: scroll var(--animationSpeed) linear infinite var(--animationDirection);
-          animation: scroll var(--animationSpeed) linear infinite var(--animationDirection);
+  -webkit-animation: scroll var(--animationDuration) linear infinite var(--animationDirection);
+          animation: scroll var(--animationDuration) linear infinite var(--animationDirection);
   display: flex;
   position: absolute;
-  /* width: calc(var(--slideWidth) * var(--numOfLogos) * 2); */
 }
 
 .slide-track * {
@@ -152,7 +125,6 @@ export default {
 
 .slider .slide {
   height: var(--logoWH);
-  /* width: var(--slideWidth); */
 	display: flex;
 	align-items: center;
 }
