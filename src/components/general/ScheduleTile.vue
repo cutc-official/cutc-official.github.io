@@ -3,7 +3,7 @@
 		<div class="strip"></div>
 		<div class="content">
 			<div class="top-bar">
-				<button v-if="start">
+				<!-- <button v-if="start">
 					<div @mouseenter="showDropdown = true" @mouseleave="showDropdown = false">
 						<img src="@/assets/schedule/addButton.svg" alt="Add to Calendar" />
 						<div class="calendar" v-if="showDropdown">
@@ -19,7 +19,7 @@
 							</a>
 						</div>
 					</div>
-				</button>
+				</button> -->
 				<h3>{{ title }}</h3>
 				<div class="top-info">
 					<div class="top-info-section" v-if="start">
