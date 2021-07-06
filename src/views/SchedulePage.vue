@@ -22,7 +22,7 @@
 				</span>
 			</div>
 		</transition>
-			<div class="mobile-menu-button" @click="showMobileMenu = !showMobileMenu">&#9776;</div>
+		<div class="mobile-menu-button" @click="showMobileMenu = !showMobileMenu">&#9776;</div>
 
 		<div class="content">
 			<div class="top">
@@ -45,25 +45,23 @@
 				</span>
 			</div>
 
-			<div class="schedule">
-				<div v-for="(schedule, day) in scheduleData" :key="day">
-					<span v-if="day == activeDay">
-						<div v-for="(events, time) in schedule" :key="time">
-							<div class="time" v-if="time && events && events.length">
-								<h4 ref="time">{{ getTime(time) }}</h4>
-								<hr>
-							</div>
-							<div v-for="tileInfo in events" :key="tileInfo.title">
-								<schedule-tile
-									v-if="isChecked(tileInfo.topics, tileInfo.format)"
-									v-bind="tileInfo"
-									:start="getTime(tileInfo.start)"
-									:stop="getTime(tileInfo.stop)"
-									:day="day"/>
-							</div>
+			<div class="schedule" v-for="(events, day) in scheduleData" :key="day">
+				<span v-if="day == activeDay">
+
+					<div v-for="(tileInfo, i) in events" :key="tileInfo.title">
+						<div class="time" v-if="tileInfo && showTimeDivider(day, i) && isChecked(tileInfo.topics, tileInfo.format)">
+							<h4 ref="time">{{ getTime(hourNorm(tileInfo.start)) }}</h4>
+							<hr>
 						</div>
-					</span>
-				</div>
+						<schedule-tile
+							v-if="isChecked(tileInfo.topics, tileInfo.format)"
+							class="tile-indent"
+							v-bind="tileInfo"
+							:start="getTime(tileInfo.start)"
+							:stop="getTime(tileInfo.stop)"
+							:day="day"/>
+					</div>
+				</span>
 			</div>
 
 		</div>
@@ -107,7 +105,6 @@ export default {
 			timezoneOptions: [
 				'Africa/Lagos',
 				'America/Argentina/Rio_Gallegos',
-				'America/Buenos_Aires',
 				'America/Chicago',
 				'America/Costa_Rica',
 				'America/Detroit',
@@ -142,8 +139,10 @@ export default {
 	methods: {
 		getTime(stamp) {
 			if (stamp) {
-				const date = moment(stamp, 'H:mm').utcOffset(8).toDate()
-				return moment.tz(date, this.timezone).format("H:mm")
+				const date = moment(stamp, 'H:mm').toDate()
+				let m = moment.tz(date, this.timezone)
+				m = m.subtract(3, 'hours') // Default is EST
+				return m.format("H:mm")
 			}
 			return ''
 		},
@@ -159,6 +158,17 @@ export default {
 		handleResize() {
 			this.isMobile = window.innerWidth <= 850;
 		},
+		hourNorm(stamp) {
+			const hours = stamp.split(':')[0];
+			return hours + ':00';
+		},
+		showTimeDivider(day, i) {
+			const prevTile = this.scheduleData[day][i - 1];
+			const currTile = this.scheduleData[day][i];
+			if (!prevTile || !prevTile.start) return true;
+			if (!currTile || !currTile.start) return false;
+			return this.hourNorm(prevTile.start) != this.hourNorm(currTile.start);
+		}
 	},
 	created() {
 		this.handleResize();
@@ -168,15 +178,13 @@ export default {
 		let topics = []
 		let formats = []
 		for(let i in this.scheduleData){
-			for(let j in this.scheduleData[i]){
-				for(let k in this.scheduleData[i][j]){
-					for(let l in this.scheduleData[i][j][k]["topics"]){
-						const topic = this.scheduleData[i][j][k]["topics"][l];
-						if (topic) topics.push(topic)
-					}
-					const format = this.scheduleData[i][j][k]["format"];
-					if (format) formats.push(format)
+			for(let k in this.scheduleData[i]){
+				for(let l in this.scheduleData[i][k]["topics"]){
+					const topic = this.scheduleData[i][k]["topics"][l];
+					if (topic) topics.push(topic)
 				}
+				const format = this.scheduleData[i][k]["format"];
+				if (format) formats.push(format)
 			}
 		}
 		this.allTopics = [...new Set(topics)]
@@ -199,6 +207,10 @@ export default {
 h4 {
 	color: black;
 }
+.time > h4 {
+	padding-right: .25em;
+}
+
 
 .sidebar {
 	width: var(--desktop-sidebar-width);
@@ -250,6 +262,9 @@ h4 {
 	width: 90%;
 	border: none;
 	border-bottom: 2px solid var(--border-divider-color);
+}
+.tile-indent {
+	margin-left: 4rem;
 }
 
 .dateButton {
@@ -353,10 +368,14 @@ h4 {
 	}
 
 	.dateButton {
+		margin: .5rem;
 		padding: .75rem 1rem;
 	}
 	.schedule {
 		margin: .5rem;
+	}
+	.tile-indent {
+		margin-left: 0;
 	}
 }
 
