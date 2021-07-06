@@ -22,6 +22,16 @@
         "org": "Notion",
         "bio": "Bio coming soon!"
     },
+    "Kevin Xu": {
+        "title": "Senior Director of International Expansion Strategy",
+        "org": "GitHub",
+        "bio": "Kevin Xu is the senior director for international expansion strategy at GitHub. He is also the founder and author of Interconnected, a newsletter on the intersections of tech, business, investment, and geopolitics. He previously served in the Obama White House.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/kevinsxu/",
+            "Twitter": "https://twitter.com/kevinsxu",
+            "Website": "https://interconnected.blog/"
+        }
+    },
     "Aubrey de Grey": {
         "title": "Chief Science Officer",
         "org": "SENS Research Foundation",
