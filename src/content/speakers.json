@@ -407,9 +407,12 @@
         }
     },
     "Ralf Klinkenberg": {
-        "title": "Co-founder",
-        "org": "Rapid Minder",
-        "bio": "Bio coming soon!"
+        "title": "Founder & Head of Research",
+        "org": "RapidMiner",
+        "bio": "Ralf is a data-driven entrepreneur with 30 years of experience in machine learning, artificial intelligence, data science, and applications in the automotive, aviation, chemical, manufacturing, pharmaceutical, financial, and telecom industries. Today RapidMiner has 770,000+ registered users in 150+ countries.",
+        "links": {
+            "Twitter": "https://twitter.com/RalfKlinkenberg"
+        }
     },
     "Serena Li": {
         "title": "Building something new",
@@ -429,6 +432,16 @@
     "Shannon Lal": {
         "title": "Director",
         "org": "RBC",
+        "bio": "Bio coming soon!"
+    },
+    "Sonia Edmonds": {
+        "title": "National Managing Partner of Consulting Service Lines",
+        "org": "BDO",
+        "bio": "Bio coming soon!"
+    },
+    "Shafina Hassam": {
+        "title": "Modern Workplace Manager",
+        "org": "BDO",
         "bio": "Bio coming soon!"
     }
 }
