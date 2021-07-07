@@ -1,8 +1,8 @@
 {
 	"JULY 24": [
 		{
-			"start": "2:00",
-			"stop": "2:25",
+			"start": "14:00",
+			"stop": "14:25",
 			"title": "Building Happy Engineering Teams at Scale",
 			"format": "Breakout Session",
 			"topics": [
@@ -13,8 +13,8 @@
 			"description": "Leadership in technology integrates both aspects of software engineering and management. Come out to learn more about how to foster a positive work environment in a SWE team."
 		},
 		{
-			"start": "2:30",
-			"stop": "3:25",
+			"start": "14:30",
+			"stop": "15:25",
 			"title": "Gen Z Entrepreneurship",
 			"format": "Panel",
 			"topics": [
@@ -25,8 +25,8 @@
 			"description": "Join founders of viral social apps and startups backed by the most prolific investors in Silicon Valley as they discuss the ups and downs of building a company as a Zoomer."
 		},
 		{
-			"start": "3:30",
-			"stop": "3:55",
+			"start": "15:30",
+			"stop": "15:55",
 			"title": "Breaking into PM From a Non-technical Background",
 			"format": "Workshop",
 			"topics": [
@@ -37,8 +37,8 @@
 			"description": "Learn about how to tap into product management from a non-technical background"
 		},
 		{
-			"start": "4:00",
-			"stop": "4:55",
+			"start": "16:00",
+			"stop": "16:55",
 			"title": "The Future of Education, Today",
 			"format": "Panel",
 			"topics": [
@@ -84,8 +84,8 @@
 			"description": "If you want to stand out, having a great landing page is a must. Learn how to use Figma to create a page that'll convert"
 		},
 		{
-			"start": "1:30",
-			"stop": "1:55",
+			"start": "13:30",
+			"stop": "13:55",
 			"title": "Applications of AI and how you can get involved",
 			"format": "Breakout Session",
 			"topics": [
@@ -96,8 +96,8 @@
 			"description": "Everyone knows Ai is the future  but what does that look like exactly? Join us for a breakdown of the future and how you can get involved"
 		},
 		{
-			"start": "2:30",
-			"stop": "2:55",
+			"start": "14:30",
+			"stop": "14:55",
 			"title": "Creating a More Diverse Work Landscape",
 			"format": "Fireside Chat",
 			"topics": [
@@ -107,8 +107,8 @@
 			"description": "With tech growing rapidly, it's important we focus on diversity first. Join us in conversation with 2 senior leaders who’ve been fighting at big organizations to make tech more inclusive. "
 		},
 		{
-			"start": "3:00",
-			"stop": "3:55",
+			"start": "15:00",
+			"stop": "15:55",
 			"title": "Innovation in Asia's Blooming Tech Ecosystem",
 			"format": "Panel",
 			"topics": [
@@ -121,8 +121,8 @@
 			"description": "Asia is a hub of innovation that is often overshadowed by Silicon Valley. Join us at this panel to learn about the most interesting Asian companies and the Asian tech landscape."
 		},
 		{
-			"start": "3:00",
-			"stop": "3:55",
+			"start": "15:00",
+			"stop": "15:55",
 			"title": "Data Science Panel",
 			"format": "Panel",
 			"topics": [
@@ -132,8 +132,8 @@
 			"description": "Learn how to break into the Data Science field and what a data scientist's day-to-day looks like!"
 		},
 		{
-			"start": "4:00",
-			"stop": "4:25",
+			"start": "16:00",
+			"stop": "16:25",
 			"title": "Artful Design: Technology in Search of the Sublime",
 			"format": "Keynote",
 			"topics": [

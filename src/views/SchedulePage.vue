@@ -26,22 +26,13 @@
 
 		<div class="content">
 			<div class="top">
-				<span class="days">
-					<span v-for="(_, day) in scheduleData" :key="day">
-						<div
-							:class="{'dateButton': true, 'dateButton-active': day == activeDay}"
-							@click="activeDay = day"
-							v-if="day.length"
-							>{{ day }}
-						</div>
-					</span>
-				</span>
-				<div class="filler"></div>
-				<span class="timezone">
-					<h4>Timezone: </h4>
-					<select ref="timezones" v-model="timezone">
-						<option v-for="zone in timezoneOptions" :key="zone">{{ zone.replace('_', ' ') }}</option>
-					</select>
+				<span v-for="(_, day) in scheduleData" :key="day">
+					<div
+						:class="{'dateButton': true, 'dateButton-active': day == activeDay}"
+						@click="activeDay = day"
+						v-if="day.length"
+						>{{ day }}
+					</div>
 				</span>
 			</div>
 
@@ -101,30 +92,6 @@ export default {
 			displayFormats: true,
 			isMobile: false,
 			showMobileMenu: false,
-			timezone: 'Canada/Eastern',
-			timezoneOptions: [
-				'Africa/Lagos',
-				'America/Argentina/Rio_Gallegos',
-				'America/Chicago',
-				'America/Costa_Rica',
-				'America/Detroit',
-				'America/Edmonton',
-				'America/Halifax',
-				'America/Jamaica',
-				'America/Los_Angeles',
-				'America/Montreal',
-				'America/Sao_Paulo',
-				'America/Toronto',
-				'Asia/Beirut',
-				'Asia/Dubai',
-				'Asia/Qatar',
-				'Atlantic/Bermuda',
-				'Australia/Melbourne',
-				'Brazil/East',
-				'Canada/Central',
-				'Canada/Eastern',
-				'Europe/Amsterdam',
-			],
 			colors: {
 				"Workshop": "#8394F2",
 				"Panel": "#F57A75",
@@ -139,10 +106,10 @@ export default {
 	methods: {
 		getTime(stamp) {
 			if (stamp) {
-				const date = moment(stamp, 'H:mm').toDate()
-				let m = moment.tz(date, this.timezone)
-				m = m.subtract(3, 'hours') // Default is EST
-				return m.format("H:mm")
+				let date = moment(stamp, 'H:mm')
+				date = date.add(4, 'hours') // Dates are in EST
+				date = date.add(moment.parseZone().utcOffset(), 'minutes')
+				return date.format("h:mm A")
 			}
 			return ''
 		},
@@ -209,6 +176,7 @@ h4 {
 }
 .time > h4 {
 	padding-right: .25em;
+	width: max-content;
 }
 
 
@@ -234,9 +202,6 @@ h4 {
 	border-bottom: 1px solid var(--border-divider-color);
 	flex-wrap: wrap;
 }
-.top > .days {
-	display: flex;
-}
 .top > .filler {
 	flex-grow: 1;
 }
@@ -259,9 +224,10 @@ h4 {
 	margin-top: 2%;
 }
 .time hr {
-	width: 90%;
+	flex-grow: 1;
 	border: none;
 	border-bottom: 2px solid var(--border-divider-color);
+	margin: 1rem;
 }
 .tile-indent {
 	margin-left: 4rem;
@@ -335,7 +301,7 @@ h4 {
 		padding-bottom: 20%;
 		box-sizing: border-box;
 
-		border: 1px solid #CCCCCC;
+		border: 1px solid var(--border-divider-color);
 		background: white;
 		border-top-left-radius: 1rem;
 		border-top-right-radius: 1rem;
