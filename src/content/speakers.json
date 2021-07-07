@@ -22,6 +22,16 @@
         "org": "Notion",
         "bio": "Bio coming soon!"
     },
+    "Kevin Xu": {
+        "title": "Senior Director of International Expansion Strategy",
+        "org": "GitHub",
+        "bio": "Kevin Xu is the senior director for international expansion strategy at GitHub. He is also the founder and author of Interconnected, a newsletter on the intersections of tech, business, investment, and geopolitics. He previously served in the Obama White House.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/kevinsxu/",
+            "Twitter": "https://twitter.com/kevinsxu",
+            "Website": "https://interconnected.blog/"
+        }
+    },
     "Aubrey de Grey": {
         "title": "Chief Science Officer",
         "org": "SENS Research Foundation",
@@ -40,8 +50,8 @@
         "org": "Ladder",
         "bio": "Akshaya is the Co-Founder of Ladder, the professional community platform for the next generation. She previously did engineering work at Bloomberg, Microsoft, Oath, Godiva, Kitty Hawk, and more. She also previously founded a national nonprofit to close the gender gap in tech.",
         "links": {
-            "Twitter": "https://twitter.com/akshayadinesh19",
-            "LinkedIn": "https://www.linkedin.com/in/akshayadinesh/"
+            "LinkedIn": "https://www.linkedin.com/in/akshayadinesh/",
+            "Twitter": "https://twitter.com/akshayadinesh19"
         }
     },
     "Victor Kovalev": {
@@ -84,9 +94,14 @@
         }
     },
     "Faisal Abid": {
-        "title": "CEO",
-        "org": "Eireen",
-        "bio": "Bio coming soon!"
+        "title": "Entrepreneur / Chief Technology Officer",
+        "org": "Eirene Cremations",
+        "bio": "Bio coming soon!",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/faisalabid/",
+            "Twitter": "https://twitter.com/FaisalAbid",
+            "Website": "https://faisalabid.com/"
+        }
     },
 
     "Jean-Michel Lemieux": {
@@ -94,8 +109,8 @@
         "org": "Shopify",
         "bio": "Jean-Michel Lemieux is the Chief Technology Officer at Shopify and founder of Dev Degree, an innovative work integrated learning program. He was previously VP of Engineering at Atlassian and Chief Architect at IBM.",
         "links": {
-            "Twitter": "https://twitter.com/jmwind",
-            "LinkedIn": "https://www.linkedin.com/in/jean-michel-lemieux-3756a81a/"
+            "LinkedIn": "https://www.linkedin.com/in/jean-michel-lemieux-3756a81a/",
+            "Twitter": "https://twitter.com/jmwind"
         }
     },
     "Susan Shu Chang": {
@@ -103,9 +118,9 @@
         "org": "Wealthsimple",
         "bio": "Susan is a principal data scientist in fintech, where she builds machine learning models and infrastructure at scale. In her previous role, she developed the company’s very first ML powered website recommender system and deployed to millions of customers.",
         "links": {
-            "Website": "https://www.susanshu.com/",
+            "LinkedIn": "https://ca.linkedin.com/in/susan-shu-chang",
             "Twitter": "https://twitter.com/susan_shuc",
-            "LinkedIn": "https://ca.linkedin.com/in/susan-shu-chang"
+            "Website": "https://www.susanshu.com/"
         }
     },
     "Carl Barrelet": {
@@ -123,8 +138,8 @@
         "org": "Hack Club",
         "bio": "Zach Latta dropped out of high school after his freshman year to work in the technology industry and had over 5 million people using apps he worked on when he was 16. He was awarded the Thiel Fellowship when he was 17 and was featured in Forbes 30 Under 30 when he was 18.",
         "links": {
-            "Twitter": "https://twitter.com/zachlatta",
-            "LinkedIn": "https://www.linkedin.com/in/zachlatta/"
+            "LinkedIn": "https://www.linkedin.com/in/zachlatta/",
+            "Twitter": "https://twitter.com/zachlatta"
         }
     },
     "Sophia Dhrolia": {
@@ -135,7 +150,6 @@
             "LinkedIn": "https://www.linkedin.com/in/sophia-dhrolia/"
         }
     },
-
 
     "Vivian Li": {
         "title": "Senior D&I Leader",
@@ -150,8 +164,8 @@
         "org": "Arist (YC 20)",
         "bio": "Michael Ioffe is the co-founder and CEO of Arist, a platform that helps leading companies and nonprofits rapidly create, launch, and assess text message-based courses. For his work on Arist, Michael has been named a Forbes 30 under 30.",
         "links": {
-            "Twitter": "https://twitter.com/realioffe",
-            "LinkedIn": "https://www.linkedin.com/in/michaelaioffe/"
+            "LinkedIn": "https://www.linkedin.com/in/michaelaioffe/",
+            "Twitter": "https://twitter.com/realioffe"
         }
     },
 
@@ -176,8 +190,8 @@
         "org": "Wonsulting",
         "bio": "Jerry is the COO of Wonsulting and an ex-Senior Strategy & Operations Manager at Google & used to lead Product Strategy at Lucid. Jerry partners with universities & organizations (220+ to date) to help others land into their dream careers. He's amassed 250,000+ followers across LinkedIn, TikTok & Instagram and has reached 40M+ professionals.",
         "links": {
-            "Instagram": "https://www.instagram.com/iamjerrry",
-            "LinkedIn": "https://www.linkedin.com/in/jehakjerrylee/"
+            "LinkedIn": "https://www.linkedin.com/in/jehakjerrylee/",
+            "Instagram": "https://www.instagram.com/iamjerrry"
         }
     },
     "Jonathan Javier": {
@@ -185,8 +199,8 @@
         "org": "Wonsulting",
         "bio": "Jonathan Javier is the CEO/Founder of Wonsulting, which mission is to “turn underdogs into winners”. He's worked at Snap, Google, and Cisco being featured on Forbes, Business Insider, Yahoo News, and more as a top job search expert and amassed 1M+ followers on LinkedIn, Instagram, TikTok + 30+ million impressions monthly on his content.",
         "links": {
-            "LinkedIn": "https://www.linkedin.com/in/jonathan-wonsulting/",
-            "Instagram": "https://www.instagram.com/jonathanwordsofwisdom/"
+            "Instagram": "https://www.instagram.com/jonathanwordsofwisdom/",
+            "LinkedIn": "https://www.linkedin.com/in/jonathan-wonsulting/"
         }
     },
     "Iris Guo": {
@@ -194,8 +208,8 @@
         "org": "Google X, the Moonshot Factory",
         "bio": "Iris is a Product Manager Intern at Google X and Founder / CEO of a sustainability startup Neutrify. With the mission of empowering individuals to take action to fight climate change, Iris founded Neutrify to shift food consumption towards sustainable food.",
         "links": {
-            "Twitter": "https://twitter.com/IrisGuoo",
-            "LinkedIn": "https://www.linkedin.com/in/iris-guo/"
+            "LinkedIn": "https://www.linkedin.com/in/iris-guo/",
+            "Twitter": "https://twitter.com/IrisGuoo"
         }
     },
     "Minjun Chen": {
@@ -219,8 +233,8 @@
         "org": "Lux Capital",
         "bio": "Rahul Rana is an Associate at Lux Capital, a $2.5bn deeptech VC firm. He is the author of Making Moonshots—a deep dive into the mindsets, philosophies, and strategies conducive to building impactful moonshot companies.",
         "links": {
-            "Twitter": "https://twitter.com/rrana03_",
-            "LinkedIn": "https://www.linkedin.com/in/rahul-rana-99b338169/"
+            "LinkedIn": "https://www.linkedin.com/in/rahul-rana-99b338169/",
+            "Twitter": "https://twitter.com/rrana03_"
         }
     },
 
@@ -229,8 +243,8 @@
         "org": "Alloy Automation",
         "bio": "Sara is the founder of Alloy Automation (YC W20), an ecommerce automation platform that helps brands eliminate manual work across fulfillments, marketing, & more. Before Alloy, she was an engineer at Snap and had dropped out of her undergrad at Harvard.",
         "links": {
-            "Twitter": "https://twitter.com/saraduit",
-            "LinkedIn": "https://www.linkedin.com/in/saradu"
+            "LinkedIn": "https://www.linkedin.com/in/saradu",
+            "Twitter": "https://twitter.com/saraduit"
         }
     },
     "Arielle Lok": {
@@ -238,8 +252,8 @@
         "org": "Peko Produce, Ripple Ventures",
         "bio": "Arielle ate CPG brands @ District Ventures Capital, and now eats SaaS companies @ Ripple Ventures. She currently makes people eat weirdly shaped produce at Peko Produce, Canada’s leading “imperfect” online grocery delivery service.",
         "links": {
-            "Twitter": "https://twitter.com/ariellelok",
-            "LinkedIn": "https://www.linkedin.com/in/ariellelok/"
+            "LinkedIn": "https://www.linkedin.com/in/ariellelok/",
+            "Twitter": "https://twitter.com/ariellelok"
         }
     },
 
@@ -277,8 +291,8 @@
         "org": "Matrix",
         "bio": "Justin Zheng is the CEO of Matrix, where he works on esports, crypto, and creating a better fan/creator experience. He's also previously done several crypto fellowships at IDEO CoLab.",
         "links": {
-            "Twitter": "https://twitter.com/jzlegion",
-            "LinkedIn": "https://www.linkedin.com/in/zhengjustin/"
+            "LinkedIn": "https://www.linkedin.com/in/zhengjustin/",
+            "Twitter": "https://twitter.com/jzlegion"
         }
     },
     "Alison Adnani": {
@@ -313,8 +327,8 @@
         "org": "Fion Technologies",
         "bio": "Yash Godiwala is Chief of Staff at Fion Technologies, a deeptech company using GIS-enabled machine learning models to identify and analyze wildfires. He also works part-time on the platform team at Contrary, a venture firm investing in top early career talent.",
         "links": {
-            "Twitter": "https://twitter.com/yashgodiwala",
-            "LinkedIn": "https://www.linkedin.com/in/yashgodiwala/"
+            "LinkedIn": "https://www.linkedin.com/in/yashgodiwala/",
+            "Twitter": "https://twitter.com/yashgodiwala"
         }
     },
     "Omna Toshniwal": {
@@ -330,8 +344,8 @@
         "org": "Asian Hustle Network",
         "bio": "Bryan is the founder of Asian Hustle Network (AHN), Crushing it in Real Estate (CIIRE), HateIsAVirus, and a venture partner at Outliers Fund. He is passionate about bringing together individuals through growing AHN to over 100,000+ members in a year.",
         "links": {
-            "Twitter": "https://twitter.com/bryanvuongpham",
-            "LinkedIn": "https://www.linkedin.com/in/bryanvuongpham/"
+            "LinkedIn": "https://www.linkedin.com/in/bryanvuongpham/",
+            "Twitter": "https://twitter.com/bryanvuongpham"
         }
     },
     "Priya Ghose": {
@@ -379,15 +393,32 @@
         "org": "Kotn",
         "bio": "Bio coming soon!",
         "links": {
-            "Website": "https://postscript.ps/ben",
+            "LinkedIn": "https://www.linkedin.com/in/benjaminsehl",
             "Twitter": "https://twitter.com/benjaminsehl",
-            "LinkedIn": "https://www.linkedin.com/in/benjaminsehl"
+            "Website": "https://postscript.ps/ben"
+        }
+    },
+    "Michelle Reyes": {
+        "title": "Campus & Community Program Manager",
+        "org": "Geotab",
+        "bio": "Michelle manages the global student program at Geotab including recruitment, student experience and campus engagement. Prior to joining Geotab, Michelle brings experience from the post-secondary education sector in leadership roles within career program development.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/michellepreyes"
         }
     },
     "Ralf Klinkenberg": {
         "title": "Co-founder",
         "org": "Rapid Minder",
         "bio": "Bio coming soon!"
+    },
+    "Serena Li": {
+        "title": "Building something new",
+        "org": "",
+        "bio": "From non-target school to landing a full-time job at Merrill Lynch without graduating, to leaving the finance world and starting over in Silicon Valley, Serena believes leveraging unconventional ways to navigate your career is underrated.",
+        "links": {
+            "Twitter": "https://twitter.com/serenalihere",
+            "Website": "https://productfreaks.substack.com/p/on-starting-over-getting-into-tech"
+        }
     },
 
     "Helen Huang": {
@@ -398,11 +429,6 @@
     "Shannon Lal": {
         "title": "Director",
         "org": "RBC",
-        "bio": "Bio coming soon!"
-    },
-    "Serena Li": {
-        "title": "Product Developer and Marketer",
-        "org": "HackerOne",
         "bio": "Bio coming soon!"
     }
 }
