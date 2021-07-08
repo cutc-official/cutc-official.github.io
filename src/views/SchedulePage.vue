@@ -7,7 +7,7 @@
 			<div class="sidebar" v-if="!isMobile || showMobileMenu">
 				<h4 class="sidebar-title">Topics</h4>
 				<span v-if="displayTopics">
-					<label class="container" v-for="i in allTopics" :key="i">{{i}}
+					<label class="container" v-for="i in allTopics" :key="i" style="--dot-color: #C8190F">{{i}}
 						<input type="checkbox" :id="i" :value="i" v-model="checkedTopics">
 						<span class="checkmark"/>
 					</label>
@@ -15,11 +15,12 @@
 				<div class="sidebar-spacer"/>
 				<h4 class="sidebar-title">Format</h4>
 				<span v-if="displayFormats">
-					<div class="checkbox-row" v-for="i in allFormats" :key="i">
-						<input type="checkbox" :id="i" :value="i" v-model="checkedFormats" class="checkbox">
-						<div class="dot" :style="{'--format-color': colors[i]}"></div>
-						<label for="i" class="checkboxText">{{ i }}</label>
-					</div>
+					<label class="container" v-for="i in allFormats" :key="i" :style="{'--dot-color': colors[i]}">
+						<input type="checkbox" :id="i" :value="i" v-model="checkedFormats">
+						<div class="dot"/>
+						{{i}}
+						<span class="checkmark"/>
+					</label>
 				</span>
 			</div>
 		</transition>
@@ -274,12 +275,7 @@ h4, p {
 .checkbox-row>label {
 	margin-top: .1rem;
 }
-.checkbox-row>.dot {
-	background: var(--format-color);
-	height: .4rem;
-	width: .4rem;
-	border-radius: 20rem;
-}
+
 .checkbox-row>:not(:last-child) {
 	margin-right: .25rem;
 }
@@ -344,7 +340,8 @@ h4, p {
 }
 
 .container {
-  display: block;
+  display: flex;
+	align-items: center;
   position: relative;
 	color: black;
   padding-left: 32px;
@@ -355,6 +352,14 @@ h4, p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.dot {
+	background: var(--dot-color);
+	height: 8px;
+	width: 8px;
+	margin-right: 8px;
+	border-radius: 999px;
 }
 
 /* Hide the browser's default checkbox */
@@ -385,7 +390,7 @@ h4, p {
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #C8190F;
+  background-color: var(--dot-color);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
