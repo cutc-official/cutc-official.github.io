@@ -67,7 +67,7 @@ export default {
 
 	display: flex;
 	align-items: center;
-	padding-top: 6rem;
+	padding-top: 1rem;
 	background: linear-gradient(
 		180deg,
 		#ffffff -0.11%,

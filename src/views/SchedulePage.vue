@@ -98,10 +98,10 @@ export default {
 			showMobileMenu: false,
 			colors: {
 				"Workshop": "#8394F2",
-				"Panel": "#F57A75",
+				"Panel": "#17AECE",
 				"Keynote": "#17ADCE",
 				"Lightning Talk": "#F9AFAB",
-				"Fireside Chat": "#E28383",
+				"Fireside Chat": "#F57A75",
 				"Breakout Session": "#98D485",
 				"Default": "#44AF69" // Misc
 			},
