@@ -36,9 +36,9 @@
 				</div>
 			</div>
 			<p>{{ description }}</p>
-		
+
 			<div class="speakers-container">
-				<div 
+				<div
 					v-for="(speaker,index) in speakers"
 					:key="speaker"
 					class="speaker"
@@ -99,10 +99,10 @@ export default {
 			// ! Duplicated in SchedulePage.vue
 			colors: {
 				"Workshop": "#8394F2",
-				"Panel": "#F57A75",
+				"Panel": "#17AECE",
 				"Keynote": "#17ADCE",
 				"Lightning Talk": "#F9AFAB",
-				"Fireside Chat": "#E28383",
+				"Fireside Chat": "#F57A75",
 				"Breakout Session": "#98D485",
 				"Default": "#44AF69" // Misc
 			},
@@ -142,7 +142,7 @@ export default {
 				case "Google Calendar":
 					startDate = `202107${this.getDay()}T${this.cleanTimeStamp(this.start)}00`
 					endDate = `202107${this.getDay()}T${this.cleanTimeStamp(this.stop)}00`
-					return `https://calendar.google.com/calendar/render?action=TEMPLATE&dates=${startDate}$/${endDate}&details=${this.description}&location=${this.location}&text=${this.title}`				
+					return `https://calendar.google.com/calendar/render?action=TEMPLATE&dates=${startDate}$/${endDate}&details=${this.description}&location=${this.location}&text=${this.title}`
 				case "Outlook":
 					startDate = `2021-07-${this.getDay()}T${this.start}:00+00:00`
 					endDate = `2021-07-${this.getDay()}T${this.stop}:00+00:00`
