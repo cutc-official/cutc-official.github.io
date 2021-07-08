@@ -98,7 +98,6 @@
             "Website": "https://faisalabid.com/"
         }
     },
-
     "Jean-Michel Lemieux": {
         "title": "Chief Technology Officer",
         "org": "Shopify",
@@ -106,6 +105,14 @@
         "links": {
             "LinkedIn": "https://www.linkedin.com/in/jean-michel-lemieux-3756a81a/",
             "Twitter": "https://twitter.com/jmwind"
+        }
+    },
+    "Linda Chen": {
+        "title": "Director of Technical Program Management",
+        "org": "Facebook",
+        "bio": "Linda Chen has been at Facebook for almost 10 years. She is currently the director of TPM (Technical Program Manager) for infrastructure hardware and capacity.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/linda-chen-3a87a81a/"
         }
     },
     "Susan Shu Chang": {
@@ -163,7 +170,6 @@
             "Twitter": "https://twitter.com/realioffe"
         }
     },
-
     "Daniel Huang": {
         "title": "CEO",
         "org": "Monet",
