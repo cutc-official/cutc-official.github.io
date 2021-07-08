@@ -105,7 +105,7 @@ a {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	z-index: 2;
+	z-index: 15;
 
 	background: white;
 	color: var(--nav-color);
