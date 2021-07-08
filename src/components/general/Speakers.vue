@@ -142,7 +142,7 @@ export default {
 }
 
 .bio {
-	font-size: 0.75em;
+	font-size: 0.6rem;
 	box-sizing: border-box;
 	padding: 1rem;
 	z-index: 2;

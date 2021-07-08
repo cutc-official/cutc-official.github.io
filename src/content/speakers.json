@@ -12,11 +12,6 @@
         "org": "Facebook",
         "bio": "Jenn Henley has been at Facebook for 10 years. She is currently a Vice President, supporting Technical Program Management (TPM) where she is responsible for leadership, development, and growth of the global Infrastructure organization."
     },
-    "Aarthi Scott": {
-        "title": "Director of Global Customer Success",
-        "org": "Google",
-        "bio": "Bio coming soon!"
-    },
     "Jamie Quint": {
         "title": "Former Head of Growth",
         "org": "Notion",
@@ -421,6 +416,14 @@
         "links": {
             "Twitter": "https://twitter.com/serenalihere",
             "Website": "https://productfreaks.substack.com/p/on-starting-over-getting-into-tech"
+        }
+    },
+    "Winona Huang": {
+        "title": "Community & Partnership Manager",
+        "org": "ADPList",
+        "bio": "Winona is a Community & Partnership Manager at ADPList, a global community where people can meet mentors from around the world. Prior to this, she was a UX Designer with an educational background in all things design who diverged into the education sector, then made a U-turn back into the design space.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/winonah/"
         }
     },
 
