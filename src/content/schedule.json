@@ -9,8 +9,10 @@
 				"Leadership",
 				"SWE"
 			],
-			"speakers": ["Victor Kovalev"],
-			"description": "Leadership in technology integrates both aspects of software engineering and management. Come out to learn more about how to foster a positive work environment in a SWE team."
+			"description": "Leadership in technology integrates both aspects of software engineering and management. Come out to learn more about how to foster a positive work environment in a SWE team.",
+			"speakers": [
+				"Victor Kovalev"
+			]
 		},
 		{
 			"start": "14:30",
@@ -21,8 +23,10 @@
 				"Entrepeneurship",
 				"Amplify"
 			],
-			"speakers": ["Michael Ioffe", "Sara Du", "Akshaya Dinesh", "Daniel Huang", "Justin Zheng"],
-			"description": "Join founders of viral social apps and startups backed by the most prolific investors in Silicon Valley as they discuss the ups and downs of building a company as a Zoomer."
+			"description": "Join founders of viral social apps and startups backed by the most prolific investors in Silicon Valley as they discuss the ups and downs of building a company as a Zoomer.",
+			"speakers": [
+				"Michael Ioffe", "Sara Du", "Akshaya Dinesh", "Daniel Huang", "Justin Zheng"
+			]
 		},
 		{
 			"start": "15:30",
@@ -33,8 +37,22 @@
 				"Product",
 				"Amplify"
 			],
-			"speakers": [],
-			"description": "Learn about how to tap into product management from a non-technical background"
+			"description": "Learn about how to tap into product management from a non-technical background",
+			"speakers": [
+				"Helen Huang"
+			]
+		},
+		{
+			"start": "15:30",
+			"stop": "15:55",
+			"title": "Data Science/SWE Workshop",
+			"format": "Workshop",
+			"topics": [
+				"Data Science",
+				"SWE"
+			],
+			"description": "",
+			"speakers": []
 		},
 		{
 			"start": "16:00",
@@ -44,11 +62,26 @@
 			"topics": [
 				"Education"
 			],
-			"speakers": ["Alison Adnani", "Zach Latta", "Amanda DoAmaral"],
-			"description": "Education hasn't seen much innovation for the past 100 years. With the initiatives our panelists are part of, it'll look radically different within the next 10."
+			"description": "Education hasn't seen much innovation for the past 100 years. With the initiatives our panelists are part of, it'll look radically different within the next 10.",
+			"speakers": [
+				"Alison Adnani",
+				"Zach Latta",
+				"Amanda DoAmaral"
+			]
 		}
 	],
 	"JULY 25": [
+		{
+			"start": "10:00",
+			"stop": "10:25",
+			"title": "5G Virtual Tour presented by Huawei",
+			"format": "Workshop",
+			"topics": [
+				"5G"
+			],
+			"description": "",
+			"speakers": []
+		},
 		{
 			"start": "10:30",
 			"stop": "10:55",
@@ -58,19 +91,26 @@
 				"E-Commerce",
 				"Amplify"
 			],
-			"speakers": ["Harley Finkelstein", "Benjamin Sehl"],
-			"description": "The president of Shopify sits down with one of their largest merchants do discuss how Shopify's helping anyone get started with entreprenuership, no matter how small."
+			"description": "The president of Shopify sits down with one of their largest merchants do discuss how Shopify's helping anyone get started with entreprenuership, no matter how small.",
+			"speakers": [
+				"Harley Finkelstein",
+				"Benjamin Sehl"
+			]
 		},
 		{
 			"start": "11:30",
 			"stop": "12:25",
-			"title": "Different Paths into SWE",
+			"title": "Data Science Panel",
 			"format": "Panel",
 			"topics": [
-				"SWE"
+				"Data Science"
 			],
-			"speakers": ["Priya Ghose", "Vivian Phung", "Faisal Abid"],
-			"description": "No matter your background - a coding bootcamp, a college dropout, a CS major - there's a way to break into software engineering. Learn how you can do the same in this panel!"
+			"description": "Learn how to break into the Data Science field and what a data scientist's day-to-day looks like!",
+			"speakers": [
+				"Ralf Klinkenberg",
+				"Serena McDonnell",
+				"Susan Shu Chang"
+			]
 		},
 		{
 			"start": "12:30",
@@ -80,8 +120,10 @@
 			"topics": [
 				"Design"
 			],
-			"speakers": ["Minjun Chen"],
-			"description": "If you want to stand out, having a great landing page is a must. Learn how to use Figma to create a page that'll convert"
+			"description": "If you want to stand out, having a great landing page is a must. Learn how to use Figma to create a page that'll convert",
+			"speakers": [
+				"Minjun Chen"
+			]
 		},
 		{
 			"start": "13:30",
@@ -92,8 +134,10 @@
 				"AI",
 				"Data Science"
 			],
-			"speakers": ["Carl Barrelet"],
-			"description": "Everyone knows Ai is the future  but what does that look like exactly? Join us for a breakdown of the future and how you can get involved"
+			"description": "Everyone knows Ai is the future  but what does that look like exactly? Join this session for a breakdown of AI applications and how you can get involved",
+			"speakers": [
+				"Carl Barrelet"
+			]
 		},
 		{
 			"start": "14:30",
@@ -103,45 +147,44 @@
 			"topics": [
 				"D&I"
 			],
-			"speakers": ["Mark Patterson", "Sophia Dhrolia"],
-			"description": "With tech growing rapidly, it's important we focus on diversity first. Join us in conversation with 2 senior leaders who’ve been fighting at big organizations to make tech more inclusive. "
+			"description": "With tech growing rapidly, it's important we focus on diversity first. Join us in conversation with 2 senior leaders who’ve been fighting at big organizations to make tech more inclusive. ",
+			"speakers": [
+				"Mark Patterson",
+				"Sophia Dhrolia"
+			]
 		},
 		{
 			"start": "15:00",
 			"stop": "15:55",
-			"title": "Innovation in Asia's Blooming Tech Ecosystem",
+			"title": "Different Paths into SWE",
 			"format": "Panel",
 			"topics": [
-				"Amplify",
-				"D&I",
-				"E-Commerce",
 				"SWE"
 			],
-			"speakers": ["Bernard Moon", "Jihoon Jeong", "Leonard Lee", "Bryan Pham"],
-			"description": "Asia is a hub of innovation that is often overshadowed by Silicon Valley. Join us at this panel to learn about the most interesting Asian companies and the Asian tech landscape."
+			"description": "No matter your background - a coding bootcamp, a college dropout, a CS major - there's a way to break into software engineering. Learn how you can do the same in this panel!",
+			"speakers": [
+				"Priya Ghose",
+				"Vivian Phung",
+				"Faisal Abid",
+				"Ryan D'Silva"
+			]
 		},
 		{
 			"start": "15:00",
 			"stop": "15:55",
-			"title": "Data Science Panel",
+			"title": "Breaking into Venture Capital",
 			"format": "Panel",
 			"topics": [
-				"Data Science"
+				"VC"
 			],
-			"speakers": ["Ralf Klinkenberg", "Serena McDonnell", "Susan Shu Chang"],
-			"description": "Learn how to break into the Data Science field and what a data scientist's day-to-day looks like!"
-		},
-		{
-			"start": "16:00",
-			"stop": "16:25",
-			"title": "Artful Design: Technology in Search of the Sublime",
-			"format": "Keynote",
-			"topics": [
-				"Design",
-				"Amplify"
-			],
-			"speakers": ["Ge Wang"],
-			"description": "How might the shaping of technology make our lives richer and more meaningful? What does it mean to design well — to design ethically? This presentation is a meditation on the design of everyday tools, musical instruments, games, and social experiences. It is a story of how we shape technology — and how technology, in turn, shapes us and our society."
-		}		
+			"description": "Ever wondered how to break into venture capital as an undergrad? Join this panel to learn how the industry works and how you can start getting involved even as a college student!",
+			"speakers": [
+				"Yash Godiwala",
+				"Rahul Rana",
+				"Michelle Qin",
+				"Arielle Lok",
+				"Jonny Hsu"
+			]
+		}
 	]
 }

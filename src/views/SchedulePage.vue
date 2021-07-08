@@ -34,6 +34,8 @@
 						>{{ day }}
 					</div>
 				</span>
+				<div class="spacer"/>
+				<p>Times are in {{ getTimeZone() }}</p>
 			</div>
 
 			<div class="schedule" v-for="(events, day) in scheduleData" :key="day">
@@ -113,6 +115,10 @@ export default {
 			}
 			return ''
 		},
+		getTimeZone() {
+			var zone_name =  moment.tz.guess();
+			return moment.tz(zone_name).zoneAbbr();
+		},
 		isChecked(topics, format) {
 			if(this.checkedTopics.length || this.checkedFormats.length){
 				return (
@@ -171,7 +177,7 @@ export default {
 	display: flex;
 }
 
-h4 {
+h4, p {
 	color: black;
 }
 .time > h4 {
@@ -179,18 +185,11 @@ h4 {
 	width: max-content;
 }
 
-
 .sidebar {
 	width: var(--desktop-sidebar-width);
 	height: 100vh;
 	border-right: 1px solid rgb(0, 0, 0, 0.25);
 	padding: 1rem;
-}
-
-.spacer {
-	width: 100%;
-	margin: 2rem 0;
-	border-bottom: 1px solid var(--border-divider-color);
 }
 
 .content {
@@ -201,21 +200,13 @@ h4 {
 	display: flex;
 	border-bottom: 1px solid var(--border-divider-color);
 	flex-wrap: wrap;
+	align-items: center;
 }
-.top > .filler {
+.top > .spacer {
 	flex-grow: 1;
 }
-.top > .timezone {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	margin: .5rem;
-}
-.timezone > select {
-	margin: .25rem;
-	padding: .25rem;
-	border: 1px solid var(--border-divider-color);
-	border-radius: .25rem;
+.top > p {
+	margin-right: 1rem;
 }
 
 .time {
@@ -319,7 +310,7 @@ h4 {
 
 	.mobile-menu-button {
 		position: fixed;
-		z-index: 10;
+		z-index: 7;
 		display: grid;
 		place-items: center;
 

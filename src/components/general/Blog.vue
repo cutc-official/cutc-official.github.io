@@ -38,11 +38,13 @@ export default {
 		}
 	},
 	beforeMount() {
-		let referenceThis = this
+		let self = this
 		let httpRequest = new XMLHttpRequest();
 		httpRequest.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
-				referenceThis.blogData = JSON.parse(this.responseText);
+				self.blogData = JSON.parse(this.responseText);
+				if (self.limit)
+					self.blogData = self.blogData.slice(0, self.limit);
 			}
 		};
 		httpRequest.open("GET", "https://cutc.ca/api/html/mediumPosts.php", true);
