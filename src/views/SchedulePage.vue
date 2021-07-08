@@ -2,17 +2,18 @@
 <div id="schedule">
 	<nav-bar/>
 	<div class="page">
+
 		<transition name="pop-up">
 			<div class="sidebar" v-if="!isMobile || showMobileMenu">
-				<h4>Topics</h4>
+				<h4 class="sidebar-title">Topics</h4>
 				<span v-if="displayTopics">
-					<div class="checkbox-row" v-for="i in allTopics" :key="i">
+					<label class="container" v-for="i in allTopics" :key="i">{{i}}
 						<input type="checkbox" :id="i" :value="i" v-model="checkedTopics">
-						<label for="i" class="checkboxText">{{ i }}</label>
-					</div>
+						<span class="checkmark"/>
+					</label>
 				</span>
-				<div class="spacer"/>
-				<h4>Format</h4>
+				<div class="sidebar-spacer"/>
+				<h4 class="sidebar-title">Format</h4>
 				<span v-if="displayFormats">
 					<div class="checkbox-row" v-for="i in allFormats" :key="i">
 						<input type="checkbox" :id="i" :value="i" v-model="checkedFormats" class="checkbox">
@@ -122,7 +123,7 @@ export default {
 		isChecked(topics, format) {
 			if(this.checkedTopics.length || this.checkedFormats.length){
 				return (
-					(format && this.checkedFormats.includes(format)) || 
+					(format && this.checkedFormats.includes(format)) ||
 					(topics && topics.some(topic => this.checkedTopics.includes(topic)))
 				)
 			}
@@ -191,6 +192,12 @@ h4, p {
 	border-right: 1px solid rgb(0, 0, 0, 0.25);
 	padding: 1rem;
 }
+.sidebar-title {
+	margin-bottom: 0.75rem;
+}
+.sidebar-spacer {
+	margin-bottom: 2rem;
+}
 
 .content {
 	width: 100%;
@@ -249,7 +256,7 @@ h4, p {
 	align-items: center;
 	color: black;
 	font-size: .8rem;
-	margin-bottom: .25rem;
+	margin-bottom: .5rem;
 }
 .checkbox-row>input {
 	margin: 0;
@@ -278,7 +285,7 @@ h4, p {
 }
 
 .mobile-menu-button {
-	display: none;		
+	display: none;
 }
 
 @media screen and (max-width: 850px) {
@@ -303,7 +310,7 @@ h4, p {
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		background: linear-gradient(180deg, rgba(0, 0, 0, 0.1643) 0%, rgba(0, 0, 0, 0.53) 25%);	
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.1643) 0%, rgba(0, 0, 0, 0.53) 25%);
 		z-index: 3;
 		opacity: 1;
 	}
@@ -334,6 +341,76 @@ h4, p {
 	.tile-indent {
 		margin-left: 0;
 	}
+}
+
+.container {
+  display: block;
+  position: relative;
+	color: black;
+  padding-left: 32px;
+  margin-bottom: 12px;
+	padding-top: 1px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+	border: 1.5px solid darkgray;
+	border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #C8190F;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6.5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .fade-in-enter-active,
