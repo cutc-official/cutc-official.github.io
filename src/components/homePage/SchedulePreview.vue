@@ -28,7 +28,7 @@
         <ul>
           <li>Breakout sessions on product, AI/ML, crypto, and sports</li>
           <li>
-            Panels on different paths into SWE, venture capital, and Asia’s tech
+            Panels on different paths into software engineering, venture capital, and Asia’s tech
             scene
           </li>
         </ul>

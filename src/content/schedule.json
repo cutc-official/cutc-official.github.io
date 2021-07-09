@@ -92,9 +92,6 @@
 			"stop": "14:25",
 			"title": "Winning the Fight Against Aging",
 			"format": "Breakout Session",
-			"topics": [
-				"Longevity"
-			],
 			"description": "As a pioneer in the longevity field, Aubrey believes that aging is a disease that can be cured in our lifetimes. Tune into his talk to find out what it'll take for humans to live forever.",
 			"speakers": [
 				"Aubrey de Grey"
@@ -196,9 +193,6 @@
 			"stop": "10:25",
 			"title": "5G Virtual Tour (presented by Huawei)",
 			"format": "Workshop",
-			"topics": [
-				"5G"
-			],
 			"description": "",
 			"speakers": []
 		},
@@ -286,7 +280,7 @@
 				"AI",
 				"Data Science"
 			],
-			"description": "Everyone knows Ai is the future  but what does that look like exactly? Join this session for a breakdown of AI applications and how you can get involved",
+			"description": "Everyone knows AI is the future  but what does that look like exactly? Join this session for a breakdown of AI applications and how you can get involved",
 			"speakers": [
 				"Carl Barrelet"
 			]
