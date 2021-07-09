@@ -23,7 +23,7 @@
 				"Finance",
 				"Business"
 			],
-			"description": "Learn about the unique experiences of these women in tech and how to deal with imposter syndrome, prejudice, and more as an underrepresented community.",
+			"description": "",
 			"speakers": [
 				"Muna Khayyat"
 			]
@@ -157,18 +157,6 @@
 				"Peter Poydenko",
 				"Alex Ng"
 			]
-		},
-		{
-			"start": "15:30",
-			"stop": "15:55",
-			"title": "Data Science/SWE Workshop",
-			"format": "Workshop",
-			"topics": [
-				"Data Science",
-				"SWE"
-			],
-			"description": "",
-			"speakers": []
 		},
 		{
 			"start": "16:00",

@@ -439,11 +439,6 @@
         "org": "Co.Lab",
         "bio": "Bio coming soon!"
     },
-    "Shannon Lal": {
-        "title": "Director",
-        "org": "RBC",
-        "bio": "Bio coming soon!"
-    },
     "Sonia Edmonds": {
         "title": "National Managing Partner of Consulting Service Lines",
         "org": "BDO",
@@ -459,9 +454,9 @@
         "org": "JobJunxion",
         "bio": "Bio coming soon!"
     },
-    "Piro Dhimitri": {
-        "title": "Consulting Manager for Technology, Insights, and Intelligence",
-        "org": "BDO",
+    "Jenny Sun": {
+        "title": "Software Engineer",
+        "org": "Instagram",
         "bio": "Bio coming soon!"
     },
     "Peter Poydenko": {
@@ -469,14 +464,19 @@
         "org": "BDO",
         "bio": "Bio coming soon!"
     },
-    "Alex Ng": {
-        "title": "Senior Consulting Manager for Technology, Insights, and Intelligence",
+    "Piro Dhimitri": {
+        "title": "Consulting Manager for Technology, Insights, and Intelligence",
         "org": "BDO",
         "bio": "Bio coming soon!"
     },
-    "Jenny Sun": {
-        "title": "Software Engineer",
-        "org": "Instagram",
+    "Shannon Lal": {
+        "title": "Director",
+        "org": "RBC",
+        "bio": "Bio coming soon!"
+    },
+    "Alex Ng": {
+        "title": "Senior Consulting Manager for Technology, Insights, and Intelligence",
+        "org": "BDO",
         "bio": "Bio coming soon!"
     }
 }
