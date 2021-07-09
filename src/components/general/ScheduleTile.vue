@@ -229,9 +229,10 @@ export default {
 .top-info {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 }
 .top-info > :not(:last-child) {
-	margin-right: 2rem;
+	margin-right: 1rem;
 }
 
 .top-info-section {
@@ -249,7 +250,7 @@ export default {
 .topic-tag {
 	padding: 0.25rem 1rem;
 	border-radius: 50rem;
-	background: var(--type-color);
+	background: #c8190f;
 
 	color: white;
 	font-size: 0.8em;
@@ -257,9 +258,10 @@ export default {
 
 .speakers-container {
 	display: grid;
+	margin-top: 0.75rem;
 	--speaker-size: 4rem;
 	grid-template-columns: repeat(auto-fit, var(--speaker-size));
-	gap: 1rem;
+	gap: 0.75rem;
 }
 .speaker {
 	position: relative;
