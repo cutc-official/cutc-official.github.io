@@ -189,7 +189,7 @@ h4, p {
 
 .sidebar {
 	width: var(--desktop-sidebar-width);
-	height: 100vh;
+	height: 100%;
 	border-right: 1px solid rgb(0, 0, 0, 0.25);
 	padding: 1rem;
 }
