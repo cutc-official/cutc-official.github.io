@@ -190,18 +190,18 @@ h4, p {
 .sidebar {
 	width: var(--desktop-sidebar-width);
 	height: 100%;
-	border-right: 1px solid rgb(0, 0, 0, 0.25);
-	padding: 1rem;
+	padding: 1em;
 }
 .sidebar-title {
-	margin-bottom: 0.75rem;
+	margin-bottom: 0.5em;
 }
 .sidebar-spacer {
-	margin-bottom: 2rem;
+	margin-bottom: 2em;
 }
 
 .content {
 	width: 100%;
+	border-left: 1px solid var(--border-divider-color);
 }
 
 .top {
@@ -292,7 +292,8 @@ h4, p {
 		z-index: 5;
 		width: 100vw;
 		height: fit-content;
-		padding-bottom: 20%;
+		padding-bottom: 5%;
+		font-size: .8em;
 		box-sizing: border-box;
 
 		border: 1px solid var(--border-divider-color);
