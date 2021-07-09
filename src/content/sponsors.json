@@ -3,42 +3,42 @@
 		"link": "https://www.huawei.com/en/",
 		"class": "gold",
 		"dot": ["37.1%", "10.5%"],
-		"dtCoords": ["27.0%", "8.5%"] 
+		"dtCoords": ["27.0%", "8.5%"]
 	},
 	"BDO": {
-		"link": "https://www.bdo.com/",
+		"link": "https://www.bdo.ca/en-ca/home/",
 		"class": "gold",
 		"dot": ["60.1%", "10.0%"],
-		"dtCoords": ["57.5%", "8.5%"] 
+		"dtCoords": ["57.5%", "8.5%"]
 	},
 	"Geotab": {
 		"link": "https://www.geotab.com/",
 		"class": "gold",
 		"dot": ["51.3%", "2.00%"],
-		"dtCoords": ["42.8%", "0.0%"] 
+		"dtCoords": ["42.8%", "0.0%"]
 	},
 	"Shopify": {
 		"link": "https://www.shopify.com/",
 		"class": "silver",
 		"dot": ["78.6%", "21.1%"],
-		"dtCoords": ["72%", "19.0%"] 
+		"dtCoords": ["72%", "19.0%"]
 	},
 	"Accenture": {
 		"link": "https://www.accenture.com/",
 		"class": "silver",
 		"dot": ["23.0%", "23.5%"],
-		"dtCoords": ["14.0%", "21.3%"] 
+		"dtCoords": ["14.0%", "21.3%"]
 	},
 	"Flipp": {
 		"link": "https://flipp.com/home",
 		"class": "bronze",
 		"dot": ["38.8%", "35.5%"],
-		"dtCoords": ["31.6%", "34.0%"] 
+		"dtCoords": ["31.6%", "34.0%"]
 	},
 	"Copysmith": {
 		"link": "http://copysmith.ai/",
 		"class": "partner",
 		"dot": ["49.8%", "44.6%"],
-		"dtCoords": ["43.5%", "43.0%"]   
+		"dtCoords": ["43.5%", "43.0%"]
 	}
 }
