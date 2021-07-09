@@ -99,7 +99,7 @@ export default {
 			colors: {
 				"Workshop": "#8394F2",
 				"Panel": "#17AECE",
-				"Keynote": "#17ADCE",
+				"Keynote": "#FFA500",
 				"Lightning Talk": "#F9AFAB",
 				"Fireside Chat": "#F57A75",
 				"Breakout Session": "#98D485",

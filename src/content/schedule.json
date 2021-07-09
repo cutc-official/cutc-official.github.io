@@ -1,6 +1,34 @@
 {
 	"JULY 24": [
 		{
+			"start": "11:30",
+			"stop": "12:25",
+			"title": "Women In Tech (presented by BDO)",
+			"format": "Panel",
+			"topics": [
+				"Women in Tech",
+				"Amplify"
+			],
+			"description": "Learn about the unique experiences of these women in tech and how to deal with imposter syndrome, prejudice, and more as an underrepresented community.",
+			"speakers": [
+				"Sonia Edmonds",
+				"Shafina Hassam"
+			]
+		},
+		{
+			"start": "13:30",
+			"stop": "13:55",
+			"title": "Resume Roast",
+			"format": "Workshop",
+			"topics": [
+				"Career"
+			],
+			"description": "Join JobJunxion as they judge a series of student tech resumes! Gain key takeaways to use on your own resumes from a modern hiring platform.",
+			"speakers": [
+				"Sarah Gray"
+			]
+		},
+		{
 			"start": "14:00",
 			"stop": "14:25",
 			"title": "Building Happy Engineering Teams at Scale",
@@ -15,6 +43,34 @@
 			]
 		},
 		{
+			"start": "14:00",
+			"stop": "14:25",
+			"title": "Achieving Viral Business Growth AMA",
+			"format": "Breakout Session",
+			"topics": [
+				"Marketing",
+				"Business",
+				"Entrepreneurship"
+			],
+			"description": "So many businesses have skyrocketed and have achieved high levels of growth in a short period of time - learn how you can do the same in this workshop!",
+			"speakers": [
+				"Jamie Quint"
+			]
+		},
+		{
+			"start": "14:00",
+			"stop": "14:25",
+			"title": "Winning the Fight Against Aging",
+			"format": "Breakout Session",
+			"topics": [
+				"Longevity"
+			],
+			"description": "As a pioneer in the longevity field, Aubrey believes that aging is a disease that can be cured in our lifetimes. Tune into his talk to find out what it'll take for humans to live forever.",
+			"speakers": [
+				"Aubrey De Gray"
+			]
+		},
+		{
 			"start": "14:30",
 			"stop": "15:25",
 			"title": "Gen Z Entrepreneurship",
@@ -26,6 +82,20 @@
 			"description": "Join founders of viral social apps and startups backed by the most prolific investors in Silicon Valley as they discuss the ups and downs of building a company as a Zoomer.",
 			"speakers": [
 				"Michael Ioffe", "Sara Du", "Akshaya Dinesh", "Daniel Huang", "Justin Zheng"
+			]
+		},
+		{
+			"start": "14:30",
+			"stop": "15:25",
+			"title": "Diversity in Tech (presented by Geotab)",
+			"format": "Panel",
+			"topics": [
+				"D&I",
+				"Amplify"
+			],
+			"description": "With tech growing rapidly, it's important we focus on diversity first. Join us in conversation with 5 outstanding senior leaders who’ve been fighting at big organizations to make tech more inclusive.",
+			"speakers": [
+				"Michelle Reyes", "Crystal Hunt", "Vivian Li", "Wendy Cukier"
 			]
 		},
 		{
@@ -68,13 +138,29 @@
 				"Zach Latta",
 				"Amanda DoAmaral"
 			]
+		},
+		{
+			"start": "16:00",
+			"stop": "16:55",
+			"title": "How to Build Great Products",
+			"format": "Panel",
+			"topics": [
+				"Product"
+			],
+			"description": "Ever wondered how to create something used by millions of people every day? Tune in to see how you can create change. ",
+			"speakers": [
+				"David Thompson",
+				"Omna Toshniwal",
+				"Ryan D'Silva",
+				"Iris Guo"
+			]
 		}
 	],
 	"JULY 25": [
 		{
 			"start": "10:00",
 			"stop": "10:25",
-			"title": "5G Virtual Tour presented by Huawei",
+			"title": "5G Virtual Tour (presented by Huawei)",
 			"format": "Workshop",
 			"topics": [
 				"5G"
@@ -113,6 +199,24 @@
 			]
 		},
 		{
+			"start": "11:30",
+			"stop": "12:25",
+			"title": "Innovation in Asia's Blooming Tech Ecosystem",
+			"format": "Panel",
+			"topics": [
+				"Amplify",
+				"D&I",
+				"E-Commerce",
+				"SWE"
+			],
+			"description": "Asia is a hub of innovation that is often overshadowed by Silicon Valley. Join us at this panel to learn about the most interesting Asian companies and the Asian tech landscape.",
+			"speakers": [
+				"Bernard Moon",
+				"Leonard Lee",
+				"Bryan Pham"
+			]
+		},
+		{
 			"start": "12:30",
 			"stop": "12:55",
 			"title": "Designing Your Landing Page with Figma",
@@ -126,9 +230,23 @@
 			]
 		},
 		{
+			"start": "12:30",
+			"stop": "12:55",
+			"title": "Landing Your Dream Job Without Applying",
+			"format": "Workshop",
+			"topics": [
+				"Career"
+			],
+			"description": "Ever wonder how you can land your dream job as Fall comes around? Jonathan Javier and Jerry Lee, Co-Founder of Wonsulting, will be hosting a workshop to help you turn from underdogs into winners with their strategies. The workshop will consist of: 1) how do you proactively recruit and network to land your dream job and 2) how do you build a personal brand where opportunities come to you instead of you always having to seek opportunities.",
+			"speakers": [
+				"Jonathan Javier",
+				"Jerry Lee"
+			]
+		},
+		{
 			"start": "13:30",
 			"stop": "13:55",
-			"title": "Applications of AI and how you can get involved",
+			"title": "Applications of AI and How You can get Involved",
 			"format": "Breakout Session",
 			"topics": [
 				"AI",
@@ -137,6 +255,45 @@
 			"description": "Everyone knows Ai is the future  but what does that look like exactly? Join this session for a breakdown of AI applications and how you can get involved",
 			"speakers": [
 				"Carl Barrelet"
+			]
+		},
+		{
+			"start": "13:30",
+			"stop": "13:55",
+			"title": "Getting Involved with Open Source",
+			"format": "Breakout Session",
+			"topics": [
+				"SWE"
+			],
+			"description": "",
+			"speakers": [
+				"Jihoon Jeong"
+			]
+		},
+		{
+			"start": "13:30",
+			"stop": "13:55",
+			"title": "Designing Cities of the Future",
+			"format": "Breakout Session",
+			"topics": [
+				"SWE"
+			],
+			"description": "Watch Josh talk about his journey scaling Sidewalk Labs to be one of the biggest Civic Tech companies in the world.",
+			"speakers": [
+				"Josh Sirefman"
+			]
+		},
+		{
+			"start": "14:00",
+			"stop": "14:25",
+			"title": "Life, Career, and TPM",
+			"format": "Fireside Chat",
+			"topics": [
+				"SWE"
+			],
+			"description": "Listen to Jenn discuss her journey breaking into technical product management and her extensive experiences in the industry.",
+			"speakers": [
+				"Jenn Henley"
 			]
 		},
 		{
@@ -184,6 +341,20 @@
 				"Michelle Qin",
 				"Arielle Lok",
 				"Jonny Hsu"
+			]
+		},
+		{
+			"start": "16:00",
+			"stop": "16:25",
+			"title": "Artful Design: Technology in Search of the Sublime",
+			"format": "Keynote",
+			"topics": [
+				"Design",
+				"Amplify"
+			],
+			"description": "How might the shaping of technology make our lives richer and more meaningful? What does it mean to design well — to design ethically? This presentation is a meditation on the design of everyday tools, musical instruments, games, and social experiences. It is a story of how we shape technology — and how technology, in turn, shapes us and our society.",
+			"speakers": [
+				"Ge Wang"
 			]
 		}
 	]
