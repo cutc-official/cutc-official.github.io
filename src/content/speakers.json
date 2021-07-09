@@ -12,6 +12,11 @@
         "org": "Facebook",
         "bio": "Jenn Henley has been at Facebook for 10 years. She is currently a Vice President, supporting Technical Program Management (TPM) where she is responsible for leadership, development, and growth of the global Infrastructure organization."
     },
+    "Amma Kwateng": {
+        "title": "Director of Operations for Microsoft Cloud Consumption",
+        "org": "Microsoft",
+        "bio": "Bio coming soon!"
+    },
     "Jamie Quint": {
         "title": "Former Head of Growth",
         "org": "Notion",
@@ -48,6 +53,11 @@
             "LinkedIn": "https://www.linkedin.com/in/akshayadinesh/",
             "Twitter": "https://twitter.com/akshayadinesh19"
         }
+    },
+    "Muna Khayyat": {
+        "title": "Vice President and Machine Learning Lead",
+        "org": "Morgan Stanley",
+        "bio": "Bio coming soon!"
     },
     "Victor Kovalev": {
         "title": "Co-founder",
