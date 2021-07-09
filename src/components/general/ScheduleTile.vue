@@ -277,11 +277,12 @@ export default {
 }
 .speaker>.dialog {
 	position: absolute;
-	top: -4rem;
+	bottom: 75%;
 	left: 1rem;
 	z-index: 1;
 	padding: 0.5rem;
 	width: max-content;
+	max-width: 240px;
 	color: white;
 	background: #b3160d;
 }
@@ -291,8 +292,8 @@ export default {
 	position: absolute;
 	background: #b3160d;
 	transform: rotate(45deg);
-	top: 70%;
-	left: 10%;
+	bottom: -5%;
+	left: 5%;
 	z-index: -1;
 }
 .name {
