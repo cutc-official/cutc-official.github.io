@@ -12,7 +12,9 @@
 			"description": "Learn about the unique experiences of these women in tech and how to deal with imposter syndrome, prejudice, and more as an underrepresented community.",
 			"speakers": [
 				"Sonia Edmonds",
-				"Shafina Hassam"
+				"Shafina Hassam",
+				"Linda Chen",
+				"Jenny Sun"
 			]
 		},
 		{
@@ -110,6 +112,22 @@
 			"description": "Learn about how to tap into product management from a non-technical background",
 			"speakers": [
 				"Helen Huang"
+			]
+		},
+		{
+			"start": "15:30",
+			"stop": "15:55",
+			"title": "Data Science Code-Along (presented by BDO)",
+			"format": "Workshop",
+			"topics": [
+				"Data Science",
+				"SWE"
+			],
+			"description": "Our BDO Team will be hosting an interactive workshop on data science initiatives in the industry. We will showcase a coding problem which participants can either follow along while BDO codes the solution, or participants can code their own unique solution for a chance to win a prize.",
+			"speakers": [
+				"Piro Dhimitri",
+				"Peter Poydenko",
+				"Alex Ng"
 			]
 		},
 		{
