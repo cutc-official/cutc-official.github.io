@@ -14,6 +14,20 @@
 			]
 		},
 		{
+			"start": "10:30",
+			"stop": "10:55",
+			"title": "‘Fork in the Road’ = Joy in your Career",
+			"format": "Keynote",
+			"topics": [
+				"Career",
+				"Amplify"
+			],
+			"description": "Not everyone has or knows the linear path to what they want to do in 10+ years. Come learn how I navigated and mapped my career across continents with Microsoft!",
+			"speakers": [
+				"Amma Kwateng"
+			]
+		},
+		{
 			"start": "11:00",
 			"stop": "11:25",
 			"title": "Machine Learning in Finance",
