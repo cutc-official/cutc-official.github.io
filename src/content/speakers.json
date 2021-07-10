@@ -435,9 +435,13 @@
     },
 
     "Helen Huang": {
-        "title": "Founder",
+        "title": "Co-Founder",
         "org": "Co.Lab",
-        "bio": "Bio coming soon!"
+        "bio": "Helen is a first-gen Chinese-Canadian, as well as an earth scientist turned product manager turned startup founder. After leaving her mark at companies such as Zynga, Microsoft, and Github, she's gone on to co-found Co.Lab, an education platform that allows people to learn real-world tech skills with others.",
+        "links": {
+            "Twitter": "https://twitter.com/heyohelen",
+            "LinkedIn": "https://www.linkedin.com/in/heyohelen/"
+        }
     },
     "Sonia Edmonds": {
         "title": "National Managing Partner of Consulting Service Lines",
