@@ -279,6 +279,7 @@ export default {
 	position: absolute;
 	bottom: 75%;
 	left: 1rem;
+	right: 0;
 	z-index: 1;
 	padding: 0.5rem;
 	width: max-content;
@@ -304,6 +305,12 @@ export default {
 	.tile {
 		margin: 1rem 0.25rem;
 		font-size: .75rem;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.speaker>.dialog {
+		display: none;
 	}
 }
 </style>
