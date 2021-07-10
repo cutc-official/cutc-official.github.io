@@ -8,7 +8,7 @@
 			<router-link to="/speakers">SPEAKERS</router-link>
 			<router-link to="/schedule">SCHEDULE</router-link>
 			<router-link to="/blog">BLOG</router-link>
-			<register-button/>
+			<!-- <register-button/> -->
 		</nav>
 
 		<!-- MOBILE MENU -->
@@ -28,13 +28,13 @@
 
 
 <script>
-import RegisterButton from '@/components/general/RegisterButton.vue';
+// import RegisterButton from '@/components/general/RegisterButton.vue';
 
 export default {
 	name: 'NavBar',
-	components: {
-		RegisterButton
-	},
+	// components: {
+	// 	RegisterButton
+	// },
 	props: {
 		hasBackground: {
 			default: true,
