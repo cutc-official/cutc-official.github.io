@@ -463,6 +463,11 @@
         "org": "Instagram",
         "bio": "Bio coming soon!"
     },
+	"Clarisse Schneider": {
+        "title": "Software Engineer",
+        "org": "Facebook",
+        "bio": "Clarisse Schneider is a SE 2017 graduate from the University of Waterloo! She strategized using 6 co-ops to decide location, company size, and tech stack that would work best for her. She is now at Facebook in Seattle working on iOS Messenger calling!"
+    },
     "Peter Poydenko": {
         "title": "Azure Cloud DevOps Engineering Intern",
         "org": "BDO",
