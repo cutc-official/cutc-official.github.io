@@ -470,13 +470,13 @@
     },
     "Peter Poydenko": {
         "title": "Azure Cloud DevOps Engineering Intern",
-        "org": "BDO",
-        "bio": "Bio coming soon!"
+        "org": "BDO Canada",
+        "bio": "Peter is a passionate intern at BDO learning a great variety of technologies while completing client facing projects for companies primarily situated within the banking and insurance industries."
     },
     "Piro Dhimitri": {
         "title": "Consulting Data and Analytics Manager",
-        "org": "BDO",
-        "bio": "Bio coming soon!"
+        "org": "BDO Canada",
+        "bio": "Building data strategies that align with corporate values, technology visions, and push boundaries bring a heavy competitive advantage. Piro is an experienced business-first technically-savvy consultant focused on delivering advisory services in Information Management and Analytics."
     },
     "Shannon Lal": {
         "title": "Director",
@@ -485,7 +485,108 @@
     },
     "Alex Ng": {
         "title": "Senior Data and Analytics Consulting Manager",
-        "org": "BDO",
-        "bio": "Bio coming soon!"
+        "org": "BDO Canada",
+        "bio": "Alex is the practice-lead for Data & Analytics at BDO Canada LLP IT Solutions practice. Having worked across many industries including Insurance, Mining, and Retail, Alex has deep industry and technical knowledge providing Analytics solutions to meet the needs of the Digital Organization."
+    },
+    "Shabrana Aman": {
+        "title": "Project Management Coordinator",
+        "org": "BDO Canada",
+        "bio": "Shabrana is a Project Management Coordinator for Modern Workplace in BDO’s Technology Consulting team. Shabrana has completed two work terms with BDO as a project coordinator. She has learned to assist in managing and supervising administrative aspects of projects.",
+        "links": {
+            "LinkedIn": "https://ca.linkedin.com/in/shabranaaman"
+        }
+    },
+    "Denis Repin": {
+        "title": "Senior Manager of Digital Integration",
+        "org": "BDO Canada",
+        "bio": "Denis is an experienced senior technology professional with over 20 years extensive experience in Analytics, Big Data, AI and Cloud Enablement transformational projects. He facilitated IT strategy and operational delivery at several large organizations in the finance, transit, healthcare, and public sector.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/denisrepin/"
+        }
+    },
+    "Daryl Senick": {
+        "title": "Consulting Partner",
+        "org": "BDO Canada",
+        "bio": "Daryl is a partner in BDO’s Mississauga IT Solutions office, with over 20 years of professional experience providing technology services to financial services & insurance, natural resources, retail, agriculture, and not-for-profit/public sector. He has assisted hundreds of clients looking to streamline their businesses.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/daryl-senick-45217125/"
+        }
+    },
+    "Vivek Gupta": {
+        "title": "Consulting Partner",
+        "org": "BDO Canada",
+        "bio": "Vivek Gupta is the Practice leader for Cybersecurity and Digital Forensics in BDO Canada’s Consulting Practice. He specializes in delivering Cybersecurity and Forensic technology related services. He has extensive experience in leadership roles focused on both business development along with delivering information security solutions.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/vivekg1/"
+        }
+    },
+    "Rishan Lye": {
+        "title": "Consulting Partner",
+        "org": "BDO Canada",
+        "bio": "Rishan Lye is a partner in BDO’s Technology Practice, with over 15 years of professional experience engineering and architecting large-scale technology solutions. He leads BDO’s technology practice and is responsible for advising clients in emerging technologies, IT strategy, and enterprise architecture.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/rishan-lye/"
+        }
+    },
+    "Eddie Wang": {
+        "title": "Cloud .NET Developer",
+        "org": "BDO Canada",
+        "bio": "Eddie has over two years of software development experience working at start-ups, research labs, and big tech companies across the globe – including Canada, Silicon Valley, and Europe. Eddie has an expertise in delivering data science projects in the cloud.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/es-wang/"
+        }
+    },
+    "Chander Subramaniam": {
+        "title": "DevOps and Software Engineer",
+        "org": "BDO Canada",
+        "bio": "Since Chander started working as a co-op back in 2017, he has gained invaluable experience and developed a knack for finding creative solutions to technical challenges. Having interned at CIBC, BlackBerry, Manulife, NCR, and Sun Life Canada.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/chandrakiran-subramaniam/"
+        }
+    },
+    "Shawn Paul": {
+        "title": "Data & Analytics Consultant",
+        "org": "BDO Canada",
+        "bio": "Shawn is joining as a Consultant in the Data Analytics practice. He has recently graduated from the University of Waterloo with an undergraduate degree in Mechanical Engineering (Honors). Prior to joining BDO, Shawn had interned with XSensor and Entuitive as a data scientist.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/shawnmichaelpaul/"
+        }
+    },
+    "Don Munasinghe": {
+        "title": "Senior Consultant",
+        "org": "BDO Canada",
+        "bio": "Don is a Senior Consultant within the Data & Analytics Practice at BDO Canada, who has over 7 years of experience implementing BI solutions for a variety of industries, delivering quality in a timely manner. Don is able to interface with stakeholders to navigate the challenges and requirements to a successful implementation."
+    },
+    "Lakey Hu": {
+        "title": "Consultant for Cloud Operations",
+        "org": "BDO Canada",
+        "bio": "Lakey is a dedicated and passionate professional with experience in Cloud Technology and digital transformation. Lakey has capabilities in Microsoft Azure (Azure Fundamentals Certified), Microsoft Excel, Office 365 and Google Analytics and is currently mastering Cloud Migrations techniques.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/lakeylanhu/"
+        }
+    },
+    "Kaitlyn Barnett": {
+        "title": "Campus Recruitment Specialist",
+        "org": "BDO Canada",
+        "bio": "Working on BDO Canada's Talent Acquisitions team, Kaitlyn delivers campus recruiting initiatives and strategies for hiring at the co-op, intern and grad levels. Kaitlyn supports recruitment for their Audit and Tax teams based in the KW Region and their Advisory and Consulting teams across Canada.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/kaitlynbarnett/"
+        }
+    },
+    "Michelle Ouellet": {
+        "title": "Campus Recruitment Coordinator",
+        "org": "BDO Canada",
+        "bio": "As a Campus Recruitment Coordinator, Michelle works with BDO teams across Canada to recruit, onboard, and engage co-ops, interns, and new grads for BDO. Michelle strives to provide the best candidate experience for all students, and promotes BDO through networking, events, and social media.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/michelle-ouellet-chrp/"
+        }
+    },
+    "Farzan Nadeem": {
+        "title": "Software Consultant",
+        "org": "BDO Canada",
+        "bio": "Hey, I'm Farzan and I work as a software consultant at BDO. I work with the team to make web applications mainly using the Microsoft technology stack. My interests are in web development and UI/UX and on my own time I enjoy Formula 1, basketball and rock climbing!",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/farzannadeem/"
+        }
     }
 }
