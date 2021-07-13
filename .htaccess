@@ -1,0 +1,13 @@
+# This file is not automatically deployed on the website.
+# It must be uploaded directly to the server in order to be updated.
+
+# http to https redirect
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://cutc.ca/$1 [R,L]
+
+# Blog redirect (because of hash routing)
+RedirectMatch 301 ^/blog https://cutc.ca/#/blog
+
+# Join redirect (because of hash routing)
+RedirectMatch 301 ^/join https://cutc.ca/#/join
