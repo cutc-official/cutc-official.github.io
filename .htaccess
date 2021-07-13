@@ -1,5 +1,4 @@
-# This file is not automatically deployed on the website.
-# It must be uploaded directly to the server in order to be updated.
+# This file currently contains redirect info for the main website
 
 # http to https redirect
 RewriteEngine On
