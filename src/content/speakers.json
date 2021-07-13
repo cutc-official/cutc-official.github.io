@@ -455,7 +455,10 @@
     "Sarah Gray": {
         "title": "Lead Technical Recruiter",
         "org": "JobJunxion",
-        "bio": "Bio coming soon!"
+        "bio": "Sarah is a Technical Recruiter at JobJunxion, helping people of all career stages find their tech dream job. She works with thousands of people each year to find employment opportunities that match their skill set. Throughout her time in this domain, she has witnessed first hand what is required from a candidate during a job search.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/sarahgrayjobjunxion/"
+        }
     },
     "Jenny Sun": {
         "title": "Software Engineer",
@@ -586,6 +589,14 @@
         "bio": "Farzan works as a software consultant at BDO and works with the team to make web applications mainly using the Microsoft technology stack. Farzan's interests are in web development and UI/UX, but also enjoys Formula 1, basketball and rock climbing!",
         "links": {
             "LinkedIn": "https://www.linkedin.com/in/farzannadeem/"
+        }
+    },
+    "Motasem Salem": {
+        "title": "Data Scientist",
+        "org": "Flipp",
+        "bio": "Motasem is a Data Scientist at Flipp. He builds models for personalizing the user experience on the app and for automating flyer processing. Motasem has background in Software and Data Engineering and holds a Master's degree in Data Science from University of California, Berkeley",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/motasemsalem/"
         }
     }
 }
