@@ -15,7 +15,10 @@
     "Amma Kwateng": {
         "title": "Director of Operations for Microsoft Cloud Consumption",
         "org": "Microsoft",
-        "bio": "Bio coming soon!"
+        "bio": "Amma Kwateng has been with Microsoft for 10 years starting in the NYC Office focused on digital advertising, moving to Ghana to launch the Microsoft office, doing a stint in Seattle as a Marketing Leader, and now resides in Atlanta. Currently, she is Director of Global Operations.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/amma-kwateng/"
+        }
     },
     "Jamie Quint": {
         "title": "Former Head of Growth",
@@ -57,7 +60,10 @@
     "Muna Khayyat": {
         "title": "Vice President and Machine Learning Lead",
         "org": "Morgan Stanley",
-        "bio": "Muna is a Machine Learning team lead for operations technology at Morgan Stanley and an associate professor at Concordia University. Muna received her Ph.D. from the computer science department of Concordia University and worked as a researcher at the Centre of Pattern Recognition and Machine Learning."
+        "bio": "Muna is a Machine Learning team lead for operations technology at Morgan Stanley and an associate professor at Concordia University. Muna received her Ph.D. from the computer science department of Concordia University and worked as a researcher at the Centre of Pattern Recognition and Machine Learning.",
+        "links": {
+            "LinkedIn": "https://ca.linkedin.com/in/muna-khayyat-7a71a653"
+        }
     },
     "Victor Kovalev": {
         "title": "Co-founder",
@@ -463,22 +469,34 @@
 	"Clarisse Schneider": {
         "title": "Software Engineer",
         "org": "Facebook",
-        "bio": "Clarisse Schneider is a SE 2017 graduate from the University of Waterloo! She strategized using 6 co-ops to decide location, company size, and tech stack that would work best for her. She is now at Facebook in Seattle working on iOS Messenger calling!"
+        "bio": "Clarisse Schneider is a SE 2017 graduate from the University of Waterloo! She strategized using 6 co-ops to decide location, company size, and tech stack that would work best for her. She is now at Facebook in Seattle working on iOS Messenger calling!",
+        "links": {
+            "Instagram": "https://www.instagram.com/reesschneide"
+        }
     },
     "Peter Poydenko": {
         "title": "Azure Cloud DevOps Engineering Intern",
         "org": "BDO Canada",
-        "bio": "Peter is a passionate intern at BDO learning a great variety of technologies while completing client facing projects for companies primarily situated within the banking and insurance industries."
+        "bio": "Peter is a passionate intern at BDO learning a great variety of technologies while completing client facing projects for companies primarily situated within the banking and insurance industries.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/peterpoydenko/"
+        }
     },
     "Piro Dhimitri": {
         "title": "Consulting Data and Analytics Manager",
         "org": "BDO Canada",
-        "bio": "Building data strategies that align with corporate values, technology visions, and push boundaries bring a heavy competitive advantage. Piro is an experienced business-first technically-savvy consultant focused on delivering advisory services in Information Management and Analytics."
+        "bio": "Building data strategies that align with corporate values, technology visions, and push boundaries bring a heavy competitive advantage. Piro is an experienced business-first technically-savvy consultant focused on delivering advisory services in Information Management and Analytics.",
+        "links": {
+            "LinkedIn": "http://www.linkedin.com/in/pdhimitri"
+        }
     },
     "Alex Ng": {
         "title": "Senior Data and Analytics Consulting Manager",
         "org": "BDO Canada",
-        "bio": "Alex is the practice-lead for Data & Analytics at BDO Canada LLP IT Solutions practice. Having worked across many industries including Insurance and Retail, Alex has deep industry and technical knowledge providing Analytics solutions to meet the needs of the Digital Organization."
+        "bio": "Alex is the practice-lead for Data & Analytics at BDO Canada LLP IT Solutions practice. Having worked across many industries including Insurance and Retail, Alex has deep industry and technical knowledge providing Analytics solutions to meet the needs of the Digital Organization.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/alex-ng-11a5653/"
+        }
     },
     "Rishan Lye": {
         "title": "Consulting Partner",
