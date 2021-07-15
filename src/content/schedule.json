@@ -55,7 +55,20 @@
 				"Shafina Hassam",
 				"Linda Chen",
 				"Jenny Sun",
-				"Clarisse Schneider"
+				"Alice Gao"
+			]
+		},
+		{
+			"start": "12:30",
+			"stop": "12:55",
+			"title": "The Hard Thing About Life Long Learning",
+			"format": "Keynote",
+			"topics": [
+				"Career", "Amplify"
+			],
+			"description": "One of the biggest impacts you can have to your success as you embark on a career is to adopt a Growth Mindset. Having a Growth Mindset is vital, especially within the Technology industry as it is important to learn and improve over time. Rishan Lye, Partner at BDO Canada, will share strategies he has discovered through his career path to accelerate that growth.",
+			"speakers": [
+				"Rishan Lye"
 			]
 		},
 		{
@@ -69,6 +82,19 @@
 			"description": "Join JobJunxion as they judge a series of student tech resumes! Gain key takeaways to use on your own resumes from a modern hiring platform.",
 			"speakers": [
 				"Sarah Gray"
+			]
+		},
+		{
+			"start": "13:30",
+			"stop": "13:40",
+			"title": "The eye in the sky: Introduction to Satellite Intelligence",
+			"format": "Lightning Talk",
+			"topics": [
+				"Amplify"
+			],
+			"description": "",
+			"speakers": [
+				"Malte Lauterbach"
 			]
 		},
 		{
@@ -101,9 +127,9 @@
 		{
 			"start": "14:00",
 			"stop": "14:25",
-			"title": "Winning the Fight Against Aging",
+			"title": "Rejuvenation biotechnology: why age may soon cease to mean aging",
 			"format": "Breakout Session",
-			"description": "As a pioneer in the longevity field, Aubrey believes that aging is a disease that can be cured in our lifetimes. Tune into his talk to find out what it'll take for humans to live forever.",
+			"description": "People are living longer - no longer because of reduced child mortality, but because we are postponing the ill-health of old age. But we’ve seen nothing yet: regenerative medicine and other new medicines will eventually be so comprehensive that people will stay truly youthful however long they live, which means they may mostly live very long indeed. Aubrey will discuss both the biology and the sociology of what will be the most momentous advance in the history of civilisation.",
 			"speakers": [
 				"Aubrey de Grey"
 			]
