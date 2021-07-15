@@ -23,7 +23,12 @@
       <img id="group" src="@/assets/schedule/group.svg" alt="group" />
     </div>
     <div class="box blue">
-      <div class="blueText">
+      <video width="1920" height="1080" :poster="getImage()" controls preload="metadata">
+        <source src="@/assets/misc/promo_video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="box green">
+      <div class="greenText">
         <h3>Explore tech with</h3>
         <ul>
           <li>Breakout sessions on product, AI/ML, crypto, and sports</li>
@@ -39,27 +44,6 @@
         alt="astronaut"
       />
     </div>
-    <div class="box green">
-      <div class="greenText">
-        <h3>Grow your career with</h3>
-        <ul>
-          <li>
-            Design workshops with an <b>Amazon</b> designer to help you build
-            your brand
-          </li>
-          <li>Sessions with recruiters from well-known companies</li>
-          <li>
-            Career workshops with <b>Wonsulting</b> to help you land your dream
-            job
-          </li>
-        </ul>
-      </div>
-      <img
-        id="illustration"
-        src="@/assets/schedule/illustration.svg"
-        alt="illustration"
-      />
-    </div>
   </div>
   <div class="view-more">
     <router-link to="/schedule">View full schedule</router-link>
@@ -72,10 +56,31 @@ export default {
   props: {
     link: Boolean,
   },
+  methods: {
+		getImage() {
+			try {
+				// speaker name is the exact same as the file path in speaker assets
+				return require(`@/assets/misc/promo_video_poster.jpg`);
+			} catch (e) {
+				// throw Error(`pic does not exist: ${name}`);
+				// image placeholder when name does not match the filename of a headshot
+        console.log("errored when loading promo video poster image")
+			}
+		},
+  }
 };
 </script>
 
 <style scoped>
+video {
+  /* margin: 1rem; */
+  display: block;
+  /* width: 70%; */
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
 .content {
   display: grid;
   grid-template-columns: 45% 1fr;
@@ -104,7 +109,6 @@ export default {
 .green {
   background-color: #44af69;
   grid-area: green;
-  flex-direction: row-reverse;
 }
 
 h3 {

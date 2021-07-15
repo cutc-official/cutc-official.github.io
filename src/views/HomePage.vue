@@ -8,7 +8,7 @@
 		<div class="home-content">
 			<about />
 			<speakers :limit="8" />
-			<Video />
+			<!-- <Video /> -->
 			<schedule-preview />
 			<testimonials />
 			<sponsorship />
@@ -25,7 +25,7 @@ import NavBar from "@/components/general/NavBar.vue";
 import Hero from "@/components/homePage/Hero.vue";
 import About from "@/components/homePage/About.vue";
 import Speakers from "@/components/general/Speakers.vue";
-import Video from "@/components/homePage/Video.vue";
+// import Video from "@/components/homePage/Video.vue";
 import SchedulePreview from "@/components/homePage/SchedulePreview.vue";
 import Testimonials from "@/components/homePage/Testimonials.vue";
 import Sponsorship from "@/components/homePage/Sponsorship.vue";
@@ -41,7 +41,7 @@ export default {
 		Hero,
 		About,
 		Speakers,
-		Video,
+		// Video,
 		SchedulePreview,
 		Testimonials,
 		Sponsorship,
