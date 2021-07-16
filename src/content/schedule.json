@@ -87,7 +87,21 @@
 		{
 			"start": "13:30",
 			"stop": "13:40",
-			"title": "The eye in the sky: Introduction to Satellite Intelligence",
+			"title": "Navigating a Career in Tech through Networking",
+			"format": "Lightning Talk",
+			"topics": [
+				"Career"
+			],
+			"description": "",
+			"speakers": [
+				"Serena Li",
+				"Winona Huang"
+			]
+		},
+		{
+			"start": "13:30",
+			"stop": "13:40",
+			"title": "The Eye in the Sky: Introduction to Satellite Intelligence",
 			"format": "Lightning Talk",
 			"topics": [
 				"Amplify"

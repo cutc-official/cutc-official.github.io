@@ -60,7 +60,7 @@
     "Muna Khayyat": {
         "title": "Vice President and Machine Learning Lead",
         "org": "Morgan Stanley",
-        "bio": "Muna is a Machine Learning team lead for operations technology at Morgan Stanley and an associate professor at Concordia University. Muna received her Ph.D. from the computer science department of Concordia University and worked as a researcher at the Centre of Pattern Recognition and Machine Learning.",
+        "bio": "Muna is a Machine Learning team lead at Morgan Stanley and an associate professor at Concordia University. Muna received her Ph.D. from the computer science department of Concordia University and worked as a researcher at the Centre of Pattern Recognition and Machine Learning.",
         "links": {
             "LinkedIn": "https://ca.linkedin.com/in/muna-khayyat-7a71a653"
         }
@@ -412,7 +412,7 @@
     "Ralf Klinkenberg": {
         "title": "Founder & Head of Research",
         "org": "RapidMiner",
-        "bio": "Ralf is a data-driven entrepreneur with 30 years of experience in machine learning, artificial intelligence, data science, and applications in the automotive, aviation, chemical, manufacturing, pharmaceutical, financial, and telecom industries. Today RapidMiner has 770,000+ registered users in 150+ countries.",
+        "bio": "Ralf is a data-driven entrepreneur with 30 years of experience in machine learning, artificial intelligence, data science, and applications in the automotive, aviation, chemical, manufacturing, and pharmaceutical industries. Today RapidMiner has 770,000+ registered users in 150+ countries.",
         "links": {
             "Twitter": "https://twitter.com/RalfKlinkenberg"
         }
@@ -429,7 +429,7 @@
     "Winona Huang": {
         "title": "Community & Partnership Manager",
         "org": "ADPList",
-        "bio": "Winona is a Community & Partnership Manager at ADPList, a global community where people can meet mentors from around the world. Prior to this, she was a UX Designer with an educational background in all things design who diverged into the education sector, then made a U-turn back into the design space.",
+        "bio": "Winona is a Community & Partnership Manager at ADPList, a global community where people can meet mentors from around the world. Prior to this, she was a UX Designer with an educational background in all things design who diverged into the education sector.",
         "links": {
             "LinkedIn": "https://www.linkedin.com/in/winonah/"
         }
@@ -446,17 +446,23 @@
     "Sonia Edmonds": {
         "title": "National Managing Partner of Consulting Service Lines",
         "org": "BDO",
-        "bio": "Sonia Edmonds is the National Managing Partner of BDO's Consulting Services Service Line. With over 25 years of Finance & Ops experience and over 20 years of Technology Consulting experience, Sonia leads a team of over 600 dedicated professionals nationally."
+        "bio": "Sonia Edmonds is the National Managing Partner of BDO's Consulting Services Service Line. With over 25 years of Finance & Ops experience and over 20 years of Technology Consulting experience, Sonia leads a team of over 600 dedicated professionals nationally.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/soniaedmonds"
+        }
     },
     "Shafina Hassam": {
         "title": "Modern Workplace Manager",
         "org": "BDO",
-        "bio": "Shafina is a Manager for Modern Workplace in BDO’s Technology Consulting team, with over 12 years of professional experience providing productivity and collaboration solutions to organizations across the globe. Shafina is a passionate advocate for seamless user experiences specializing in intelligent intranets."
+        "bio": "Shafina is a Manager for Modern Workplace in BDO’s Technology Consulting team, with over 12 years of professional experience providing productivity and collaboration solutions to organizations across the globe. Shafina is a passionate advocate for seamless user experiences specializing in intelligent intranets.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/shafina-hassam/"
+        }
     },
     "Sarah Gray": {
         "title": "Lead Technical Recruiter",
         "org": "JobJunxion",
-        "bio": "Sarah is a Technical Recruiter at JobJunxion, helping people of all career stages find their tech dream job. She works with thousands of people each year to find employment opportunities that match their skill set. Throughout her time in this domain, she has witnessed first hand what is required from a candidate during a job search.",
+        "bio": "Sarah is a Technical Recruiter at JobJunxion, helping people find their tech dream job. She works with thousands of people each year to find employment opportunities that match their skill set. Throughout her time in this domain, she has witnessed what is required from a candidate during a job search.",
         "links": {
             "LinkedIn": "https://www.linkedin.com/in/sarahgrayjobjunxion/"
         }
@@ -501,7 +507,7 @@
     "Rishan Lye": {
         "title": "Consulting Partner",
         "org": "BDO Canada",
-        "bio": "Rishan Lye is a partner in BDO’s Technology Practice, with over 15 years of professional experience engineering and architecting large-scale technology solutions. He leads BDO’s technology practice and is responsible for advising clients in emerging technologies, IT strategy, and enterprise architecture.",
+        "bio": "Rishan Lye is a partner in BDO’s Technology Practice, with over 15 years of professional experience engineering and architecting large-scale technology solutions. He leads BDO’s technology practice and is responsible for advising clients in emerging technologies and IT strategy.",
         "links": {
             "LinkedIn": "https://www.linkedin.com/in/rishan-lye/"
         }
@@ -517,12 +523,12 @@
     "Don Munasinghe": {
         "title": "Senior Consultant",
         "org": "BDO Canada",
-        "bio": "Don is a Senior Consultant within the Data & Analytics Practice at BDO Canada, who has over 7 years of experience implementing BI solutions for a variety of industries, delivering quality in a timely manner. Don is able to interface with stakeholders to navigate the challenges and requirements to a successful implementation."
+        "bio": "Don is a Senior Consultant within the Data & Analytics Practice at BDO Canada, who has over 7 years of experience implementing BI solutions for a variety of industries. Don is able to interface with stakeholders to navigate the challenges and requirements to a successful implementation."
     },
     "Lakey Hu": {
         "title": "Consultant for Cloud Operations",
         "org": "BDO Canada",
-        "bio": "Lakey is a dedicated and passionate professional with experience in Cloud Technology and digital transformation. Lakey has capabilities in Microsoft Azure (Azure Fundamentals Certified), Microsoft Excel, Office 365 and Google Analytics and is currently mastering Cloud Migrations techniques.",
+        "bio": "Lakey is a dedicated and passionate professional with experience in Cloud Technology and digital transformation. Lakey has capabilities in Microsoft Azure, Microsoft Excel, Office 365 and Google Analytics and is currently mastering Cloud Migrations techniques.",
         "links": {
             "LinkedIn": "https://www.linkedin.com/in/lakeylanhu/"
         }
@@ -554,9 +560,17 @@
     "Motasem Salem": {
         "title": "Data Scientist",
         "org": "Flipp",
-        "bio": "Motasem is a Data Scientist at Flipp. He builds models for personalizing the user experience on the app and for automating flyer processing. Motasem has background in Software and Data Engineering and holds a Master's degree in Data Science from University of California, Berkeley",
+        "bio": "Motasem is a Data Scientist at Flipp. He builds models for personalizing the user experience on the app and for automating flyer processing. Motasem has background in Software and Data Engineering and holds a Master's degree in Data Science from University of California, Berkeley.",
         "links": {
             "LinkedIn": "https://www.linkedin.com/in/motasemsalem/"
+        }
+    },
+    "Rebecca Wellum": {
+        "title": "VP Compliance & Diversity",
+        "org": "Geotab",
+        "bio": "Rebecca Wellum is currently the Chief Global Compliance Officer and the Chief Diversity Officer at the leading global telematics company, Geotab Inc. With a strong focus on ensuring that compliance controls are embedded into daily operational processes, she delivers agile compliance programs.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/rebeccawellum/"
         }
     }
 }
