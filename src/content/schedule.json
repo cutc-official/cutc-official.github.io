@@ -2,13 +2,26 @@
 	"JULY 24": [
 		{
 			"start": "10:00",
-			"stop": "10:25",
+			"stop": "10:05",
 			"title": "Opening Ceremonies",
 			"format": "",
 			"topics": [
-				"SWE"
 			],
 			"description": "",
+			"speakers": [
+				""
+			]
+		},
+		{
+			"start": "10:05",
+			"stop": "10:30",
+			"title": "How to collect dots and connect them backwards",
+			"format": "Keynote",
+			"topics": [
+				"Career",
+				"Amplify"
+			],
+			"description": "One of Steve Jobs’ most influential quotes is “You can’t connect the dots looking forward; you can only connect them looking backwards.” But how do you do that in real life? I’ll walk through my own experiences, growing up in rural Canada, to working in the White House, to now working in open source and at GitHub to share some lived experiences on how to “collect dots” and connect them backwards.",
 			"speakers": [
 				"Kevin Xu"
 			]
@@ -180,7 +193,8 @@
 				"Michelle Reyes",
 				"Crystal Hunt",
 				"Vivian Li",
-				"Wendy Cukier"
+				"Wendy Cukier",
+				"Rebecca Wellum"
 			]
 		},
 		{
@@ -326,6 +340,20 @@
 			"speakers": [
 				"Jonathan Javier",
 				"Jerry Lee"
+			]
+		},
+		{
+			"start": "13:30",
+			"stop": "13:55",
+			"title": "Harnessing the Power of Community",
+			"format": "Fireside Chat",
+			"topics": [
+				"SWE",
+				"Leadership"
+			],
+			"description": "Repl.it, a Y Combinator startup, is a collaborative IDE with over 7 million users - most of which are students. Come listen to Amjad, the CEO, talk about how community has been the foundation of success for his company.",
+			"speakers": [
+				"Amjad Masad"
 			]
 		},
 		{
