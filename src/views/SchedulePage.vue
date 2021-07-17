@@ -103,7 +103,7 @@ export default {
 				"Lightning Talk": "#F9AFAB",
 				"Fireside Chat": "#F57A75",
 				"Breakout Session": "#98D485",
-				"Default": "grey" // Misc
+				"Default": "lightgrey" // Misc
 			},
 		}
 	},

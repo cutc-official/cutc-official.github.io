@@ -105,7 +105,7 @@ export default {
 				"Lightning Talk": "#F9AFAB",
 				"Fireside Chat": "#F57A75",
 				"Breakout Session": "#98D485",
-				"Default": "grey" // Misc
+				"Default": "lightgrey" // Misc
 			},
 			popUp: -1,
 			speakerInfo: Speakers,
@@ -271,6 +271,7 @@ export default {
 	height: var(--speaker-size);
 	overflow: hidden;
 	border-radius: 50%;
+	background-color: var(--type-color);
 }
 .speaker-img>img {
 	width: 100%;

@@ -9,7 +9,7 @@
 			],
 			"description": "",
 			"speakers": [
-				""
+				"CUTC Team"
 			]
 		},
 		{
@@ -381,19 +381,6 @@
 			"description": "",
 			"speakers": [
 				"Jihoon Jeong"
-			]
-		},
-		{
-			"start": "13:30",
-			"stop": "13:55",
-			"title": "Designing Cities of the Future",
-			"format": "Breakout Session",
-			"topics": [
-				"SWE"
-			],
-			"description": "Watch Josh talk about his journey scaling Sidewalk Labs to be one of the biggest Civic Tech companies in the world.",
-			"speakers": [
-				"Josh Sirefman"
 			]
 		},
 		{
