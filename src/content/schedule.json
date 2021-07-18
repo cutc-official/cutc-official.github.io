@@ -194,7 +194,8 @@
 				"Crystal Hunt",
 				"Vivian Li",
 				"Wendy Cukier",
-				"Rebecca Wellum"
+				"Rebecca Wellum",
+				"Sophia Dhrolia"
 			]
 		},
 		{
@@ -398,16 +399,17 @@
 			]
 		},
 		{
-			"start": "14:30",
-			"stop": "14:55",
-			"title": "Creating a More Diverse Work Landscape",
+			"start": "14:00",
+			"stop": "14:25",
+			"title": "Cali or Bust: Busted?",
 			"format": "Fireside Chat",
 			"topics": [
-				"D&I"
+				"Career"
 			],
-			"description": "With tech growing rapidly, it's important we focus on diversity first. Join us in conversation with 2 senior leaders who’ve been fighting at big organizations to make tech more inclusive. ",
+			"description": "Two people. Two perspectives on 'Silicon Valley'. Matt and Kai discuss the 'Cali or Bust' mentality when it comes to the common dream of moving one's tech career to the San Francisco Bay Area",
 			"speakers": [
-				"Sophia Dhrolia"
+				"Matt Zhao",
+				"Kai Gandhi"
 			]
 		},
 		{
