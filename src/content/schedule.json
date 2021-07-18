@@ -373,19 +373,6 @@
 			]
 		},
 		{
-			"start": "13:30",
-			"stop": "13:55",
-			"title": "Getting Involved with Open Source",
-			"format": "Breakout Session",
-			"topics": [
-				"SWE"
-			],
-			"description": "",
-			"speakers": [
-				"Jihoon Jeong"
-			]
-		},
-		{
 			"start": "14:00",
 			"stop": "14:25",
 			"title": "Life, Career, and TPM",
