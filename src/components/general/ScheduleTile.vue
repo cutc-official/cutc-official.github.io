@@ -39,26 +39,24 @@
 
 			<div class="speakers-container">
 				<div
-					v-for="(speaker,index) in speakers"
+					v-for="speaker in speakers"
 					:key="speaker"
 					class="speaker"
-					@mouseleave="popUp = -1"
-					@mouseover="open(index)"
 				>
-					<transition name="fade">
-						<div class="dialog" v-if="popUp===index && speakerInfo[speaker]">
-							<div class="name">{{speaker}}</div>
-							<div class="company">{{speakerInfo[speaker].title}}</div>
-							<div class="company">{{speakerInfo[speaker].org}}</div>
-							<div class="dialog-diamond"></div>
-						</div>
-					</transition>
 					<div class="speaker-img"><img :src="getImage(speaker)"/></div>
+					<div class="speaker-description" v-if="speakerInfo[speaker]">
+						<div class="name">{{speaker}}</div>
+						<span>{{speakerInfo[speaker].title}}
+							<span v-if="speakerInfo[speaker].org"> 
+								@ {{speakerInfo[speaker].org}}
+							</span>
+						</span>
+					</div>
 				</div>
 			</div>
 
 		</div>
-	</div>
+	</div>   
 </template>
 
 <script>
@@ -132,9 +130,6 @@ export default {
 				return this.colors[format]
 			else
 				return this.colors["Default"]
-		},
-		open(popped) {
-			this.popUp = popped;
 		},
 		addCalendar(calendar) {
 			let startDate = "";
@@ -260,52 +255,38 @@ export default {
 	display: grid;
 	margin-top: 0.75rem;
 	--speaker-size: 4rem;
-	grid-template-columns: repeat(auto-fit, var(--speaker-size));
+	grid-template-columns: repeat(auto-fit, 15em);
 	gap: 0.75rem;
 }
-.speaker {
-	position: relative;
-}
 .speaker-img {
-	width: var(--speaker-size);
+	flex: 0 0 var(--speaker-size);
 	height: var(--speaker-size);
 	overflow: hidden;
 	border-radius: 50%;
 	background-color: var(--type-color);
+	margin-right: 1rem;
 }
 .speaker-img>img {
 	width: 100%;
 }
-.speaker>.dialog {
-	position: absolute;
-	bottom: 75%;
-	left: 1rem;
-	right: 0;
-	z-index: 1;
-	padding: 0.5rem;
-	width: max-content;
-	max-width: 240px;
-	color: white;
-	background: #b3160d;
-}
-.dialog-diamond {
-	width: 1rem;
-	height: 1.5rem;
-	position: absolute;
-	background: #b3160d;
-	transform: rotate(45deg);
-	bottom: -5%;
-	left: 5%;
-	z-index: -1;
-}
 .name {
 	font-weight: bold;
+}
+.speaker {
+	display: flex;
 }
 
 @media screen and (max-width: 850px) {
 	.tile {
 		margin: 1rem 0.25rem;
 		font-size: .75rem;
+	}
+	.speaker-description {
+		display: none;
+		visibility: hidden;
+	}
+	.speakers-container {
+		grid-template-columns: repeat(auto-fit, var(--speaker-size));
 	}
 }
 
