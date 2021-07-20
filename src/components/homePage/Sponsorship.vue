@@ -13,7 +13,7 @@
 		</a>
 	</div>
 	<div class="desktop">
-		<img src="@/assets/sponsors/desktop.png" alt="Huawei, BDO, Geotab, Shopify, Accenture, Flipp, Copysmith"/>
+		<img src="@/assets/sponsors/desktop.png" :alt="Object.keys(sponsors).join(', ')"/>
 		<div
 			v-for="(info, name, i) in sponsors"
 			:key="name"

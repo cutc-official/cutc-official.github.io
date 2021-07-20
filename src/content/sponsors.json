@@ -32,13 +32,19 @@
 	"Flipp": {
 		"link": "https://flipp.com/home",
 		"class": "bronze",
-		"dot": ["38.8%", "35.5%"],
-		"dtCoords": ["31.6%", "34.0%"]
+		"dot": ["51.3%", "24.0%"],
+		"dtCoords": ["44.3%", "22.2%"]
 	},
 	"Copysmith": {
 		"link": "http://copysmith.ai/",
 		"class": "partner",
-		"dot": ["49.8%", "44.6%"],
-		"dtCoords": ["43.5%", "43.0%"]
+		"dot": ["38.8%", "36.0%"],
+		"dtCoords": ["32.0%", "34.5%"]
+	},
+	"Wonsulting": {
+		"link": "https://wonsulting.com/",
+		"class": "partner",
+		"dot": ["61.3%", "36.0%"],
+		"dtCoords": ["54.5%", "34.0%"]
 	}
 }
