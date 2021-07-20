@@ -584,8 +584,18 @@
         }
     },
     "Alice Gao": {
-        "title": "Professor",
+        "title": "Lecturer and Advisor",
         "org": "University of Waterloo",
+        "bio": "Bio coming soon!"
+    },
+    "Kai Gandhi": {
+        "title": "Commerce Growth Product Manager",
+        "org": "Yahoo Mail",
+        "bio": "Bio coming soon!"
+    },
+    "Matt Zhao": {
+        "title": "Product Manager",
+        "org": "Indeed",
         "bio": "Bio coming soon!"
     }
 }

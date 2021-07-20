@@ -152,16 +152,6 @@
 			]
 		},
 		{
-			"start": "14:00",
-			"stop": "14:25",
-			"title": "Rejuvenation biotechnology: why age may soon cease to mean aging",
-			"format": "Breakout Session",
-			"description": "People are living longer - no longer because of reduced child mortality, but because we are postponing the ill-health of old age. But we’ve seen nothing yet: regenerative medicine and other new medicines will eventually be so comprehensive that people will stay truly youthful however long they live, which means they may mostly live very long indeed. Aubrey will discuss both the biology and the sociology of what will be the most momentous advance in the history of civilisation.",
-			"speakers": [
-				"Aubrey de Grey"
-			]
-		},
-		{
 			"start": "14:30",
 			"stop": "15:25",
 			"title": "Gen Z Entrepreneurship",
@@ -194,7 +184,8 @@
 				"Crystal Hunt",
 				"Vivian Li",
 				"Wendy Cukier",
-				"Rebecca Wellum"
+				"Rebecca Wellum",
+				"Sophia Dhrolia"
 			]
 		},
 		{
@@ -280,6 +271,16 @@
 			"speakers": [
 				"Harley Finkelstein",
 				"Benjamin Sehl"
+			]
+		},
+		{
+			"start": "11:00",
+			"stop": "11:25",
+			"title": "Rejuvenation biotechnology: why age may soon cease to mean aging",
+			"format": "Keynote",
+			"description": "People are living longer - no longer because of reduced child mortality, but because we are postponing the ill-health of old age. But we’ve seen nothing yet: regenerative medicine and other new medicines will eventually be so comprehensive that people will stay truly youthful however long they live, which means they may mostly live very long indeed. Aubrey will discuss both the biology and the sociology of what will be the most momentous advance in the history of civilisation.",
+			"speakers": [
+				"Aubrey de Grey"
 			]
 		},
 		{
@@ -372,19 +373,6 @@
 			]
 		},
 		{
-			"start": "13:30",
-			"stop": "13:55",
-			"title": "Getting Involved with Open Source",
-			"format": "Breakout Session",
-			"topics": [
-				"SWE"
-			],
-			"description": "",
-			"speakers": [
-				"Jihoon Jeong"
-			]
-		},
-		{
 			"start": "14:00",
 			"stop": "14:25",
 			"title": "Life, Career, and TPM",
@@ -398,16 +386,17 @@
 			]
 		},
 		{
-			"start": "14:30",
-			"stop": "14:55",
-			"title": "Creating a More Diverse Work Landscape",
+			"start": "14:00",
+			"stop": "14:25",
+			"title": "Cali or Bust: Busted?",
 			"format": "Fireside Chat",
 			"topics": [
-				"D&I"
+				"Career"
 			],
-			"description": "With tech growing rapidly, it's important we focus on diversity first. Join us in conversation with 2 senior leaders who’ve been fighting at big organizations to make tech more inclusive. ",
+			"description": "Two people. Two perspectives on 'Silicon Valley'. Matt and Kai discuss the 'Cali or Bust' mentality when it comes to the common dream of moving one's tech career to the San Francisco Bay Area",
 			"speakers": [
-				"Sophia Dhrolia"
+				"Matt Zhao",
+				"Kai Gandhi"
 			]
 		},
 		{
