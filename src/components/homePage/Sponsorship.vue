@@ -138,10 +138,6 @@ img {
 		margin-bottom: 0;
 		transition: all .3s ease;
 	}
-	.mobile > a:hover {
-		margin-top: 0;
-		margin-bottom: .5rem;
-	}
 
 	.gold {
 		width: var(--total-width);
