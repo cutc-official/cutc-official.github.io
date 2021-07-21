@@ -40,14 +40,6 @@
         "org": "SENS Research Foundation",
         "bio": "Dr. Grey is a biomedical gerontologist based in Mountain View, California, USA, and is the Chief Science Officer of SENS Research Foundation, a California-based biomedical research charity that performs laboratory research dedicated to combating aging."
     },
-    "Ge Wang": {
-        "title": "Professor",
-        "org": "Stanford",
-        "bio": "Ge Wang is an Associate Professor at Stanford University’s Center for Computer Research in Music and Acoustics. A 2016 Guggenheim Fellow, Ge is the author of 'Artful Design: Technology in Search of the Sublime.'",
-        "links": {
-            "Website": "https://en.wikipedia.org/wiki/Ge_Wang"
-        }
-    },
     "Akshaya Dinesh": {
         "title": "Co-Founder",
         "org": "Ladder",
@@ -574,6 +566,11 @@
     "Matt Zhao": {
         "title": "Product Manager",
         "org": "Indeed",
+        "bio": "Bio coming soon!"
+    },
+    "Sabrina Chartrand": {
+        "title": "Spokesperson and Chief Representative",
+        "org": "Huawei",
         "bio": "Bio coming soon!"
     }
 }

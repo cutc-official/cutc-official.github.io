@@ -255,8 +255,15 @@
 			"stop": "10:25",
 			"title": "5G Virtual Tour (presented by Huawei)",
 			"format": "Workshop",
-			"description": "",
-			"speakers": []
+			"topics": [
+				"SWE",
+				"AI",
+				"D&I"
+			],
+			"description": "We hear a lot of about digital transformation and the Internet of Things, but what does it entail? How are we going to deal with all the data that is created, exchanged, and stored? Attend this event to get a behind-the-scene look at how a future where everything is connected is taking shape with the help of 5G, optical fiber, artificial intelligence, and energy-efficient data servers.",
+			"speakers": [
+				"Sabrina Chartrand"
+			]
 		},
 		{
 			"start": "10:30",
@@ -429,20 +436,6 @@
 				"Michelle Qin",
 				"Arielle Lok",
 				"Jonny Hsu"
-			]
-		},
-		{
-			"start": "16:00",
-			"stop": "16:25",
-			"title": "Artful Design: Technology in Search of the Sublime",
-			"format": "Keynote",
-			"topics": [
-				"Design",
-				"Amplify"
-			],
-			"description": "How might the shaping of technology make our lives richer and more meaningful? What does it mean to design well — to design ethically? This presentation is a meditation on the design of everyday tools, musical instruments, games, and social experiences. It is a story of how we shape technology — and how technology, in turn, shapes us and our society.",
-			"speakers": [
-				"Ge Wang"
 			]
 		}
 	]
