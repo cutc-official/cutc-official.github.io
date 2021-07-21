@@ -81,7 +81,6 @@
             "LinkedIn": "https://www.linkedin.com/in/dsilva/"
         }
     },
-
     "Amjad Masad": {
         "title": "CEO and Co-Founder",
         "org": "Replit",
@@ -137,15 +136,6 @@
         "org": "Intuit",
         "bio": "Bio coming soon!"
     },
-    "Zach Latta": {
-        "title": "CEO",
-        "org": "Hack Club",
-        "bio": "Zach Latta dropped out of high school after his freshman year to work in the technology industry and had over 5 million people using apps he worked on when he was 16. He was awarded the Thiel Fellowship when he was 17 and was featured in Forbes 30 Under 30 when he was 18.",
-        "links": {
-            "LinkedIn": "https://www.linkedin.com/in/zachlatta/",
-            "Twitter": "https://twitter.com/zachlatta"
-        }
-    },
     "Sophia Dhrolia": {
         "title": "Director of D&I",
         "org": "Toronto Board of Trade",
@@ -154,7 +144,6 @@
             "LinkedIn": "https://www.linkedin.com/in/sophia-dhrolia/"
         }
     },
-
     "Vivian Li": {
         "title": "Senior D&I Leader",
         "org": "RBC",
@@ -240,7 +229,6 @@
             "Twitter": "https://twitter.com/rrana03_"
         }
     },
-
     "Sara Du": {
         "title": "CEO & Cofounder",
         "org": "Alloy Automation",
@@ -297,7 +285,6 @@
             "Instagram": "https://www.instagram.com/alison_evans_adnani/"
         }
     },
-
     "Michelle Qin": {
         "title": "Intern",
         "org": "Floodgate",
@@ -306,16 +293,6 @@
             "Twitter": "https://twitter.com/michelleqin_"
         }
     },
-
-    "Mark Patterson": {
-        "title": "Executive Director",
-        "org": "Magnet",
-        "bio": "As Executive Director, Mark leads Magnet based at Ryerson University. Magnet harnesses intelligent matching technology to effectively connect people, businesses, and organizations to opportunity; with the goal of helping regions and communities collaborate and grow.",
-        "links": {
-            "LinkedIn": "https://www.linkedin.com/in/mark-patterson-a761ab/"
-        }
-    },
-
     "Yash Godiwala": {
         "title": "CoS",
         "org": "Fion Technologies",
