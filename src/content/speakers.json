@@ -553,14 +553,26 @@
             "Twitter": "https://twitter.com/kbarley66"
         }
     },
+    "Kaivalya Gandhi": {
+        "title": "Product Manager",
+        "org": "Yahoo",
+        "bio": "Kai is currently a growth product manager at Yahoo bringing to life new commerce experiences on Mail. Previously, he co-founded EPOCH, an employee engagement platform helping HR leaders at Slack, Postmates, Zynga and more. While in university, he interned in product roles at Pagerduty and Groupon, and led CUTC and UWPM.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/kaivalyagandhi/",
+            "Twitter": "https://twitter.com/KaiGandhi"
+        }
+    },
+    "Caris Frazier-Baker": {
+        "title": "Senior Technical Artist",
+        "org": "Unity Technologies",
+        "bio": "Caris Frazier-Baker utilizes her background in computer animation and video game development to design and develop software for non-games industries. She has worked in 3D printing, litigation imaging, VR training, and AEC.",
+        "links": {
+            "Twitter": "https://twitter.com/CarisFrazier"
+        }
+    },
     "Alice Gao": {
         "title": "Lecturer and Advisor",
         "org": "University of Waterloo",
-        "bio": "Bio coming soon!"
-    },
-    "Kai Gandhi": {
-        "title": "Commerce Growth Product Manager",
-        "org": "Yahoo Mail",
         "bio": "Bio coming soon!"
     },
     "Matt Zhao": {
