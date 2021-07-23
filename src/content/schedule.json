@@ -85,6 +85,30 @@
 			]
 		},
 		{
+			"start": "13:00",
+			"stop": "13:25",
+			"title": "Career Fair",
+			"format": "",
+			"topics": [
+				"Career"
+			],
+			"description": "Meet our sponsors and ask your questions to recruiters!",
+			"speakers": [
+			]
+		},
+		{
+			"start": "13:00",
+			"stop": "13:25",
+			"title": "Speed Networking",
+			"format": "",
+			"topics": [
+				"Career"
+			],
+			"description": "Meet other passionate students from around the world!",
+			"speakers": [
+			]
+		},
+		{
 			"start": "13:30",
 			"stop": "13:55",
 			"title": "Resume Roast",
@@ -352,6 +376,30 @@
 			]
 		},
 		{
+			"start": "13:00",
+			"stop": "13:25",
+			"title": "Career Fair",
+			"format": "",
+			"topics": [
+				"Career"
+			],
+			"description": "Meet our sponsors and ask your questions to recruiters!",
+			"speakers": [
+			]
+		},
+		{
+			"start": "13:00",
+			"stop": "13:25",
+			"title": "Speed Networking",
+			"format": "",
+			"topics": [
+				"Career"
+			],
+			"description": "Meet other passionate students from around the world!",
+			"speakers": [
+			]
+		},
+		{
 			"start": "13:30",
 			"stop": "13:55",
 			"title": "Harnessing the Power of Community",
@@ -436,6 +484,18 @@
 				"Michelle Qin",
 				"Arielle Lok",
 				"Jonny Hsu"
+			]
+		},
+		{
+			"start": "16:00",
+			"stop": "16:10",
+			"title": "Closing Ceremonies",
+			"format": "",
+			"topics": [
+			],
+			"description": "",
+			"speakers": [
+				"CUTC Team"
 			]
 		}
 	]
