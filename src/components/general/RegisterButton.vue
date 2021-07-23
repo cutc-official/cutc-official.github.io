@@ -1,18 +1,15 @@
 <template>
-	<!-- <a href="https://www.eventbrite.ca/e/canadian-undergraduate-technology-conference-cutc-2021-registration-151149800121"
+	<a href="https://www.eventbrite.ca/e/canadian-undergraduate-technology-conference-cutc-2021-registration-151149800121"
 		target="_blank"
 		class="register-button"
 		>REGISTER FOR FREE
-	</a> -->
-	<a id="eventbrite-widget-modal-trigger-151149800121" type="button" class="register-button">REGISTER FOR FREE</a>
+	</a>
 </template>
 
 <script>
 export default {
-	name: 'registerButton',
+	name: 'registerButton'
 }
-
-
 </script>
 
 <style scoped>
