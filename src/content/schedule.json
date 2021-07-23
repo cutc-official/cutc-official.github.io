@@ -85,6 +85,30 @@
 			]
 		},
 		{
+			"start": "13:00",
+			"stop": "13:25",
+			"title": "Career Fair",
+			"format": "",
+			"topics": [
+				"Career"
+			],
+			"description": "Meet our sponsors and ask your questions to recruiters!",
+			"speakers": [
+			]
+		},
+		{
+			"start": "13:00",
+			"stop": "13:25",
+			"title": "Speed Networking",
+			"format": "",
+			"topics": [
+				"Career"
+			],
+			"description": "Meet other passionate students from around the world!",
+			"speakers": [
+			]
+		},
+		{
 			"start": "13:30",
 			"stop": "13:55",
 			"title": "Resume Roast",
@@ -252,7 +276,7 @@
 	],
 	"JULY 25": [
 		{
-			"start": "10:00",
+			"start": "9:30",
 			"stop": "10:25",
 			"title": "5G Virtual Tour (presented by Huawei)",
 			"format": "Workshop",
@@ -275,7 +299,7 @@
 				"Business",
 				"Amplify"
 			],
-			"description": "The president of Shopify sits down with one of their largest merchants do discuss how Shopify's helping anyone get started with entreprenuership, no matter how small.",
+			"description": "The president of Shopify sits down with one of their largest merchants do discuss how Shopify's helping anyone get started with entrepreneurship, no matter how small.",
 			"speakers": [
 				"Harley Finkelstein",
 				"Benjamin Sehl"
@@ -353,6 +377,30 @@
 			]
 		},
 		{
+			"start": "13:00",
+			"stop": "13:25",
+			"title": "Career Fair",
+			"format": "",
+			"topics": [
+				"Career"
+			],
+			"description": "Meet our sponsors and ask your questions to recruiters!",
+			"speakers": [
+			]
+		},
+		{
+			"start": "13:00",
+			"stop": "13:25",
+			"title": "Speed Networking",
+			"format": "",
+			"topics": [
+				"Career"
+			],
+			"description": "Meet other passionate students from around the world!",
+			"speakers": [
+			]
+		},
+		{
 			"start": "13:30",
 			"stop": "13:55",
 			"title": "Harnessing the Power of Community",
@@ -394,8 +442,8 @@
 			]
 		},
 		{
-			"start": "14:00",
-			"stop": "14:25",
+			"start": "14:30",
+			"stop": "14:55",
 			"title": "Cali or Bust: Busted?",
 			"format": "Fireside Chat",
 			"topics": [
@@ -437,6 +485,18 @@
 				"Michelle Qin",
 				"Arielle Lok",
 				"Jonny Hsu"
+			]
+		},
+		{
+			"start": "16:00",
+			"stop": "16:10",
+			"title": "Closing Ceremonies",
+			"format": "",
+			"topics": [
+			],
+			"description": "",
+			"speakers": [
+				"CUTC Team"
 			]
 		}
 	]
