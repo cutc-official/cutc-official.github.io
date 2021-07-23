@@ -47,7 +47,7 @@
 					<div class="speaker-description" v-if="speakerInfo[speaker]">
 						<div class="name">{{speaker}}</div>
 						<span>{{speakerInfo[speaker].title}}
-							<span v-if="speakerInfo[speaker].org"> 
+							<span v-if="speakerInfo[speaker].org">
 								@ {{speakerInfo[speaker].org}}
 							</span>
 						</span>
@@ -56,7 +56,7 @@
 			</div>
 
 		</div>
-	</div>   
+	</div>
 </template>
 
 <script>
@@ -178,6 +178,8 @@ export default {
 
 	display: grid;
 	grid-template-columns: var(--b-radius) auto;
+
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .strip {
