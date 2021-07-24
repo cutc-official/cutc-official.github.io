@@ -430,7 +430,11 @@
     "Jenny Sun": {
         "title": "Software Engineer",
         "org": "Instagram",
-        "bio": "Bio coming soon!"
+        "bio": "Jenny works on Instagram Reels as an iOS engineer and graduated in 2019 from the University of Waterloo as Valedictorian with a Bachelors in Computer Science . She is passionate about supporting women in tech, as she currently leads the IG WiE (SF) group and was involved with WiCS at UWaterloo.",
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/jennyzsun/",
+            "Twitter": "https://twitter.com/jennyzsun"
+        }
     },
 	"Clarisse Schneider": {
         "title": "Software Engineer",
