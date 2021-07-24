@@ -33,6 +33,9 @@
 					<div class="top-info-section" v-if="topics && topics.length">
 						<p v-for="topic in topics" :key="topic" class="topic-tag">{{ topic }}</p>
 					</div>
+					<div class="top-info-section" v-if="link">
+						<a :href="link" style="font-weight: bold;">Zoom Link</a>
+					</div>
 				</div>
 			</div>
 			<p>{{ description }}</p>
@@ -90,7 +93,8 @@ export default {
 		day: {
 			default: "24",
 			type: String
-		}
+		},
+		link: stringDefault
 	},
 
 	data() {
