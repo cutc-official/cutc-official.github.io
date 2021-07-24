@@ -1,8 +1,8 @@
 <template>
-	<a href="https://www.eventbrite.ca/e/canadian-undergraduate-technology-conference-cutc-2021-registration-151149800121"
+	<a href="https://hopin.com/events/cutc-2021-amplify"
 		target="_blank"
 		class="register-button"
-		>REGISTER FOR FREE
+		>JOIN EVENT NOW
 	</a>
 </template>
 
