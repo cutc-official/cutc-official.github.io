@@ -353,19 +353,6 @@
 		{
 			"start": "12:30",
 			"stop": "12:55",
-			"title": "Designing Your Landing Page with Figma",
-			"format": "Workshop",
-			"topics": [
-				"Design"
-			],
-			"description": "If you want to stand out, having a great landing page is a must. Learn how to use Figma to create a page that'll convert",
-			"speakers": [
-				"Minjun Chen"
-			]
-		},
-		{
-			"start": "12:30",
-			"stop": "12:55",
 			"title": "Landing Your Dream Job Without Applying",
 			"format": "Workshop",
 			"topics": [
@@ -468,7 +455,8 @@
 			"speakers": [
 				"Priya Ghose",
 				"Vivian Phung",
-				"Faisal Abid"
+				"Faisal Abid",
+				"Clarisse Schneider"
 			]
 		},
 		{
