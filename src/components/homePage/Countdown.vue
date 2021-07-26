@@ -1,8 +1,8 @@
 <template>
 	<div id="countdown">
 		<p class="title">CUTC COUNTDOWN!</p>
-		<p>IT'S HERE!</p>
-		<p>JOIN NOW</p>
+		<p>THANKS FOR</p>
+		<p>COMING!</p>
 	</div>
 </template>
 

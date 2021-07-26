@@ -11,20 +11,20 @@
 			<h3><strong>Jul 24-25, 2021</strong></h3>
 			<h3>A free virtual event open to everyone worldwide</h3>
 		</div>
-		<register-button/>
+		<!-- <register-button/> -->
 	</span>
 </div>
 </template>
 
 <script>
 import Countdown from '@/components/homePage/Countdown.vue';
-import RegisterButton from '@/components/general/RegisterButton.vue';
+// import RegisterButton from '@/components/general/RegisterButton.vue';
 
 export default {
 	name: 'Hero',
 	components: {
 		Countdown,
-		RegisterButton
+		// RegisterButton
 	},
 	data: () => ({
 		email: '',
